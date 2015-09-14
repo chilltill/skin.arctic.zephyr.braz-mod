@@ -3,7 +3,6 @@
 <window id="103">
     <defaultcontrol always="true">300</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <zorder>10</zorder>
 
     <coordinates>
         <origin x="0" y="0" />
@@ -332,10 +331,11 @@
                         <label>@#!*</label>
                         <onup>303</onup>
                         <ondown>300</ondown>
-                        <textureradioofffocus>noop</textureradioofffocus>
+                        <!--<textureradioofffocus>noop</textureradioofffocus>
                         <textureradiooffnofocus>noop</textureradiooffnofocus>
                         <textureradioonfocus>noop</textureradioonfocus>
-                        <textureradioonnofocus>noop</textureradioonnofocus>
+                        <textureradioonnofocus>noop</textureradioonnofocus>-->
+                        <radioposx>135</radioposx>
                         <include>DefKeyboardKeys</include>
                     </control>
                     <control type="button" id="160">

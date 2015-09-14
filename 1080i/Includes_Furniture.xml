@@ -212,7 +212,7 @@
             <align>left</align>
             <itemgap>24</itemgap>
             <usecontrolcoords>true</usecontrolcoords>
-            <control type="group">
+            <!--<control type="group">
                 <visible>substring(ListItem.Path,videodb://movies/sets,left) | !Skin.HasSetting(furniture.flagicons) | Container.Content(tvshows) | Container.Content(seasons) | IsEmpty(ListItem.VideoResolution)</visible>
                 <centertop>50%</centertop>
                 <width>64</width>
@@ -238,7 +238,7 @@
                     <texture colordiffuse="Light1">flags/sets.png</texture>
                     <visible>substring(ListItem.Path,videodb://movies/sets,left)</visible>
                 </control>
-            </control>
+            </control>-->
             <control type="image">
                 <width>88</width>
                 <height>64</height>
@@ -929,7 +929,6 @@
     
     <variable name="MainHeaderLabel">
         <value condition="Skin.HasSetting(hide.busydialog) + Window.IsVisible(DialogBusy.xml)">$LOCALIZE[20186]...</value>
-        <value condition="Window.IsVisible(Custom_SetCustomColor.xml)">$LOCALIZE[31238]</value>
         <value condition="Window.IsVisible(MyMusicPlaylistEditor.xml)">$LOCALIZE[20011]</value>
         <value condition="Window.IsVisible(DialogButtonMenu.xml)">$LOCALIZE[33060]</value>
         <value condition="Window.IsVisible(DialogFavourites.xml)">$LOCALIZE[1036]</value>
@@ -1043,13 +1042,15 @@
                     <animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
                 </control>
                 <control type="image">
+                    <visible>Skin.HasSetting(hide.busydialog) + Window.IsVisible(DialogBusy.xml)</visible>
+                    <description>Busy animation</description>
                     <centertop>40</centertop>
                     <centerleft>40</centerleft>
                     <width>48</width>
                     <height>48</height>
-                    <texture colordiffuse="PanelWhite100" fallback="special://skin/extras/spinners/flower.gif">$INFO[Skin.String(busyloader)]</texture>
-                    <visible>Skin.HasSetting(hide.busydialog) + Window.IsVisible(DialogBusy.xml)</visible>
-                    <animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
+                    <texture colordiffuse="PanelWhite100" fallback="special://skin/extras/spinners/Sun.png">$INFO[Skin.String(busyloader)]</texture>
+                    <aspectratio>keep</aspectratio>
+                    <animation effect="rotate" start="360" end="0" center="auto" time="3000" loop="true" condition="true">conditional</animation>
                 </control>
             </control>
             <control type="group">
@@ -1082,7 +1083,7 @@
             <animation effect="slide" start="0" end="0,-10" time="150" condition="Skin.HasSetting(furniture.weather)">Conditional</animation>
             <control type="label">
                 <centertop>24</centertop>
-                <right>130</right>
+                <right>138</right>
                 <align>right</align>
                 <font>LargeBold</font>
                 <textcolor>Dark1</textcolor>

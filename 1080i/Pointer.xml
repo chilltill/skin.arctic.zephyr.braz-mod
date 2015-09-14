@@ -1,40 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window>
-	<!-- pointer -->
-	<defaultcontrol>-</defaultcontrol>
+<!-- Foundation -->
+<window id="105">
+	<allowoverlay>yes</allowoverlay>
 
 	<controls>
 
-		<!-- Pointer -->
 		<control type="image" id="1">
-			<width>200</width>
-			<height>50</height>
-			<texture>mouse.png</texture>
-			<visible>!Skin.HasSetting(HideMouse)</visible>
+			<description>Pointer</description>
+			<width>45</width>
+			<height>45</height>
+			<texture>other_textures/PointerNF.png</texture>
 		</control>
 
-		<!-- Pointer focus -->
 		<control type="image" id="2">
-			<width>200</width>
-			<height>50</height>
-			<texture>mouse.png</texture>
-			<visible>!Skin.HasSetting(HideMouse)</visible>
+			<description>Pointer Focus</description>
+			<width>45</width>
+			<height>45</height>
+			<texture>other_textures/PointerFo.png</texture>
 		</control>
 
-		<!-- Pointer drag -->
 		<control type="image" id="3">
-			<width>200</width>
-			<height>50</height>
-			<texture>mouse.png</texture>
-			<visible>!Skin.HasSetting(HideMouse)</visible>
+			<description>Pointer Drag</description>
+			<width>45</width>
+			<height>45</height>
+			<texture>other_textures/PointerDrag.png</texture>
 		</control>
 
-		<!-- Pointer click -->
 		<control type="image" id="4">
-			<width>200</width>
-			<height>50</height>
-			<texture>mouse.png</texture>
-			<visible>!Skin.HasSetting(HideMouse)</visible>
+			<description>pointer_click</description>
+			<width>45</width>
+			<height>45</height>
+			<texture>other_textures/PointerClick.png</texture>
 		</control>
 
 	</controls>

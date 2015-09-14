@@ -2,6 +2,7 @@
 <!-- Foundation -->
 <window id="2600">
     <defaultcontrol always="true">9100</defaultcontrol>
+    <menucontrol>9000</menucontrol>
     <allowoverlay>yes</allowoverlay>
     <background>0</background>
     <controls>
@@ -40,20 +41,10 @@
                     <control type="image">
                         <centertop>35%</centertop>
                         <centerleft>50%</centerleft>
-                        <width>285</width>
-                        <height>285</height>
+                        <width>255</width>
+                        <height>255</height>
                         <aspectratio align="center" aligny="center">keep</aspectratio>
-                        <texture>$INFO[Window(weather).Property(Current.FanartCode),weather/,.png]</texture>
-                        <visible>Skin.HasSetting(weather.useflaticons)</visible>
-                    </control>
-                    <control type="image">
-                        <centertop>35%</centertop>
-                        <centerleft>50%</centerleft>
-                        <width>240</width>
-                        <height>240</height>
-                        <aspectratio align="center" aligny="center">keep</aspectratio>
-                        <texture>$INFO[Window(weather).Property(Current.ConditionIcon)]</texture>
-                        <visible>!Skin.HasSetting(weather.useflaticons)</visible>
+                        <texture>$VAR[DefWeatherIcon]$INFO[Window(weather).Property(Current.FanartCode),,.png]</texture>
                     </control>
                     <control type="label">
                         <top>20</top>
@@ -74,14 +65,14 @@
                         <label fallback="N/A">$INFO[Window(Weather).Property(Current.Temperature),[B],[/B]°]</label>
                     </control>
                     <control type="textbox">
-                        <top>78%</top>
-                        <height>130</height>
-                        <left>20</left>
-                        <right>20</right>
+                        <top>75%</top>
+                        <height>140</height>
+                        <left>10</left>
+                        <right>10</right>
                         <align>center</align>
                         <font>Tiny</font>
                         <textcolor>PanelWhite100</textcolor>
-                        <label fallback="161">$INFO[Window(Weather).Property(Current.Condition),,[CR]]$INFO[Window(Weather).Property(Current.FeelsLike),$LOCALIZE[402] ,°[CR]]$INFO[Window(Weather).Property(Current.Humidity),, $LOCALIZE[406][CR]]$INFO[Window(Weather).Property(Current.Wind)]</label>
+                        <label fallback="161">$INFO[Window(Weather).Property(Current.Condition),,[CR]]$INFO[Window(Weather).Property(Current.FeelsLike),$LOCALIZE[402] ,°[CR]]$INFO[Window(Weather).Property(Current.Humidity),, $LOCALIZE[406]]</label>
                     </control>
                 </control>
                 <control type="group">
@@ -105,20 +96,10 @@
                     <control type="image">
                         <centertop>35%</centertop>
                         <centerleft>50%</centerleft>
-                        <width>285</width>
-                        <height>285</height>
+                        <width>255</width>
+                        <height>255</height>
                         <aspectratio align="center" aligny="center">keep</aspectratio>
-                        <texture>$INFO[Window(weather).Property(Day0.FanartCode),weather/,.png]</texture>
-                        <visible>Skin.HasSetting(weather.useflaticons)</visible>
-                    </control>
-                    <control type="image">
-                        <centertop>35%</centertop>
-                        <centerleft>50%</centerleft>
-                        <width>240</width>
-                        <height>240</height>
-                        <aspectratio align="center" aligny="center">keep</aspectratio>
-                        <texture>$INFO[Window(weather).Property(Day0.OutlookIcon)]</texture>
-                        <visible>!Skin.HasSetting(weather.useflaticons)</visible>
+                        <texture>$VAR[DefWeatherIcon]$INFO[Window(weather).Property(Day0.FanartCode),,.png]</texture>
                     </control>
                     <control type="label">
                         <top>20</top>
@@ -139,10 +120,10 @@
                         <label fallback="N/A">$INFO[Window(Weather).Property(Day0.HighTemp),[B],[/B]°]$INFO[Window(Weather).Property(Day0.LowTemp),  ,°]</label>
                     </control>
                     <control type="textbox">
-                        <top>78%</top>
+                        <top>75%</top>
                         <height>130</height>
-                        <left>20</left>
-                        <right>20</right>
+                        <left>10</left>
+                        <right>10</right>
                         <align>center</align>
                         <font>Tiny</font>
                         <textcolor>PanelWhite100</textcolor>
@@ -170,20 +151,10 @@
                     <control type="image">
                         <centertop>35%</centertop>
                         <centerleft>50%</centerleft>
-                        <width>285</width>
-                        <height>285</height>
+                        <width>255</width>
+                        <height>255</height>
                         <aspectratio align="center" aligny="center">keep</aspectratio>
-                        <texture>$INFO[Window(weather).Property(Day1.FanartCode),weather/,.png]</texture>
-                        <visible>Skin.HasSetting(weather.useflaticons)</visible>
-                    </control>
-                    <control type="image">
-                        <centertop>35%</centertop>
-                        <centerleft>50%</centerleft>
-                        <width>240</width>
-                        <height>240</height>
-                        <aspectratio align="center" aligny="center">keep</aspectratio>
-                        <texture>$INFO[Window(weather).Property(Day1.OutlookIcon)]</texture>
-                        <visible>!Skin.HasSetting(weather.useflaticons)</visible>
+                        <texture>$VAR[DefWeatherIcon]$INFO[Window(weather).Property(Day1.FanartCode),,.png]</texture>
                     </control>
                     <control type="label">
                         <top>20</top>
@@ -204,10 +175,10 @@
                         <label fallback="N/A">$INFO[Window(Weather).Property(Day1.HighTemp),[B],[/B]°]$INFO[Window(Weather).Property(Day1.LowTemp),  ,°]</label>
                     </control>
                     <control type="textbox">
-                        <top>78%</top>
+                        <top>75%</top>
                         <height>130</height>
-                        <left>20</left>
-                        <right>20</right>
+                        <left>10</left>
+                        <right>10</right>
                         <align>center</align>
                         <font>Tiny</font>
                         <textcolor>PanelWhite100</textcolor>
@@ -235,20 +206,10 @@
                     <control type="image">
                         <centertop>35%</centertop>
                         <centerleft>50%</centerleft>
-                        <width>285</width>
-                        <height>285</height>
+                        <width>255</width>
+                        <height>255</height>
                         <aspectratio align="center" aligny="center">keep</aspectratio>
-                        <texture>$INFO[Window(weather).Property(Day2.FanartCode),weather/,.png]</texture>
-                        <visible>Skin.HasSetting(weather.useflaticons)</visible>
-                    </control>
-                    <control type="image">
-                        <centertop>35%</centertop>
-                        <centerleft>50%</centerleft>
-                        <width>240</width>
-                        <height>240</height>
-                        <aspectratio align="center" aligny="center">keep</aspectratio>
-                        <texture>$INFO[Window(weather).Property(Day2.OutlookIcon)]</texture>
-                        <visible>!Skin.HasSetting(weather.useflaticons)</visible>
+                        <texture>$VAR[DefWeatherIcon]$INFO[Window(weather).Property(Day2.FanartCode),,.png]</texture>
                     </control>
                     <control type="label">
                         <top>20</top>
@@ -269,10 +230,10 @@
                         <label fallback="N/A">$INFO[Window(Weather).Property(Day2.HighTemp),[B],[/B]°]$INFO[Window(Weather).Property(Day2.LowTemp),  ,°]</label>
                     </control>
                     <control type="textbox">
-                        <top>78%</top>
+                        <top>75%</top>
                         <height>130</height>
-                        <left>20</left>
-                        <right>20</right>
+                        <left>10</left>
+                        <right>10</right>
                         <align>center</align>
                         <font>Tiny</font>
                         <textcolor>PanelWhite100</textcolor>
@@ -300,20 +261,10 @@
                     <control type="image">
                         <centertop>35%</centertop>
                         <centerleft>50%</centerleft>
-                        <width>285</width>
-                        <height>285</height>
+                        <width>255</width>
+                        <height>255</height>
                         <aspectratio align="center" aligny="center">keep</aspectratio>
-                        <texture>$INFO[Window(weather).Property(Day3.FanartCode),weather/,.png]</texture>
-                        <visible>Skin.HasSetting(weather.useflaticons)</visible>
-                    </control>
-                    <control type="image">
-                        <centertop>35%</centertop>
-                        <centerleft>50%</centerleft>
-                        <width>240</width>
-                        <height>240</height>
-                        <aspectratio align="center" aligny="center">keep</aspectratio>
-                        <texture>$INFO[Window(weather).Property(Day3.OutlookIcon)]</texture>
-                        <visible>!Skin.HasSetting(weather.useflaticons)</visible>
+                        <texture>$VAR[DefWeatherIcon]$INFO[Window(weather).Property(Day3.FanartCode),,.png]</texture>
                     </control>
                     <control type="label">
                         <top>20</top>
@@ -334,10 +285,10 @@
                         <label fallback="N/A">$INFO[Window(Weather).Property(Day3.HighTemp),[B],[/B]°]$INFO[Window(Weather).Property(Day3.LowTemp),  ,°]</label>
                     </control>
                     <control type="textbox">
-                        <top>78%</top>
+                        <top>75%</top>
                         <height>130</height>
-                        <left>20</left>
-                        <right>20</right>
+                        <left>10</left>
+                        <right>10</right>
                         <align>center</align>
                         <font>Tiny</font>
                         <textcolor>PanelWhite100</textcolor>
@@ -365,20 +316,10 @@
                     <control type="image">
                         <centertop>35%</centertop>
                         <centerleft>50%</centerleft>
-                        <width>285</width>
-                        <height>285</height>
+                        <width>255</width>
+                        <height>255</height>
                         <aspectratio align="center" aligny="center">keep</aspectratio>
-                        <texture>$INFO[Window(weather).Property(Day4.FanartCode),weather/,.png]</texture>
-                        <visible>Skin.HasSetting(weather.useflaticons)</visible>
-                    </control>
-                    <control type="image">
-                        <centertop>35%</centertop>
-                        <centerleft>50%</centerleft>
-                        <width>240</width>
-                        <height>240</height>
-                        <aspectratio align="center" aligny="center">keep</aspectratio>
-                        <texture>$INFO[Window(weather).Property(Day4.OutlookIcon)]</texture>
-                        <visible>!Skin.HasSetting(weather.useflaticons)</visible>
+                        <texture>$VAR[DefWeatherIcon]$INFO[Window(weather).Property(Day4.FanartCode),,.png]</texture>
                     </control>
                     <control type="label">
                         <top>20</top>
@@ -399,10 +340,10 @@
                         <label fallback="N/A">$INFO[Window(Weather).Property(Day4.HighTemp),[B],[/B]°]$INFO[Window(Weather).Property(Day4.LowTemp),  ,°]</label>
                     </control>
                     <control type="textbox">
-                        <top>78%</top>
+                        <top>75%</top>
                         <height>130</height>
-                        <left>20</left>
-                        <right>20</right>
+                        <left>10</left>
+                        <right>10</right>
                         <align>center</align>
                         <font>Tiny</font>
                         <textcolor>PanelWhite100</textcolor>
@@ -410,7 +351,14 @@
                     </control>
                 </control>
             </control>
-            
+            <control type="image">
+                <left>80</left>
+                <top>880</top>
+                <width>300</width>
+                <height>100</height>
+                <aspectratio align="left" aligny="center">keep</aspectratio>
+                <texture>$INFO[Window.Property(WeatherProviderLogo)]</texture>
+            </control>
             
         </control>
         <control type="button" id="9100" description="Fake Button">
@@ -449,12 +397,14 @@
                     <label2>$INFO[Weather.Location]</label2>
                     <onclick>Weather.LocationNext</onclick>
                 </control>
-                <control type="radiobutton" id="9001" description="Use flat icons">
+                <control type="button" id="9001" description="Select icons">
                     <include>DefContextButton</include>
                     <align>left</align>
                     <label>31233</label>
-                    <selected>Skin.HasSetting(weather.useflaticons)</selected>
-                    <onclick>Skin.ToggleSetting(weather.useflaticons)</onclick>
+                    <!--<selected>Skin.HasSetting(weather.useflaticons)</selected>
+                    <onclick>Skin.ToggleSetting(weather.useflaticons)</onclick>-->
+                    <onclick>RunScript(script.image.resource.select,property=weathericons&amp;type=resource.images.weathericons)</onclick>
+                    <visible>System.HasAddon(script.image.resource.select)</visible>
                 </control>
                 <control type="radiobutton" id="9002" description="Show weather overlay">
                     <include>DefContextButton</include>

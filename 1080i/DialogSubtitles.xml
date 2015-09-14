@@ -1,5 +1,6 @@
 <window type="dialog">
     <defaultcontrol always="true">120</defaultcontrol>
+    <zorder>5</zorder>
     <controls>
         <control type="group">
             <posy>95</posy>
@@ -239,7 +240,7 @@
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
                         <textcolor>Black30</textcolor>
-                        <selectedcolor>Highlight2</selectedcolor>
+                        <selectedcolor>Highlight</selectedcolor>
                     </control>
 
                 </itemlayout>
@@ -264,7 +265,7 @@
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
                         <textcolor>Black30</textcolor>
-                        <selectedcolor>Highlight2</selectedcolor>
+                        <selectedcolor>$VAR[ColorHighlight]</selectedcolor>
                         <visible>!Control.HasFocus(150)</visible>
                     </control>
                     <control type="label">
@@ -274,7 +275,7 @@
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
                         <textcolor>White100</textcolor>
-                        <selectedcolor>Highlight2</selectedcolor>
+                        <selectedcolor>White100</selectedcolor>
                         <visible>Control.HasFocus(150)</visible>
                     </control>
                     

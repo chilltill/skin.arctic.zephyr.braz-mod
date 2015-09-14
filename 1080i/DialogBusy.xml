@@ -18,7 +18,7 @@
                 <centertop>47%</centertop>
                 <width>48</width>
                 <height>48</height>
-                <texture colordiffuse="$VAR[ColorHighlight]" fallback="special://skin/extras/spinners/flower.gif">$INFO[Skin.String(busyloader)]</texture>
+                <texture colordiffuse="$VAR[ColorHighlight]" fallback="special://skin/extras/spinners/Sun.png">$INFO[Skin.String(busyloader)]</texture>
                 <aspectratio>keep</aspectratio>
             </control>
 

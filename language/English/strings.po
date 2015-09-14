@@ -284,9 +284,7 @@ msgctxt "#31167"
 msgid "[B]View System Information[/B][CR][CR] •     Summary[CR] •     Storage[CR] •     Network[CR] •     Video[CR] •     Hardware[CR] •     PVR Backend"
 msgstr ""
 
-msgctxt "#31168"
-msgid "Startup video or music playlist"
-msgstr ""
+#empty string with id 31168
 
 msgctxt "#31169"
 msgid "Extras"
@@ -356,9 +354,7 @@ msgctxt "#31185"
 msgid "Big poster"
 msgstr ""
 
-msgctxt "#31186"
-msgid "Use circular icons in dialogs"
-msgstr ""
+#empty string with id 31186
 
 msgctxt "#31187"
 msgid "Random Albums"
@@ -545,7 +541,7 @@ msgid "Reset path"
 msgstr ""
 
 msgctxt "#31233"
-msgid "Use flat icons"
+msgid "Select icons"
 msgstr ""
 
 msgctxt "#31234"

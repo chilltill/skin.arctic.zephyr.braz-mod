@@ -3,7 +3,6 @@
 <window id="109">
     <defaultcontrol always="true">21</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <zorder>10</zorder>
 
     <coordinates>
         <origin x="750" y="270" />

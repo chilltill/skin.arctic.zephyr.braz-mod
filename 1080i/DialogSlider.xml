@@ -3,7 +3,6 @@
 <window id="145">
     <defaultcontrol always="true">11</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <zorder>5</zorder>
 
     <controls>
         <control type="group">

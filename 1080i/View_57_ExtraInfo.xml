@@ -177,7 +177,7 @@
                 <height>290</height>
                 
                 <control type="label">
-                    <top>8</top>
+                    <top>0</top>
                     <aligny>center</aligny>
                     <height>64</height>
                     <font>SmallBold</font>
@@ -186,7 +186,7 @@
                     <label>$VAR[LabelDirector]</label>
                 </control>
                 <control type="label">
-                    <top>48</top>
+                    <top>40</top>
                     <height>64</height>
                     <aligny>center</aligny>
                     <font>Tiny</font>
@@ -195,8 +195,8 @@
                     <label>$VAR[LabelGenre]</label>
                 </control>
                 <control type="textbox">
-                    <top>116</top>
-                    <bottom>17</bottom>
+                    <top>105</top>
+                    <bottom>5</bottom>
                     <align>justify</align>
                     <font>Tiny</font>
                     <textcolor>Dark1</textcolor>

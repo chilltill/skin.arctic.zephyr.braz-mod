@@ -3,7 +3,6 @@
 <window id="2003">
     <defaultcontrol always="true">8</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <zorder>0</zorder>
     <onload condition="System.HasAddon(script.videoextras)">RunScript(script.videoextras,check,"$INFO[ListItem.FilenameAndPath]")</onload>
     <onload>ClearProperty(content)</onload>
     <onload>ClearProperty(movie.Fanart,home)</onload>
@@ -685,7 +684,7 @@
                         <posy>30</posy>
                         <width>48</width>
                         <height>48</height>
-                        <texture colordiffuse="$VAR[ColorHighlight]" fallback="special://skin/extras/spinners/flower.gif">$INFO[Skin.String(busyloader)]</texture>
+                        <texture colordiffuse="$VAR[ColorHighlight]" fallback="special://skin/extras/spinners/Sun.png">$INFO[Skin.String(busyloader)]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
 

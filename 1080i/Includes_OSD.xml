@@ -174,9 +174,9 @@
             <info>Player.ProgressCache</info>
             <visible>true</visible>
             <texturebg colordiffuse="00ffffff">osd/progress-bg.png</texturebg>
-            <lefttexture colordiffuse="Highlight2">osd/progress-end.png</lefttexture>
-            <midtexture colordiffuse="Highlight2">osd/progress-end.png</midtexture>
-            <righttexture colordiffuse="Highlight2">osd/progress-end.png</righttexture>
+            <lefttexture colordiffuse="00ffffff">osd/progress-end.png</lefttexture>
+            <midtexture colordiffuse="00ffffff">osd/progress-end.png</midtexture>
+            <righttexture colordiffuse="00ffffff">osd/progress-end.png</righttexture>
         </control>
         <control type="progress" id="23">
             <description>Progress Bar</description>
@@ -1134,6 +1134,84 @@
             </control>
         </control>
         
+    </include>
+
+    <include name="MenuPlayerControls">
+        <control type="grouplist" id="6050">
+            <visible>Player.HasMedia</visible>
+            <top>10</top>
+            <height>60</height>
+            <width>450</width>
+            <align>center</align>
+            <itemgap>20</itemgap>
+            <scrolltime tween="sine">200</scrolltime>
+            <orientation>horizontal</orientation>
+            <onup>$PARAM[PlayerControlsOnUp]</onup>
+            <ondown>$PARAM[PlayerControlsOnDown]</ondown>
+            <onleft>6050</onleft>
+            <onright>6050</onright>
+            <onback>50</onback>
+            <control type="button" id="6051">
+                <animation effect="rotate" time="0" start="0" end="180" condition="true" center="auto">Conditional</animation>
+                <texturefocus colordiffuse="$VAR[ColorHighlight]">osd/next.png</texturefocus>
+                <texturenofocus colordiffuse="Black70">osd/next.png</texturenofocus>
+                <label>-</label>
+                <width>48</width>
+                <height>48</height>
+                <font>-</font>
+                <onclick>PlayerControl(Previous)</onclick>
+            </control>
+            <control type="button" id="6052">
+                <animation effect="rotate" time="0" start="0" end="180" condition="true" center="auto">Conditional</animation>
+                <texturefocus colordiffuse="$VAR[ColorHighlight]">osd/ff.png</texturefocus>
+                <texturenofocus colordiffuse="Black70">osd/ff.png</texturenofocus>
+                <label>-</label>
+                <width>48</width>
+                <height>48</height>
+                <font>-</font>
+                <onclick>PlayerControl(Rewind)</onclick>
+            </control>
+            <control type="togglebutton" id="6053">
+                <texturefocus colordiffuse="$VAR[ColorHighlight]">osd/pause.png</texturefocus>
+                <texturenofocus colordiffuse="Black70">osd/pause.png</texturenofocus>
+                <alttexturefocus colordiffuse="$VAR[ColorHighlight]">osd/play.png</alttexturefocus>
+                <alttexturenofocus colordiffuse="Black70">osd/play.png</alttexturenofocus>
+                <label>-</label>
+                <altlabel>208</altlabel>
+                <width>48</width>
+                <height>48</height>
+                <font>-</font>
+                <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
+                <onclick>PlayerControl(Play)</onclick>
+            </control>
+            <control type="button" id="6054">
+                <texturefocus colordiffuse="$VAR[ColorHighlight]">osd/stop.png</texturefocus>
+                <texturenofocus colordiffuse="Black70">osd/stop.png</texturenofocus>
+                <label>-</label>
+                <width>48</width>
+                <height>48</height>
+                <font>-</font>
+                <onclick>PlayerControl(Stop)</onclick>
+            </control>
+            <control type="button" id="6055">
+                <texturefocus colordiffuse="$VAR[ColorHighlight]">osd/ff.png</texturefocus>
+                <texturenofocus colordiffuse="Black70">osd/ff.png</texturenofocus>
+                <label>-</label>
+                <width>48</width>
+                <height>48</height>
+                <font>-</font>
+                <onclick>PlayerControl(Forward)</onclick>
+            </control>
+            <control type="button" id="6056">
+                <texturefocus colordiffuse="$VAR[ColorHighlight]">osd/next.png</texturefocus>
+                <texturenofocus colordiffuse="Black70">osd/next.png</texturenofocus>
+                <label>-</label>
+                <width>48</width>
+                <height>48</height>
+                <font>-</font>
+                <onclick>PlayerControl(Next)</onclick>
+            </control>
+        </control>
     </include>
     
 </includes>

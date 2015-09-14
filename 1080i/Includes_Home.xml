@@ -377,7 +377,7 @@
                 <posy>30</posy>
                 <width>48</width>
                 <height>48</height>
-                <texture colordiffuse="$VAR[ColorHighlight]" fallback="special://skin/extras/spinners/flower.gif">$INFO[Skin.String(busyloader)]</texture>
+                <texture colordiffuse="$VAR[ColorHighlight]" fallback="special://skin/extras/spinners/Sun.png">$INFO[Skin.String(busyloader)]</texture>
                 <aspectratio>keep</aspectratio>
             </control>
 
@@ -634,7 +634,7 @@
                 </control>
             </control>
             
-            <include>HomeWidgetUpdating</include>
+            <!--<include>HomeWidgetUpdating</include>-->
         </control>
     </include>
     
@@ -1166,7 +1166,8 @@
                         <centertop>50%</centertop>
                         <width>450</width>
                         <height>117</height>
-                        <visible>Container(301).IsUpdating</visible>
+                        <visible>false</visible>
+                        <!--<visible>Container(301).IsUpdating</visible>-->
                         <animation effect="fade" start="0" end="100" delay="500" time="200" reversible="false">Visible</animation>
                     
                         <control type="image">
@@ -1175,7 +1176,7 @@
                             <posy>30</posy>
                             <width>48</width>
                             <height>48</height>
-                            <texture colordiffuse="$VAR[ColorHighlight]" fallback="special://skin/extras/spinners/flower.gif">$INFO[Skin.String(busyloader)]</texture>
+                            <texture colordiffuse="$VAR[ColorHighlight]" fallback="special://skin/extras/spinners/Sun.png">$INFO[Skin.String(busyloader)]</texture>
                             <aspectratio>keep</aspectratio>
                         </control>
 
@@ -1228,7 +1229,7 @@
                             <left>0</left>
                             <right>0</right>
                             <top>120</top>
-                            <height>97</height>
+                            <height>110</height>
                             <font>Tiny</font>
                             <align>justify</align>
                             <autoscroll>false</autoscroll>
@@ -1650,7 +1651,7 @@
                         <posy>30</posy>
                         <width>48</width>
                         <height>48</height>
-                        <texture colordiffuse="$VAR[ColorHighlight]" fallback="special://skin/extras/spinners/flower.gif">$INFO[Skin.String(busyloader)]</texture>
+                        <texture colordiffuse="$VAR[ColorHighlight]" fallback="special://skin/extras/spinners/Sun.png">$INFO[Skin.String(busyloader)]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="label">

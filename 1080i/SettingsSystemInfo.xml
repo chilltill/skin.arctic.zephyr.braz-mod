@@ -125,7 +125,7 @@
 
                 <control type="grouplist">
                     <left>480</left>
-                    <top>140</top>
+                    <top>120</top>
                     <bottom>0</bottom>
                     <right>30</right>
                     <itemgap>0</itemgap>

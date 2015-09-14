@@ -4,7 +4,6 @@
     <defaultcontrol always="true">3</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <onunload condition="!Skin.HasSetting(startup.init)">Skin.SetBool(osd.usetheme)</onunload>
-    <onunload condition="!Skin.HasSetting(startup.init)">Skin.SetBool(global.hidecirles)</onunload>
     <onunload condition="!Skin.HasSetting(startup.init)">Skin.SetBool(home.classicwidgets)</onunload>
     <onunload condition="!Skin.HasSetting(startup.init)">Skin.SetBool(startup.init)</onunload>
     <controls>
@@ -93,7 +92,7 @@
                     <textoffsetx>0</textoffsetx>
                     <texturenofocus>noop</texturenofocus>
                     <texturefocus>noop</texturefocus>
-                    <focusedcolor>Highlight2</focusedcolor>
+                    <focusedcolor>$VAR[ColorHighlight]</focusedcolor>
                     <ondown>3</ondown>
                     <onleft>9000</onleft>
                     <onright>5</onright>
@@ -138,7 +137,6 @@
         </control>
 
         <control type="togglebutton" id="10">
-            <width>450</width>
             <description>Default Category Button</description>
             <include>DefSettingsButton</include>
         </control>

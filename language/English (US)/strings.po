@@ -284,10 +284,6 @@ msgctxt "#31167"
 msgid "[B]View System Information[/B][CR][CR] •     Summary[CR] •     Storage[CR] •     Network[CR] •     Video[CR] •     Hardware[CR] •     PVR Backend"
 msgstr "[B]View System Information[/B][CR][CR] •     Summary[CR] •     Storage[CR] •     Network[CR] •     Video[CR] •     Hardware[CR] •     PVR Backend"
 
-msgctxt "#31168"
-msgid "Startup video"
-msgstr "Startup video"
-
 msgctxt "#31169"
 msgid "Extras"
 msgstr "Extras"
@@ -355,10 +351,6 @@ msgstr "Use classic widget style"
 msgctxt "#31185"
 msgid "Big poster"
 msgstr "Big poster"
-
-msgctxt "#31186"
-msgid "Use circular icons in dialogs"
-msgstr "Use circular icons in dialogs"
 
 msgctxt "#31187"
 msgid "Random Albums"
@@ -545,8 +537,8 @@ msgid "Reset path"
 msgstr "Reset path"
 
 msgctxt "#31233"
-msgid "Use flat icons"
-msgstr "Use flat icons"
+msgid "Select icons"
+msgstr "Select icons"
 
 msgctxt "#31234"
 msgid "Fanart overlay"

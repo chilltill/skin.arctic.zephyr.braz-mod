@@ -497,21 +497,12 @@
                     
                     
                     <!-- Extras -->
-                    <control type="button" id="9271" description="Startup Video">
-                        <width>1310</width>
-                        <visible>ControlGroup(9100).HasFocus(9107)</visible>
-                        <include>DefSettingsButton</include>
-                        <label>31168</label>
-                        <label2>$INFO[Skin.String(StartupPlaylist)]</label2>
-                        <onclick condition="IsEmpty(Skin.String(StartupPlaylist))">Skin.SetFile(StartupPlaylist,.mp4|.avi|.mkv|.xvid|.wmv|.mov|.xsp|.mp3|.wma|.flac|.m3u)</onclick>
-                        <onclick condition="!IsEmpty(Skin.String(StartupPlaylist))">Skin.Reset(StartupPlaylist)</onclick>
-                    </control>
                     <control type="button" id="9279" description="Set Custom Colour">
                         <width>1310</width>
                         <visible>ControlGroup(9100).HasFocus(9107)</visible>
                         <include>DefSettingsButton</include>
                         <label>$LOCALIZE[31238]</label>
-                        <label2>$INFO[Skin.String(focuscolor.name)]</label2>
+                        <label2>[UPPERCASE]$INFO[Skin.String(focuscolor.name)][/UPPERCASE]</label2>
                         <onclick>ActivateWindow(1107)</onclick>
                     </control>
                     <control type="radiobutton" id="9272" description="Kiosk Mode">
@@ -521,14 +512,6 @@
                         <label>31199</label>
                         <selected>Skin.HasSetting(global.kioskmode)</selected>
                         <onclick>Skin.ToggleSetting(global.kioskmode)</onclick>
-                    </control>
-                    <control type="radiobutton" id="9273" description="Dont use circle icons">
-                        <width>1310</width>
-                        <visible>ControlGroup(9100).HasFocus(9107)</visible>
-                        <include>DefSettingsButton</include>
-                        <label>31186</label>
-                        <selected>!Skin.HasSetting(global.hidecirles)</selected>
-                        <onclick>Skin.ToggleSetting(global.hidecirles)</onclick>
                     </control>
                     
                     <!-- <control type="radiobutton" id="9275" description="TV Tunes">
@@ -563,9 +546,16 @@
                         <include>DefSettingsButton</include>
                         <label>31216</label>
                         <label2>$INFO[Skin.String(busyloader)]</label2>
-                        <onclick>Skin.SetFile(busyloader,.gif,special://skin/extras/spinners)</onclick>
+                        <onclick>Skin.SetFile(busyloader,.png,special://skin/extras/spinners)</onclick>
                     </control>
-                    
+                     <control type="radiobutton" id="9273" description="Debug mode">
+                        <width>1310</width>
+                        <include>DefSettingsButton</include>
+                        <label>20191</label>
+                        <onclick>Skin.ToggleSetting(Skin.ToggleDebug)</onclick>
+                        <onclick>Skin.ToggleDebug</onclick>
+                        <selected>Skin.HasSetting(Skin.ToggleDebug)</selected>
+                    </control>
                 </control>
                 
                 

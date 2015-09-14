@@ -25,12 +25,12 @@
                 <bottom>10</bottom>
                 <right>10</right>
                 <left>1160</left>
-                <control type="image">
+                <!--<control type="image">
                     <visible>false</visible>
                     <width>100%</width>
                     <height>100%</height>
                     <texture border="5" colordiffuse="PanelWhite12">common/box.png</texture>
-                </control>
+                </control>-->
                 <control type="textbox">
                     <top>30</top>
                     <bottom>30</bottom>
