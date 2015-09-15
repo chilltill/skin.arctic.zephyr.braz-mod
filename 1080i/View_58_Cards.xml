@@ -62,8 +62,8 @@
                             <left>237</left>
                             <right>30</right>
                             <top>70</top>
-                            <height>188</height>
-                            <align>justify</align>
+                            <height>180</height>
+                            <!--<align>justify</align>-->
                             <font>Tiny</font>
                             <autoscroll>false</autoscroll>
                             <textcolor>Dark1</textcolor>
@@ -125,8 +125,8 @@
                             <left>430</left>
                             <right>30</right>
                             <top>70</top>
-                            <height>188</height>
-                            <align>justify</align>
+                            <height>180</height>
+                            <!--<align>justify</align>-->
                             <font>Tiny</font>
                             <textcolor>Dark1</textcolor>
                             <selectedcolor>Dark1</selectedcolor>
@@ -187,8 +187,8 @@
                             <left>237</left>
                             <right>30</right>
                             <top>70</top>
-                            <height>188</height>
-                            <align>justify</align>
+                            <height>180</height>
+                            <!--<align>justify</align>-->
                             <font>Tiny</font>
                             <textcolor>Light1</textcolor>
                             <selectedcolor>Light1</selectedcolor>
@@ -247,8 +247,8 @@
                             <left>430</left>
                             <right>30</right>
                             <top>70</top>
-                            <height>188</height>
-                            <align>justify</align>
+                            <height>180</height>
+                            <!--<align>justify</align>-->
                             <font>Tiny</font>
                             <textcolor>Light1</textcolor>
                             <selectedcolor>Light1</selectedcolor>

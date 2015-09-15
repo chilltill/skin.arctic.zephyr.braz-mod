@@ -4,6 +4,10 @@
         <value condition="!IsEmpty(Skin.String(focuscolor.name))">$INFO[Skin.String(focuscolor.name)]</value>
         <value>Highlight</value>
     </variable>
+    <variable name="SortDirection">
+        <value condition="Container.SortDirection(Ascending)">Ascending</value>
+        <value condition="Container.SortDirection(Descending)">Descending</value>
+    </variable>
     <variable name="DefSettingsOnRight">
         <value condition="Window.IsVisible(AppearanceSettings)">ReplaceWindow(VideosSettings)</value>
         <value condition="Window.IsVisible(VideosSettings)">ReplaceWindow(MusicSettings)</value>
@@ -598,16 +602,30 @@
     
     
     <include name="Def9000MusicSide">
-        <control type="button" id="2">
+        <!-- Sort Options -->
+        <control type="button" id="1802">
             <description>View</description>
+            <label>View</label>
+            <label2>$INFO[Container.Viewmode]</label2>
             <include>DefContextButton</include>
             <align>left</align>
+            <onclick>Container.NextViewMode</onclick>
         </control>
-
+        
         <control type="button" id="3">
             <description>Sort</description>
             <include>DefContextButton</include>
             <align>left</align>
+            <visible>false</visible>
+        </control>
+        <control type="button" id="1803">
+            <description>Sort by button</description>
+            <include>DefContextButton</include>
+            <align>left</align>
+            <label>Sort by</label>
+            <label2>$INFO[Container.SortMethod]</label2>
+            <onclick>Container.NextSortMethod</onclick>
+            <enable>Control.IsEnabled(3)</enable>
         </control>
 
         <control type="togglebutton" id="4">
@@ -616,8 +634,17 @@
             <align>left</align>
             <label>584</label>
             <altlabel>585</altlabel>
+            <visible>false</visible>
         </control>
-
+        <control type="button" id="1804">
+            <description>Sort direction</description>
+            <include>DefContextButton</include>
+            <align>left</align>
+            <label>Sort direction</label>
+            <label2>$VAR[SortDirection]</label2>
+            <onclick>Container.SortDirection</onclick>
+            <enable>Control.IsEnabled(4)</enable>
+        </control>
         <control type="button" id="5">
             <description>Files</description>
             <include>DefContextButton</include>

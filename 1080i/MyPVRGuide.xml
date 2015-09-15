@@ -27,7 +27,7 @@
                 </control>
                 
                 <control type="group">
-                    <top>500</top>
+                    <top>495</top>
                     <bottom>10</bottom>
                     <left>30</left>
                     <right>30</right>
@@ -44,7 +44,7 @@
                     <control type="textbox">
                         <top>55</top>
                         <right>280</right>
-                        <height>67</height>
+                        <height>77</height>
                         <align>left</align>
                         <font>Tiny</font>
                         <textcolor>PanelWhite100</textcolor>
@@ -66,7 +66,8 @@
                     <top>-60</top>
                     <width>1760</width>
                     <height>560</height>
-                    <onback>28</onback>
+                    <!--<onback>28</onback>-->
+                    <onleft>9000</onleft>
                     <viewtype label="19069">list</viewtype>
                     <progresstexture border="5" colordiffuse="bf777777">pvr/progressline.png</progresstexture>
                     <scrolltime tween="quadratic">300</scrolltime>

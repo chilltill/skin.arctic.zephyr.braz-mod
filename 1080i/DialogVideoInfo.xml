@@ -94,7 +94,6 @@
                     <onup condition="Control.IsVisible(50)">51</onup>
                     <onup condition="Control.IsVisible(9501)">9501</onup>
                     <onup condition="!Control.IsVisible(50) + !Control.IsVisible(9501)">9601</onup>
-                    <ondown condition="!Control.IsVisible(50) + !Control.IsVisible(9501)">9601</ondown>
                     <orientation>horizontal</orientation>
 
                     <control type="button" id ="8">
@@ -239,12 +238,12 @@
                     <right>SidePad</right>
                     <bottom>224</bottom>
                     <top>PosterPad</top>
-                    <control type="image">
+                    <!--<control type="image">
                         <right>0</right>
                         <width>410</width>
                         <height>410</height>
                         <texture>$INFO[ListItem.Art(discart)]</texture>
-                    </control>    
+                    </control>-->
                     <control type="grouplist">
                         <left>30</left>
                         <right>30</right>
@@ -253,22 +252,43 @@
                             <description>Header Label</description>
                             <textcolor>Dark1</textcolor>
                             <include>DefDialogInfoHeader</include>
-                            <label>$INFO[ListItem.Title]</label>
+                            <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="group">
                             <height>50</height>
                             <control type="label">
+                                <visible>Container.Content(movies)</visible>
                                 <posy>-10</posy>
-                                <right>420</right>
+                                <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
                                 <textcolor>Dark2</textcolor>
-                                <label fallback="19055">$INFO[ListItem.Tagline]</label>
+                                <label>$INFO[ListItem.Tagline]</label>
+                                <aligny>center</aligny>
+                            </control>
+                            <control type="label">
+                                <visible>Container.Content(episodes)</visible>
+                                <posy>-10</posy>
+                                <width>100%</width>
+                                <height>36</height>
+                                <font>Tiny</font>
+                                <textcolor>Dark2</textcolor>
+                                <label>$INFO[ListItem.TVShowTitle]</label>
+                                <aligny>center</aligny>
+                            </control>
+                            <control type="label">
+                                <visible>Container.Content(seasons) | Container.Content(tvshows)</visible>
+                                <posy>-10</posy>
+                                <width>100%</width>
+                                <height>36</height>
+                                <font>Tiny</font>
+                                <textcolor>Dark2</textcolor>
+                                <label>$INFO[ListItem.Property(UnWatchedEpisodes)] unwatched episodes</label>
                                 <aligny>center</aligny>
                             </control>
                         </control>
                         <control type="group">
-                    
+                            <visible>!IsEmpty(ListItem.Year)</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>100%</width>
@@ -289,7 +309,7 @@
                             </control>
                         </control>
                         <control type="group">
-                    
+                            <visible>!IsEmpty(ListItem.MPAA)</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>100%</width>
@@ -305,12 +325,12 @@
                                 <height>36</height>
                                 <font>Tiny</font>
                                 <textcolor>Dark2</textcolor>
-                                <label fallback="19055">$INFO[ListItem.MPAA]</label>
+                                <label fallback="Unrated">$INFO[ListItem.MPAA]</label>
                                 <aligny>center</aligny>
                             </control>
                         </control>
                         <control type="group">
-                    
+                            <visible>!IsEmpty(ListItem.Duration)</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>100%</width>
@@ -331,7 +351,7 @@
                             </control>
                         </control>
                         <control type="group">
-                    
+                            <visible>!IsEmpty(ListItem.Studio)</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>100%</width>
@@ -352,7 +372,7 @@
                             </control>
                         </control>
                         <control type="group">
-                    
+                            <visible>!IsEmpty(ListItem.Genre)</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>100%</width>
@@ -373,7 +393,28 @@
                             </control>
                         </control>
                         <control type="group">
-                    
+                            <visible>[Container.Content(tvshows) | Container.Content(seasons)] + !IsEmpty(Window(Home).Property(NextAired.LatestTitle))</visible>
+                            <height>36</height>
+                            <control type="label">
+                                <width>100%</width>
+                                <height>36</height>
+                                <font>Tiny</font>
+                                <textcolor>Dark1</textcolor>
+                                <label>[B]Latest[/B]</label>
+                                <aligny>center</aligny>
+                            </control>
+                            <control type="label">
+                                <left>150</left>
+                                <right>420</right>
+                                <height>36</height>
+                                <font>Tiny</font>
+                                <textcolor>Dark2</textcolor>
+                                <label fallback="19055">$INFO[Window(Home).Property(NextAired.LatestNumber),, - ]$INFO[Window(Home).Property(NextAired.LatestTitle)]</label>
+                                <aligny>center</aligny>
+                            </control>
+                        </control>
+                        <control type="group">
+                            <visible>!IsEmpty(ListItem.Director)</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>100%</width>
@@ -394,7 +435,7 @@
                             </control>
                         </control>
                         <control type="group">
-                    
+                            <visible>!IsEmpty(ListItem.Writer)</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>100%</width>
@@ -415,7 +456,7 @@
                             </control>
                         </control>
                         <control type="group">
-                    
+                            <visible>!IsEmpty(Window(movieinformation).Property(AudioLanguage.1)) | !IsEmpty(ListItem.AudioLanguage)</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>100%</width>
@@ -532,7 +573,7 @@
                         </control>
                         <control type="label">
                             <width>100%</width>
-                            <height>36</height>
+                            <height>20</height>
                             <font>Tiny</font>
                             <textcolor>Dark1</textcolor>
                             <label></label>
@@ -541,10 +582,10 @@
                         <control type="textbox" id="4">
                     
                             <width>100%</width>
-                            <height>94</height>
+                            <height>110</height>
                             <font>Tiny</font>
                             <textcolor>Dark2</textcolor>
-                            <align>justify</align>
+                            <!--<align>justify</align>-->
                         </control>
                         
                     </control>
@@ -864,7 +905,7 @@
             <left>SidePad</left>
             <right>SidePad</right>
             <top>PosterPad</top>
-            <height>640</height>
+            <height>670</height>
             <visible>Control.HasFocus(9601)</visible>
             <include>Animation.FadeIn.Slide</include>
             <include>Animation.FadeOut</include>

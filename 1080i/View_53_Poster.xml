@@ -179,7 +179,7 @@
                     <label>$VAR[LabelPlotBox]</label>
                     <textcolor>Dark2</textcolor>
                     <height>80</height>
-                    <align>justify</align>
+                    <!--<align>justify</align>-->
                 </control>
             </control>
         </control>

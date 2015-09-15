@@ -66,22 +66,56 @@
                     <include>DefContextButton</include>
                     <align>left</align>
                 </control>
-                <control type="button" id="2">
+
+                <!-- Sort Options -->
+                <control type="button" id="1802">
                     <description>View</description>
+                    <label>View</label>
+                    <label2>$INFO[Container.Viewmode]</label2>
                     <include>DefContextButton</include>
                     <align>left</align>
+                    <onclick>Container.NextViewMode</onclick>
                 </control>
+                
                 <control type="button" id="3">
                     <description>Sort</description>
                     <include>DefContextButton</include>
                     <align>left</align>
+                    <visible>false</visible>
                 </control>
+                <control type="button" id="1803">
+                    <description>Sort by button</description>
+                    <include>DefContextButton</include>
+                    <align>left</align>
+                    <label>Sort by</label>
+                    <label2>$INFO[Container.SortMethod]</label2>
+                    <onclick>Container.NextSortMethod</onclick>
+                    <enable>Control.IsEnabled(3)</enable>
+                </control>
+
                 <control type="togglebutton" id="4">
-                    <description>Direction</description>
+                    <description>Ascending</description>
                     <include>DefContextButton</include>
                     <align>left</align>
                     <label>584</label>
                     <altlabel>585</altlabel>
+                    <visible>false</visible>
+                </control>
+                <control type="button" id="1804">
+                    <description>Sort direction</description>
+                    <include>DefContextButton</include>
+                    <align>left</align>
+                    <label>Sort direction</label>
+                    <label2>$VAR[SortDirection]</label2>
+                    <onclick>Container.SortDirection</onclick>
+                    <enable>Control.IsEnabled(4)</enable>
+                </control>
+                <control type="radiobutton" id="5">
+                    <description>Group recording items by folder structure</description>
+                    <include>DefContextButton</include>
+                    <align>left</align>
+                    <label>Group items</label>
+                    <visible>Window.IsVisible(MyPVRRecordings.xml)</visible>
                 </control>
                 <control type="radiobutton" id="6">
                     <description>Show Hidden Channels</description>

@@ -49,6 +49,16 @@
                     <height>1</height>
                     <visible allowhiddenfocus="true">false</visible>
                 </control>
+                <control type="button" id ="9601">
+                    <width>1</width>
+                    <height>1</height>
+                    <visible allowhiddenfocus="true">false</visible>
+                    <onback>9000</onback>
+                    <onup>9000</onup>
+                    <ondown>9000</ondown>
+                    <onleft>9000</onleft>
+                    <onright>9000</onright>
+                </control>
 
                 <!-- Control Buttons -->
                 <control type="grouplist" id="9000">
@@ -62,6 +72,7 @@
                     <ondown>9000</ondown>
                     <onup condition="Control.IsVisible(50)">51</onup>
                     <onup condition="Control.IsVisible(9501)">9501</onup>
+                    <onup condition="!Control.IsVisible(50) + !Control.IsVisible(9501)">9601</onup>
                     <orientation>horizontal</orientation>
 
                     <control type="button" id ="9001">
@@ -154,6 +165,7 @@
                         </control>
                         
                         <control type="group">
+                            <visible>!IsEmpty(ListItem.Year)</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>150</width>
@@ -164,7 +176,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <left>150</left>
+                                <left>160</left>
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
@@ -174,6 +186,7 @@
                             </control>
                         </control>
                         <control type="group">
+                            <visible>!IsEmpty(Window(home).Property(Album.Songs.Duration))</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>150</width>
@@ -184,7 +197,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <left>150</left>
+                                <left>160</left>
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
@@ -194,6 +207,7 @@
                             </control>
                         </control>
                         <control type="group">
+                            <visible>!IsEmpty(ListItem.Property(Album_Label))</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>150</width>
@@ -204,7 +218,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <left>150</left>
+                                <left>160</left>
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
@@ -214,7 +228,8 @@
                             </control>
                         </control>
                         <control type="group">
-                            <height>36</height>
+                            <visible>!IsEmpty(ListItem.Genre)</visible>
+                            <height>50</height>
                             <control type="label">
                                 <width>150</width>
                                 <height>36</height>
@@ -224,7 +239,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <left>150</left>
+                                <left>160</left>
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
@@ -235,7 +250,7 @@
                         </control>
 
                         <!-- Twitter -->
-                        <control type="group">
+                        <!--<control type="group">
                             <height>36</height>
                             <width>100%</width>
                             <control type="label">
@@ -260,27 +275,34 @@
                                 <label fallback="19055">$INFO[Container(9301).ListItem.Property(author),[B],[/B]]$INFO[Container(9301).ListItem.Property(date), ,]$INFO[Container(9301).ListItem.Property(comment),  -  ","]$INFO[Container(9301).ListItem(1).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(1).Property(date), ,]$INFO[Container(9301).ListItem(1).Property(comment),  -  ","]$INFO[Container(9301).ListItem(2).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(2).Property(date), ,]$INFO[Container(9301).ListItem(2).Property(comment),  -  ","]$INFO[Container(9301).ListItem(3).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(3).Property(date), ,]$INFO[Container(9301).ListItem(3).Property(comment),  -  ","]$INFO[Container(9301).ListItem(4).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(4).Property(date), ,]$INFO[Container(9301).ListItem(4).Property(comment),  -  ","]$INFO[Container(9301).ListItem(5).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(5).Property(date), ,]$INFO[Container(9301).ListItem(5).Property(comment),  -  ","]$INFO[Container(9301).ListItem(6).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(6).Property(date), ,]$INFO[Container(9301).ListItem(6).Property(comment),  -  ","]$INFO[Container(9301).ListItem(7).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(7).Property(date), ,]$INFO[Container(9301).ListItem(7).Property(comment),  -  ","]$INFO[Container(9301).ListItem(8).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(8).Property(date), ,]$INFO[Container(9301).ListItem(8).Property(comment),  -  ","]$INFO[Container(9301).ListItem(9).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(9).Property(date), ,]$INFO[Container(9301).ListItem(9).Property(comment),  -  ","]$INFO[Container(9301).ListItem(10).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(10).Property(date), ,]$INFO[Container(9301).ListItem(10).Property(comment),  -  ","]$INFO[Container(9301).ListItem(11).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(11).Property(date), ,]$INFO[Container(9301).ListItem(11).Property(comment),  -  ","]$INFO[Container(9301).ListItem(12).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(12).Property(date), ,]$INFO[Container(9301).ListItem(12).Property(comment),  -  ","]$INFO[Container(9301).ListItem(13).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(13).Property(date), ,]$INFO[Container(9301).ListItem(13).Property(comment),  -  ","]$INFO[Container(9301).ListItem(14).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(14).Property(date), ,]$INFO[Container(9301).ListItem(14).Property(comment),  -  ","]$INFO[Container(9301).ListItem(15).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(15).Property(date), ,]$INFO[Container(9301).ListItem(15).Property(comment),  -  ","]$INFO[Container(9301).ListItem(16).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(16).Property(date), ,]$INFO[Container(9301).ListItem(16).Property(comment),  -  ","]$INFO[Container(9301).ListItem(17).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(17).Property(date), ,]$INFO[Container(9301).ListItem(17).Property(comment),  -  ","]$INFO[Container(9301).ListItem(18).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(18).Property(date), ,]$INFO[Container(9301).ListItem(18).Property(comment),  -  ","]$INFO[Container(9301).ListItem(19).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(19).Property(date), ,]$INFO[Container(9301).ListItem(19).Property(comment),  -  ","]</label>
                                 <aligny>center</aligny>
                             </control>
-                        </control>
+                        </control>-->
                         <control type="group">
                             <height>auto</height>
                             <width>100%</width>
                             <visible>!Container.Content(Albums) | IsEmpty(Window.Property(tracklist))</visible>
-                            <control type="label">
+                            <!--<control type="label">
                                 <width>150</width>
-                                <height>36</height>
+                                <height>50</height>
                                 <font>Tiny</font>
                                 <textcolor>Dark1</textcolor>
                                 <label>[B]$LOCALIZE[183][/B]</label>
                                 <aligny>center</aligny>
-                            </control>
+                            </control>-->
                             <control type="textbox" id="4">
-                                <left>150</left>
+                                <top>10</top>
+                                <width>100%</width>
+                                <height>250</height>
+                                <font>Tiny</font>
+                                <textcolor>Dark2</textcolor>
+                                <aligny>top</aligny>
+                                <!--<left>160</left>
                                 <right>0</right>
-                                <height>240</height>
+                                <top>2</top>
+                                <height>245</height>
                                 <font>Tiny</font>
                                 <textcolor>Dark2</textcolor>
                                 <scroll>false</scroll>
-                                <aligny>top</aligny>
+                                <aligny>top</aligny>-->
                             </control>
                         </control>
                         <control type="group">
@@ -296,7 +318,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <left>150</left>
+                                <left>160</left>
                                 <width>439</width>
                                 <height>250</height>
                                 <font>Tiny</font>
@@ -306,7 +328,7 @@
                                 <aligny>top</aligny>
                             </control>
                             <control type="label">
-                                <left>589</left>
+                                <left>599</left>
                                 <width>439</width>
                                 <height>250</height>
                                 <font>Tiny</font>
@@ -350,6 +372,7 @@
                             </control>
                         </control>
                         <control type="group">
+                            <visible>!IsEmpty(ListItem.Genre)</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>150</width>
@@ -360,7 +383,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <left>150</left>
+                                <left>160</left>
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
@@ -370,6 +393,7 @@
                             </control>
                         </control>
                         <control type="group">
+                            <visible>!IsEmpty(ListItem.Property(Artist_Born)) | !IsEmpty(ListItem.Property(Artist_Formed))</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>150</width>
@@ -390,7 +414,7 @@
                                 <visible>IsEmpty(ListItem.Property(Artist_Born))</visible>
                             </control>
                             <control type="label">
-                                <left>150</left>
+                                <left>160</left>
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
@@ -400,6 +424,7 @@
                             </control>
                         </control>
                         <control type="group">
+                            <visible>!IsEmpty(ListItem.Property(Artist_Died)) | !IsEmpty(ListItem.Property(Artist_Disbanded))</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>150</width>
@@ -420,16 +445,28 @@
                                 <visible>IsEmpty(ListItem.Property(Artist_Died))</visible>
                             </control>
                             <control type="label">
-                                <left>150</left>
+                                <left>160</left>
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
                                 <textcolor>Dark2</textcolor>
-                                <label fallback="19055">$INFO[ListItem.Property(Artist_Died)]$INFO[ListItem.Property(Artist_Disbanded)]</label>
+                                <label fallback="19055">$INFO[ListItem.Property(Artist_Died)]</label>
                                 <aligny>center</aligny>
+                                <visible>!IsEmpty(ListItem.Property(Artist_Died))</visible>
+                            </control>
+                            <control type="label">
+                                <left>160</left>
+                                <width>100%</width>
+                                <height>36</height>
+                                <font>Tiny</font>
+                                <textcolor>Dark2</textcolor>
+                                <label fallback="19055">$INFO[ListItem.Property(Artist_Disbanded)]</label>
+                                <aligny>center</aligny>
+                                <visible>IsEmpty(ListItem.Property(Artist_Died))</visible>
                             </control>
                         </control>
                         <control type="group">
+                            <visible>!IsEmpty(ListItem.Property(Artist_Style))</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>150</width>
@@ -440,7 +477,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <left>150</left>
+                                <left>160</left>
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
@@ -451,7 +488,7 @@
                         </control>
 
                         <!-- Twitter -->
-                        <control type="group">
+                        <!--<control type="group">
                             <height>36</height>
                             <width>100%</width>
                             <control type="label">
@@ -463,7 +500,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <left>150</left>
+                                <left>160</left>
                                 <top>6</top>
                                 <width>100%</width>
                                 <height>24</height>
@@ -476,26 +513,34 @@
                                 <label fallback="19055">$INFO[Container(9301).ListItem.Property(author),[B],[/B]]$INFO[Container(9301).ListItem.Property(date), ,]$INFO[Container(9301).ListItem.Property(comment),  -  ","]$INFO[Container(9301).ListItem(1).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(1).Property(date), ,]$INFO[Container(9301).ListItem(1).Property(comment),  -  ","]$INFO[Container(9301).ListItem(2).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(2).Property(date), ,]$INFO[Container(9301).ListItem(2).Property(comment),  -  ","]$INFO[Container(9301).ListItem(3).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(3).Property(date), ,]$INFO[Container(9301).ListItem(3).Property(comment),  -  ","]$INFO[Container(9301).ListItem(4).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(4).Property(date), ,]$INFO[Container(9301).ListItem(4).Property(comment),  -  ","]$INFO[Container(9301).ListItem(5).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(5).Property(date), ,]$INFO[Container(9301).ListItem(5).Property(comment),  -  ","]$INFO[Container(9301).ListItem(6).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(6).Property(date), ,]$INFO[Container(9301).ListItem(6).Property(comment),  -  ","]$INFO[Container(9301).ListItem(7).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(7).Property(date), ,]$INFO[Container(9301).ListItem(7).Property(comment),  -  ","]$INFO[Container(9301).ListItem(8).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(8).Property(date), ,]$INFO[Container(9301).ListItem(8).Property(comment),  -  ","]$INFO[Container(9301).ListItem(9).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(9).Property(date), ,]$INFO[Container(9301).ListItem(9).Property(comment),  -  ","]$INFO[Container(9301).ListItem(10).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(10).Property(date), ,]$INFO[Container(9301).ListItem(10).Property(comment),  -  ","]$INFO[Container(9301).ListItem(11).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(11).Property(date), ,]$INFO[Container(9301).ListItem(11).Property(comment),  -  ","]$INFO[Container(9301).ListItem(12).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(12).Property(date), ,]$INFO[Container(9301).ListItem(12).Property(comment),  -  ","]$INFO[Container(9301).ListItem(13).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(13).Property(date), ,]$INFO[Container(9301).ListItem(13).Property(comment),  -  ","]$INFO[Container(9301).ListItem(14).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(14).Property(date), ,]$INFO[Container(9301).ListItem(14).Property(comment),  -  ","]$INFO[Container(9301).ListItem(15).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(15).Property(date), ,]$INFO[Container(9301).ListItem(15).Property(comment),  -  ","]$INFO[Container(9301).ListItem(16).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(16).Property(date), ,]$INFO[Container(9301).ListItem(16).Property(comment),  -  ","]$INFO[Container(9301).ListItem(17).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(17).Property(date), ,]$INFO[Container(9301).ListItem(17).Property(comment),  -  ","]$INFO[Container(9301).ListItem(18).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(18).Property(date), ,]$INFO[Container(9301).ListItem(18).Property(comment),  -  ","]$INFO[Container(9301).ListItem(19).Property(author),  ••  [B],[/B]]$INFO[Container(9301).ListItem(19).Property(date), ,]$INFO[Container(9301).ListItem(19).Property(comment),  -  ","]</label>
                                 <aligny>center</aligny>
                             </control>
-                        </control>
+                        </control>-->
                         <control type="group">
                             <height>auto</height>
                             <width>100%</width>
-                            <control type="label">
+                            <!--<control type="label">
                                 <width>150</width>
-                                <height>36</height>
+                                <height>50</height>
                                 <font>Tiny</font>
                                 <textcolor>Dark1</textcolor>
                                 <label>[B]$LOCALIZE[183][/B]</label>
                                 <aligny>center</aligny>
-                            </control>
+                            </control>-->
                             <control type="textbox" id="4">
-                                <left>150</left>
+                                <top>24</top>
+                                <width>100%</width>
+                                <height>250</height>
+                                <font>Tiny</font>
+                                <textcolor>Dark2</textcolor>
+                                <aligny>top</aligny>
+                                <!--<align>justify</align>-->
+                                <!--<top>2</top>
+                                <left>160</left>
                                 <right>0</right>
                                 <height>240</height>
                                 <font>Tiny</font>
                                 <textcolor>Dark2</textcolor>
                                 <scroll>false</scroll>
-                                <aligny>top</aligny>
+                                <aligny>top</aligny>-->
                             </control>
                         </control>
                     </control>
@@ -690,6 +735,87 @@
             <itemlayout width="1" height="1"></itemlayout>
             <focusedlayout width="1" height="1"></focusedlayout>
             <content>plugin://script.extendedinfo?info=artistshouts&amp;&amp;artistname=$INFO[ListItem.Artist]</content>
+        </control>
+
+        <control type="group">
+            <visible>Control.HasFocus(9601)</visible>
+            <include>Animation.FadeIn</include>
+            <include>Animation.FadeOut</include>
+            
+            <control type="image" description="Background">
+                <include>Dimensions_Fullscreen</include>
+                <texture colordiffuse="Background">common/bg.jpg</texture>
+                <animation effect="fade" start="100" end="95" condition="true">Conditional</animation>
+            </control>
+
+            <control type="image" description="clearlogo">
+                <visible>Skin.HasSetting(furniture.logo)</visible>
+                <centertop>120</centertop>
+                <centerleft>50%</centerleft>
+                <width>400</width>
+                <height>100</height>
+                <aspectratio align="center">keep</aspectratio>
+                <texture background="true">$VAR[ClearLogoTopVar]</texture>
+            </control>
+        </control>
+
+        <control type="group">
+            <left>SidePad</left>
+            <right>SidePad</right>
+            <top>PosterPad</top>
+            <height>670</height>
+            <visible>Control.HasFocus(9601)</visible>
+            <include>Animation.FadeIn.Slide</include>
+            <include>Animation.FadeOut</include>
+            
+            
+            <control type="label">
+                <description>header label</description>
+                <left>60</left>
+                <right>60</right>
+                <posy>60</posy>
+                <font>EpisodeNumber</font>
+                <textcolor>Dark1</textcolor>
+                <height>45</height>
+                <label>$INFO[ListItem.Artist]</label>
+                <visible>Container.Content(artists)</visible>
+            </control>
+            <control type="label">
+                <description>header label</description>
+                <left>60</left>
+                <right>60</right>
+                <posy>60</posy>
+                <font>EpisodeNumber</font>
+                <textcolor>Dark1</textcolor>
+                <height>45</height>
+                <label>$INFO[ListItem.Album]</label>
+                <visible>Container.Content(albums)</visible>
+            </control>
+
+            <control type="textbox">
+                <description>textarea</description>
+                <left>60</left>
+                <right>60</right>
+                <top>150</top>
+                <bottom>0</bottom>
+                <align>justify</align>
+                <font>Medium</font>
+                <textcolor>Dark1</textcolor>
+                <label>$INFO[ListItem.Property(Artist_Description)]</label>
+                <visible>Container.Content(artists)</visible>
+            </control>
+            <control type="textbox">
+                <description>textarea</description>
+                <left>60</left>
+                <right>60</right>
+                <top>150</top>
+                <bottom>0</bottom>
+                <align>justify</align>
+                <font>Medium</font>
+                <textcolor>Dark1</textcolor>
+                <label>$INFO[ListItem.Property(Album_Description)]</label>
+                <visible>Container.Content(albums)</visible>
+            </control>
         </control>
 
     </controls>

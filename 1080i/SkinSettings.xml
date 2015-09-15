@@ -550,6 +550,7 @@
                     </control>
                      <control type="radiobutton" id="9273" description="Debug mode">
                         <width>1310</width>
+                        <visible>ControlGroup(9100).HasFocus(9107)</visible>
                         <include>DefSettingsButton</include>
                         <label>20191</label>
                         <onclick>Skin.ToggleSetting(Skin.ToggleDebug)</onclick>
