@@ -308,7 +308,7 @@
                             </control>
                         </control>
                         <control type="group">
-                            <visible>IsEmpty(Window.Property(content))</visible>
+                            <visible>IsEmpty(Window.Property(content)) + !IsEmpty(Window.Property(movie.ReleaseDate))</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>100%</width>
@@ -319,7 +319,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <left>150</left>
+                                <left>160</left>
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
@@ -329,7 +329,7 @@
                             </control>
                         </control>
                         <control type="group">
-                            <visible>IsEmpty(Window.Property(content))</visible>
+                            <visible>IsEmpty(Window.Property(content)) + !IsEmpty(Window.Property(movie.mpaa))</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>100%</width>
@@ -340,7 +340,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <left>150</left>
+                                <left>160</left>
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
@@ -350,7 +350,7 @@
                             </control>
                         </control>
                         <control type="group">
-                            <visible>IsEmpty(Window.Property(content))</visible>
+                            <visible>IsEmpty(Window.Property(content)) + !IsEmpty(Window.Property(movie.duration))</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>100%</width>
@@ -361,7 +361,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <left>150</left>
+                                <left>160</left>
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
@@ -371,7 +371,7 @@
                             </control>
                         </control>
                         <control type="group">
-                            <visible>IsEmpty(Window.Property(content))</visible>
+                            <visible>IsEmpty(Window.Property(content)) + !IsEmpty(Window.Property(movie.Budget))</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>100%</width>
@@ -382,7 +382,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <left>150</left>
+                                <left>160</left>
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
@@ -392,7 +392,7 @@
                             </control>
                         </control>
                         <control type="group">
-                            <visible>IsEmpty(Window.Property(content))</visible>
+                            <visible>IsEmpty(Window.Property(content)) + !IsEmpty(Window.Property(movie.Revenue))</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>100%</width>
@@ -403,7 +403,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <left>150</left>
+                                <left>160</left>
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
@@ -413,7 +413,7 @@
                             </control>
                         </control>
                         <control type="group">
-                            <visible>IsEmpty(Window.Property(content))</visible>
+                            <visible>IsEmpty(Window.Property(content)) + !IsEmpty(Window.Property(movie.studio))</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>100%</width>
@@ -424,7 +424,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <left>150</left>
+                                <left>160</left>
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
@@ -434,7 +434,7 @@
                             </control>
                         </control>
                         <control type="group">
-                            <visible>IsEmpty(Window.Property(content))</visible>
+                            <visible>IsEmpty(Window.Property(content)) + !IsEmpty(Window.Property(movie.genre))</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>100%</width>
@@ -445,7 +445,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <left>150</left>
+                                <left>160</left>
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
@@ -455,7 +455,7 @@
                             </control>
                         </control>
                         <control type="group">
-                            <visible>IsEmpty(Window.Property(content))</visible>
+                            <visible>IsEmpty(Window.Property(content)) + !IsEmpty(Window.Property(movie.director))</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>100%</width>
@@ -466,7 +466,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <left>150</left>
+                                <left>160</left>
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
@@ -478,7 +478,7 @@
                       
                         <control type="label">
                             <width>100%</width>
-                            <height>36</height>
+                            <height>24</height>
                             <font>Tiny</font>
                             <textcolor>Dark1</textcolor>
                             <label></label>
@@ -490,7 +490,7 @@
                             <height>110</height>
                             <font>Tiny</font>
                             <textcolor>Dark2</textcolor>
-                            <align>justify</align>
+                            <!--<align>justify</align>-->
                             <label>$INFO[Window.Property(movie.plot)]</label>
                         </control>
                         

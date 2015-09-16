@@ -290,13 +290,12 @@
                                 <height>36</height>
                                 <font>Tiny</font>
                                 <textcolor>Dark2</textcolor>
-                                <label fallback="19055">$INFO[Window.Property(actor.AlsoKnownAs)]</label>
+                                <label>$INFO[Window.Property(actor.AlsoKnownAs)]</label>
                                 <aligny>center</aligny>
                             </control>
                         </control>
                         <control type="group">
-                            <visible>IsEmpty(Window.Property(content))</visible>
-                            <visible>!IsEmpty(Window.Property(actor.Birthday))</visible>
+                            <visible>IsEmpty(Window.Property(content)) + !IsEmpty(Window.Property(actor.Birthday))</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>100%</width>
@@ -317,8 +316,7 @@
                             </control>
                         </control>
                         <control type="group">
-                            <visible>IsEmpty(Window.Property(content))</visible>
-                            <visible>!IsEmpty(Window.Property(actor.PlaceOfBirth))</visible>
+                            <visible>IsEmpty(Window.Property(content)) + !IsEmpty(Window.Property(actor.PlaceOfBirth))</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>100%</width>
@@ -339,8 +337,7 @@
                             </control>
                         </control>
                         <control type="group">
-                            <visible>IsEmpty(Window.Property(content))</visible>
-                            <visible>!IsEmpty(Window.Property(actor.DeathDay))</visible>
+                            <visible>IsEmpty(Window.Property(content)) + !IsEmpty(Window.Property(actor.DeathDay))</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>100%</width>
@@ -361,8 +358,7 @@
                             </control>
                         </control>
                         <control type="group">
-                            <visible>IsEmpty(Window.Property(content))</visible>
-                            <visible>!IsEmpty(Window.Property(actor.Age))</visible>
+                            <visible>IsEmpty(Window.Property(content)) !IsEmpty(Window.Property(actor.Age))</visible>
                             <height>36</height>
                             <control type="label">
                                 <width>100%</width>
@@ -387,7 +383,7 @@
                       
                         <control type="label">
                             <width>100%</width>
-                            <height>36</height>
+                            <height>24</height>
                             <font>Tiny</font>
                             <textcolor>Dark1</textcolor>
                             <label></label>
@@ -396,10 +392,10 @@
                         <control type="textbox">
                             <visible>IsEmpty(Window.Property(content))</visible>
                             <width>100%</width>
-                            <height>244</height>
+                            <height>250</height>
                             <font>Tiny</font>
                             <textcolor>Dark2</textcolor>
-                            <align>justify</align>
+                            <!--<align>justify</align>-->
                             <label>$INFO[Window.Property(actor.Biography)]</label>
                         </control>
                         

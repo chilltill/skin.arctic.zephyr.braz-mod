@@ -525,7 +525,7 @@
                     <top>132</top>
                     <height>127</height>
                     <font>Tiny</font>
-                    <align>justify</align>
+                    <!--<align>justify</align>-->
                     <autoscroll>false</autoscroll>
                     <textcolor>Dark2</textcolor>
                     <selectedcolor>Dark2</selectedcolor>
@@ -613,7 +613,7 @@
                     <top>132</top>
                     <height>127</height>
                     <font>Tiny</font>
-                    <align>justify</align>
+                    <!--<align>justify</align>-->
                     <autoscroll>false</autoscroll>
                     <textcolor>Dark2</textcolor>
                     <selectedcolor>Dark2</selectedcolor>
@@ -1231,7 +1231,7 @@
                             <top>120</top>
                             <height>110</height>
                             <font>Tiny</font>
-                            <align>justify</align>
+                            <!--<align>justify</align>-->
                             <autoscroll>false</autoscroll>
                             <textcolor>Dark2</textcolor>
                             <selectedcolor>Dark2</selectedcolor>
