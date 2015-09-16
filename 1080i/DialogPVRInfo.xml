@@ -239,7 +239,6 @@
                                 <font>Tiny</font>
                                 <textcolor>Dark2</textcolor>
                                 <scroll>false</scroll>
-                                <align>justify</align>
                                 <info>ListItem.Plot</info>
                                 <aligny>top</aligny>
                             </control>

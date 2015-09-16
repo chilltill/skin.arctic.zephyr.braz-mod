@@ -38,7 +38,6 @@
                     <left>30</left>
                     <right>30</right>
                     <height>74</height>
-                    <align>justify</align>
                     <label>$LOCALIZE[19001] $LOCALIZE[19002]</label>
                     <font>Tiny</font>
                 </control>

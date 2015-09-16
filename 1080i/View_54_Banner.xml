@@ -261,7 +261,6 @@
                             <right>130</right>
                             <top>70</top>
                             <height>188</height>
-                            <align>justify</align>
                             <font>Tiny</font>
                             <textcolor>Light1</textcolor>
                             <selectedcolor>Light1</selectedcolor>
@@ -446,7 +445,6 @@
                                 <left>525</left>
                                 <right>50</right>
                                 <bottom>54</bottom>
-                                <align>justify</align>
                                 <aligny>top</aligny>
                                 <label>$INFO[ListItem.Plot]</label>
                                 <font>Tiny</font>
@@ -509,7 +507,6 @@
                                 <left>320</left>
                                 <right>50</right>
                                 <bottom>54</bottom>
-                                <align>justify</align>
                                 <aligny>top</aligny>
                                 <label>$INFO[ListItem.Property(Album_Description)]</label>
                                 <font>Tiny</font>
@@ -611,7 +608,6 @@
                                 <left>320</left>
                                 <right>50</right>
                                 <bottom>54</bottom>
-                                <align>justify</align>
                                 <aligny>top</aligny>
                                 <label>$INFO[ListItem.Genre,[B]$LOCALIZE[515]  [/B],[CR]]$INFO[ListItem.Duration,[B]$LOCALIZE[180]  [/B],[CR]]</label>
                                 <font>Tiny</font>

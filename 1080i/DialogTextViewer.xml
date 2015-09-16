@@ -31,7 +31,6 @@
                 <right>90</right>
                 <posy>108</posy>
                 <height>780</height>
-                <align>justify</align>
             </control>
 
             <control type="scrollbar" id="61">

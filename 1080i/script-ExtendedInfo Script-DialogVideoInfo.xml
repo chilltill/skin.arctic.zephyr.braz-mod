@@ -490,7 +490,6 @@
                             <height>110</height>
                             <font>Tiny</font>
                             <textcolor>Dark2</textcolor>
-                            <!--<align>justify</align>-->
                             <label>$INFO[Window.Property(movie.plot)]</label>
                         </control>
                         
@@ -579,7 +578,6 @@
                 <right>60</right>
                 <top>150</top>
                 <bottom>0</bottom>
-                <align>justify</align>
                 <font>Medium</font>
                 <textcolor>Dark1</textcolor>
                 <label>$INFO[Window.Property(movie.plot)]</label>

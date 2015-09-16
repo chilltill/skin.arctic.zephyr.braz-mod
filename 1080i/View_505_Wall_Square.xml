@@ -146,7 +146,6 @@
                     <control type="textbox">
                         <top>115</top>
                         <bottom>5</bottom>
-                        <!--<align>justify</align>-->
                         <font>Tiny</font>
                         <textcolor>Dark1</textcolor>
                         <selectedcolor>Dark1</selectedcolor>

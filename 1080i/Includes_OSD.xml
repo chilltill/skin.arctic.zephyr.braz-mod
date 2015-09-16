@@ -143,7 +143,6 @@
             <top>105</top>
             <height>68</height>
             <font>Tiny</font>
-            <align>justify</align>
             <textcolor>$VAR[OSDPanelWhite30]</textcolor>
             <label>$VAR[PlayerPlotBox]</label>
         </control>

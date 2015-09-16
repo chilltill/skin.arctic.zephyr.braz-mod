@@ -33,7 +33,6 @@
                                 <bottom>10</bottom>
                                 <left>30</left>
                                 <right>30</right>
-                                <!--<align>justify</align>-->
                                 <label>$VAR[LabelPlotBox]</label>
                                 <textcolor>Light1</textcolor>
                                 <font>Tiny</font>
@@ -47,7 +46,6 @@
                                 <bottom>10</bottom>
                                 <left>30</left>
                                 <right>30</right>
-                                <!--<align>justify</align>-->
                                 <label>$VAR[LabelPlotBox]</label>
                                 <textcolor>Dark2</textcolor>
                                 <font>Tiny</font>

@@ -1337,7 +1337,6 @@
                 <right>60</right>
                 <top>150</top>
                 <bottom>0</bottom>
-                <!--<align>justify</align>-->
                 <font>Medium</font>
                 <textcolor>Dark1</textcolor>
                 <label>$VAR[LabelOverlayPlot]</label>
