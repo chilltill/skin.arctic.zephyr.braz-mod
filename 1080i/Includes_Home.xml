@@ -522,8 +522,8 @@
                 <control type="textbox">
                     <left>251</left>
                     <right>40</right>
-                    <top>132</top>
-                    <height>127</height>
+                    <top>125</top>
+                    <height>145</height>
                     <font>Tiny</font>
                     <autoscroll>false</autoscroll>
                     <textcolor>Dark2</textcolor>
@@ -609,8 +609,8 @@
                 <control type="textbox">
                     <left>359</left>
                     <right>40</right>
-                    <top>132</top>
-                    <height>127</height>
+                    <top>125</top>
+                    <height>145</height>
                     <font>Tiny</font>
                     <autoscroll>false</autoscroll>
                     <textcolor>Dark2</textcolor>
@@ -1699,7 +1699,7 @@
                         <control type="textbox">
                             <font>Tiny</font>
                             <width>100%</width>
-                            <height>95</height>
+                            <height>110</height>
                             <align>left</align>
                             <textcolor>Dark2</textcolor>
                             <label>$VAR[WidgetPlot]</label>
