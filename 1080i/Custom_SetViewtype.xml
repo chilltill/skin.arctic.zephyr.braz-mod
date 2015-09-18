@@ -10,7 +10,7 @@
             <param name="containerheight" value="522" />
             <param name="listheight" value="490" />
         </include>
-        <include condition="Window.IsActive(musiclibrary) | Window.IsActive(musicplaylist) | Window.IsActive(addonbrowser)" name="DefViewLayout">
+        <include condition="Window.IsActive(musiclibrary) | Window.IsActive(musicplaylist) | Window.IsActive(addonbrowser) | Window.IsActive(pictures)" name="DefViewLayout">
             <param name="containerheight" value="382" />
             <param name="listheight" value="350" />
         </include>

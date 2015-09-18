@@ -966,19 +966,25 @@
                     <include>DefContextButton</include>
                     <label>Icons</label>
                     <onclick>Container.SetViewMode(505)</onclick>
-                    <visible>Container.Content(artists) | Container.Content(albums)</visible>
+                    <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left) | Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos)</visible>
                 </control>
                 <control type="button" id="3123">
                     <include>DefContextButton</include>
                     <label>Icons</label>
                     <onclick>Container.SetViewMode(506)</onclick>
-                    <visible>Container.Content(albums)</visible>
+                    <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left) | Container.Content(albums)</visible>
+                </control>
+                <control type="button" id="3125">
+                    <include>DefContextButton</include>
+                    <label>Icons</label>
+                    <onclick>Container.SetViewMode(507)</onclick>
+                    <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left) | Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums)</visible>
                 </control>
                 <control type="button" id="3124">
                     <include>DefContextButton</include>
                     <label>Big Icons</label>
                     <onclick>Container.SetViewMode(503)</onclick>
-                    <visible>Container.Content(artists) | Container.Content(albums) | Window.IsActive(MyPrograms.xml) | Container.Content(addons)</visible>
+                    <visible>Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Window.IsActive(MyPrograms.xml) | Container.Content(addons)</visible>
                 </control>
                 <control type="button" id="3114">
                     <include>DefContextButton</include>

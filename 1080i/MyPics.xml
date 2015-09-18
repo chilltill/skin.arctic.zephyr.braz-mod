@@ -35,7 +35,7 @@
                     <label2>$INFO[Container.Viewmode]</label2>
                     <include>DefContextButton</include>
                     <align>left</align>
-                    <onclick>Container.NextViewMode</onclick>
+                    <onclick>ActivateWindow(1109)</onclick>
                 </control>
                 
                 <control type="button" id="3">

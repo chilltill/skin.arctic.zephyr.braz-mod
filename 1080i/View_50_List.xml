@@ -400,7 +400,7 @@
             <selectedcolor>Light1</selectedcolor>
             <label fallback="0.0">$INFO[ListItem.Rating]</label>
             <visible>!stringcompare(ListItem.Label,..)</visible>
-            <visible>!Container.Content(seasons)</visible>
+            <visible>![Container.Content(seasons) | Container.Content(artists)]</visible>
         </control>
     </include>
 
@@ -471,7 +471,7 @@
             <selectedcolor>Dark1</selectedcolor>
             <label fallback="0.0">$INFO[ListItem.Rating]</label>
             <visible>!stringcompare(ListItem.Label,..)</visible>
-            <visible>!Container.Content(seasons)</visible>
+            <visible>![Container.Content(seasons) | Container.Content(artists)]</visible>
         </control>
     </include>
     <include name="50itemlayout_square">

@@ -37,10 +37,10 @@
                         <texture diffuse="diffuse/wall.png" background="true">$VAR[PosterImage]</texture>
                     </control>
                     <control type="textbox">
-                        <top>222</top>
+                        <top>217</top>
                         <left>20</left>
                         <right>20</right>
-                        <height>96</height>
+                        <height>110</height>
                         <textcolor>Dark1</textcolor>
                         <font>Tiny</font>
                         <align>center</align>
@@ -80,10 +80,10 @@
                         </animation>
                     </control>
                     <control type="textbox">
-                        <top>222</top>
+                        <top>217</top>
                         <left>20</left>
                         <right>20</right>
-                        <height>96</height>
+                        <height>110</height>
                         <textcolor>Dark1</textcolor>
                         <font>Tiny</font>
                         <align>center</align>
@@ -159,7 +159,7 @@
             <include>Animation.Common</include>
             <visible>Control.IsVisible(506)</visible>
             <control type="panel" id="506">
-                <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left) | Container.Content(musicvideos) | Container.Content(albums)</visible>
+                <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left) | Container.Content(albums)</visible>
                 <top>206</top>
                 <right>70</right>
                 <width>1120</width>
@@ -294,10 +294,10 @@
                         <texture diffuse="diffuse/wall.png" background="true">$VAR[PosterImage]</texture>
                     </control>
                     <control type="textbox">
-                        <top>222</top>
+                        <top>217</top>
                         <left>20</left>
                         <right>20</right>
-                        <height>96</height>
+                        <height>110</height>
                         <textcolor>Dark1</textcolor>
                         <font>Tiny</font>
                         <align>center</align>
@@ -337,10 +337,10 @@
                         </animation>
                     </control>
                     <control type="textbox">
-                        <top>222</top>
+                        <top>217</top>
                         <left>20</left>
                         <right>20</right>
-                        <height>96</height>
+                        <height>110</height>
                         <textcolor>Dark1</textcolor>
                         <font>Tiny</font>
                         <align>center</align>
