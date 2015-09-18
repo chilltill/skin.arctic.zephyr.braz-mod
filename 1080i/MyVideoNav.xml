@@ -50,7 +50,9 @@
             <height>522</height>
             <include>Def9000Background</include>
             <control type="group">
+                <visible>!Window.IsActive(1109)</visible>
                 <control type="image">
+                    <visible>Container(9000).HasPrevious</visible>
                     <description>arrow image</description>
                     <centerleft>50%</centerleft>
                     <posy>-16</posy>
@@ -59,6 +61,7 @@
                     <texture colordiffuse="White70" flipy="true">common/arrow-small.png</texture>
                 </control>
                 <control type="image">
+                    <visible>Container(9000).HasNext</visible>
                     <description>arrow image</description>
                     <centerleft>50%</centerleft>
                     <posy>522</posy>

@@ -6,127 +6,18 @@
     <allowoverlay>no</allowoverlay>
     <controls>
 
-        <!--<include>GlobalOverlay</include>-->
-
-        <control type="group">
-            <visible>Window.IsActive(videolibrary)</visible>
-            <height>522</height>
-            <centerleft>50%</centerleft>
-            <width>466</width>
-            <top>184</top>
-            <centerleft>50%</centerleft>
-            
-            <control type="image">
-                <description>background image</description>
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>466</width>
-                <height>100%</height>
-                <texture border="16" colordiffuse="White100">common/rounded-shadow8.png</texture>
-            </control>
-            <control type="grouplist" id="3110">
-                <description>grouplist for context buttons</description>
-                <!--<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>-->
-                <posx>8</posx>
-                <posy>16</posy>
-                <width>510</width>
-                <height>490</height>
-                <onleft>Close</onleft>
-                <onright>Close</onright>
-                <itemgap>0</itemgap>
-                <include>DefViewButtons</include>
-            </control>
-        </control>
-
-        <control type="group">
-            <visible>Window.IsActive(musiclibrary) | Window.IsActive(musicplaylist)</visible>
-            <height>382</height>
-            <centerleft>50%</centerleft>
-            <width>466</width>
-            <top>184</top>
-            <centerleft>50%</centerleft>
-            
-            <control type="image">
-                <description>background image</description>
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>466</width>
-                <height>100%</height>
-                <texture border="16" colordiffuse="White100">common/rounded-shadow8.png</texture>
-            </control>
-            <control type="grouplist" id="3110">
-                <description>grouplist for context buttons</description>
-                <!--<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>-->
-                <posx>8</posx>
-                <posy>16</posy>
-                <width>510</width>
-                <height>350</height>
-                <onleft>Close</onleft>
-                <onright>Close</onright>
-                <itemgap>0</itemgap>
-                <include>DefViewButtons</include>
-            </control>
-        </control>
-
-        <control type="group">
-            <visible>Window.IsActive(addonbrowser)</visible>
-            <height>382</height>
-            <centerleft>50%</centerleft>
-            <width>466</width>
-            <top>184</top>
-            <centerleft>50%</centerleft>
-            
-            <control type="image">
-                <description>background image</description>
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>466</width>
-                <height>100%</height>
-                <texture border="16" colordiffuse="White100">common/rounded-shadow8.png</texture>
-            </control>
-            <control type="grouplist" id="3110">
-                <description>grouplist for context buttons</description>
-                <!--<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>-->
-                <posx>8</posx>
-                <posy>16</posy>
-                <width>510</width>
-                <height>350</height>
-                <onleft>Close</onleft>
-                <onright>Close</onright>
-                <itemgap>0</itemgap>
-                <include>DefViewButtons</include>
-            </control>
-        </control>
-
-        <control type="group">
-            <visible>Window.IsActive(programs)</visible>
-            <height>242</height>
-            <centerleft>50%</centerleft>
-            <width>466</width>
-            <top>184</top>
-            <centerleft>50%</centerleft>
-            
-            <control type="image">
-                <description>background image</description>
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>466</width>
-                <height>100%</height>
-                <texture border="16" colordiffuse="White100">common/rounded-shadow8.png</texture>
-            </control>
-            <control type="grouplist" id="3110">
-                <description>grouplist for context buttons</description>
-                <!--<visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>-->
-                <posx>8</posx>
-                <posy>16</posy>
-                <width>510</width>
-                <height>210</height>
-                <onleft>Close</onleft>
-                <onright>Close</onright>
-                <itemgap>0</itemgap>
-                <include>DefViewButtons</include>
-            </control>
-        </control>
+        <include condition="Window.IsActive(videolibrary)" name="DefViewLayout">
+            <param name="containerheight" value="522" />
+            <param name="listheight" value="490" />
+        </include>
+        <include condition="Window.IsActive(musiclibrary) | Window.IsActive(musicplaylist) | Window.IsActive(addonbrowser)" name="DefViewLayout">
+            <param name="containerheight" value="382" />
+            <param name="listheight" value="350" />
+        </include>
+        <include condition="Window.IsActive(programs)" name="DefViewLayout">
+            <param name="containerheight" value="242" />
+            <param name="listheight" value="210" />
+        </include>
 
     </controls>
 
