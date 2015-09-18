@@ -773,7 +773,7 @@
         <value>resource://resource.images.weathericons.default/</value>
     </variable>
     <variable name="DefWeatherFanart">
-        <value condition="!IsEmpty(Skin.String(weatherfanart.multi))">/</value>
+        <value condition="StringCompare(Skin.String(weatherfanart.path),resource://resource.images.weatherfanart.multi/)">/</value>
         <value>.jpg</value>
     </variable>
 
