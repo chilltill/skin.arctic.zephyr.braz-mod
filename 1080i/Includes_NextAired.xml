@@ -51,7 +51,7 @@
             <top>0</top>
             <bottom>10</bottom>
             <aspectratio>scale</aspectratio>
-            <texture fallback="background.jpg">$VAR[NextAiredArt]</texture>
+            <texture fallback="special://skin/extras/backgrounds/default_bg.jpg">$VAR[NextAiredArt]</texture>
         </control>
         <control type="image">
             <left>0</left>
@@ -88,7 +88,7 @@
             <top>0</top>
             <bottom>10</bottom>
             <aspectratio>scale</aspectratio>
-            <texture fallback="background.jpg">$VAR[NextAiredArt]</texture>
+            <texture fallback="special://skin/extras/backgrounds/default_bg.jpg">$VAR[NextAiredArt]</texture>
         </control>
         <control type="image">
             <left>0</left>

@@ -185,7 +185,7 @@ msgid "Use low list"
 msgstr ""
 
 msgctxt "#31143"
-msgid "Set weather fanart"
+msgid "Select weather fanart"
 msgstr ""
 
 msgctxt "#31144"
