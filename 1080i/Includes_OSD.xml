@@ -1138,8 +1138,9 @@
     <include name="MenuPlayerControls">
         <control type="grouplist" id="6050">
             <visible>Player.HasMedia</visible>
-            <top>10</top>
-            <height>60</height>
+            <usecontrolcoords>true</usecontrolcoords>
+            <top>0</top>
+            <height>70</height>
             <width>450</width>
             <align>center</align>
             <itemgap>20</itemgap>
@@ -1155,6 +1156,7 @@
                 <texturefocus colordiffuse="$VAR[ColorHighlight]">osd/next.png</texturefocus>
                 <texturenofocus colordiffuse="Black70">osd/next.png</texturenofocus>
                 <label>-</label>
+                <top>10</top>
                 <width>48</width>
                 <height>48</height>
                 <font>-</font>
@@ -1165,6 +1167,7 @@
                 <texturefocus colordiffuse="$VAR[ColorHighlight]">osd/ff.png</texturefocus>
                 <texturenofocus colordiffuse="Black70">osd/ff.png</texturenofocus>
                 <label>-</label>
+                <top>10</top>
                 <width>48</width>
                 <height>48</height>
                 <font>-</font>
@@ -1177,6 +1180,7 @@
                 <alttexturenofocus colordiffuse="Black70">osd/play.png</alttexturenofocus>
                 <label>-</label>
                 <altlabel>208</altlabel>
+                <top>10</top>
                 <width>48</width>
                 <height>48</height>
                 <font>-</font>
@@ -1187,6 +1191,7 @@
                 <texturefocus colordiffuse="$VAR[ColorHighlight]">osd/stop.png</texturefocus>
                 <texturenofocus colordiffuse="Black70">osd/stop.png</texturenofocus>
                 <label>-</label>
+                <top>10</top>
                 <width>48</width>
                 <height>48</height>
                 <font>-</font>
@@ -1196,6 +1201,7 @@
                 <texturefocus colordiffuse="$VAR[ColorHighlight]">osd/ff.png</texturefocus>
                 <texturenofocus colordiffuse="Black70">osd/ff.png</texturenofocus>
                 <label>-</label>
+                <top>10</top>
                 <width>48</width>
                 <height>48</height>
                 <font>-</font>
@@ -1205,6 +1211,7 @@
                 <texturefocus colordiffuse="$VAR[ColorHighlight]">osd/next.png</texturefocus>
                 <texturenofocus colordiffuse="Black70">osd/next.png</texturenofocus>
                 <label>-</label>
+                <top>10</top>
                 <width>48</width>
                 <height>48</height>
                 <font>-</font>

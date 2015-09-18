@@ -88,6 +88,11 @@
                     <label>653</label>
                     <include>DefContextButton</include>
                 </control>
+
+                <include name="MenuPlayerControls">
+                    <param name="PlayerControlsOnUp" value="20" />
+                    <param name="PlayerControlsOnDown" value="1802" />
+                </include>
             </control>
         </control>
         

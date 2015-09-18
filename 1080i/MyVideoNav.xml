@@ -73,13 +73,21 @@
                 <include>Def9000GroupList</include>
 
                 <!-- Sort Options -->
-                <control type="button" id="1802">
+                <!--<control type="button" id="1802">
                     <description>View</description>
                     <label>View</label>
                     <label2>$INFO[Container.Viewmode]</label2>
                     <include>DefContextButton</include>
                     <align>left</align>
                     <onclick>Container.NextViewMode</onclick>
+                </control>-->
+                <control type="button" id="1802">
+                    <description>View</description>
+                    <label>View</label>
+                    <label2>$INFO[Container.Viewmode]</label2>
+                    <include>DefContextButton</include>
+                    <align>left</align>
+                    <onclick>ActivateWindow(1109)</onclick>
                 </control>
                 
                 <control type="button" id="3">
@@ -327,11 +335,20 @@
 
                 <include name="MenuPlayerControls">
                     <param name="PlayerControlsOnUp" value="20" />
-                    <param name="PlayerControlsOnDown" value="2" />
+                    <param name="PlayerControlsOnDown" value="1802" />
                 </include>
             </control>
         </control>
-        
+
+        <!--<control type="group">
+            <height>522</height>
+            <include>Def9050Background</include>
+            <control type="grouplist" id="9050">
+                <height>490</height>
+                <usecontrolcoords>true</usecontrolcoords>
+                <include>Def9050GroupList</include>
+            </control>
+        </control>-->
         
     
         
