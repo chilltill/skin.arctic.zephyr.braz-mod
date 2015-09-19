@@ -8,12 +8,76 @@
             <include>GlobalOverlay</include>
         </control>
         <control type="group">
-            <height>732</height>
+            <height>522</height>
             <include>Def9000Background</include>
+            <control type="group">
+                <visible>!Window.IsActive(1109)</visible>
+                <control type="image">
+                    <visible>Container(9000).HasPrevious</visible>
+                    <description>arrow image</description>
+                    <centerleft>50%</centerleft>
+                    <posy>-16</posy>
+                    <width>16</width>
+                    <height>16</height>
+                    <texture colordiffuse="White70" flipy="true">common/arrow-small.png</texture>
+                </control>
+                <control type="image">
+                    <visible>Container(9000).HasNext</visible>
+                    <description>arrow image</description>
+                    <centerleft>50%</centerleft>
+                    <posy>522</posy>
+                    <width>16</width>
+                    <height>16</height>
+                    <texture colordiffuse="White70" flipy="false">common/arrow-small.png</texture>
+                </control>
+            </control>
             <control type="grouplist" id="9000">
-                <height>700</height>
+                <height>490</height>
                 <onback condition="Window.IsVisible(MyPVRGuide.xml) + Control.IsVisible(10)">ActivateWindow(home)</onback>
                 <include>Def9000GroupList</include>
+                <!-- Sort Options -->
+                <control type="button" id="1802">
+                    <description>View</description>
+                    <label>View</label>
+                    <label2>$INFO[Container.Viewmode]</label2>
+                    <include>DefContextButton</include>
+                    <align>left</align>
+                    <onclick>Container.NextViewMode</onclick>
+                </control>
+                
+                <control type="button" id="3">
+                    <description>Sort</description>
+                    <include>DefContextButton</include>
+                    <align>left</align>
+                    <visible>false</visible>
+                </control>
+                <control type="button" id="1803">
+                    <description>Sort by button</description>
+                    <include>DefContextButton</include>
+                    <align>left</align>
+                    <label>Sort by</label>
+                    <label2>$INFO[Container.SortMethod]</label2>
+                    <onclick>Container.NextSortMethod</onclick>
+                    <enable>Control.IsEnabled(3)</enable>
+                </control>
+
+                <control type="togglebutton" id="4">
+                    <description>Ascending</description>
+                    <include>DefContextButton</include>
+                    <align>left</align>
+                    <label>584</label>
+                    <altlabel>585</altlabel>
+                    <visible>false</visible>
+                </control>
+                <control type="button" id="1804">
+                    <description>Sort direction</description>
+                    <include>DefContextButton</include>
+                    <align>left</align>
+                    <label>Sort direction</label>
+                    <label2>$VAR[SortDirection]</label2>
+                    <onclick>Container.SortDirection</onclick>
+                    <enable>Control.IsEnabled(4)</enable>
+                </control>
                 <control type="button" id="9001">
                     <description>Channels</description>
                     <label>19019</label>
@@ -67,49 +131,6 @@
                     <align>left</align>
                 </control>
 
-                <!-- Sort Options -->
-                <control type="button" id="1802">
-                    <description>View</description>
-                    <label>View</label>
-                    <label2>$INFO[Container.Viewmode]</label2>
-                    <include>DefContextButton</include>
-                    <align>left</align>
-                    <onclick>Container.NextViewMode</onclick>
-                </control>
-                
-                <control type="button" id="3">
-                    <description>Sort</description>
-                    <include>DefContextButton</include>
-                    <align>left</align>
-                    <visible>false</visible>
-                </control>
-                <control type="button" id="1803">
-                    <description>Sort by button</description>
-                    <include>DefContextButton</include>
-                    <align>left</align>
-                    <label>Sort by</label>
-                    <label2>$INFO[Container.SortMethod]</label2>
-                    <onclick>Container.NextSortMethod</onclick>
-                    <enable>Control.IsEnabled(3)</enable>
-                </control>
-
-                <control type="togglebutton" id="4">
-                    <description>Ascending</description>
-                    <include>DefContextButton</include>
-                    <align>left</align>
-                    <label>584</label>
-                    <altlabel>585</altlabel>
-                    <visible>false</visible>
-                </control>
-                <control type="button" id="1804">
-                    <description>Sort direction</description>
-                    <include>DefContextButton</include>
-                    <align>left</align>
-                    <label>Sort direction</label>
-                    <label2>$VAR[SortDirection]</label2>
-                    <onclick>Container.SortDirection</onclick>
-                    <enable>Control.IsEnabled(4)</enable>
-                </control>
                 <control type="radiobutton" id="5">
                     <description>Group recording items by folder structure</description>
                     <include>DefContextButton</include>
@@ -138,6 +159,10 @@
                     <align>left</align>
                     <visible>Window.IsVisible(MyPVRChannels.xml)</visible>
                 </control>
+                <include name="MenuPlayerControls">
+                    <param name="PlayerControlsOnUp" value="31" />
+                    <param name="PlayerControlsOnDown" value="9001" />
+                </include>
                 
             </control>
         </control>
@@ -352,7 +377,7 @@
                     <bottom>0</bottom>
                     <onup>50</onup>
                     <ondown>50</ondown>
-                    <onleft condition="!Skin.HasSetting(global.kioskmode)">28</onleft>
+                    <onleft condition="!Skin.HasSetting(global.kioskmode)">9000</onleft>
                     <onright>60</onright>
                     <pagecontrol>60</pagecontrol>
                     <viewtype label="535">list</viewtype>
