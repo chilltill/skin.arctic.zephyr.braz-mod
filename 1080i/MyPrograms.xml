@@ -28,7 +28,29 @@
         <control type="group">
             <height>242</height>
             <include>Def9000Background</include>
+            <control type="group">
+                <visible>!Window.IsActive(1109)</visible>
+                <control type="image">
+                    <visible>Container(9000).HasPrevious</visible>
+                    <description>arrow image</description>
+                    <centerleft>50%</centerleft>
+                    <posy>-16</posy>
+                    <width>16</width>
+                    <height>16</height>
+                    <texture colordiffuse="White70" flipy="true">common/arrow-small.png</texture>
+                </control>
+                <control type="image">
+                    <visible>Container(9000).HasNext</visible>
+                    <description>arrow image</description>
+                    <centerleft>50%</centerleft>
+                    <posy>242</posy>
+                    <width>16</width>
+                    <height>16</height>
+                    <texture colordiffuse="White70" flipy="false">common/arrow-small.png</texture>
+                </control>
+            </control>
             <control type="grouplist" id="9000">
+                <height>210</height>
                 <include>Def9000GroupList</include>
                 
                 <!-- Sort Options -->
@@ -74,6 +96,10 @@
                     <onclick>Container.SortDirection</onclick>
                     <enable>Control.IsEnabled(4)</enable>
                 </control>
+                <include name="MenuPlayerControls">
+                    <param name="PlayerControlsOnUp" value="1804" />
+                    <param name="PlayerControlsOnDown" value="1802" />
+                </include>
 
             </control>
         </control>

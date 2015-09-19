@@ -26,6 +26,7 @@
         </control>
         <control type="group">
             <include>Def9000Background</include>
+            <include>Def9000Arrows</include>
             <control type="grouplist" id="9000">
                 <include>Def9000GroupList</include>
 
@@ -95,6 +96,11 @@
                     <align>left</align>
                     <label>13319</label>
                 </control>
+
+                <include name="MenuPlayerControls">
+                    <param name="PlayerControlsOnUp" value="9" />
+                    <param name="PlayerControlsOnDown" value="1802" />
+                </include>
 
             </control>
 

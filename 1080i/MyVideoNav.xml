@@ -343,18 +343,7 @@
                     <param name="PlayerControlsOnDown" value="1802" />
                 </include>
             </control>
-        </control>
-
-        <!--<control type="group">
-            <height>522</height>
-            <include>Def9050Background</include>
-            <control type="grouplist" id="9050">
-                <height>490</height>
-                <usecontrolcoords>true</usecontrolcoords>
-                <include>Def9050GroupList</include>
-            </control>
-        </control>-->
-        
+        </control>        
     
         
     </controls>

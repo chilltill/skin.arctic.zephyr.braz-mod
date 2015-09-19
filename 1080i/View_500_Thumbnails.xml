@@ -106,6 +106,7 @@
                             <aligny>center</aligny>
                             <font>Tiny</font>
                             <label>$INFO[ListItem.Label]</label>
+                            <selectedcolor>White100</selectedcolor>
                             <textcolor>Selected</textcolor>
                         </control>
                         <control type="image">
