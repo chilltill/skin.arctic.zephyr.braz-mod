@@ -156,7 +156,7 @@
 
                     <control type="button" id ="9002">
                         <description>Extras</description>
-                        <label>Extras</label>
+                        <label>More...</label>
                         <include>DefInfoButtons</include>
                         <onclick>ActivateWindow(1110)</onclick>
                     </control>

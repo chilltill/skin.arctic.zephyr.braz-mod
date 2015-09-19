@@ -72,7 +72,7 @@
                 <itemgap>0</itemgap>
                 <control type="button" id="3111">
                     <include>DefContextButton</include>
-                    <label>$INFO[System.AddonTitle(script.artwork.downloader)]</label>
+                    <label>Download artwork</label>
                     <onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
                     <onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
                     <onclick condition="Container.Content(musicvideos)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=musicvideo, dbid=$INFO[ListItem.DBID])</onclick>
@@ -82,7 +82,7 @@
                 </control>
                 <control type="button" id="3112">
                     <include>DefContextButton</include>
-                    <label>$INFO[System.AddonTitle(script.artwork.downloader)] (auto)</label>
+                    <label>Download artwork (auto)</label>
                     <onclick condition="Container.Content(movies)">RunScript(script.artwork.downloader, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
                     <onclick condition="Container.Content(tvshows)">RunScript(script.artwork.downloader, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
                     <onclick condition="Container.Content(musicvideos)">RunScript(script.artwork.downloader, mediatype=musicvideo, dbid=$INFO[ListItem.DBID])</onclick>
