@@ -240,7 +240,7 @@
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
                         <textcolor>Black30</textcolor>
-                        <selectedcolor>Highlight</selectedcolor>
+                        <selectedcolor>$VAR[ColorHighlight]</selectedcolor>
                     </control>
 
                 </itemlayout>
