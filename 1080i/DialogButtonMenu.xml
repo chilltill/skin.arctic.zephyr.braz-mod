@@ -148,6 +148,11 @@
                     <label>31195</label>
                     <onclick>ReloadSkin()</onclick>
                 </control>
+
+                <include name="MenuPlayerControls">
+                    <param name="PlayerControlsOnUp" value="3120" />
+                    <param name="PlayerControlsOnDown" value="3111" />
+                </include>
                 
             </control>
 
