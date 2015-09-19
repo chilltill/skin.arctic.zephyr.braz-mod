@@ -464,32 +464,6 @@
             <align>left</align>
             <itemgap>24</itemgap>
             <usecontrolcoords>true</usecontrolcoords>
-            <control type="group">
-                <visible>!Skin.HasSetting(furniture.flagicons) | IsEmpty(Container(9500).ListItem.VideoResolution)</visible>
-                <width>64</width>
-                <height>64</height>
-                <control type="image" description="button back">
-                    <width>64</width>
-                    <height>64</height>
-                    <texture border="32" colordiffuse="Dark1">common/circle.png</texture>
-                </control>
-                <control type="label">
-                    <width>64</width>
-                    <height>64</height>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$VAR[HDSD]</label>
-                    <font>SmallBold</font>
-                    <textcolor>Light1</textcolor>
-                    <visible>!substring(Container(9500).ListItem.Path,videodb://movies/sets,left)</visible>
-                </control>
-                <control type="image">
-                    <width>64</width>
-                    <height>64</height>
-                    <texture colordiffuse="Light1">flags/sets.png</texture>
-                    <visible>substring(Container(9500).ListItem.Path,videodb://movies/sets,left)</visible>
-                </control>
-            </control>
             <control type="image">
                 <width>88</width>
                 <height>64</height>
