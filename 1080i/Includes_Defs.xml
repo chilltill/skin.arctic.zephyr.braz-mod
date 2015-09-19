@@ -1046,4 +1046,25 @@
             </control>
         </control>
     </include>
+    <include name="DefCustomColorIcon">
+        <control type="image">
+            <left>$PARAM[left]</left>
+            <top>$PARAM[top]</top>
+            <width>90</width>
+            <height>90</height>
+            <texture colordiffuse="$PARAM[colorcode]" border="20">common/box.png</texture>
+        </control>
+        <control type="label">
+            <left>$PARAM[left]</left>
+            <top>$PARAM[top]</top>
+            <width>90</width>
+            <height>90</height>
+            <font>Symbol</font>
+            <textcolor>Dark1</textcolor>
+            <align>center</align>
+            <aligny>center</aligny>
+            <label>✓</label>
+            <visible>StringCompare(Skin.String(focuscolor.name),$PARAM[colorcode])</visible>
+        </control>
+    </include>
 </includes>

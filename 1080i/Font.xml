@@ -101,6 +101,12 @@
             <filename>weblysleekuisb.ttf</filename>
             <size>22</size>
         </font>
+
+        <font>
+            <name>Symbol</name>
+            <filename>webhostinghub-glyphs.ttf</filename>
+            <size>40</size>
+        </font>
        
         <!-- Required for system -->
         <font>
