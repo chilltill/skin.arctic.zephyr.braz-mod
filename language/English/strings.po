@@ -625,7 +625,7 @@ msgid "Always display info and osd controls on music visualisation"
 msgstr ""
 
 msgctxt "#31254"
-msgid "Show plot overlay after 3 second delay"
+msgid "Show plot overlay after 5 second delay"
 msgstr ""
 
 msgctxt "#31255"
@@ -637,7 +637,7 @@ msgid "Movie hub items"
 msgstr ""
 
 msgctxt "#31257"
-msgid "TV-Show hub items"
+msgid "TV Show hub items"
 msgstr ""
 
 msgctxt "#31258"
