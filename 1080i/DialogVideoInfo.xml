@@ -36,12 +36,14 @@
                     <centerbottom>258</centerbottom>
                     <height>16</height>
                     <control type="image">
+                        <visible>Container(9000).HasPrevious</visible>
                         <centerleft>524</centerleft>
                         <width>16</width>
                         <height>16</height>
                         <texture colordiffuse="Dark3" flipx="true">common/arrow-small-right.png</texture>
                     </control>
                     <control type="image">
+                        <visible>Container(9000).HasNext</visible>
                         <centerright>64</centerright>
                         <width>16</width>
                         <height>16</height>
@@ -54,12 +56,14 @@
                     <centerbottom>366</centerbottom>
                     <height>16</height>
                     <control type="image">
+                        <visible>[Container(9501).HasPrevious + Control.HasFocus(9501)] | [Container(50).HasPrevious + Control.HasFocus(51)]</visible>
                         <centerleft>524</centerleft>
                         <width>16</width>
                         <height>16</height>
                         <texture colordiffuse="Dark3" flipx="true">common/arrow-small-right.png</texture>
                     </control>
                     <control type="image">
+                        <visible>[Container(9501).HasNext + Control.HasFocus(9501)] | [Container(50).HasNext + Control.HasFocus(51)]</visible>
                         <centerright>64</centerright>
                         <width>16</width>
                         <height>16</height>
