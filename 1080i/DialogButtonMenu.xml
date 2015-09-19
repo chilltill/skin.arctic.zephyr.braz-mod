@@ -15,6 +15,7 @@
             <width>466</width>
             <control type="group">
                 <control type="image">
+                    <visible>Container(3110).HasPrevious</visible>
                     <description>arrow image</description>
                     <centerleft>50%</centerleft>
                     <posy>-32</posy>
@@ -23,6 +24,7 @@
                     <texture colordiffuse="White70" flipy="true">common/arrow-small.png</texture>
                 </control>
                 <control type="image">
+                    <visible>Container(3110).HasNext</visible>
                     <description>arrow image</description>
                     <centerleft>50%</centerleft>
                     <posy>576</posy>

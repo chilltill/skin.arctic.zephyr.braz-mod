@@ -86,9 +86,9 @@
                         <property name="colorname">Light Blue</property>
                     </item>
                     <item id="11">
-                        <onclick>Skin.SetString(focuscolor.name,ff305b9a)</onclick>
+                        <onclick>Skin.SetString(focuscolor.name,ff38688a)</onclick>
                         <onclick>Close</onclick>
-                        <label>ff305b9a</label>
+                        <label>ff38688a</label>
                         <property name="colorname">Blue</property>
                     </item>
                     <item id="2">
@@ -168,7 +168,7 @@
                     <top>170</top>
                     <width>140</width>
                     <height>140</height>
-                    <texture colordiffuse="ff305b9a" border="20">common/box.png</texture>
+                    <texture colordiffuse="ff38688a" border="20">common/box.png</texture>
                 </control>
                 <control type="image">
                     <left>10</left>
