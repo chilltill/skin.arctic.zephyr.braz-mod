@@ -66,7 +66,6 @@
                     <top>-60</top>
                     <width>1760</width>
                     <height>560</height>
-                    <!--<onback>28</onback>-->
                     <onleft>9000</onleft>
                     <viewtype label="19069">list</viewtype>
                     <progresstexture border="5" colordiffuse="bf777777">pvr/progressline.png</progresstexture>
@@ -261,7 +260,7 @@
                         <bottom>0</bottom>
                         <onup>11</onup>
                         <ondown>11</ondown>
-                        <onleft>28</onleft>
+                        <onleft>9000</onleft>
                         <onright>60</onright>
                         <pagecontrol>60</pagecontrol>
                         <viewtype label="19030">list</viewtype>
@@ -592,7 +591,7 @@
                         <bottom>0</bottom>
                         <onup>12</onup>
                         <ondown>12</ondown>
-                        <onleft>28</onleft>
+                        <onleft>9000</onleft>
                         <onright>60</onright>
                         <pagecontrol>60</pagecontrol>
                         <viewtype label="19031">list</viewtype>
@@ -925,7 +924,7 @@
                         <bottom>0</bottom>
                         <onup>13</onup>
                         <ondown>13</ondown>
-                        <onleft>28</onleft>
+                        <onleft>9000</onleft>
                         <onright>60</onright>
                         <pagecontrol>60</pagecontrol>
                         <viewtype label="19029">list</viewtype>

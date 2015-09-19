@@ -247,8 +247,8 @@
                     <label fallback="19055">$INFO[ListItem.Genre]</label>
                 </control>
                 <control type="textbox">
-                    <top>116</top>
-                    <bottom>17</bottom>
+                    <top>115</top>
+                    <bottom>0</bottom>
                     <font>Tiny</font>
                     <textcolor>Dark1</textcolor>
                     <selectedcolor>Dark1</selectedcolor>
@@ -792,7 +792,7 @@
                     <right>70</right>
                     <onup>51</onup>
                     <ondown>51</ondown>
-                    <onleft condition="!Skin.HasSetting(global.kioskmode)">28</onleft>
+                    <onleft condition="!Skin.HasSetting(global.kioskmode)">9000</onleft>
                     <onright>60</onright>
                     <orientation>vertical</orientation>
                     <pagecontrol>60</pagecontrol>
@@ -832,7 +832,7 @@
                                 <left>260</left>
                                 <right>30</right>
                                 <top>70</top>
-                                <height>128</height>
+                                <height>145</height>
                                 <font>Tiny</font>
                                 <textcolor>Dark1</textcolor>
                                 <selectedcolor>Dark1</selectedcolor>
@@ -842,7 +842,7 @@
                             <control type="label">
                                 <left>260</left>
                                 <right>30</right>
-                                <bottom>80</bottom>
+                                <bottom>70</bottom>
                                 <aligny>center</aligny>
                                 <height>38</height>
                                 <align>left</align>
@@ -983,7 +983,7 @@
                                 <left>260</left>
                                 <right>30</right>
                                 <top>70</top>
-                                <height>128</height>
+                                <height>145</height>
                                 <font>Tiny</font>
                                 <textcolor>Light1</textcolor>
                                 <selectedcolor>Light1</selectedcolor>
@@ -992,7 +992,7 @@
                             <control type="label">
                                 <left>260</left>
                                 <right>30</right>
-                                <bottom>80</bottom>
+                                <bottom>70</bottom>
                                 <aligny>center</aligny>
                                 <height>38</height>
                                 <align>left</align>
@@ -1121,7 +1121,7 @@
                 <right>70</right>
                 <onup>52</onup>
                 <ondown>52</ondown>
-                <onleft condition="!Skin.HasSetting(global.kioskmode)">28</onleft>
+                <onleft condition="!Skin.HasSetting(global.kioskmode)">9000</onleft>
                 <onright>60</onright>
                 <orientation>vertical</orientation>
                 <pagecontrol>60</pagecontrol>
@@ -1309,13 +1309,13 @@
                 <height>165</height>
                 <left>70</left>
                 <right>70</right>
-                <control type="image">
+                <!--<control type="image">
                     <left>10</left>
                     <top>10</top>
                     <right>10</right>
                     <bottom>10</bottom>
                     <texture colordiffuse="Dark4" border="5">common/box.png</texture>
-                </control>
+                </control>-->
                 <control type="image">
                     <right>20</right>
                     <top>20</top>
@@ -1323,6 +1323,7 @@
                     <height>125</height>
                     <aspectratio align="right">keep</aspectratio>
                     <texture>$INFO[ListItem.Icon]</texture>
+                    <colordiffuse>Dark1</colordiffuse>
                 </control>
                 <control type="label">
                     <left>30</left>
@@ -1339,7 +1340,7 @@
                     <left>30</left>
                     <right>280</right>
                     <top>70</top>
-                    <height>65</height>
+                    <height>80</height>
                     <align>left</align>
                     <aligny>top</aligny>
                     <font>Tiny</font>
