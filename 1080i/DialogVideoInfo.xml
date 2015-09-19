@@ -7,9 +7,8 @@
     <onload>ClearProperty(content)</onload>
     <onload>ClearProperty(movie.Fanart,home)</onload>
     <controls>
-
         <control type="group">
-            <animation type="Conditional" reversible="true" condition="Window.IsVisible(FileBrowser.xml) | Window.IsVisible(DialogProgress.xml) | Window.IsVisible(DialogYesNo.xml) | Window.IsVisible(DialogOK.xml) | Window.IsVisible(DialogSelect.xml) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogButtonMenu.xml)">
+            <animation type="Conditional" reversible="true" condition="Window.IsVisible(FileBrowser.xml) | Window.IsVisible(DialogProgress.xml) | Window.IsVisible(DialogYesNo.xml) | Window.IsVisible(DialogOK.xml) | Window.IsVisible(DialogSelect.xml) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(1110)">
                 <effect type="zoom" end="95" start="100" time="200" center="auto" tween="quadratic" easing="in" />
             </animation>
             <control type="group">
@@ -141,22 +140,6 @@
                         <visible>Container.Content(movies)</visible>
                     </control>
 
-                    <control type="button" id="49">
-                        <description>Home Theatre</description>
-                        <label>31170</label>
-                        <include>DefInfoButtons</include>
-                        <onclick>XBMC.RunScript(script.cinema.experience,movieid=$INFO[ListItem.DBID])</onclick>
-                        <visible>system.hasaddon(script.cinema.experience) + Container.Content(movies)</visible>
-                    </control>
-
-                    <control type="button" id="105">
-                        <description>Extras</description>
-                        <include>DefInfoButtons</include>
-                        <label>31171</label>
-                        <onclick>RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
-                        <visible>System.HasAddon(script.videoextras) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(TVShows) | Container.Content(musicvideos)] + IsEmpty(Window(movieinformation).Property("HideVideoExtrasButton"))</visible>
-                    </control>
-
                     <control type="button" id ="6">
                         <description>Refresh</description>
                         <label>184</label>
@@ -171,16 +154,13 @@
                         <visible>!Skin.HasSetting(global.kioskmode)</visible>
                     </control>
 
-                    <control type="button" id="9001">
-                        <label>$LOCALIZE[31203]</label>
-                        <onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
-                        <onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
-                        <onclick condition="Container.Content(musicvideos)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=musicvideo, dbid=$INFO[ListItem.DBID])</onclick>
-                        <description>Get Artwork</description>
+                    <control type="button" id ="9002">
+                        <description>Extras</description>
+                        <label>Extras</label>
                         <include>DefInfoButtons</include>
-                        <visible>!Skin.HasSetting(global.kioskmode)</visible>
-                        <visible>[Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvideos)] + system.hasaddon(script.artwork.downloader)</visible>
+                        <onclick>ActivateWindow(1110)</onclick>
                     </control>
+
                 </control>
                 <control type="label">
                     <right>SidePad</right>
