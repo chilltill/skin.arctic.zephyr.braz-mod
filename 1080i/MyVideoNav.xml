@@ -243,13 +243,13 @@
                     <visible>Control.IsVisible(52)</visible>
                 </control>
 
-                <control type="radiobutton" id="9021" description="Plot Overlay">
+                <!--<control type="radiobutton" id="9021" description="Plot Overlay">
                     <include>DefContextButton</include>
                     <align>left</align>
                     <label>31255</label>
                     <selected>Skin.HasSetting(furniture.overlayinfo)</selected>
                     <onclick>Skin.ToggleSetting(furniture.overlayinfo)</onclick>
-                </control>
+                </control>-->
 
                 <control type="radiobutton" id="9022" description="Enable Extra Fanart">
                     <include>DefContextButton</include>

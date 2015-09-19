@@ -107,7 +107,7 @@
                         <font>Tiny</font>
                         <label>$VAR[LabelPlotBox]</label>
                         <textcolor>Dark2</textcolor>
-                        <height>68</height>
+                        <height>75</height>
                     </control>
                 </control>
             </control>

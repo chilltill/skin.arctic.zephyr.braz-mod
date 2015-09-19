@@ -29,8 +29,8 @@
                             <visible>!Control.HasFocus(60)</visible>
                             <include>50focuslayout</include>
                             <control type="textbox">
-                                <height>68</height>
-                                <bottom>10</bottom>
+                                <height>75</height>
+                                <bottom>5</bottom>
                                 <left>30</left>
                                 <right>30</right>
                                 <label>$VAR[LabelPlotBox]</label>
