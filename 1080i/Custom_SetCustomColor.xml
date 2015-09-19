@@ -7,11 +7,10 @@
         <include>GlobalOverlay</include>
 
         <control type="group">
-            <include>Animation.ZoomIn</include>
+            <include>Animation.FadeIn.Slide</include>
             <centerleft>50%</centerleft>
             <posy>265</posy>
             <width>1170</width>
-            <!--<include>Animation.FadeIn.Slide</include>-->
             <control type="image">
                 <posx>-30</posx>
                 <posy>-30</posy>
