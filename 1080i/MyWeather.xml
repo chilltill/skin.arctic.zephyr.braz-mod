@@ -38,13 +38,17 @@
                         <animation effect="fade" start="100" end="10" condition="true">Conditional</animation>
                         <imagepath background="true">$INFO[Skin.String(weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[DefWeatherFanart]</imagepath>
                     </control>
-                    <control type="image">
+                    <control type="multiimage">
                         <centertop>35%</centertop>
                         <centerleft>50%</centerleft>
                         <width>255</width>
                         <height>255</height>
+                        <timeperimage>65</timeperimage>
+                        <fadetime>1</fadetime>
+                        <randomize>false</randomize>
+                        <loop>yes</loop>
                         <aspectratio align="center" aligny="center">keep</aspectratio>
-                        <texture>$VAR[DefWeatherIcon]$INFO[Window(weather).Property(Current.FanartCode),,.png]</texture>
+                        <imagepath background="true">$VAR[DefWeatherIcon]$INFO[Window(weather).Property(Current.FanartCode)]$VAR[DefWeatherIconExt]</imagepath>
                     </control>
                     <control type="label">
                         <top>20</top>
@@ -93,13 +97,17 @@
                         <animation effect="fade" start="100" end="10" condition="true">Conditional</animation>
                         <imagepath background="true">$INFO[Skin.String(weatherfanart.path)]$INFO[Window(Weather).Property(Day0.FanartCode)]$VAR[DefWeatherFanart]</imagepath>
                     </control>
-                    <control type="image">
+                    <control type="multiimage">
                         <centertop>35%</centertop>
                         <centerleft>50%</centerleft>
                         <width>255</width>
                         <height>255</height>
+                        <timeperimage>65</timeperimage>
+                        <fadetime>1</fadetime>
+                        <randomize>false</randomize>
+                        <loop>yes</loop>
                         <aspectratio align="center" aligny="center">keep</aspectratio>
-                        <texture>$VAR[DefWeatherIcon]$INFO[Window(weather).Property(Day0.FanartCode),,.png]</texture>
+                        <imagepath background="true">$VAR[DefWeatherIcon]$INFO[Window(weather).Property(Day0.FanartCode)]$VAR[DefWeatherIconExt]</imagepath>
                     </control>
                     <control type="label">
                         <top>20</top>
@@ -148,13 +156,17 @@
                         <animation effect="fade" start="100" end="10" condition="true">Conditional</animation>
                         <imagepath background="true">$INFO[Skin.String(weatherfanart.path)]$INFO[Window(Weather).Property(Day1.FanartCode)]$VAR[DefWeatherFanart]</imagepath>
                     </control>
-                    <control type="image">
+                    <control type="multiimage">
                         <centertop>35%</centertop>
                         <centerleft>50%</centerleft>
                         <width>255</width>
                         <height>255</height>
+                        <timeperimage>65</timeperimage>
+                        <fadetime>1</fadetime>
+                        <randomize>false</randomize>
+                        <loop>yes</loop>
                         <aspectratio align="center" aligny="center">keep</aspectratio>
-                        <texture>$VAR[DefWeatherIcon]$INFO[Window(weather).Property(Day1.FanartCode),,.png]</texture>
+                        <imagepath background="true">$VAR[DefWeatherIcon]$INFO[Window(weather).Property(Day1.FanartCode)]$VAR[DefWeatherIconExt]</imagepath>
                     </control>
                     <control type="label">
                         <top>20</top>
@@ -203,13 +215,17 @@
                         <animation effect="fade" start="100" end="10" condition="true">Conditional</animation>
                         <imagepath background="true">$INFO[Skin.String(weatherfanart.path)]$INFO[Window(Weather).Property(Day2.FanartCode)]$VAR[DefWeatherFanart]</imagepath>
                     </control>
-                    <control type="image">
+                    <control type="multiimage">
                         <centertop>35%</centertop>
                         <centerleft>50%</centerleft>
                         <width>255</width>
                         <height>255</height>
+                        <timeperimage>65</timeperimage>
+                        <fadetime>1</fadetime>
+                        <randomize>false</randomize>
+                        <loop>yes</loop>
                         <aspectratio align="center" aligny="center">keep</aspectratio>
-                        <texture>$VAR[DefWeatherIcon]$INFO[Window(weather).Property(Day2.FanartCode),,.png]</texture>
+                        <imagepath background="true">$VAR[DefWeatherIcon]$INFO[Window(weather).Property(Day2.FanartCode)]$VAR[DefWeatherIconExt]</imagepath>
                     </control>
                     <control type="label">
                         <top>20</top>
@@ -258,13 +274,17 @@
                         <animation effect="fade" start="100" end="10" condition="true">Conditional</animation>
                         <imagepath background="true">$INFO[Skin.String(weatherfanart.path)]$INFO[Window(Weather).Property(Day3.FanartCode)]$VAR[DefWeatherFanart]</imagepath>
                     </control>
-                    <control type="image">
+                    <control type="multiimage">
                         <centertop>35%</centertop>
                         <centerleft>50%</centerleft>
                         <width>255</width>
                         <height>255</height>
+                        <timeperimage>65</timeperimage>
+                        <fadetime>1</fadetime>
+                        <randomize>false</randomize>
+                        <loop>yes</loop>
                         <aspectratio align="center" aligny="center">keep</aspectratio>
-                        <texture>$VAR[DefWeatherIcon]$INFO[Window(weather).Property(Day3.FanartCode),,.png]</texture>
+                        <imagepath background="true">$VAR[DefWeatherIcon]$INFO[Window(weather).Property(Day3.FanartCode)]$VAR[DefWeatherIconExt]</imagepath>
                     </control>
                     <control type="label">
                         <top>20</top>
@@ -313,13 +333,17 @@
                         <animation effect="fade" start="100" end="10" condition="true">Conditional</animation>
                         <imagepath background="true">$INFO[Skin.String(weatherfanart.path)]$INFO[Window(Weather).Property(Day4.FanartCode)]$VAR[DefWeatherFanart]</imagepath>
                     </control>
-                    <control type="image">
+                    <control type="multiimage">
                         <centertop>35%</centertop>
                         <centerleft>50%</centerleft>
                         <width>255</width>
                         <height>255</height>
+                        <timeperimage>65</timeperimage>
+                        <fadetime>1</fadetime>
+                        <randomize>false</randomize>
+                        <loop>yes</loop>
                         <aspectratio align="center" aligny="center">keep</aspectratio>
-                        <texture>$VAR[DefWeatherIcon]$INFO[Window(weather).Property(Day4.FanartCode),,.png]</texture>
+                        <imagepath background="true">$VAR[DefWeatherIcon]$INFO[Window(weather).Property(Day4.FanartCode)]$VAR[DefWeatherIconExt]</imagepath>
                     </control>
                     <control type="label">
                         <top>20</top>
