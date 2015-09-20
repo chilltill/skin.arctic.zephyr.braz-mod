@@ -648,14 +648,14 @@
             <label>584</label>
             <altlabel>585</altlabel>
         </control>
-        <control type="button" id="5">
+        <!--<control type="button" id="5">
             <description>Files</description>
             <include>DefContextButton</include>
             <align>left</align>
             <label>744</label>
             <onclick>SetFocus(50)</onclick>
             <visible>Window.IsVisible(MyMusicNav.xml)</visible>
-        </control>
+        </control>-->
 
         <control type="button" id="7">
             <description>Playlist</description>
