@@ -97,9 +97,9 @@
                         <property name="colorname">Purple</property>
                     </item>
                     <item id="3">
-                        <onclick>Skin.SetString(focuscolor.name,ff8121a0)</onclick>
+                        <onclick>Skin.SetString(focuscolor.name,ff7b2d95)</onclick>
                         <onclick>Close</onclick>
-                        <label>ff8121a0</label>
+                        <label>ff7b2d95</label>
                         <property name="colorname">Mauve</property>
                     </item>
                     <item id="4">
@@ -174,7 +174,7 @@
                 <include name="DefCustomColorIcon">
                     <param name="left" value="15" />
                     <param name="top" value="375" />
-                    <param name="colorcode" value="ff8121a0" />
+                    <param name="colorcode" value="ff7b2d95" />
                 </include>
                 <!-- column 2 -->
                 <include name="DefCustomColorIcon">
@@ -228,7 +228,7 @@
                     <align>center</align>
                     <aligny>center</aligny>
                     <label>✓</label>
-                    <visible>!StringCompare(Skin.String(focuscolor.name),ff0385b5) + !StringCompare(Skin.String(focuscolor.name),ff38688a) + !StringCompare(Skin.String(focuscolor.name),ff6c33b3) + !StringCompare(Skin.String(focuscolor.name),ff8121a0) + !StringCompare(Skin.String(focuscolor.name),ffa21b81) + !StringCompare(Skin.String(focuscolor.name),ffb33333) + !StringCompare(Skin.String(focuscolor.name),ffae501d) + !StringCompare(Skin.String(focuscolor.name),ffa28d1b) + !StringCompare(Skin.String(focuscolor.name),ff6b8716) + !StringCompare(Skin.String(focuscolor.name),ff16872b) + !StringCompare(Skin.String(focuscolor.name),ff6b5441)</visible>
+                    <visible>!StringCompare(Skin.String(focuscolor.name),ff0385b5) + !StringCompare(Skin.String(focuscolor.name),ff38688a) + !StringCompare(Skin.String(focuscolor.name),ff6c33b3) + !StringCompare(Skin.String(focuscolor.name),ff7b2d95) + !StringCompare(Skin.String(focuscolor.name),ffa21b81) + !StringCompare(Skin.String(focuscolor.name),ffb33333) + !StringCompare(Skin.String(focuscolor.name),ffae501d) + !StringCompare(Skin.String(focuscolor.name),ffa28d1b) + !StringCompare(Skin.String(focuscolor.name),ff6b8716) + !StringCompare(Skin.String(focuscolor.name),ff16872b) + !StringCompare(Skin.String(focuscolor.name),ff6b5441)</visible>
                 </control>
             </control>
         </control>

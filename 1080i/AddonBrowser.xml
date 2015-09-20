@@ -60,16 +60,6 @@
                     <align>left</align>
                     <label>584</label>
                     <altlabel>585</altlabel>
-                    <visible>false</visible>
-                </control>
-                <control type="button" id="1804">
-                    <description>Sort direction</description>
-                    <include>DefContextButton</include>
-                    <align>left</align>
-                    <label>Sort direction</label>
-                    <label2>$VAR[SortDirection]</label2>
-                    <onclick>Container.SortDirection</onclick>
-                    <enable>Control.IsEnabled(4)</enable>
                 </control>
 
                 <control type="button" id="9">
