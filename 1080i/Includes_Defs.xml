@@ -767,7 +767,7 @@
         <value>.png</value>
     </variable>
     <variable name="DefWeatherFanart">
-        <value condition="StringCompare(Skin.String(weatherfanart.path),resource://resource.images.weatherfanart.multi/)">/</value>
+        <value condition="Skin.HasSetting(weatherfanart.multi)">/</value>
         <value>.jpg</value>
     </variable>
 
