@@ -1061,4 +1061,107 @@
             <visible>StringCompare(Skin.String(focuscolor.name),$PARAM[colorcode])</visible>
         </control>
     </include>
+    <include name="DefCdArtContainer">
+        <top>45</top>
+        <left>150</left>
+        <width>1184</width>
+        <height>990</height>
+        <preloaditems>2</preloaditems>
+        <pagecontrol>60</pagecontrol>
+        <orientation>vertical</orientation>
+        <scrolltime tween="quadratic">400</scrolltime>
+        <itemlayout height="330" width="296">
+            <control type="image">
+                <width>100%</width>
+                <height>100%</height>
+                <texture border="10">common/nofocus-shadow10.png</texture>
+            </control>
+            <control type="image">
+                <left>10</left>
+                <top>10</top>
+                <right>10</right>
+                <bottom>10</bottom>
+                <texture border="5" colordiffuse="Panel">common/box.png</texture>
+            </control>
+            <control type="label">
+                <left>20</left>
+                <right>20</right>
+                <bottom>10</bottom>
+                <height>50</height>
+                <aligny>center</aligny>
+                <font>Tiny</font>
+                <label>$INFO[ListItem.Label]</label>
+                <textcolor>PanelWhite70</textcolor>
+                <visible>!IsEmpty(ListItem.Label)</visible>
+            </control>
+            <control type="image">
+                <left>20</left>
+                <top>20</top>
+                <right>20</right>
+                <height>256</height>
+                <aspectratio scalediffuse="false">scale</aspectratio>
+                <texture diffuse="diffuse/wall.png" colordiffuse="ff181818">common/white.png</texture>
+            </control>
+            <control type="image">
+                <left>20</left>
+                <top>20</top>
+                <right>20</right>
+                <height>256</height>
+                <aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
+                <texture diffuse="diffuse/wall.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
+            </control>
+        </itemlayout>
+        <focusedlayout height="330" width="296">
+            <control type="image">
+                <width>100%</width>
+                <height>100%</height>
+                <texture border="10">common/nofocus-shadow10.png</texture>
+            </control>
+            <control type="image">
+                <left>10</left>
+                <top>10</top>
+                <right>10</right>
+                <bottom>10</bottom>
+                <texture border="5" colordiffuse="$VAR[ColorHighlight]">common/box.png</texture>
+            </control>
+            <control type="label">
+                <left>20</left>
+                <right>20</right>
+                <bottom>10</bottom>
+                <height>50</height>
+                <aligny>center</aligny>
+                <font>Tiny</font>
+                <label>$INFO[ListItem.Label]</label>
+                <selectedcolor>White100</selectedcolor>
+                <textcolor>Selected</textcolor>
+                <visible>!IsEmpty(ListItem.Label)</visible>
+            </control>
+            <control type="image">
+                <left>20</left>
+                <top>20</top>
+                <right>20</right>
+                <height>256</height>
+                <aspectratio scalediffuse="false">scale</aspectratio>
+                <texture diffuse="diffuse/wall.png" colordiffuse="ff181818">common/white.png</texture>
+            </control>
+            <control type="image">
+                <left>20</left>
+                <top>20</top>
+                <right>20</right>
+                <height>256</height>
+                <aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
+                <texture diffuse="diffuse/wall.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
+            </control>
+        </focusedlayout>
+    </include>
+    <include name="DefCdArtScrollbar">
+        <left>1350</left>
+        <top>55</top>
+        <width>8</width>
+        <height>970</height>
+        <texturesliderbackground border="4" colordiffuse="Dark4">scrollbar/scrollv.png</texturesliderbackground>
+        <texturesliderbar border="4" colordiffuse="Dark3">scrollbar/scrollv.png</texturesliderbar>
+        <texturesliderbarfocus border="4" colordiffuse="Dark2">scrollbar/scrollv.png</texturesliderbarfocus>
+        <animation effect="fade" start="100" end="50" time="400" condition="True">Conditional</animation>
+    </include>
 </includes>
