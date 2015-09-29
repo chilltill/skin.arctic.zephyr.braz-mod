@@ -461,6 +461,7 @@
             <include>Def9000Background</include>
             <control type="image">
                 <description>arrow image</description>
+                <visible>Container(9000).HasPrevious</visible>
                 <centerleft>50%</centerleft>
                 <posy>-16</posy>
                 <width>16</width>
@@ -469,6 +470,7 @@
             </control>
             <control type="image">
                 <description>arrow image</description>
+                <visible>Container(9000).HasNext</visible>
                 <centerleft>50%</centerleft>
                 <posy>732</posy>
                 <width>16</width>
