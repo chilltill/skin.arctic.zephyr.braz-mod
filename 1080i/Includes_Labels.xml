@@ -136,7 +136,6 @@
         <value>$INFO[Container(301).ListItem.Label]</value>
     </variable>
     <variable name="WidgetPlot">
-        <value condition="StringCompare(Container(300).ListItem.Property(widget),NextAired)">$INFO[Container(301).ListItem.Label2,,[CR]]$INFO[Container(301).ListItem.Property(Plot)]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(widgetType),albums)">$INFO[Container(301).ListItem.Property(Album_Description)]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(widgetType),songs)">Recorded by $INFO[Container(301).ListItem.Artist] on the album $INFO[Container(301).ListItem.Album,,.]</value>
         <value condition="substring(Container(300).ListItem.Property(widget),Weather,left)">$INFO[Weather.Conditions]</value>
@@ -145,12 +144,11 @@
         <value>$LOCALIZE[19055]</value>
     </variable>
     <variable name="WidgetSubLabel">
-        <value condition="StringCompare(Container(300).ListItem.Property(widget),NextAired)"></value>
         <value condition="StringCompare(Container(300).ListItem.Property(widgetType),albums)">$INFO[Container(301).ListItem.Artist]$INFO[Container(301).ListItem.Year,  •  ,]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(widgetType),songs)">$INFO[Container(301).ListItem.Artist]$INFO[Container(301).ListItem.Year,  •  ,]</value>
-        <value condition="!StringCompare(Container(301).ListItem.Title,Container(301).ListItem.TvShowTitle) + !IsEmpty(Container(301).ListItem.TvShowTitle)">$INFO[Container(301).ListItem.TvShowTitle,,  •  ]$INFO[Container(301).ListItem.Premiered,,  •  ]$INFO[Container(301).ListItem.Duration,, $LOCALIZE[31102]  •  ]$INFO[Container(301).ListItem.Rating]</value>
-        <value condition="!StringCompare(Container(301).ListItem.Title,Container(301).ListItem.TvShowTitle) + IsEmpty(Container(301).ListItem.TvShowTitle)">$INFO[Container(301).ListItem.Year,,  •  ]$INFO[Container(301).ListItem.Duration,, $LOCALIZE[31102]]$INFO[Container(301).ListItem.Rating,  •  ]</value>
-        <value condition="StringCompare(Container(301).ListItem.Title,Container(301).ListItem.TvShowTitle)">$INFO[Container(301).ListItem.Episode,, $LOCALIZE[20360]  •  ]$INFO[Container(301).ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101]  •  ]$INFO[Container(301).ListItem.Duration,, $LOCALIZE[31102]  •  ]$INFO[Container(301).ListItem.Rating]</value>
+        <value condition="!StringCompare(Container(301).ListItem.Title,Container(301).ListItem.TvShowTitle) + !IsEmpty(Container(301).ListItem.TvShowTitle)">$INFO[Container(301).ListItem.TvShowTitle]$INFO[Container(301).ListItem.Premiered,  •  ]$INFO[Container(301).ListItem.Duration,  •  , $LOCALIZE[31102]]$INFO[Container(301).ListItem.Rating,  •  ]</value>
+        <value condition="!StringCompare(Container(301).ListItem.Title,Container(301).ListItem.TvShowTitle) + IsEmpty(Container(301).ListItem.TvShowTitle)">$INFO[Container(301).ListItem.Year]$INFO[Container(301).ListItem.Duration,  •  , $LOCALIZE[31102]]$INFO[Container(301).ListItem.Rating,  •  ]</value>
+        <value condition="StringCompare(Container(301).ListItem.Title,Container(301).ListItem.TvShowTitle)">$INFO[Container(301).ListItem.Episode,, $LOCALIZE[20360]]$INFO[Container(301).ListItem.Property(UnWatchedEpisodes),  •  , $LOCALIZE[16101]]$INFO[Container(301).ListItem.Duration,  •  , $LOCALIZE[31102]]$INFO[Container(301).ListItem.Rating,  •  ]</value>
     </variable>
     <variable name="PVRInfoStatus">
         <value condition="ListItem.IsRecording">$LOCALIZE[19158]</value>
