@@ -325,7 +325,7 @@
                         <onclick condition="!IsEmpty(Skin.String(home.slideshowpath))">Skin.Reset(home.slideshowpath)</onclick>
                     </control>
                     
-                    <control type="button" id="9246" description="Custom Widget 1">
+                    <!--<control type="button" id="9246" description="Custom Widget 1">
                         <width>1310</width>
                         <visible>ControlGroup(9100).HasFocus(9104)</visible>
                         <include>DefSettingsButton</include>
@@ -356,7 +356,7 @@
                         <label>31231</label>
                         <label2>$INFO[Skin.String(CustomWidget4)]</label2>
                         <onclick>Skin.SetString(CustomWidget4)</onclick>
-                    </control>
+                    </control>-->
                     
                     <!-- Hubs -->
                     <control type="button" id="9251" description="Select Movies Hub Widget">
