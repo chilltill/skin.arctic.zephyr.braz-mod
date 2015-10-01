@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <variable name="GlobalSearchArt">
-        <value condition="!IsEmpty(ListItem.Property(Fanart))">$INFO[ListItem.Property(Fanart)]</value>
+        <!--<value condition="!IsEmpty(ListItem.Property(Fanart))">$INFO[ListItem.Property(Fanart)]</value>-->
         <value>$INFO[ListItem.Thumb]</value>
     </variable>
     <variable name="GlobalSearchPoster">
@@ -24,107 +24,156 @@
     </variable>
     <include name="GlobalSearchListItem">
         <control type="image">
-            <left>0</left>
-            <right>10</right>
-            <top>0</top>
-            <bottom>10</bottom>
-            <aspectratio>scale</aspectratio>
-            <texture fallback="special://skin/extras/backgrounds/default_bg.jpg">$VAR[GlobalSearchArt]</texture>
+            <width>100%</width>
+            <height>100%</height>
+            <texture border="10">common/nofocus-shadow10.png</texture>
         </control>
         <control type="image">
-            <left>0</left>
+            <left>10</left>
+            <top>10</top>
             <right>10</right>
-            <height>48</height>
             <bottom>10</bottom>
-            <texture colordiffuse="Black70">common/white.png</texture>
+            <texture border="5" colordiffuse="Panel">common/box.png</texture>
         </control>
         <control type="label">
             <left>20</left>
-            <right>30</right>
-            <height>48</height>
+            <right>20</right>
             <bottom>10</bottom>
-            <align>left</align>
-            <font>TinyBold</font>
-            <textcolor>White100</textcolor>
+            <height>50</height>
+            <aligny>center</aligny>
+            <font>Tiny</font>
             <label>$INFO[ListItem.Label]</label>
+            <textcolor>PanelWhite70</textcolor>
+        </control>
+        <control type="image">
+            <left>20</left>
+            <top>20</top>
+            <right>20</right>
+            <height>256</height>
+            <aspectratio scalediffuse="false">scale</aspectratio>
+            <texture diffuse="diffuse/wall.png" colordiffuse="ff181818">common/white.png</texture>
+        </control>
+        <control type="image">
+            <left>20</left>
+            <top>20</top>
+            <right>20</right>
+            <height>256</height>
+            <aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
+            <texture diffuse="diffuse/wall.png" background="true">$VAR[GlobalSearchArt]</texture>
         </control>
     </include>
     <include name="GlobalSearchListFocus">
         <control type="image">
-            <left>0</left>
-            <right>10</right>
-            <top>0</top>
-            <bottom>10</bottom>
-            <aspectratio>scale</aspectratio>
-            <texture fallback="special://skin/extras/backgrounds/default_bg.jpg">$VAR[GlobalSearchArt]</texture>
+            <width>100%</width>
+            <height>100%</height>
+            <texture border="10">common/nofocus-shadow10.png</texture>
         </control>
         <control type="image">
-            <left>0</left>
+            <left>10</left>
+            <top>10</top>
             <right>10</right>
-            <height>48</height>
             <bottom>10</bottom>
-            <texture colordiffuse="$VAR[ColorHighlight]">common/white.png</texture>
+            <texture border="5" colordiffuse="$VAR[ColorHighlight]">common/box.png</texture>
         </control>
         <control type="label">
             <left>20</left>
-            <right>30</right>
-            <height>48</height>
+            <right>20</right>
             <bottom>10</bottom>
-            <align>left</align>
-            <font>TinyBold</font>
-            <textcolor>Selected</textcolor>
+            <height>50</height>
+            <aligny>center</aligny>
+            <font>Tiny</font>
             <label>$INFO[ListItem.Label]</label>
+            <selectedcolor>White100</selectedcolor>
+            <textcolor>Selected</textcolor>
+        </control>
+        <control type="image">
+            <left>20</left>
+            <top>20</top>
+            <right>20</right>
+            <height>256</height>
+            <aspectratio scalediffuse="false">scale</aspectratio>
+            <texture diffuse="diffuse/wall.png" colordiffuse="ff181818">common/white.png</texture>
+        </control>
+        <control type="image">
+            <left>20</left>
+            <top>20</top>
+            <right>20</right>
+            <height>256</height>
+            <aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
+            <texture diffuse="diffuse/wall.png" background="true">$VAR[GlobalSearchArt]</texture>
         </control>
     </include>
     <include name="GlobalSearchListGroupParams">
         <control type="group" id="$PARAM[groupid]">
-            <height>220</height>
-            <control type="image">
-                <left>0</left>
-                <width>192</width>
-                <top>0</top>
-                <height>210</height>
-                <texture colordiffuse="Panel">common/white.png</texture>
+            <height>330</height>
+            <control type="group">
+                <width>296</width>
+                <control type="image">
+                    <width>296</width>
+                    <height>330</height>
+                    <texture border="10">common/nofocus-shadow10.png</texture>
+                </control>
+                <control type="button" id="$PARAM[buttonid]">
+                    <height>310</height>
+                    <left>10</left>
+                    <top>10</top>
+                    <right>10</right>
+                    <bottom>10</bottom>
+                    <font>Mini</font>
+                    <textoffsetx>10</textoffsetx>
+                    <textcolor>White100</textcolor>
+                    <focusedcolor>Selected</focusedcolor>
+                    <onright>$PARAM[listid]</onright>
+                    <onup>$PARAM[onleft]</onup>
+                    <ondown>$PARAM[onright]</ondown>
+                    <onclick>Close</onclick>
+                    <onclick>$PARAM[buttonclick]</onclick>
+                    <label></label>
+                    <texturenofocus border="5" colordiffuse="Panel">common/box.png</texturenofocus>
+                    <texturefocus border="5" colordiffuse="$VAR[ColorHighlight]">common/box.png</texturefocus>
+                </control>
+                <control type="label">
+                    <left>20</left>
+                    <right>20</right>
+                    <bottom>10</bottom>
+                    <height>50</height>
+                    <aligny>center</aligny>
+                    <font>Tiny</font>
+                    <label>$INFO[Control.GetLabel($PARAM[labelid]),$PARAM[locallabel] (,)]</label>
+                    <selectedcolor>White100</selectedcolor>
+                    <textcolor>Selected</textcolor>
+                </control>
+                <control type="image">
+                    <left>20</left>
+                    <top>20</top>
+                    <right>20</right>
+                    <height>256</height>
+                    <texture diffuse="diffuse/wall.png" colordiffuse="ff181818">common/white.png</texture>
+                </control>
+                <control type="image">
+                    <left>20</left>
+                    <top>20</top>
+                    <right>20</right>
+                    <height>256</height>
+                    <aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
+                    <texture diffuse="diffuse/wall.png" background="true">$PARAM[iconimage]</texture>
+                    <colordiffuse>PanelWhite70</colordiffuse>
+                </control>
             </control>
-            <control type="image">
-                <left>0</left>
-                <width>192</width>
-                <top>0</top>
-                <bottom>58</bottom>
-                <aspectratio>keep</aspectratio>
-                <texture colordiffuse="PanelWhite70">$PARAM[iconimage]</texture>
-            </control>
-            <control type="button" id="$PARAM[buttonid]">
-                <left>0</left>
-                <width>192</width>
-                <height>48</height>
-                <bottom>10</bottom>
-                <font>Mini</font>
-                <textoffsetx>10</textoffsetx>
-                <textcolor>White100</textcolor>
-                <focusedcolor>Selected</focusedcolor>
-                <onright>$PARAM[listid]</onright>
-                <onup>$PARAM[onleft]</onup>
-                <ondown>$PARAM[onright]</ondown>
-                <onclick>Close</onclick>
-                <onclick>$PARAM[buttonclick]</onclick>
-                <texturenofocus colordiffuse="Black70">common/white.png</texturenofocus>
-                <texturefocus colordiffuse="$VAR[ColorHighlight]">common/white.png</texturefocus>
-                <label>$INFO[Control.GetLabel($PARAM[labelid]),$PARAM[locallabel] (,)]</label>
-            </control>
+
             <control type="list" id="$PARAM[listid]">
                 <top>0</top>
                 <onleft>$PARAM[buttonid]</onleft>
                 <onup>$PARAM[onleft]</onup>
                 <ondown>$PARAM[onright]</ondown>
-                <height>220</height>
-                <left>202</left>
-                <width>1568</width>
+                <height>330</height>
+                <left>296</left>
+                <width>1480</width>
                 <orientation>horizontal</orientation>
-                <itemlayout height="220" width="392">
+                <itemlayout height="330" width="296">
                     <include>GlobalSearchListItem</include>
                 </itemlayout>
-                <focusedlayout height="220" width="392">
+                <focusedlayout height="330" width="296">
                     <control type="group">
                         <visible>!Control.HasFocus($PARAM[listid])</visible>
                         <include>GlobalSearchListItem</include>
@@ -137,8 +186,8 @@
             </control>
         
             <control type="image">
-                <centertop>100</centertop>
-                <centerright>8</centerright>
+                <centertop>165</centertop>
+                <centerright>5</centerright>
                 <width>16</width>
                 <height>16</height>
                 <include>Animation.DelayFadeIn</include>
