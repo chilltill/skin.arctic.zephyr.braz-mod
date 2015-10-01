@@ -11,17 +11,23 @@
         <include>Furniture_Weather</include>-->
         <control type="group">
             <visible>IsEmpty(Window.Property(additionalDialog))</visible>
+            <animation effect="fade" time="300" delay="200" tween="cubic" start="0" end="100" reversible="true">Visible</animation>
+            <animation effect="fade" time="300" delay="200" tween="cubic" start="0" end="100" reversible="true">WindowOpen</animation>
+            <animation effect="fade" time="150" tween="cubic" start="100" end="0" reversible="true">Hidden</animation>
+            <animation type="Conditional" reversible="true" condition="Window.IsVisible(DialogSelect.xml)">
+            <effect type="zoom" end="95" start="100" time="200" center="auto" tween="quadratic" easing="in" />
+        </animation>
             <!--<include>Animation.Common</include>-->
             <left>72</left>
             <right>72</right>
             <top>208</top>
             <height>656</height>
             
-            <control type="image">
+            <!--<control type="image">
                 <width>100%</width>
                 <height>100%</height>
                 <texture border="16" colordiffuse="Panel">common/rounded-shadow8.png</texture>
-            </control>
+            </control>-->
             
             <control type="group">
                 <left>8</left>
@@ -192,14 +198,14 @@
                 
                 
                 <!-- Lines -->
-                <control type="image">
+                <!--<control type="image">
                     <top>10</top>
                     <left>450</left>
                     <width>1</width>
                     <bottom>10</bottom>
                     <colordiffuse>Black12</colordiffuse>
                     <texture>common/white.png</texture>
-                </control>
+                </control>-->
          
                 
                 <!-- Header -->
@@ -226,9 +232,28 @@
                     <label>$INFO[System.ProfileName]</label>
                 </control>
                 <control type="label" id="500">
+                    <visible>!stringcompare(Window.Property(groupname),movieshub) + !stringcompare(Window.Property(groupname),episodeshub)</visible>
                     <left>480</left>
-                    <width>390</width>
+                    <width>500</width>
                     <posy>18</posy>
+                    <font>MediumBold</font>
+                    <textcolor>PanelWhite100</textcolor>
+                </control>
+                <control type="label">
+                    <visible>stringcompare(Window.Property(groupname),movieshub)</visible>
+                    <left>480</left>
+                    <width>500</width>
+                    <posy>18</posy>
+                    <label>Customize Movies Hub</label>
+                    <font>MediumBold</font>
+                    <textcolor>PanelWhite100</textcolor>
+                </control>
+                <control type="label">
+                    <visible>stringcompare(Window.Property(groupname),episodeshub)</visible>
+                    <left>480</left>
+                    <width>500</width>
+                    <posy>18</posy>
+                    <label>Customize TV Hub</label>
                     <font>MediumBold</font>
                     <textcolor>PanelWhite100</textcolor>
                 </control>
