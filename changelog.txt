@@ -1,3 +1,9 @@
+[B]2.0.8[/B]
+Updated skinshortcuts support for new widgets implementation
+Added an option to set widget icon aspect ratio
+Skinned cdART Manager scipt
+Added IMDb Top 250 number to the furniture flags
+
 [B]2.0.7[/B]
 Add mouse warning
 Fix touch lockout
