@@ -69,6 +69,9 @@
                 </control>
     
                 <control type="grouplist" id="9500">
+                    <animation type="Conditional" reversible="true" condition="Window.IsVisible(addonsettings)">
+                        <effect type="zoom" end="95" start="100" time="200" center="auto" tween="quadratic" easing="in" />
+                    </animation>
                     <posy>-5</posy>
                     <height>660</height>
                     <left>-5</left>
