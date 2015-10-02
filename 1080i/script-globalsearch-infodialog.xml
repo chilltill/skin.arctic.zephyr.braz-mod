@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
-    <defaultcontrol always="true">9401</defaultcontrol>
+    <defaultcontrol always="true">9000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
 
     <controls>
@@ -14,41 +14,329 @@
             <focusedlayout width="1" height="1"/>
         </control>
 
-        <control type="button" id="9401">
-            <visible allowhiddenfocus="true">false</visible>
-            <onfocus condition="Control.IsVisible(110) | Control.IsVisible(120) | Control.IsVisible(140)">AlarmClock(blerg,SetFocus(9402),00:01,silent)</onfocus>
-            <onfocus condition="![Control.IsVisible(110) | Control.IsVisible(120) | Control.IsVisible(140)]">Action(Close)</onfocus>
-        </control>
-        <control type="button" id="9402">
-            <visible allowhiddenfocus="true">false</visible>
-            <onfocus>Action(Close)</onfocus>
-            <onfocus condition="Control.IsVisible(110)">RunScript(script.extendedinfo,info=extendedinfo,name=$INFO[Container(100).ListItem.Label])</onfocus>
-            <onfocus condition="Control.IsVisible(120)">RunScript(script.extendedinfo,info=extendedtvinfo,name=$INFO[Container(100).ListItem.Label])</onfocus>
-            <onfocus condition="Control.IsVisible(140)">RunScript(script.extendedinfo,info=extendedtvinfo,name=$INFO[Container(100).ListItem.Property(TvShowTitle)])</onfocus>
-        </control>
-
-        <control type="group">
-            <control type="group" id="110">              
+        <control type="group" id="101">
+            <control type="group" id="110">
+                <include>GlobalSearchInfoPosterArt</include>
+                <control type="group">
+                    <animation effect="slide" start="1920" end="0" delay="0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+                    <animation effect="slide" start="0" end="1920" time="300" tween="quadratic" easing="in">WindowClose</animation>
+                    <animation effect="slide" start="1920" end="0" delay="0" time="300" tween="quadratic" easing="out">Visible</animation>
+                    <animation effect="slide" start="0" end="1920" time="300" tween="quadratic" easing="in">Hidden</animation>
+                    <include>GlobalSearchVideoDetails</include>
+                    <control type="grouplist" id="9000">
+                        <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
+                        <bottom>224</bottom>
+                        <left>540</left>
+                        <right>SidePad</right>
+                        <height>68</height>
+                        <bottom>33</bottom>
+                        <itemgap>16</itemgap>
+                        <orientation>horizontal</orientation>
+                        <control type="button" id ="191">
+                            <description>Ok button</description>
+                            <label>186</label>
+                            <width>260</width>
+                            <include>DefInfoButtons</include>
+                        </control>
+                        <control type="button" id ="192">
+                            <description>Play button</description>
+                            <label>-</label>
+                            <width>260</width>
+                            <include>DefInfoButtons</include>
+                        </control>
+                        <control type="button" id ="193">
+                            <description>Trailer button</description>
+                            <label>-</label>
+                            <width>260</width>
+                            <include>DefInfoButtons</include>
+                        </control>
+                    </control>
+                </control>
             </control>
             <control type="group" id="120">
+                <include>GlobalSearchInfoPosterArt</include>
+                <control type="group">
+                    <animation effect="slide" start="1920" end="0" delay="0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+                    <animation effect="slide" start="0" end="1920" time="300" tween="quadratic" easing="in">WindowClose</animation>
+                    <animation effect="slide" start="1920" end="0" delay="0" time="300" tween="quadratic" easing="out">Visible</animation>
+                    <animation effect="slide" start="0" end="1920" time="300" tween="quadratic" easing="in">Hidden</animation>
+                    <include>GlobalSearchVideoDetails</include>
+                    <control type="grouplist" id="9000">
+                        <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
+                        <bottom>224</bottom>
+                        <left>540</left>
+                        <right>SidePad</right>
+                        <height>68</height>
+                        <bottom>33</bottom>
+                        <itemgap>16</itemgap>
+                        <orientation>horizontal</orientation>
+                        <control type="button" id ="191">
+                            <description>Ok button</description>
+                            <label>186</label>
+                            <width>260</width>
+                            <include>DefInfoButtons</include>
+                        </control>
+                        <control type="button" id ="192">
+                            <description>Play button</description>
+                            <label>Browse</label>
+                            <width>260</width>
+                            <include>DefInfoButtons</include>
+                        </control>
+                        <control type="button" id ="193">
+                            <description>Trailer button</description>
+                            <visible>false</visible>
+                        </control>
+                    </control>
+                </control>
             </control>
             <control type="group" id="130">
+                <include>GlobalSearchInfoPosterArt</include>
+                <control type="group">
+                    <animation effect="slide" start="1920" end="0" delay="0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+                    <animation effect="slide" start="0" end="1920" time="300" tween="quadratic" easing="in">WindowClose</animation>
+                    <animation effect="slide" start="1920" end="0" delay="0" time="300" tween="quadratic" easing="out">Visible</animation>
+                    <animation effect="slide" start="0" end="1920" time="300" tween="quadratic" easing="in">Hidden</animation>
+                    <include>GlobalSearchVideoDetails</include>
+                    <control type="grouplist" id="9000">
+                        <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
+                        <bottom>224</bottom>
+                        <left>540</left>
+                        <right>SidePad</right>
+                        <height>68</height>
+                        <bottom>33</bottom>
+                        <itemgap>16</itemgap>
+                        <orientation>horizontal</orientation>
+                        <control type="button" id ="191">
+                            <description>Ok button</description>
+                            <label>186</label>
+                            <width>260</width>
+                            <include>DefInfoButtons</include>
+                        </control>
+                        <control type="button" id ="192">
+                            <description>Play button</description>
+                            <label>Browse</label>
+                            <width>260</width>
+                            <include>DefInfoButtons</include>
+                        </control>
+                        <control type="button" id ="193">
+                            <description>Trailer button</description>
+                            <visible>false</visible>
+                        </control>
+                    </control>
+                </control>
             </control>
             <control type="group" id="140">
+                <include>GlobalSearchInfoPosterArt</include>
+                <control type="group">
+                    <animation effect="slide" start="1920" end="0" delay="0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+                    <animation effect="slide" start="0" end="1920" time="300" tween="quadratic" easing="in">WindowClose</animation>
+                    <animation effect="slide" start="1920" end="0" delay="0" time="300" tween="quadratic" easing="out">Visible</animation>
+                    <animation effect="slide" start="0" end="1920" time="300" tween="quadratic" easing="in">Hidden</animation>
+                    <include>GlobalSearchVideoDetails</include>
+                    <control type="grouplist" id="9000">
+                        <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
+                        <bottom>224</bottom>
+                        <left>540</left>
+                        <right>SidePad</right>
+                        <height>68</height>
+                        <bottom>33</bottom>
+                        <itemgap>16</itemgap>
+                        <orientation>horizontal</orientation>
+                        <control type="button" id ="191">
+                            <description>Ok button</description>
+                            <label>186</label>
+                            <width>260</width>
+                            <include>DefInfoButtons</include>
+                        </control>
+                        <control type="button" id ="192">
+                            <description>Play button</description>
+                            <label>Play</label>
+                            <width>260</width>
+                            <include>DefInfoButtons</include>
+                        </control>
+                        <control type="button" id ="193">
+                            <description>Trailer button</description>
+                            <visible>false</visible>
+                        </control>
+                    </control>
+                </control>
             </control>
             <control type="group" id="150">
+                <include>GlobalSearchInfoSquareArt</include>
+                <control type="group">
+                    <animation effect="slide" start="1920" end="0" delay="0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+                    <animation effect="slide" start="0" end="1920" time="300" tween="quadratic" easing="in">WindowClose</animation>
+                    <animation effect="slide" start="1920" end="0" delay="0" time="300" tween="quadratic" easing="out">Visible</animation>
+                    <animation effect="slide" start="0" end="1920" time="300" tween="quadratic" easing="in">Hidden</animation>
+                    <include>GlobalSearchMusicDetails</include>
+                    <control type="grouplist" id="9000">
+                        <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
+                        <bottom>224</bottom>
+                        <left>ListSquareX</left>
+                        <right>SidePad</right>
+                        <height>68</height>
+                        <bottom>33</bottom>
+                        <itemgap>16</itemgap>
+                        <orientation>horizontal</orientation>
+                        <control type="button" id ="191">
+                            <description>Ok button</description>
+                            <label>186</label>
+                            <width>260</width>
+                            <include>DefInfoButtons</include>
+                        </control>
+                        <control type="button" id ="192">
+                            <description>Play button</description>
+                            <label>Play</label>
+                            <width>260</width>
+                            <include>DefInfoButtons</include>
+                        </control>
+                        <control type="button" id ="193">
+                            <description>Trailer button</description>
+                            <visible>false</visible>
+                        </control>
+                    </control>
+                </control>
             </control>
             <control type="group" id="160">
+                <include>GlobalSearchInfoSquareArt</include>
+                <control type="group">
+                    <animation effect="slide" start="1920" end="0" delay="0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+                    <animation effect="slide" start="0" end="1920" time="300" tween="quadratic" easing="in">WindowClose</animation>
+                    <animation effect="slide" start="1920" end="0" delay="0" time="300" tween="quadratic" easing="out">Visible</animation>
+                    <animation effect="slide" start="0" end="1920" time="300" tween="quadratic" easing="in">Hidden</animation>
+                    <include>GlobalSearchMusicDetails</include>
+                    <control type="grouplist" id="9000">
+                        <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
+                        <bottom>224</bottom>
+                        <left>ListSquareX</left>
+                        <right>SidePad</right>
+                        <height>68</height>
+                        <bottom>33</bottom>
+                        <itemgap>16</itemgap>
+                        <orientation>horizontal</orientation>
+                        <control type="button" id ="191">
+                            <description>Ok button</description>
+                            <label>186</label>
+                            <width>260</width>
+                            <include>DefInfoButtons</include>
+                        </control>
+                        <control type="button" id ="192">
+                            <description>Play button</description>
+                            <label>Browse</label>
+                            <width>260</width>
+                            <include>DefInfoButtons</include>
+                        </control>
+                        <control type="button" id ="193">
+                            <description>Trailer button</description>
+                            <visible>false</visible>
+                        </control>
+                    </control>
+                </control>
             </control>
             <control type="group" id="170">
+                <include>GlobalSearchInfoSquareArt</include>
+                <control type="group">
+                    <animation effect="slide" start="1920" end="0" delay="0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+                    <animation effect="slide" start="0" end="1920" time="300" tween="quadratic" easing="in">WindowClose</animation>
+                    <animation effect="slide" start="1920" end="0" delay="0" time="300" tween="quadratic" easing="out">Visible</animation>
+                    <animation effect="slide" start="0" end="1920" time="300" tween="quadratic" easing="in">Hidden</animation>
+                    <include>GlobalSearchMusicDetails</include>
+                    <control type="grouplist" id="9000">
+                        <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
+                        <bottom>224</bottom>
+                        <left>ListSquareX</left>
+                        <right>SidePad</right>
+                        <height>68</height>
+                        <bottom>33</bottom>
+                        <itemgap>16</itemgap>
+                        <orientation>horizontal</orientation>
+                        <control type="button" id ="191">
+                            <description>Ok button</description>
+                            <label>186</label>
+                            <width>260</width>
+                            <include>DefInfoButtons</include>
+                        </control>
+                        <control type="button" id ="192">
+                            <description>Play button</description>
+                            <label>Play</label>
+                            <width>260</width>
+                            <include>DefInfoButtons</include>
+                        </control>
+                        <control type="button" id ="193">
+                            <description>Trailer button</description>
+                            <visible>false</visible>
+                        </control>
+                    </control>
+                </control>
             </control>
             <control type="group" id="180">
+                <include>GlobalSearchInfoSquareArt</include>
+                <control type="group">
+                    <animation effect="slide" start="1920" end="0" delay="0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+                    <animation effect="slide" start="0" end="1920" time="300" tween="quadratic" easing="in">WindowClose</animation>
+                    <animation effect="slide" start="1920" end="0" delay="0" time="300" tween="quadratic" easing="out">Visible</animation>
+                    <animation effect="slide" start="0" end="1920" time="300" tween="quadratic" easing="in">Hidden</animation>
+                    <include>GlobalSearchMusicDetails</include>
+                    <control type="grouplist" id="9000">
+                        <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
+                        <bottom>224</bottom>
+                        <left>ListSquareX</left>
+                        <right>SidePad</right>
+                        <height>68</height>
+                        <bottom>33</bottom>
+                        <itemgap>16</itemgap>
+                        <orientation>horizontal</orientation>
+                        <control type="button" id ="191">
+                            <description>Ok button</description>
+                            <label>186</label>
+                            <width>260</width>
+                            <include>DefInfoButtons</include>
+                        </control>
+                        <control type="button" id ="192">
+                            <description>Play button</description>
+                            <visible>false</visible>
+                        </control>
+                        <control type="button" id ="193">
+                            <description>Trailer button</description>
+                            <visible>false</visible>
+                        </control>
+                    </control>
+                </control>
             </control>
             <control type="group" id="200">
+                <include>GlobalSearchInfoSquareArt</include>
+                <control type="group">
+                    <animation effect="slide" start="1920" end="0" delay="0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+                    <animation effect="slide" start="0" end="1920" time="300" tween="quadratic" easing="in">WindowClose</animation>
+                    <animation effect="slide" start="1920" end="0" delay="0" time="300" tween="quadratic" easing="out">Visible</animation>
+                    <animation effect="slide" start="0" end="1920" time="300" tween="quadratic" easing="in">Hidden</animation>
+                    <include>GlobalSearchEPGDetails</include>
+                    <control type="grouplist" id="9000">
+                        <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
+                        <bottom>224</bottom>
+                        <left>ListSquareX</left>
+                        <right>SidePad</right>
+                        <height>68</height>
+                        <bottom>33</bottom>
+                        <itemgap>16</itemgap>
+                        <orientation>horizontal</orientation>
+                        <control type="button" id ="191">
+                            <description>Ok button</description>
+                            <label>186</label>
+                            <width>260</width>
+                            <include>DefInfoButtons</include>
+                        </control>
+                        <control type="button" id ="192">
+                            <description>Play button</description>
+                            <visible>false</visible>
+                        </control>
+                        <control type="button" id ="193">
+                            <description>Trailer button</description>
+                            <visible>false</visible>
+                        </control>
+                    </control>
+                </control>
             </control>
-            <control type="button" id="191"><visible>false</visible></control>
-            <control type="button" id="192"><visible>false</visible></control>
-            <control type="button" id="193"><visible>false</visible></control>
         </control>
     </controls>
 
