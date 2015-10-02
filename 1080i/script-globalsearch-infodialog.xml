@@ -96,7 +96,7 @@
                     <label>$INFO[Container(100).ListItem.Property(Path)]</label>
                     <aligny>center</aligny>
                     <align>right</align>
-                    <visible>ControlGroup(9000).HasFocus()</visible>
+                    <visible>ControlGroup(9000).HasFocus() + [Control.IsVisible(110) | Control.IsVisible(140) | Control.IsVisible(150) | Control.IsVisible(180)]</visible>
                     <include>Animation.FadeIn</include>
                 </control>
             </control>
