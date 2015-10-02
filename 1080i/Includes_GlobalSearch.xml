@@ -21,6 +21,7 @@
         <value condition="Control.HasFocus(191) + !IsEmpty(Container(191).ListItem.Property(Fanart))">$INFO[Container(191).ListItem.Property(Fanart)]</value>
         <value condition="Control.HasFocus(211) + !IsEmpty(Container(211).ListItem.Property(Fanart))">$INFO[Container(211).ListItem.Property(Fanart)]</value>
         <value condition="Control.HasFocus(221) + !IsEmpty(Container(221).ListItem.Property(Fanart))">$INFO[Container(221).ListItem.Property(Fanart)]</value>
+        <value>common/black-back.png</value>
     </variable>
     <include name="GlobalSearchListItem">
         <control type="image">
