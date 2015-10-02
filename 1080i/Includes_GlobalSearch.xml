@@ -335,7 +335,7 @@
                         <height>36</height>
                         <font>Tiny</font>
                         <textcolor>Dark2</textcolor>
-                        <label>$VAR[GlobalSearchInfoSubHeading]</label>
+                        <label fallback="19055">$VAR[GlobalSearchInfoSubHeading]</label>
                         <aligny>center</aligny>
                     </control>
                 </control>
@@ -356,12 +356,11 @@
                         <height>36</height>
                         <font>Tiny</font>
                         <textcolor>Dark2</textcolor>
-                        <label fallback="19055">$INFO[Container(100).ListItem.Property(Year)]</label>
+                        <label>$INFO[Container(100).ListItem.Property(Year)]</label>
                         <aligny>center</aligny>
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!IsEmpty(Container(100).ListItem.Property(Mpaa))</visible>
                     <height>36</height>
                     <control type="label">
                         <width>100%</width>
@@ -398,7 +397,7 @@
                         <height>36</height>
                         <font>Tiny</font>
                         <textcolor>Dark2</textcolor>
-                        <label fallback="Unrated">$INFO[Container(100).ListItem.Property(Rating)]</label>
+                        <label>$INFO[Container(100).ListItem.Property(Rating)]</label>
                         <aligny>center</aligny>
                     </control>
                 </control>
@@ -419,7 +418,7 @@
                         <height>36</height>
                         <font>Tiny</font>
                         <textcolor>Dark2</textcolor>
-                        <label fallback="19055">$INFO[Container(100).ListItem.Property(Season)]</label>
+                        <label>$INFO[Container(100).ListItem.Property(Season)]</label>
                         <aligny>center</aligny>
                     </control>
                 </control>
@@ -440,7 +439,7 @@
                         <height>36</height>
                         <font>Tiny</font>
                         <textcolor>Dark2</textcolor>
-                        <label fallback="19055">$INFO[Container(100).ListItem.Property(Episode)]</label>
+                        <label>$INFO[Container(100).ListItem.Property(Episode)]</label>
                         <aligny>center</aligny>
                     </control>
                 </control>
@@ -461,7 +460,7 @@
                         <height>36</height>
                         <font>Tiny</font>
                         <textcolor>Dark2</textcolor>
-                        <label fallback="19055">$INFO[Container(100).ListItem.Property(Premiered)]</label>
+                        <label>$INFO[Container(100).ListItem.Property(Premiered)]</label>
                         <aligny>center</aligny>
                     </control>
                 </control>
@@ -482,7 +481,7 @@
                         <height>36</height>
                         <font>Tiny</font>
                         <textcolor>Dark2</textcolor>
-                        <label fallback="19055">$INFO[Container(100).ListItem.Property(Duration),, $LOCALIZE[12391]]</label>
+                        <label>$INFO[Container(100).ListItem.Property(Duration),, $LOCALIZE[12391]]</label>
                         <aligny>center</aligny>
                     </control>
                 </control>
@@ -503,7 +502,7 @@
                         <height>36</height>
                         <font>Tiny</font>
                         <textcolor>Dark2</textcolor>
-                        <label fallback="19055">$INFO[Container(100).ListItem.Property(Studio)]</label>
+                        <label>$INFO[Container(100).ListItem.Property(Studio)]</label>
                         <aligny>center</aligny>
                     </control>
                 </control>
@@ -524,7 +523,7 @@
                         <height>36</height>
                         <font>Tiny</font>
                         <textcolor>Dark2</textcolor>
-                        <label fallback="19055">$INFO[Container(100).ListItem.Property(Genre)]</label>
+                        <label>$INFO[Container(100).ListItem.Property(Genre)]</label>
                         <aligny>center</aligny>
                     </control>
                 </control>
@@ -545,7 +544,7 @@
                         <height>36</height>
                         <font>Tiny</font>
                         <textcolor>Dark2</textcolor>
-                        <label fallback="19055">$INFO[Container(100).ListItem.Property(Director)]</label>
+                        <label>$INFO[Container(100).ListItem.Property(Director)]</label>
                         <aligny>center</aligny>
                     </control>
                 </control>
@@ -621,7 +620,7 @@
                         <height>36</height>
                         <font>Tiny</font>
                         <textcolor>Dark2</textcolor>
-                        <label fallback="19055">$INFO[Container(100).ListItem.Property(Album)]</label>
+                        <label>$INFO[Container(100).ListItem.Property(Album)]</label>
                         <aligny>center</aligny>
                     </control>
                 </control>
@@ -642,7 +641,7 @@
                         <height>36</height>
                         <font>Tiny</font>
                         <textcolor>Dark2</textcolor>
-                        <label fallback="19055">$INFO[Container(100).ListItem.Property(Track)]</label>
+                        <label>$INFO[Container(100).ListItem.Property(Track)]</label>
                         <aligny>center</aligny>
                     </control>
                 </control>
@@ -663,7 +662,7 @@
                         <height>36</height>
                         <font>Tiny</font>
                         <textcolor>Dark2</textcolor>
-                        <label fallback="19055">$INFO[Container(100).ListItem.Property(Year)]</label>
+                        <label>$INFO[Container(100).ListItem.Property(Year)]</label>
                         <aligny>center</aligny>
                     </control>
                 </control>
@@ -684,7 +683,7 @@
                         <height>36</height>
                         <font>Tiny</font>
                         <textcolor>Dark2</textcolor>
-                        <label fallback="19055">$INFO[Container(100).ListItem.Property(Album_Label)]</label>
+                        <label>$INFO[Container(100).ListItem.Property(Album_Label)]</label>
                         <aligny>center</aligny>
                     </control>
                 </control>
@@ -705,7 +704,7 @@
                         <height>36</height>
                         <font>Tiny</font>
                         <textcolor>Dark2</textcolor>
-                        <label fallback="19055">$INFO[Container(100).ListItem.Property(Genre)]</label>
+                        <label>$INFO[Container(100).ListItem.Property(Genre)]</label>
                         <aligny>center</aligny>
                     </control>
                 </control>
@@ -726,7 +725,7 @@
                         <height>36</height>
                         <font>Tiny</font>
                         <textcolor>Dark2</textcolor>
-                        <label fallback="19055">$INFO[Container(100).ListItem.Property(Artist_Genre)]</label>
+                        <label>$INFO[Container(100).ListItem.Property(Artist_Genre)]</label>
                         <aligny>center</aligny>
                     </control>
                 </control>
@@ -757,7 +756,7 @@
                         <height>36</height>
                         <font>Tiny</font>
                         <textcolor>Dark2</textcolor>
-                        <label fallback="19055">$INFO[Container(100).ListItem.Property(Artist_Born)]$INFO[Container(100).ListItem.Property(Artist_Formed)]</label>
+                        <label>$INFO[Container(100).ListItem.Property(Artist_Born)]$INFO[Container(100).ListItem.Property(Artist_Formed)]</label>
                         <aligny>center</aligny>
                     </control>
                 </control>
@@ -788,7 +787,7 @@
                         <height>36</height>
                         <font>Tiny</font>
                         <textcolor>Dark2</textcolor>
-                        <label fallback="19055">$INFO[Container(100).ListItem.Property(Artist_Died)]</label>
+                        <label>$INFO[Container(100).ListItem.Property(Artist_Died)]</label>
                         <aligny>center</aligny>
                         <visible>!IsEmpty(Container(100).ListItem.Property(Artist_Died))</visible>
                     </control>
@@ -798,7 +797,7 @@
                         <height>36</height>
                         <font>Tiny</font>
                         <textcolor>Dark2</textcolor>
-                        <label fallback="19055">$INFO[Container(100).ListItem.Property(Artist_Disbanded)]</label>
+                        <label>$INFO[Container(100).ListItem.Property(Artist_Disbanded)]</label>
                         <aligny>center</aligny>
                         <visible>IsEmpty(Container(100).ListItem.Property(Artist_Died))</visible>
                     </control>
@@ -820,7 +819,7 @@
                         <height>36</height>
                         <font>Tiny</font>
                         <textcolor>Dark2</textcolor>
-                        <label fallback="19055">$INFO[Container(100).ListItem.Property(Artist_Style)]</label>
+                        <label>$INFO[Container(100).ListItem.Property(Artist_Style)]</label>
                         <aligny>center</aligny>
                     </control>
                 </control>
@@ -903,7 +902,7 @@
                         <height>36</height>
                         <font>Tiny</font>
                         <textcolor>Dark2</textcolor>
-                        <label fallback="19055">$INFO[Container(100).ListItem.Property(Duration)]</label>
+                        <label>$INFO[Container(100).ListItem.Property(Duration)]</label>
                         <aligny>center</aligny>
                     </control>
                 </control>
@@ -924,7 +923,7 @@
                         <height>36</height>
                         <font>Tiny</font>
                         <textcolor>Dark2</textcolor>
-                        <label fallback="19055">$INFO[Container(100).ListItem.Property(Starttime)]</label>
+                        <label>$INFO[Container(100).ListItem.Property(Starttime)]</label>
                         <aligny>center</aligny>
                     </control>
                 </control>
@@ -945,7 +944,7 @@
                         <height>36</height>
                         <font>Tiny</font>
                         <textcolor>Dark2</textcolor>
-                        <label fallback="19055">$INFO[Container(100).ListItem.Property(Endtime)]</label>
+                        <label>$INFO[Container(100).ListItem.Property(Endtime)]</label>
                         <aligny>center</aligny>
                     </control>
                 </control>
@@ -966,7 +965,7 @@
                         <height>36</height>
                         <font>Tiny</font>
                         <textcolor>Dark2</textcolor>
-                        <label fallback="19055">$INFO[Container(100).ListItem.Property(Genre)]</label>
+                        <label>$INFO[Container(100).ListItem.Property(Genre)]</label>
                         <aligny>center</aligny>
                     </control>
                 </control>
