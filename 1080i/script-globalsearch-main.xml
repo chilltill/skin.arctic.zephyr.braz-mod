@@ -69,9 +69,6 @@
                 </control>
     
                 <control type="grouplist" id="9500">
-                    <animation type="Conditional" reversible="true" condition="Window.IsVisible(addonsettings)">
-                        <effect type="zoom" end="95" start="100" time="200" center="auto" tween="quadratic" easing="in" />
-                    </animation>
                     <posy>-5</posy>
                     <height>660</height>
                     <left>-5</left>
@@ -234,6 +231,41 @@
         </control>
         <control type="label" id="199">
             <visible>false</visible>
+        </control>
+
+        <control type="group">
+            <include>Animation.FadeIn</include>
+            <include>Animation.FadeOut</include>
+            <visible>ControlGroup(9000).HasFocus()</visible>
+            <include>GlobalOverlay</include>
+        </control>
+        <control type="group">
+            <height>242</height>
+            <include>Def9000Background</include>
+            <control type="grouplist" id="9000">
+                <height>210</height>
+                <onleft>9500</onleft>
+                <onright>9500</onright>
+                <include>Def9000GroupList</include>
+                
+                <control type="button" id="1801">
+                    <description>New search</description>
+                    <label>New search</label>
+                    <include>DefContextButton</include>
+                    <onclick>SendClick(198)</onclick>
+                </control>
+                <control type="button" id="1802">
+                    <description>Addon settings</description>
+                    <label>Settings</label>
+                    <include>DefContextButton</include>
+                    <onclick>Addon.OpenSettings(script.globalsearch)</onclick>
+                </control>
+                <include name="MenuPlayerControls">
+                    <param name="PlayerControlsOnUp" value="4" />
+                    <param name="PlayerControlsOnDown" value="1802" />
+                </include>
+
+            </control>
         </control>
         
     </controls>

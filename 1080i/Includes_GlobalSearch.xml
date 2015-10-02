@@ -124,7 +124,7 @@
                     <textoffsetx>10</textoffsetx>
                     <textcolor>White100</textcolor>
                     <focusedcolor>Selected</focusedcolor>
-                    <onleft>Addon.OpenSettings(script.globalsearch)</onleft>
+                    <onleft>9000</onleft>
                     <onright>$PARAM[listid]</onright>
                     <onup>$PARAM[onleft]</onup>
                     <ondown>$PARAM[onright]</ondown>
