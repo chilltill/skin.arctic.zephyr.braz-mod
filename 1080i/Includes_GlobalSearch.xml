@@ -21,7 +21,7 @@
         <value condition="Control.HasFocus(191) + !IsEmpty(Container(191).ListItem.Property(Fanart))">$INFO[Container(191).ListItem.Property(Fanart)]</value>
         <value condition="Control.HasFocus(211) + !IsEmpty(Container(211).ListItem.Property(Fanart))">$INFO[Container(211).ListItem.Property(Fanart)]</value>
         <value condition="Control.HasFocus(221) + !IsEmpty(Container(221).ListItem.Property(Fanart))">$INFO[Container(221).ListItem.Property(Fanart)]</value>
-        <value>common/black-back.png</value>
+        <value>special://skin/extras/backgrounds/default_bg.jpg</value>
     </variable>
     <variable name="GlobalSearchInfoSubHeading">
         <value condition="Control.IsVisible(110)">$INFO[Container(100).ListItem.Property(Tagline)]</value>
@@ -382,6 +382,27 @@
                     </control>
                 </control>
                 <control type="group">
+                    <visible>!IsEmpty(Container(100).ListItem.Property(Rating))</visible>
+                    <height>36</height>
+                    <control type="label">
+                        <width>100%</width>
+                        <height>36</height>
+                        <font>Tiny</font>
+                        <textcolor>Dark1</textcolor>
+                        <label>[B]IMDb[/B]</label>
+                        <aligny>center</aligny>
+                    </control>
+                    <control type="label">
+                        <left>150</left>
+                        <right>420</right>
+                        <height>36</height>
+                        <font>Tiny</font>
+                        <textcolor>Dark2</textcolor>
+                        <label fallback="Unrated">$INFO[Container(100).ListItem.Property(Rating)]</label>
+                        <aligny>center</aligny>
+                    </control>
+                </control>
+                <control type="group">
                     <visible>!IsEmpty(Container(100).ListItem.Property(Season))</visible>
                     <height>36</height>
                     <control type="label">
@@ -424,7 +445,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!IsEmpty(Container(100).ListItem.Property(Premiered))</visible>
+                    <visible>Control.IsVisible(140) + !IsEmpty(Container(100).ListItem.Property(Premiered))</visible>
                     <height>36</height>
                     <control type="label">
                         <width>100%</width>
