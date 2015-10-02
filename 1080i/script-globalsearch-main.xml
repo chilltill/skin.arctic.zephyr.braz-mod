@@ -44,6 +44,7 @@
                 <control type="group">
                     <visible>Control.IsVisible(60)</visible>
                     <control type="image">
+                        <visible>Container(9500).HasPrevious</visible>
                         <top>-30</top>
                         <centerleft>50%</centerleft>
                         <width>16</width>
@@ -52,6 +53,7 @@
                         <animation effect="fade" end="100" start="0" delay="300" time="400" reversible="false">Visible</animation>
                     </control>
                     <control type="image">
+                        <visible>Container(9500).HasNext</visible>
                         <bottom>100</bottom>
                         <centerleft>50%</centerleft>
                         <width>16</width>
@@ -171,7 +173,7 @@
                         <param name="listid" value="181" />
                         <param name="locallabel" value="$LOCALIZE[134]" />
                         <param name="onleft" value="171" />
-                        <param name="onright" value="211" />
+                        <param name="onright" value="111" />
                     </include>
                     
                 </control>
