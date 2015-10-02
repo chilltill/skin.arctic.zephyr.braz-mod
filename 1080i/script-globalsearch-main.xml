@@ -132,8 +132,8 @@
                         <param name="onright" value="151" />
                     </include>
                     <include name="GlobalSearchListGroupParams">
-                        <param name="buttonclick" value="ActivateWindow(videos,tvshowtitles,return)" />
-                        <param name="iconimage" value="DefaultTVShows.png" />
+                        <param name="buttonclick" value="ActivateWindow(videos,musicvideotitles,return)" />
+                        <param name="iconimage" value="DefaultMusicVideos.png" />
                         <param name="buttonid" value="9606" />
                         <param name="groupid" value="159" />
                         <param name="labelid" value="150" />
