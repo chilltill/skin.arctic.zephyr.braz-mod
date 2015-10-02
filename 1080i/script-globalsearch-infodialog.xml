@@ -52,6 +52,7 @@
                 <include>GlobalSearchEPGDetails</include>
             </control>
             <control type="group">
+                <visible>!Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)</visible>
                 <animation effect="slide" start="1920" end="0" delay="0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
                 <animation effect="slide" start="0" end="1920" time="300" tween="quadratic" easing="in">WindowClose</animation>
                 <animation effect="slide" start="1920" end="0" delay="0" time="300" tween="quadratic" easing="out">Visible</animation>
@@ -83,6 +84,30 @@
                         <label>-</label>
                         <width>260</width>
                         <include>DefInfoButtons</include>
+                    </control>
+                    <control type="button" id ="9001">
+                        <visible>Control.IsVisible(110)</visible>
+                        <description>Extended button</description>
+                        <label>TMDb</label>
+                        <width>260</width>
+                        <include>DefInfoButtons</include>
+                        <onclick>RunScript(script.extendedinfo,info=extendedinfo,name=$INFO[Container(100).ListItem.Label])</onclick>
+                    </control>
+                    <control type="button" id ="9002">
+                        <visible>Control.IsVisible(120)</visible>
+                        <description>Extended button</description>
+                        <label>TMDb</label>
+                        <width>260</width>
+                        <include>DefInfoButtons</include>
+                        <onclick>RunScript(script.extendedinfo,info=extendedtvinfo,name=$INFO[Container(100).ListItem.Label])</onclick>
+                    </control>
+                    <control type="button" id ="9003">
+                        <visible>Control.IsVisible(140)</visible>
+                        <description>Extended button</description>
+                        <label>TMDb</label>
+                        <width>260</width>
+                        <include>DefInfoButtons</include>
+                        <onclick>RunScript(script.extendedinfo,info=extendedtvinfo,name=$INFO[Container(100).ListItem.Property(TvShowTitle)])</onclick>
                     </control>
                 </control>
                 <control type="label">

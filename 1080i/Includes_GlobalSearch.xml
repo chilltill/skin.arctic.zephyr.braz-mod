@@ -21,7 +21,7 @@
         <value condition="Control.HasFocus(191) + !IsEmpty(Container(191).ListItem.Property(Fanart))">$INFO[Container(191).ListItem.Property(Fanart)]</value>
         <value condition="Control.HasFocus(211) + !IsEmpty(Container(211).ListItem.Property(Fanart))">$INFO[Container(211).ListItem.Property(Fanart)]</value>
         <value condition="Control.HasFocus(221) + !IsEmpty(Container(221).ListItem.Property(Fanart))">$INFO[Container(221).ListItem.Property(Fanart)]</value>
-        <value>special://skin/extras/backgrounds/default_bg.jpg</value>
+        <value condition="!Window.IsActive(script-globalsearch-infodialog.xml)">special://skin/extras/backgrounds/default_bg.jpg</value>
     </variable>
     <variable name="GlobalSearchInfoSubHeading">
         <value condition="Control.IsVisible(110)">$INFO[Container(100).ListItem.Property(Tagline)]</value>
@@ -211,6 +211,7 @@
     
     <include name="GlobalSearchInfoPosterArt">
         <control type="group">
+            <visible>!Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)</visible>
             <animation effect="slide" start="-1920" end="0" delay="0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
             <animation effect="slide" start="0" end="-1920" time="300" tween="quadratic" easing="in">WindowClose</animation>
             <animation effect="slide" start="-1920" end="0" delay="0" time="300" tween="quadratic" easing="out">Visible</animation>
@@ -259,7 +260,8 @@
     </include>
 
     <include name="GlobalSearchInfoSquareArt">
-        <control type="group" description="Poster">
+        <control type="group" description="Square">
+            <visible>!Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)</visible>
             <animation effect="slide" start="-1920" end="0" delay="0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
             <animation effect="slide" start="0" end="-1920" time="300" tween="quadratic" easing="in">WindowClose</animation>
             <animation effect="slide" start="-1920" end="0" delay="0" time="300" tween="quadratic" easing="out">Visible</animation>
@@ -308,6 +310,7 @@
 
     <include name="GlobalSearchVideoDetails">
         <control type="group">
+            <visible>!Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)</visible>
             <animation effect="slide" start="1920" end="0" delay="0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
             <animation effect="slide" start="0" end="1920" time="300" tween="quadratic" easing="in">WindowClose</animation>
             <animation effect="slide" start="1920" end="0" delay="0" time="300" tween="quadratic" easing="out">Visible</animation>
