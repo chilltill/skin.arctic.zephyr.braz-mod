@@ -75,41 +75,41 @@
                     <pagecontrol>60</pagecontrol>
                     <orientation>vertical</orientation>
                     <include name="GlobalSearchListGroupParams">
-                        <param name="buttonclick" value="ActivateWindow(videos,movieactors,return)" />
-                        <param name="iconimage" value="special://skin/extras/icons/actor.png" />
-                        <param name="buttonid" value="9601" />
-                        <param name="groupid" value="219" />
-                        <param name="labelid" value="210" />
-                        <param name="listid" value="211" />
-                        <param name="locallabel" value="$LOCALIZE[20337]" />
-                        <param name="onleft" value="181" />
-                        <param name="onright" value="111" />
-                    </include>
-                    <include name="GlobalSearchListGroupParams">
                         <param name="buttonclick" value="ActivateWindow(videos,movietitles,return)" />
-                        <param name="iconimage" value="special://skin/extras/icons/film.png" />
+                        <param name="iconimage" value="DefaultAddonMovieInfo.png" />
                         <param name="buttonid" value="9602" />
                         <param name="groupid" value="119" />
                         <param name="labelid" value="110" />
                         <param name="listid" value="111" />
                         <param name="locallabel" value="$LOCALIZE[20342]" />
-                        <param name="onleft" value="211" />
+                        <param name="onleft" value="181" />
+                        <param name="onright" value="211" />
+                    </include>
+                    <include name="GlobalSearchListGroupParams">
+                        <param name="buttonclick" value="ActivateWindow(videos,movieactors,return)" />
+                        <param name="iconimage" value="DefaultActor.png" />
+                        <param name="buttonid" value="9601" />
+                        <param name="groupid" value="219" />
+                        <param name="labelid" value="210" />
+                        <param name="listid" value="211" />
+                        <param name="locallabel" value="$LOCALIZE[20337]" />
+                        <param name="onleft" value="111" />
                         <param name="onright" value="121" />
                     </include>
                     <include name="GlobalSearchListGroupParams">
                         <param name="buttonclick" value="ActivateWindow(videos,tvshowtitles,return)" />
-                        <param name="iconimage" value="special://skin/extras/icons/tv.png" />
+                        <param name="iconimage" value="DefaultTVShows.png" />
                         <param name="buttonid" value="9603" />
                         <param name="groupid" value="129" />
                         <param name="labelid" value="120" />
                         <param name="listid" value="121" />
                         <param name="locallabel" value="$LOCALIZE[20343]" />
-                        <param name="onleft" value="111" />
+                        <param name="onleft" value="211" />
                         <param name="onright" value="131" />
                     </include>
                     <include name="GlobalSearchListGroupParams">
                         <param name="buttonclick" value="ActivateWindow(videos,tvshowtitles,return)" />
-                        <param name="iconimage" value="special://skin/extras/icons/video.png" />
+                        <param name="iconimage" value="DefaultTVShows.png" />
                         <param name="buttonid" value="9604" />
                         <param name="groupid" value="139" />
                         <param name="labelid" value="130" />
@@ -120,7 +120,7 @@
                     </include>
                     <include name="GlobalSearchListGroupParams">
                         <param name="buttonclick" value="ActivateWindow(videos,tvshowtitles,return)" />
-                        <param name="iconimage" value="special://skin/extras/icons/video.png" />
+                        <param name="iconimage" value="DefaultTVShows.png" />
                         <param name="buttonid" value="9605" />
                         <param name="groupid" value="149" />
                         <param name="labelid" value="140" />
@@ -131,7 +131,7 @@
                     </include>
                     <include name="GlobalSearchListGroupParams">
                         <param name="buttonclick" value="ActivateWindow(videos,tvshowtitles,return)" />
-                        <param name="iconimage" value="special://skin/extras/icons/video.png" />
+                        <param name="iconimage" value="DefaultTVShows.png" />
                         <param name="buttonid" value="9606" />
                         <param name="groupid" value="159" />
                         <param name="labelid" value="150" />
@@ -142,7 +142,7 @@
                     </include>
                     <include name="GlobalSearchListGroupParams">
                         <param name="buttonclick" value="ActivateWindow(music,artists,return)" />
-                        <param name="iconimage" value="special://skin/extras/icons/artist.png" />
+                        <param name="iconimage" value="DefaultAddonAlbumInfo.png" />
                         <param name="buttonid" value="9607" />
                         <param name="groupid" value="169" />
                         <param name="labelid" value="160" />
@@ -153,7 +153,7 @@
                     </include>
                     <include name="GlobalSearchListGroupParams">
                         <param name="buttonclick" value="ActivateWindow(music,albums,return)" />
-                        <param name="iconimage" value="special://skin/extras/icons/songs.png" />
+                        <param name="iconimage" value="DefaultAddonAlbumInfo.png" />
                         <param name="buttonid" value="9608" />
                         <param name="groupid" value="179" />
                         <param name="labelid" value="170" />
@@ -164,7 +164,7 @@
                     </include>
                     <include name="GlobalSearchListGroupParams">
                         <param name="buttonclick" value="ActivateWindow(music,songs,return)" />
-                        <param name="iconimage" value="special://skin/extras/icons/song.png" />
+                        <param name="iconimage" value="DefaultAddonAlbumInfo.png" />
                         <param name="buttonid" value="9609" />
                         <param name="groupid" value="189" />
                         <param name="labelid" value="180" />
