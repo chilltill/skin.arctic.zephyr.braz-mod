@@ -77,6 +77,17 @@
                     <pagecontrol>60</pagecontrol>
                     <orientation>vertical</orientation>
                     <include name="GlobalSearchListGroupParams">
+                        <param name="buttonclick" value="ActivateWindow(tvguide)" />
+                        <param name="iconimage" value="DefaultTVShows.png" />
+                        <param name="buttonid" value="9610" />
+                        <param name="groupid" value="229" />
+                        <param name="labelid" value="220" />
+                        <param name="listid" value="221" />
+                        <param name="locallabel" value="EPG" />
+                        <param name="onleft" value="181" />
+                        <param name="onright" value="111" />
+                    </include>
+                    <include name="GlobalSearchListGroupParams">
                         <param name="buttonclick" value="ActivateWindow(videos,movietitles,return)" />
                         <param name="iconimage" value="DefaultAddonMovieInfo.png" />
                         <param name="buttonid" value="9602" />
@@ -84,7 +95,7 @@
                         <param name="labelid" value="110" />
                         <param name="listid" value="111" />
                         <param name="locallabel" value="$LOCALIZE[20342]" />
-                        <param name="onleft" value="181" />
+                        <param name="onleft" value="221" />
                         <param name="onright" value="211" />
                     </include>
                     <include name="GlobalSearchListGroupParams">
@@ -173,7 +184,7 @@
                         <param name="listid" value="181" />
                         <param name="locallabel" value="$LOCALIZE[134]" />
                         <param name="onleft" value="171" />
-                        <param name="onright" value="111" />
+                        <param name="onright" value="221" />
                     </include>
                     
                 </control>
@@ -204,6 +215,9 @@
             <visible>false</visible>
         </control>
         <control type="label" id="210">
+            <visible>false</visible>
+        </control>
+        <control type="label" id="220">
             <visible>false</visible>
         </control>
         <control type="label" id="190" description="Searching">
