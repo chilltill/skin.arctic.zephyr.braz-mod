@@ -323,6 +323,7 @@
                 <control type="label">
                     <description>Header Label</description>
                     <textcolor>Dark1</textcolor>
+                    <width>1000</width>
                     <include>DefDialogInfoHeader</include>
                     <label>$INFO[Container(100).ListItem.Label]</label>
                 </control>
@@ -565,6 +566,7 @@
                 <control type="label">
                     <description>Header Label</description>
                     <textcolor>Dark1</textcolor>
+                    <width>1000</width>
                     <include>DefDialogInfoHeader</include>
                     <label>$INFO[Container(100).ListItem.Label]</label>
                 </control>
@@ -846,6 +848,7 @@
                 <control type="label">
                     <description>Header Label</description>
                     <textcolor>Dark1</textcolor>
+                    <width>1000</width>
                     <include>DefDialogInfoHeader</include>
                     <label>$INFO[Container(100).ListItem.Label]</label>
                 </control>

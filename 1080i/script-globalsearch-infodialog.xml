@@ -87,7 +87,7 @@
                 </control>
                 <control type="label">
                     <right>SidePad</right>
-                    <left>540</left>
+                    <left>SidePad</left>
                     <bottom>174</bottom>
                     <height>50</height>
                     <font>Mini</font>
