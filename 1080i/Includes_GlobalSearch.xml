@@ -25,7 +25,7 @@
     </variable>
     <variable name="GlobalSearchInfoSubHeading">
         <value condition="Control.IsVisible(110)">$INFO[Container(100).ListItem.Property(Tagline)]</value>
-        <value condition="Control.IsVisible(120)">$INFO[Container(100).ListItem.Property(Episode),, Episodes]</value>
+        <value condition="Control.IsVisible(120)">$INFO[Container(100).ListItem.Property(Episode),, episodes]</value>
         <value condition="Control.IsVisible(140)">$INFO[Container(100).ListItem.Property(TvShowTitle)]</value>
         <value condition="Control.IsVisible(150)">$INFO[Container(100).ListItem.Property(Artist)]</value>
         <value condition="Control.IsVisible(160)">$INFO[Container(100).ListItem.Property(Artist_YearsActive)]</value>
