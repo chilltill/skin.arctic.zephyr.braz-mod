@@ -284,7 +284,6 @@
                 <height>48</height>
                 <aspectratio>stretch</aspectratio>
                 <texture>diffuse/shadowspot.png</texture>
-                
             </control>
             <control type="image">
                 <width>PosterH</width>
