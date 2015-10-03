@@ -85,12 +85,14 @@
                     <centerbottom>366</centerbottom>
                     <height>16</height>
                     <control type="image">
+                        <visible>[Control.HasFocus(150) + Container(150).HasPrevious] | [Control.HasFocus(250) + Container(250).HasPrevious] | [Control.HasFocus(350) + Container(350).HasPrevious] | [Control.HasFocus(550) + Container(550).HasPrevious] | [Control.HasFocus(750) + Container(750).HasPrevious] | [Control.HasFocus(1000) + Container(1000).HasPrevious] | [Control.HasFocus(1150) + Container(1150).HasPrevious] | [Control.HasFocus(50) + Container(50).HasPrevious] | [Control.HasFocus(9501) + Container(9501).HasPrevious]</visible>
                         <centerleft>524</centerleft>
                         <width>16</width>
                         <height>16</height>
                         <texture colordiffuse="Dark3" flipx="true">common/arrow-small-right.png</texture>
                     </control>
                     <control type="image">
+                        <visible>[Control.HasFocus(150) + Container(150).HasNext] | [Control.HasFocus(250) + Container(250).HasNext] | [Control.HasFocus(350) + Container(350).HasNext] | [Control.HasFocus(550) + Container(550).HasNext] | [Control.HasFocus(750) + Container(750).HasNext] | [Control.HasFocus(1000) + Container(1000).HasNext] | [Control.HasFocus(1150) + Container(1150).HasNext] | [Control.HasFocus(50) + Container(50).HasNext] | [Control.HasFocus(9501) + Container(9501).HasNext]</visible>
                         <centerright>64</centerright>
                         <width>16</width>
                         <height>16</height>
