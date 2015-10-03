@@ -129,7 +129,7 @@
         <value>Poster</value>
     </variable>
     <variable name="WidgetTitle">
-        <value condition="substring(Container(300).ListItem.Property(widget),Weather,left)">$INFO[Weather.Temperature]</value>
+        <value condition="substring(Container(300).ListItem.Property(widget),Weather,left)">$INFO[Window(Weather).Property(Current.Temperature),Currently ,°][LOWERCASE]$INFO[Window(Weather).Property(Current.Condition), and ][/LOWERCASE]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(widget),NextAired) | StringCompare(Container(300).ListItem.Property(widget),Favourites)">$INFO[Container(301).ListItem.Label]</value>
         <value condition="!StringCompare(Container(301).ListItem.Title,Container(301).ListItem.TvShowTitle)">$INFO[Container(301).ListItem.Season,,x]$INFO[Container(301).ListItem.Episode,,. ]$INFO[Container(301).ListItem.Title]</value>
         <value condition="StringCompare(Container(301).ListItem.Title,Container(301).ListItem.TvShowTitle) +!IsEmpty(Container(301).ListItem.Title)">$INFO[Container(301).ListItem.Title]</value>
@@ -138,12 +138,12 @@
     <variable name="WidgetPlot">
         <value condition="StringCompare(Container(300).ListItem.Property(widgetType),albums)">$INFO[Container(301).ListItem.Property(Album_Description)]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(widgetType),songs)">Recorded by $INFO[Container(301).ListItem.Artist] on the album $INFO[Container(301).ListItem.Album,,.]</value>
-        <value condition="substring(Container(300).ListItem.Property(widget),Weather,left)">$INFO[Weather.Conditions]</value>
         <value condition="!IsEmpty(Container(301).ListItem.Plot)">$INFO[Container(301).ListItem.Plot]</value>
         <value condition="!IsEmpty(Container(301).ListItem.Property(Addon.Description))">$INFO[Container(301).ListItem.Property(Addon.Description)]</value>
-        <value>$LOCALIZE[19055]</value>
+        <value condition="!substring(Container(300).ListItem.Property(widget),Weather,left)">$LOCALIZE[19055]</value>
     </variable>
     <variable name="WidgetSubLabel">
+        <value condition="substring(Container(300).ListItem.Property(widget),Weather,left)">$INFO[Window(Weather).Property(Current.FeelsLike),$LOCALIZE[402] ,°]$INFO[Window(Weather).Property(Current.Humidity),  •  , $LOCALIZE[406]]$INFO[Window(Weather).Property(Current.Wind),  •  Wind ]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(widgetType),albums) | StringCompare(Container(300).ListItem.Property(widgetType),songs)">$INFO[Container(301).ListItem.Artist]$INFO[Container(301).ListItem.Year,  •  ,]</value>
         <value condition="!StringCompare(Container(301).ListItem.Title,Container(301).ListItem.TvShowTitle) + !IsEmpty(Container(301).ListItem.TvShowTitle)">$INFO[Container(301).ListItem.TvShowTitle]$INFO[Container(301).ListItem.Premiered,  •  ]$INFO[Container(301).ListItem.Duration,  •  , $LOCALIZE[31102]]$INFO[Container(301).ListItem.Rating,  •  ]</value>
         <value condition="!StringCompare(Container(301).ListItem.Title,Container(301).ListItem.TvShowTitle) + IsEmpty(Container(301).ListItem.TvShowTitle)">$INFO[Container(301).ListItem.Duration,, $LOCALIZE[31102]]$INFO[Container(301).ListItem.Year,  •  ]$INFO[Container(301).ListItem.Rating,  •  ]</value>

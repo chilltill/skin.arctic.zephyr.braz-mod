@@ -201,76 +201,6 @@
             </control>
         </control>   
     </include>
-    
-    <include name="HomeWeatherWidget">
-        <!-- Weather Widget -->
-        <control type="group">
-            <animation effect="slide" start="0" end="0,200" time="150" condition="Skin.HasSetting(home.showheader)">Conditional</animation>
-            <animation effect="slide" end="0,100" time="150" condition="[Pvr.IsRecording | Pvr.HasTimer | [!Skin.HasSetting(home.showheader) + [Window.IsVisible(DialogKaiToast.xml) | Window.IsVisible(DialogExtendedProgressBar.xml) | Window.IsVisible(DialogVolumeBar.xml)]]]">Conditional</animation>
-            <animation effect="slide" end="0,100" time="150" condition="!Skin.HasSetting(home.showheader) + Player.HasMedia">Conditional</animation>
-            <visible>substring(Container(300).ListItem.Property(widget),Weather,left) | Skin.HasSetting(home.showweatherfanart)</visible>
-            <visible>!Player.HasVideo | !Skin.HasSetting(global.showvideo)</visible>
-            <visible>!Control.HasFocus(301) | [Skin.HasSetting(home.classicwidgets) + !Skin.HasSetting(home.showheader) + ![Player.HasMedia + [Pvr.IsRecording | Pvr.HasTimer | Window.IsVisible(DialogKaiToast.xml) | Window.IsVisible(DialogExtendedProgressBar.xml) | Window.IsVisible(DialogVolumeBar.xml)]]]</visible>
-            <visible>!ControlGroup(303).HasFocus()</visible>
-            <include>Animation.FadeIn.Slide</include>
-            <include>Animation.FadeOut</include>
-            <visible>!Skin.HasSetting(furniture.weather)</visible>
-            <right>72</right>
-            <posy>70</posy>
-            <width>660</width>
-            <height>100</height>
-            <control type="image">
-                <description>background image</description>
-                <left>0</left>
-                <top>0</top>
-                <bottom>0</bottom>
-                <width>660</width>
-                <texture border="16" colordiffuse="Background">common/rounded-shadow8.png</texture>
-                <animation effect="fade" start="100" end="90" condition="true">Conditional</animation>
-            </control>
-            <control type="image">
-                <centertop>52</centertop>
-                <centerleft>52</centerleft>
-                <width>80</width>
-                <height>80</height>
-                <fadetime>350</fadetime>
-                <aspectratio aligny="center" align="center">keep</aspectratio>
-                <texture colordiffuse="Dark1">$INFO[Weather.FanartCode,weather/small/,.png]</texture>
-            </control>
-            <control type="label">
-                <left>104</left>
-                <top>22</top>
-                <right>30</right>
-                <aligny>center</aligny>
-                <height>24</height>
-                <font>TinyBold</font>
-                <textcolor>Dark2</textcolor>
-                <label>$INFO[Weather.Conditions]</label>
-            </control>
-            <control type="label">
-                <left>104</left>
-                <bottom>22</bottom>
-                <right>30</right>
-                <aligny>center</aligny>
-                <height>24</height>
-                <font>SmallBold</font>
-                <textcolor>Dark1</textcolor>
-                <label>$INFO[Weather.Temperature]</label>
-            </control>
-            <control type="label">
-                <left>104</left>
-                <bottom>22</bottom>
-                <right>30</right>
-                <aligny>center</aligny>
-                <height>24</height>
-                <align>right</align>
-                <font>Flag</font>
-                <autoscroll>false</autoscroll>
-                <textcolor>Dark3</textcolor>
-                <label>$INFO[Weather.Location]</label>
-            </control>
-        </control>
-    </include>
 
     <include name="HomeWidgetSelector">
         <!-- Widget Selector -->
@@ -426,7 +356,7 @@
             <control type="group">
                 <visible>!Container(301).IsUpdating</visible>
                 <visible>IntegerGreaterThan(Container(301).NumItems,0)</visible>
-                <visible>!substring(Container(300).ListItem.Property(widget),Weather,left)</visible>
+                <!--<visible>!substring(Container(300).ListItem.Property(widget),Weather,left)</visible>-->
                 <visible>!StringCompare(Container(300).ListItem.Property(widgetIcon),Square) + !StringCompare(Container(300).ListItem.Property(widgetIcon),Landscape)</visible>
                 <visible>![Window.IsVisible(home) + !IsEmpty(Skin.String(home.slideshowpath)) + IsEmpty(Container(300).ListItem.Property(widget))] + [IsEmpty(Container(300).ListItem.Property(Background)) | !IsEmpty(Container(300).ListItem.Property(widget))]</visible>
                 <visible>!Player.HasVideo | !Skin.HasSetting(global.showvideo)</visible>
@@ -523,7 +453,7 @@
             <!-- Album Widget -->
             <control type="group">
                 <visible>!Container(301).IsUpdating</visible>
-                <visible>!substring(Container(300).ListItem.Property(widget),Weather,left)</visible>
+                <!--<visible>!substring(Container(300).ListItem.Property(widget),Weather,left)</visible>-->
                 <visible>StringCompare(Container(300).ListItem.Property(widgetIcon),Square) | StringCompare(Container(300).ListItem.Property(widgetIcon),Landscape)</visible>
                 <visible>![Window.IsVisible(home) + !IsEmpty(Skin.String(home.slideshowpath)) + IsEmpty(Container(300).ListItem.Property(widget))] + [IsEmpty(Container(300).ListItem.Property(Background)) | !IsEmpty(Container(300).ListItem.Property(widget))]</visible>
                 <visible>!Player.HasVideo | !Skin.HasSetting(global.showvideo)</visible>
@@ -904,8 +834,8 @@
                 <control type="group">
                     <animation effect="slide" end="0,-250" time="450" tween="back" reversible="false" condition="Control.HasFocus(301) | ControlGroup(303).HasFocus()">Conditional</animation>
                     <animation effect="slide" start="0,-250" time="250" tween="quadratic" reversible="false" condition="!Control.HasFocus(301) + !ControlGroup(303).HasFocus()">Conditional</animation>
-                    <animation effect="slide" start="0" end="0,-270" time="450" tween="back" reversible="false" condition="!substring(Container(300).ListItem.Property(widget),Weather,left) + [!IsEmpty(Container(300).ListItem.Property(widget)) | [IsEmpty(Container(300).ListItem.Property(widget)) + [IsEmpty(Container(300).ListItem.Property(Background)) + IsEmpty(Skin.String(home.slideshowpath))]]] + Control.IsVisible(301)">Conditional</animation>
-                    <animation effect="slide" end="0" start="0,-270" time="250" tween="quadratic" reversible="false" condition="![!substring(Container(300).ListItem.Property(widget),Weather,left) + [!IsEmpty(Container(300).ListItem.Property(widget)) | [IsEmpty(Container(300).ListItem.Property(widget)) + [IsEmpty(Container(300).ListItem.Property(Background)) + IsEmpty(Skin.String(home.slideshowpath))]]]] | !Control.IsVisible(301)">Conditional</animation>
+                    <animation effect="slide" start="0" end="0,-270" time="450" tween="back" reversible="false" condition="[!IsEmpty(Container(300).ListItem.Property(widget)) | [IsEmpty(Container(300).ListItem.Property(widget)) + [IsEmpty(Container(300).ListItem.Property(Background)) + IsEmpty(Skin.String(home.slideshowpath))]]] + Control.IsVisible(301)">Conditional</animation>
+                    <animation effect="slide" end="0" start="0,-270" time="250" tween="quadratic" reversible="false" condition="![[!IsEmpty(Container(300).ListItem.Property(widget)) | [IsEmpty(Container(300).ListItem.Property(widget)) + [IsEmpty(Container(300).ListItem.Property(Background)) + IsEmpty(Skin.String(home.slideshowpath))]]]] | !Control.IsVisible(301)">Conditional</animation>
                     <control type="image" description="BottomBG">
                         <width>100%</width>
                         <height>900</height>
@@ -928,18 +858,19 @@
                         <texture flipy="true">common/shadow16B.png</texture>
                     </control>
                 </control>
+
                 <!-- Widget  -->
                 <control type="group">
-                    <animation effect="fade" start="100" end="0" time="0" reversible="false" condition="![!substring(Container(300).ListItem.Property(widget),Weather,left) + [!IsEmpty(Container(300).ListItem.Property(widget)) | [IsEmpty(Container(300).ListItem.Property(widget)) + [IsEmpty(Container(300).ListItem.Property(Background)) + [IsEmpty(Skin.String(home.slideshowpath))]]]]]">Conditional</animation>
-                    <animation effect="fade" start="0" end="100" time="200" delay="200" reversible="false" condition="!substring(Container(300).ListItem.Property(widget),Weather,left) + [!IsEmpty(Container(300).ListItem.Property(widget)) | [IsEmpty(Container(300).ListItem.Property(widget)) + [IsEmpty(Container(300).ListItem.Property(Background)) + [IsEmpty(Skin.String(home.slideshowpath))]]]]">Conditional</animation>
+                    <animation effect="fade" start="100" end="0" time="0" reversible="false" condition="![[!IsEmpty(Container(300).ListItem.Property(widget)) | [IsEmpty(Container(300).ListItem.Property(widget)) + [IsEmpty(Container(300).ListItem.Property(Background)) + [IsEmpty(Skin.String(home.slideshowpath))]]]]]">Conditional</animation>
+                    <animation effect="fade" start="0" end="100" time="200" delay="200" reversible="false" condition="[!IsEmpty(Container(300).ListItem.Property(widget)) | [IsEmpty(Container(300).ListItem.Property(widget)) + [IsEmpty(Container(300).ListItem.Property(Background)) + [IsEmpty(Skin.String(home.slideshowpath))]]]]">Conditional</animation>
                     <animation type="WindowClose">
                         <effect type="fade" start="100" end="0" time="150"/>
                     </animation>
                     <bottom>190</bottom>
                     <height>297</height>
-                 
                     <control type="list" id="301">
                         <description>Plugin Content Widget</description>
+                        <visible>!substring(Container(300).ListItem.Property(widget),Weather,left)</visible>
                         <visible>IntegerGreaterThan(Container(301).NumItems,0) | Container(301).IsUpdating</visible>
                         <visible allowhiddenfocus="true">Control.HasFocus(301) | ControlGroup(303).HasFocus() | !Skin.HasSetting(home.dontautoshowwidget)</visible>
                         <include>Animation.FadeIn</include>
@@ -1070,6 +1001,160 @@
                         </focusedlayout>
                         <content target="$INFO[Container(300).ListItem.Property(widgetTarget)]">$INFO[Container(300).ListItem.Property(widgetPath)]</content>
                     </control>
+
+                    <control type="panel" id="301">
+                        <visible allowhiddenfocus="true">StringCompare(Container(300).ListItem.Property(widget),weather) + [Control.HasFocus(301) | ControlGroup(303).HasFocus() | !Skin.HasSetting(home.dontautoshowwidget)]</visible>
+                        <include>Animation.FadeIn</include>
+                        <animation effect="slide" time="200" tween="" easing="" start="0" end="0,60" condition="!Control.HasFocus(301) + !Skin.HasSetting(home.dontautoshowwidget)">Conditional</animation>
+                        <left>110</left>
+                        <top>-85</top>
+                        <width>100%</width>
+                        <height>335</height>
+                        <onup>300</onup>
+                        <ondown>300</ondown>
+                        <onleft>301</onleft>
+                        <onright>301</onright>
+                        <onback>300</onback>
+                        <orientation>Horizontal</orientation>
+                        <scrolltime tween="quadratic" easing="out">200</scrolltime>
+                        <itemlayout height="370" width="340">
+                            <control type="group">
+                                <top>35</top>
+                                <control type="image">
+                                    <description>current weather icon</description>
+                                    <top>60</top>
+                                    <width>340</width>
+                                    <height>150</height>
+                                    <texture>$INFO[ListItem.Icon]</texture>
+                                    <aspectratio aligny="top">keep</aspectratio>
+                                </control>
+                                <control type="label">
+                                    <width>340</width>
+                                    <height>60</height>
+                                    <font>Medium</font>
+                                    <align>center</align>
+                                    <textcolor>Dark2</textcolor>
+                                    <label>$INFO[ListItem.Label]</label>
+                                    <textoffsetx>15</textoffsetx>
+                                </control>
+                                <control type="label">
+                                    <top>200</top>
+                                    <width>340</width>
+                                    <height>60</height>
+                                    <font>Small</font>
+                                    <align>center</align>
+                                    <textcolor>Dark2</textcolor>
+                                    <label>$INFO[ListItem.Label2]</label>
+                                    <textoffsetx>15</textoffsetx>
+                                </control>
+                                <control type="label">
+                                    <visible>Control.HasFocus(301)</visible>
+                                    <top>250</top>
+                                    <width>340</width>
+                                    <height>60</height>
+                                    <font>Small</font>
+                                    <align>center</align>
+                                    <textcolor>Dark2</textcolor>
+                                    <label>$INFO[ListItem.Property(HighTemp),[B],[/B]]$INFO[ListItem.Property(LowTemp),  ]</label>
+                                    <textoffsetx>15</textoffsetx>
+                                </control>
+                            </control>
+                        </itemlayout>
+                        <focusedlayout height="370" width="340">
+                            <control type="group">
+                                <top>35</top>
+                                <control type="image">
+                                    <description>current weather icon</description>
+                                    <top>60</top>
+                                    <width>340</width>
+                                    <height>150</height>
+                                    <texture>$INFO[ListItem.Icon]</texture>
+                                    <aspectratio aligny="top">keep</aspectratio>
+                                </control>
+                                <control type="label">
+                                    <width>340</width>
+                                    <height>60</height>
+                                    <font>Medium</font>
+                                    <align>center</align>
+                                    <textcolor>Dark2</textcolor>
+                                    <selectedcolor>Dark2</selectedcolor>
+                                    <label>$INFO[ListItem.Label]</label>
+                                    <textoffsetx>15</textoffsetx>
+                                </control>
+                                <control type="label">
+                                    <top>200</top>
+                                    <width>340</width>
+                                    <height>60</height>
+                                    <font>Small</font>
+                                    <align>center</align>
+                                    <textcolor>Dark2</textcolor>
+                                    <selectedcolor>Dark2</selectedcolor>
+                                    <label>$INFO[ListItem.Label2]</label>
+                                    <textoffsetx>15</textoffsetx>
+                                </control>
+                                <control type="label">
+                                    <visible>Control.HasFocus(301)</visible>
+                                    <top>250</top>
+                                    <width>340</width>
+                                    <height>60</height>
+                                    <font>Small</font>
+                                    <align>center</align>
+                                    <textcolor>Dark2</textcolor>
+                                    <selectedcolor>Dark2</selectedcolor>
+                                    <label>$INFO[ListItem.Property(HighTemp),[B],[/B]]$INFO[ListItem.Property(LowTemp),  ]</label>
+                                    <textoffsetx>15</textoffsetx>
+                                </control>
+                            </control>
+                        </focusedlayout>
+                        <content>
+                            <item>
+                                <label>$LOCALIZE[31909]</label>
+                                <icon>-</icon>
+                                <onclick>noop</onclick>
+                                <visible>!Weather.IsFetched</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[33006]</label>
+                                <label2>$INFO[Window(weather).Property(Day0.Outlook)]</label2>
+                                <icon>$VAR[DefWeatherIcon]$INFO[Window(weather).Property(Day0.FanartCode),,.png]</icon>
+                                <property name="HighTemp">$INFO[Window(weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits]</property>
+                                <property name="LowTemp">$INFO[Window(weather).Property(Day0.LowTemp)]$INFO[System.TemperatureUnits]</property>
+                                <onclick>noop</onclick>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[33007]</label>
+                                <label2>$INFO[Window(weather).Property(Day1.Outlook)]</label2>
+                                <icon>$VAR[DefWeatherIcon]$INFO[Window(weather).Property(Day1.FanartCode),,.png]</icon>
+                                <property name="HighTemp">$INFO[Window(weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]</property>
+                                <property name="LowTemp">$INFO[Window(weather).Property(Day1.LowTemp)]$INFO[System.TemperatureUnits]</property>
+                                <onclick>noop</onclick>
+                            </item>
+                            <item>
+                                <label>$INFO[Window(weather).Property(Day2.Title)]</label>
+                                <label2>$INFO[Window(weather).Property(Day2.Outlook)]</label2>
+                                <icon>$VAR[DefWeatherIcon]$INFO[Window(weather).Property(Day2.FanartCode),,.png]</icon>
+                                <property name="HighTemp">$INFO[Window(weather).Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]</property>
+                                <property name="LowTemp">$INFO[Window(weather).Property(Day2.LowTemp)]$INFO[System.TemperatureUnits]</property>
+                                <onclick>noop</onclick>
+                            </item>
+                            <item>
+                                <label>$INFO[Window(weather).Property(Day3.Title)]</label>
+                                <label2>$INFO[Window(weather).Property(Day3.Outlook)]</label2>
+                                <icon>$VAR[DefWeatherIcon]$INFO[Window(weather).Property(Day3.FanartCode),,.png]</icon>
+                                <property name="HighTemp">$INFO[Window(weather).Property(Day3.HighTemp)]$INFO[System.TemperatureUnits]</property>
+                                <property name="LowTemp">$INFO[Window(weather).Property(Day3.LowTemp)]$INFO[System.TemperatureUnits]</property>
+                                <onclick>noop</onclick>
+                            </item>
+                            <item>
+                                <label>$INFO[Window(weather).Property(Day4.Title)]</label>
+                                <label2>$INFO[Window(weather).Property(Day4.Outlook)]</label2>
+                                <icon>$VAR[DefWeatherIcon]$INFO[Window(weather).Property(Day4.FanartCode),,.png]</icon>
+                                <property name="HighTemp">$INFO[Window(weather).Property(Day4.HighTemp)]$INFO[System.TemperatureUnits]</property>
+                                <property name="LowTemp">$INFO[Window(weather).Property(Day4.LowTemp)]$INFO[System.TemperatureUnits]</property>
+                                <onclick>noop</onclick>
+                            </item>
+                        </content>
+                    </control>
                     
                     <!-- Container Updating -->
                     <control type="group" id="9201">
@@ -1198,8 +1283,8 @@
                 <left>SidePad</left>
                 <include condition="!Skin.HasSetting(furniture.clock)">DefHomeRight520</include>
                 <include condition="Skin.HasSetting(furniture.clock)">DefHomeRightSidePad</include>
-                <onup condition="!Skin.HasSetting(home.dontshowfanart) + !substring(Container(300).ListItem.Property(widget),Weather,left) + [!IsEmpty(Container(300).ListItem.Property(widget)) | [IsEmpty(Container(300).ListItem.Property(widget)) + [IsEmpty(Container(300).ListItem.Property(Background)) + [IsEmpty(Skin.String(home.slideshowpath))]]]]">301</onup>
-                <onup condition="Skin.HasSetting(home.dontshowfanart) + !substring(Container(300).ListItem.Property(widget),Weather,left) + [!IsEmpty(Container(300).ListItem.Property(widget)) | [IsEmpty(Container(300).ListItem.Property(widget)) + [IsEmpty(Container(300).ListItem.Property(Background)) + [IsEmpty(Skin.String(home.slideshowpath))]]]]">SetFocus(301,0)</onup>
+                <onup condition="!Skin.HasSetting(home.dontshowfanart) + [!IsEmpty(Container(300).ListItem.Property(widget)) | [IsEmpty(Container(300).ListItem.Property(widget)) + [IsEmpty(Container(300).ListItem.Property(Background)) + [IsEmpty(Skin.String(home.slideshowpath))]]]]">301</onup>
+                <onup condition="Skin.HasSetting(home.dontshowfanart) + [!IsEmpty(Container(300).ListItem.Property(widget)) | [IsEmpty(Container(300).ListItem.Property(widget)) + [IsEmpty(Container(300).ListItem.Property(Background)) + [IsEmpty(Skin.String(home.slideshowpath))]]]]">SetFocus(301,0)</onup>
                 <ondown condition="IntegerGreaterThan(Container(302).NumItems,0)">SetFocus(302,0)</ondown>
                 <onleft>300</onleft>
                 <onright>300</onright>

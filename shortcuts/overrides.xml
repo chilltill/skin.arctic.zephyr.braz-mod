@@ -2,6 +2,10 @@
 <overrides>
     <!-- Playlist -->
     <widgetPlaylists>True</widgetPlaylists>
+
+     <!-- Widgets -->
+    <widget label="12600" condition="!IsEmpty(Weather.Plugin)">weather</widget>
+    <widget label="Daily Babes" condition="System.HasAddon(script.extendedinfo)" path="plugin://script.extendedinfo?info=dailybabes" target="picture">dailybabes</widget>
     
     <!-- Widget Icon Aspect Ratio -->
     <propertySettings property="widgetIcon" title="Select Icon" showNone="False" />

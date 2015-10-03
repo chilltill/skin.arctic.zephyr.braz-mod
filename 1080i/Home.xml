@@ -13,7 +13,6 @@
         
         <include condition="!Skin.HasSetting(home.vertical)">HomeHeader</include>
         <include condition="!Skin.HasSetting(home.vertical)">HomeNextRecording</include>
-        <include condition="!Skin.HasSetting(home.vertical)">HomeWeatherWidget</include>
         <include condition="!Skin.HasSetting(home.vertical)">HomeNowPlaying</include>
         <include condition="!Skin.HasSetting(home.vertical)">HomeWidgetSelector</include>
         <include condition="!Skin.HasSetting(home.vertical)">HomeBackgroundPlaylist</include>
