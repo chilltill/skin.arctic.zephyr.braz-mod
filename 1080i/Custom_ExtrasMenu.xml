@@ -24,6 +24,10 @@
                 <height>1080</height>
                 <texturefocus>-</texturefocus>
                 <texturenofocus>-</texturenofocus>
+                <onleft>SetFocus(3110)</onleft>
+                <onright>SetFocus(3110)</onright>
+                <onup>SetFocus(3110)</onup>
+                <ondown>SetFocus(3110)</ondown>
                 <onclick>SetFocus(3110)</onclick>
                 <label>-</label>
                 <hitrect x="0" y="0" w="0" h="0"/>
