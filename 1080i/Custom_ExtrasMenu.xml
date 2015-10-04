@@ -17,6 +17,23 @@
             <include>GlobalOverlay</include>
         </control>
         <control type="group">
+            <visible allowhiddenfocus="true">Control.HasFocus(90400)</visible>
+            <control type="button" id="90400">
+                <description>FS Fanart button</description>
+                <width>1920</width>
+                <height>1080</height>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <onclick>SetFocus(3110)</onclick>
+                <label>-</label>
+                <hitrect x="0" y="0" w="0" h="0"/>
+            </control>
+            <control type="image">
+                <include>FullscreenDimensions</include>
+                <texture>$INFO[ListItem.Art(fanart)]</texture>
+            </control>
+        </control>
+        <control type="group">
             <visible allowhiddenfocus="true">ControlGroup(3110).HasFocus()</visible>
             <include>Animation.ZoomIn</include>
             <include>Animation.FadeOut</include>
@@ -88,6 +105,12 @@
                     <onclick condition="Container.Content(musicvideos)">RunScript(script.artwork.downloader, mediatype=musicvideo, dbid=$INFO[ListItem.DBID])</onclick>
                     <visible>System.HasAddon(script.artwork.downloader) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos)]</visible>
                 </control>
+                <control type="button" id="3114">
+                    <include>DefContextButton</include>
+                    <label>Add to playlist</label>
+                    <onclick>RunPlugin(plugin://script.simpleplaylists/?mode=addCurrentUrl)</onclick>
+                    <visible>[Container.Content(movies) | Container.Content(episodes)] + System.HasAddon(script.simpleplaylists)</visible>
+                </control>
                 <control type="button" id="3113">
                     <include>DefContextButton</include>
                     <label>Update rating</label>
@@ -95,12 +118,6 @@
                     <onclick>RunScript(script.ratingupdate,Single=Movie)</onclick>
                     <visible>System.HasAddon(script.ratingupdate)</visible>
                     <visible>Container.Content(movies) | Container.Content(tvshows)</visible>
-                </control>
-                <control type="button" id="3114">
-                    <include>DefContextButton</include>
-                    <label>Add to playlist</label>
-                    <onclick>RunPlugin(plugin://script.simpleplaylists/?mode=addCurrentUrl)</onclick>
-                    <visible>[Container.Content(movies) | Container.Content(episodes)] + System.HasAddon(script.simpleplaylists)</visible>
                 </control>
                 <control type="button" id="3115">
                     <include>DefContextButton</include>
@@ -115,6 +132,11 @@
                     <label>31171</label>
                     <onclick>RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
                     <visible>System.HasAddon(script.videoextras) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(TVShows) | Container.Content(musicvideos)] + IsEmpty(Window(movieinformation).Property("HideVideoExtrasButton"))</visible>
+                </control>
+                <control type="button" id="3117">
+                    <include>DefContextButton</include>
+                    <label>View fanart</label>
+                    <onclick>SetFocus(90400)</onclick>
                 </control>
             </control>
         </control>
