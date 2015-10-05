@@ -6,6 +6,7 @@
     <onload>SetProperty(150_onback,SetFocus(9000))</onload>
     <onload>SetProperty(250_onback,SetFocus(9000))</onload>
     <onload>SetProperty(350_onback,SetFocus(9000))</onload>
+    <onload>SetProperty(450_onback,SetFocus(9000))</onload>
     <onload>SetProperty(550_onback,SetFocus(9000))</onload>
     <onload>ClearProperty(content)</onload>  
     <onload>Dialog.Close(2003)</onload>
@@ -80,18 +81,18 @@
                 <control type="group">
                     <include>Animation.DelayFadeIn</include>
                     <visible>!IsEmpty(Window.Property(content))</visible>
-                    <visible>[Control.HasFocus(150) + !Container(150).IsUpdating] | [Control.HasFocus(250) + !Container(250).IsUpdating] | [Control.HasFocus(350) + !Container(350).IsUpdating] | [Control.HasFocus(550) + !Container(550).IsUpdating] | [Control.HasFocus(750) + !Container(750).IsUpdating] | [Control.HasFocus(1000) + !Container(1000).IsUpdating] | [Control.HasFocus(1150) + !Container(1150).IsUpdating] | [Control.HasFocus(50) + !Container(50).IsUpdating] | [Control.HasFocus(9501) + !Container(9501).IsUpdating]</visible>
+                    <visible>[Control.HasFocus(150) + !Container(150).IsUpdating] | [Control.HasFocus(250) + !Container(250).IsUpdating] | [Control.HasFocus(350) + !Container(350).IsUpdating] | [Control.HasFocus(450) + !Container(450).IsUpdating] | [Control.HasFocus(550) + !Container(550).IsUpdating] | [Control.HasFocus(750) + !Container(750).IsUpdating] | [Control.HasFocus(1000) + !Container(1000).IsUpdating] | [Control.HasFocus(1150) + !Container(1150).IsUpdating] | [Control.HasFocus(50) + !Container(50).IsUpdating] | [Control.HasFocus(9501) + !Container(9501).IsUpdating]</visible>
                     <centerbottom>366</centerbottom>
                     <height>16</height>
                     <control type="image">
-                        <visible>[Control.HasFocus(150) + Container(150).HasPrevious] | [Control.HasFocus(250) + Container(250).HasPrevious] | [Control.HasFocus(350) + Container(350).HasPrevious] | [Control.HasFocus(550) + Container(550).HasPrevious] | [Control.HasFocus(750) + Container(750).HasPrevious] | [Control.HasFocus(1000) + Container(1000).HasPrevious] | [Control.HasFocus(1150) + Container(1150).HasPrevious] | [Control.HasFocus(50) + Container(50).HasPrevious] | [Control.HasFocus(9501) + Container(9501).HasPrevious]</visible>
+                        <visible>[Control.HasFocus(150) + Container(150).HasPrevious] | [Control.HasFocus(250) + Container(250).HasPrevious] | [Control.HasFocus(350) + Container(350).HasPrevious] | [Control.HasFocus(450) + Container(450).HasPrevious] | [Control.HasFocus(550) + Container(550).HasPrevious] | [Control.HasFocus(750) + Container(750).HasPrevious] | [Control.HasFocus(1000) + Container(1000).HasPrevious] | [Control.HasFocus(1150) + Container(1150).HasPrevious] | [Control.HasFocus(50) + Container(50).HasPrevious] | [Control.HasFocus(9501) + Container(9501).HasPrevious]</visible>
                         <centerleft>524</centerleft>
                         <width>16</width>
                         <height>16</height>
                         <texture colordiffuse="Dark3" flipx="true">common/arrow-small-right.png</texture>
                     </control>
                     <control type="image">
-                        <visible>[Control.HasFocus(150) + Container(150).HasNext] | [Control.HasFocus(250) + Container(250).HasNext] | [Control.HasFocus(350) + Container(350).HasNext] | [Control.HasFocus(550) + Container(550).HasNext] | [Control.HasFocus(750) + Container(750).HasNext] | [Control.HasFocus(1000) + Container(1000).HasNext] | [Control.HasFocus(1150) + Container(1150).HasNext] | [Control.HasFocus(50) + Container(50).HasNext] | [Control.HasFocus(9501) + Container(9501).HasNext]</visible>
+                        <visible>[Control.HasFocus(150) + Container(150).HasNext] | [Control.HasFocus(250) + Container(250).HasNext] | [Control.HasFocus(350) + Container(350).HasNext] | [Control.HasFocus(450) + Container(450).HasNext] | [Control.HasFocus(550) + Container(550).HasNext] | [Control.HasFocus(750) + Container(750).HasNext] | [Control.HasFocus(1000) + Container(1000).HasNext] | [Control.HasFocus(1150) + Container(1150).HasNext] | [Control.HasFocus(50) + Container(50).HasNext] | [Control.HasFocus(9501) + Container(9501).HasNext]</visible>
                         <centerright>64</centerright>
                         <width>16</width>
                         <height>16</height>
@@ -153,7 +154,16 @@
                         <include>DefInfoButtons</include>
                         <onclick>SetProperty(content,550)</onclick>
                         <onclick>SetFocus(550)</onclick>
-                    </control>  
+                        <visible>IntegerGreaterThan(Container(550).NumItems,0)</visible>
+                    </control>
+                    <control type="button" id ="9006">
+                        <description>Photos</description>
+                        <label>Photos</label>
+                        <include>DefInfoButtons</include>
+                        <onclick>SetProperty(content,450)</onclick>
+                        <onclick>SetFocus(450)</onclick>
+                        <visible>IntegerGreaterThan(Container(450).NumItems,0)</visible>
+                    </control>   
                 </control>
 
                 <control type="label">
@@ -238,6 +248,34 @@
                     <align>right</align>
                     <visible>Control.IsVisible(350)</visible>
                     <visible>Control.HasFocus(350)</visible>
+                    <include>Animation.DelayFadeIn</include>
+                </control>
+                <control type="label">
+                    <visible>stringcompare(Window.Property(content),450)</visible>
+                    <visible>Control.IsVisible(450)</visible>
+                    <visible>Control.HasFocus(450)</visible>
+                    <left>540</left>
+                    <right>SidePad</right>
+                    <top>260</top>
+                    <description>Header Label</description>
+                    <textcolor>Dark2</textcolor>
+                    <font>Small</font>
+                    <label>$INFO[Window.Property(actor.title)] photos</label>
+                    <include>Animation.DelayFadeIn</include>
+                </control>
+                <control type="label">
+                    <right>SidePad</right>
+                    <left>540</left>
+                    <bottom>264</bottom>
+                    <height>50</height>
+                    <font>Mini</font>
+                    <scroll>true</scroll>
+                    <textcolor>Dark3</textcolor>
+                    <label>$INFO[Container(450).NumItems,, $LOCALIZE[31101]  •  ]$INFO[Container(450).CurrentPage,, $LOCALIZE[20163] ]$INFO[Container(450).NumPages,, $LOCALIZE[31243]]</label>
+                    <aligny>center</aligny>
+                    <align>right</align>
+                    <visible>Control.IsVisible(450)</visible>
+                    <visible>Control.HasFocus(450)</visible>
                     <include>Animation.DelayFadeIn</include>
                 </control>
                 <control type="label">
@@ -421,7 +459,12 @@
                     <onright>350</onright>
                     <include>DefExtendedInfoListWide</include>
                 </control>                
-                <control type="list" id="450"><visible>false</visible></control>
+                <control type="list" id="450">
+                    <visible allowhiddenfocus="true">StringCompare(Window.Property(content),450)</visible>
+                    <onleft>450</onleft>
+                    <onright>450</onright>
+                    <include>DefExtendedInfoList</include>
+                </control>
                 <control type="list" id="550">
                     <visible allowhiddenfocus="true">StringCompare(Window.Property(content),550)</visible>
                     <onleft>550</onleft>

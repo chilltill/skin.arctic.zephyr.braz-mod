@@ -128,7 +128,7 @@
                         <onclick>SetProperty(content,3)</onclick>
                         <onclick>SetFocus(9501)</onclick>        
                         <visible>Container.Content(movies)</visible>
-                        <visible>!IsEmpty(ListItem.Director)</visible>
+                        <visible>!IsEmpty(ListItem.Director) + IntegerGreaterThan(Container(9501).NumItems,0)</visible>
                     </control>
 
                     <control type="button" id="9012">
