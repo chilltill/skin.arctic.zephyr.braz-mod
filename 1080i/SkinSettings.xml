@@ -144,16 +144,6 @@
                         <enable>!Skin.HasSetting(home.vertical)</enable>
                     </control>
                 
-                    <control type="radiobutton" id="9217" description="Always Show Weather Widget">
-                        <width>1310</width>
-                        <visible>ControlGroup(9100).HasFocus(9101)</visible>
-                        <include>DefSettingsButton</include>
-                        <label>31145</label>
-                        <enable>!Skin.HasSetting(home.vertical) + !Skin.HasSetting(furniture.weather)</enable>
-                        <selected>Skin.HasSetting(home.showweatherfanart)</selected>
-                        <onclick>Skin.ToggleSetting(home.showweatherfanart)</onclick>
-                    </control>
-                    
                     <control type="radiobutton" id="9216" description="Show Icons">
                         <width>1310</width>
                         <visible>ControlGroup(9100).HasFocus(9101)</visible>
@@ -172,10 +162,6 @@
                         <selected>Skin.HasSetting(home.submenu2)</selected>
                         <onclick>Skin.ToggleSetting(home.submenu2)</onclick>
                     </control>
-                        
-                    
-                    
-                            
                     
                     <!-- Fanart -->
                     <control type="radiobutton" id="9223" description="Show fanart">
@@ -323,40 +309,7 @@
                         <onclick condition="!IsEmpty(Skin.String(home.slideshowpath))">Skin.Reset(home.dontshowfanart)</onclick>
                         <onclick condition="!IsEmpty(Skin.String(home.slideshowpath))">Skin.Reset(home.slideshowpath)</onclick>
                     </control>
-                    
-                    <!--<control type="button" id="9246" description="Custom Widget 1">
-                        <width>1310</width>
-                        <visible>ControlGroup(9100).HasFocus(9104)</visible>
-                        <include>DefSettingsButton</include>
-                        <label>31128</label>
-                        <label2>$INFO[Skin.String(CustomWidget1)]</label2>
-                        <onclick>Skin.SetString(CustomWidget1)</onclick>
-                    </control>
-                    <control type="button" id="9247" description="Custom Widget 2">
-                        <width>1310</width>
-                        <visible>ControlGroup(9100).HasFocus(9104)</visible>
-                        <include>DefSettingsButton</include>
-                        <label>31129</label>
-                        <label2>$INFO[Skin.String(CustomWidget2)]</label2>
-                        <onclick>Skin.SetString(CustomWidget2)</onclick>
-                    </control>
-                    <control type="button" id="9248" description="Custom Widget 3">
-                        <width>1310</width>
-                        <visible>ControlGroup(9100).HasFocus(9104)</visible>
-                        <include>DefSettingsButton</include>
-                        <label>31230</label>
-                        <label2>$INFO[Skin.String(CustomWidget3)]</label2>
-                        <onclick>Skin.SetString(CustomWidget3)</onclick>
-                    </control>
-                    <control type="button" id="9249" description="Custom Widget 4">
-                        <width>1310</width>
-                        <visible>ControlGroup(9100).HasFocus(9104)</visible>
-                        <include>DefSettingsButton</include>
-                        <label>31231</label>
-                        <label2>$INFO[Skin.String(CustomWidget4)]</label2>
-                        <onclick>Skin.SetString(CustomWidget4)</onclick>
-                    </control>-->
-                    
+                                        
                     <!-- Hubs -->
                     <control type="button" id="9251" description="Select Movies Hub Widget">
                         <width>1310</width>
