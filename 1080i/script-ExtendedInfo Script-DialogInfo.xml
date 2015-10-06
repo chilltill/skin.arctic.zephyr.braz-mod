@@ -100,6 +100,28 @@
                     </control>
                 </control>
 
+                <!-- Arrows -->
+                <control type="group">
+                    <include>Animation.DelayFadeIn</include>
+                    <visible>ControlGroup(9000).HasFocus()</visible>
+                    <centerbottom>258</centerbottom>
+                    <height>16</height>
+                    <control type="image">
+                        <visible>Container(9000).HasPrevious</visible>
+                        <centerleft>524</centerleft>
+                        <width>16</width>
+                        <height>16</height>
+                        <texture colordiffuse="Dark3" flipx="true">common/arrow-small-right.png</texture>
+                    </control>
+                    <control type="image">
+                        <visible>Container(9000).HasNext</visible>
+                        <centerright>64</centerright>
+                        <width>16</width>
+                        <height>16</height>
+                        <texture colordiffuse="Dark3" flipx="false">common/arrow-small-right.png</texture>
+                    </control>
+                </control>
+
                 <control type="button" id ="9601">
                     <width>1</width>
                     <height>1</height>
