@@ -26,7 +26,8 @@
     <color name="FloorFade">BF181818</color>
 
     <color name="OSDBack">df000000</color>
-    <color name="Panel">AA333333</color>
+    <!--<color name="Panel">AA333333</color>-->
+    <color name="Panel">11cccccc</color>
     
     <color name="PanelWhite100">FFdddddd</color>
     <color name="PanelWhite70">B3dddddd</color>
