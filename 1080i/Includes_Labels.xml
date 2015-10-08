@@ -99,6 +99,16 @@
         <value condition="stringcompare(Container(301).ListItem.AudioChannels,1)">1.0</value>
         <value>???</value>
     </variable>
+    <variable name="LabelSearchAudioChannels">
+        <value condition="stringcompare(Container(100).ListItem.Property(AudioChannels),8)">7.1</value>
+        <value condition="stringcompare(Container(100).ListItem.Property(AudioChannels),6)">5.1</value>
+        <value condition="stringcompare(Container(100).ListItem.Property(AudioChannels),5)">4.1</value>
+        <value condition="stringcompare(Container(100).ListItem.Property(AudioChannels),4)">4.0</value>
+        <value condition="stringcompare(Container(100).ListItem.Property(AudioChannels),3)">2.1</value>
+        <value condition="stringcompare(Container(100).ListItem.Property(AudioChannels),2)">2.0</value>
+        <value condition="stringcompare(Container(100).ListItem.Property(AudioChannels),1)">1.0</value>
+        <value>???</value>
+    </variable>
     <variable name="LabelOSDAudioChannels">
         <value condition="stringcompare(VideoPlayer.AudioChannels,8)">7.1</value>
         <value condition="stringcompare(VideoPlayer.AudioChannels,6)">5.1</value>
