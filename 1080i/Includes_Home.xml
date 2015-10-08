@@ -963,24 +963,24 @@
                             </control>
                         </focusedlayout>
 
-                        <itemlayout width="356" height="227" condition="StringCompare(Container(300).ListItem.Property(widgetIcon),Landscape)">
+                        <itemlayout width="356" height="211" condition="StringCompare(Container(300).ListItem.Property(widgetIcon),Landscape)">
                             <control type="image">
                                 <centerleft>50%</centerleft>
                                 <width>339</width>
                                 <bottom>10</bottom>
                                 <top>10</top>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture diffuse="diffuse/wall.png" fallback="DefaultAddonNone.png" background="true">$VAR[PosterImage]</texture>
+                                <texture diffuse="diffuse/wall-fanart.png" fallback="DefaultAddonNone.png" background="true">$VAR[LandscapeImage]</texture>
                             </control>
                         </itemlayout>
-                        <focusedlayout width="356" height="227" condition="StringCompare(Container(300).ListItem.Property(widgetIcon),Landscape)">
+                        <focusedlayout width="356" height="211" condition="StringCompare(Container(300).ListItem.Property(widgetIcon),Landscape)">
                             <control type="image">
                                 <centerleft>50%</centerleft>
                                 <width>339</width>
                                 <bottom>10</bottom>
                                 <top>10</top>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture diffuse="diffuse/wall.png" fallback="DefaultAddonNone.png" background="true">$VAR[PosterImage]</texture>
+                                <texture diffuse="diffuse/wall-fanart.png" fallback="DefaultAddonNone.png" background="true">$VAR[LandscapeImage]</texture>
                             </control>
                             <control type="image">
                                 <visible>Control.HasFocus(301)</visible>
