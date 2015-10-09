@@ -383,27 +383,6 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!IsEmpty(Container(100).ListItem.Property(Rating))</visible>
-                    <height>36</height>
-                    <control type="label">
-                        <width>100%</width>
-                        <height>36</height>
-                        <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
-                        <label>[B]IMDb[/B]</label>
-                        <aligny>center</aligny>
-                    </control>
-                    <control type="label">
-                        <left>150</left>
-                        <right>420</right>
-                        <height>36</height>
-                        <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
-                        <label>$INFO[Container(100).ListItem.Property(Rating)]</label>
-                        <aligny>center</aligny>
-                    </control>
-                </control>
-                <control type="group">
                     <visible>!IsEmpty(Container(100).ListItem.Property(Season))</visible>
                     <height>36</height>
                     <control type="label">

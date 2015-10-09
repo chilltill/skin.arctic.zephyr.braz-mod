@@ -218,6 +218,14 @@
                         <texture colordiffuse="Light1">flags/$VAR[MusicFlagstar1].png</texture>
                     </control>
                 </control>
+                <control type="image">
+                    <right>30</right>
+                    <top>200</top>
+                    <width>200</width>
+                    <height>90</height>
+                    <aspectratio align="right">keep</aspectratio>
+                    <texture colordiffuse="Light1">$INFO[ListItem.FileExtension,flags/audio/,.png]</texture>
+                </control>
             </control>
         </control>
     
