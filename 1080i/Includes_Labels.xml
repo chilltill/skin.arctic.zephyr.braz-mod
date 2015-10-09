@@ -134,6 +134,10 @@
         <value>$LOCALIZE[480]</value>
     </variable>
     
+    <variable name="WidgetIconLabel">
+         <value condition="!IsEmpty(Container(211).ListItem.Property(widgetIcon))">$INFO[Container(211).ListItem.Property(widgetIcon)]</value>
+         <value>Poster</value>
+    </variable>
     <variable name="WidgetTitle">
         <value condition="substring(Container(300).ListItem.Property(widget),Weather,left)">$INFO[Window(Weather).Property(Current.Temperature),Currently ,°][LOWERCASE]$INFO[Window(Weather).Property(Current.Condition), and ][/LOWERCASE]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(widget),NextAired) | StringCompare(Container(300).ListItem.Property(widget),Favourites)">$INFO[Container(301).ListItem.Label]</value>
