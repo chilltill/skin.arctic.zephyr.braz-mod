@@ -21,7 +21,7 @@
         <value condition="Control.HasFocus(191) + !IsEmpty(Container(191).ListItem.Property(Fanart))">$INFO[Container(191).ListItem.Property(Fanart)]</value>
         <value condition="Control.HasFocus(211) + !IsEmpty(Container(211).ListItem.Property(Fanart))">$INFO[Container(211).ListItem.Property(Fanart)]</value>
         <value condition="Control.HasFocus(221) + !IsEmpty(Container(221).ListItem.Property(Fanart))">$INFO[Container(221).ListItem.Property(Fanart)]</value>
-        <value condition="!Window.IsActive(script-globalsearch-infodialog.xml)">special://skin/extras/backgrounds/default_bg.jpg</value>
+        <value condition="!Window.IsActive(script-globalsearch-infodialog.xml) + !Window.IsActive(script-globalsearch-contextmenu.xml)">special://skin/extras/backgrounds/default_bg.jpg</value>
     </variable>
     <variable name="GlobalSearchInfoSubHeading">
         <value condition="Control.IsVisible(110)">$INFO[Container(100).ListItem.Property(Tagline)]</value>
