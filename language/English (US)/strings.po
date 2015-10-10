@@ -201,8 +201,8 @@ msgid "Animate fanart"
 msgstr "Animate fanart"
 
 msgctxt "#31147"
-msgid "Extra Info"
-msgstr "Extra Info"
+msgid "Extra info"
+msgstr "Extra info"
 
 msgctxt "#31148"
 msgid "Wrap list"

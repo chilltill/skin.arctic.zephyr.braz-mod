@@ -771,13 +771,13 @@
                 </control>
                 <control type="button" id="3124">
                     <include>DefContextButton</include>
-                    <label>Big Icons</label>
+                    <label>Big icons</label>
                     <onclick>Container.SetViewMode(503)</onclick>
                     <visible>Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Window.IsActive(MyPrograms.xml) | Container.Content(addons)</visible>
                 </control>
                 <control type="button" id="3114">
                     <include>DefContextButton</include>
-                    <label>Big Icons</label>
+                    <label>Big icons</label>
                     <onclick>Container.SetViewMode(53)</onclick>
                     <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)</visible>
                 </control>
@@ -789,7 +789,7 @@
                 </control>
                 <control type="button" id="3113">
                     <include>DefContextButton</include>
-                    <label>Big List</label>
+                    <label>Big list</label>
                     <onclick>Container.SetViewMode(52)</onclick>
                     <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | [Winodw.IsActive(videolibrary) + Container.Content(addons)] | Container.Content(sets)</visible>
                 </control>
@@ -801,25 +801,25 @@
                 </control>
                 <control type="button" id="3112">
                     <include>DefContextButton</include>
-                    <label>Big Wide</label>
+                    <label>Big wide</label>
                     <onclick>Container.SetViewMode(51)</onclick>
                     <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(artists) | Container.Content(sets)</visible>
                 </control>
                 <control type="button" id="3120">
                     <include>DefContextButton</include>
-                    <label>Media Info</label>
+                    <label>Media info</label>
                     <onclick>Container.SetViewMode(56)</onclick>
                     <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(sets)</visible>
                 </control>
                 <control type="button" id="3121">
                     <include>DefContextButton</include>
-                    <label>Extra Info</label>
+                    <label>Extra info</label>
                     <onclick>Container.SetViewMode(57)</onclick>
                     <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(artists) | Container.Content(sets)</visible>
                 </control>
                 <control type="button" id="3118">
                     <include>DefContextButton</include>
-                    <label>Banner Wall</label>
+                    <label>Banner wall</label>
                     <onclick>Container.SetViewMode(59)</onclick>
                     <visible>Container.Content(movies) | Container.Content(tvshows)</visible>
                 </control>

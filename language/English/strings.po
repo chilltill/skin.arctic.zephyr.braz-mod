@@ -201,7 +201,7 @@ msgid "Animate fanart"
 msgstr ""
 
 msgctxt "#31147"
-msgid "Extra Info"
+msgid "Extra info"
 msgstr ""
 
 msgctxt "#31148"
@@ -585,7 +585,7 @@ msgid "pages"
 msgstr ""
 
 msgctxt "#31244"
-msgid "Banner Wall"
+msgid "Banner wall"
 msgstr ""
 
 msgctxt "#31245"
