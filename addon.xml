@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
     id="skin.arctic.zephyr.braz"
-    version="2.0.8"
-    name="Arctic: Zephyr (modified by braz)"
+    version="2.0.9"
+    name="A:Z by braz"
     provider-name="jurialmunkey">
     <requires>
         <import addon="xbmc.gui" version="5.10.0"/>

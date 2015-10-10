@@ -1,8 +1,15 @@
+[B]2.0.9[/B]
+Redesign Global Search and skinned info dialog and context menu
+Add photos to actor info dialog
+Add option to view fanart from info dialog extras menu
+Add a weather widget
+
+
 [B]2.0.8[/B]
-Updated skinshortcuts support for new widgets implementation
-Added an option to set widget icon aspect ratio
-Skinned cdART Manager scipt
-Added IMDb Top 250 number to the furniture flags
+Update skinshortcuts support for new widgets implementation
+Add an option to set widget icon aspect ratio
+Skin cdART Manager scipt
+Add IMDb Top 250 number to the furniture flags
 
 [B]2.0.7[/B]
 Add mouse warning
