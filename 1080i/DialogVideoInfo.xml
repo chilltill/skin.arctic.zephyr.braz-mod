@@ -587,13 +587,13 @@
                             <control type="textbox">
                                 <left>20</left>
                                 <right>20</right>
-                                <centerbottom>43</centerbottom>
+                                <centerbottom>45</centerbottom>
                                 <height>64</height>
                                 <font>Mini</font>
                                 <autoscroll>false</autoscroll>
                                 <textcolor>Dark2</textcolor>
                                 <label>$INFO[ListItem.Label]</label>
-                                <aligny>top</aligny>
+                                <aligny>center</aligny>
                                 <align>center</align>
                             </control>
                         </itemlayout>
@@ -625,13 +625,13 @@
                                 <control type="textbox">
                                     <left>20</left>
                                     <right>20</right>
-                                    <centerbottom>43</centerbottom>
+                                    <centerbottom>45</centerbottom>
                                     <height>64</height>
                                     <font>Mini</font>
                                     <scroll>true</scroll>
                                     <textcolor>PanelWhite100</textcolor>
                                     <label>$INFO[ListItem.Label]</label>
-                                    <aligny>top</aligny>
+                                    <aligny>center</aligny>
                                     <align>center</align>
                                 </control>
                             </control>
@@ -647,13 +647,13 @@
                                 <control type="textbox">
                                     <left>20</left>
                                     <right>20</right>
-                                    <centerbottom>43</centerbottom>
+                                    <centerbottom>45</centerbottom>
                                     <height>64</height>
                                     <font>Mini</font>
                                     <scroll>true</scroll>
                                     <textcolor>Dark2</textcolor>
                                     <label>$INFO[ListItem.Label]</label>
-                                    <aligny>top</aligny>
+                                    <aligny>center</aligny>
                                     <align>center</align>
                                 </control>
                             </control>
@@ -735,13 +735,13 @@
                         <control type="textbox">
                             <left>20</left>
                             <right>20</right>
-                            <centerbottom>43</centerbottom>
+                            <centerbottom>45</centerbottom>
                             <height>64</height>
                             <font>Mini</font>
                             <autoscroll>false</autoscroll>
                             <textcolor>Dark2</textcolor>
                             <label>$INFO[ListItem.Label]</label>
-                            <aligny>top</aligny>
+                            <aligny>center</aligny>
                             <align>center</align>
                         </control>
                     </itemlayout>
@@ -791,13 +791,13 @@
                             <control type="textbox">
                                 <left>20</left>
                                 <right>20</right>
-                                <centerbottom>43</centerbottom>
+                                <centerbottom>45</centerbottom>
                                 <height>64</height>
                                 <font>Mini</font>
                                 <scroll>true</scroll>
                                 <textcolor>PanelWhite100</textcolor>
                                 <label>$INFO[ListItem.Label]</label>
-                                <aligny>top</aligny>
+                                <aligny>center</aligny>
                                 <align>center</align>
                             </control>
                         </control>
@@ -813,13 +813,13 @@
                             <control type="textbox">
                                 <left>20</left>
                                 <right>20</right>
-                                <centerbottom>43</centerbottom>
+                                <centerbottom>45</centerbottom>
                                 <height>64</height>
                                 <font>Mini</font>
                                 <scroll>true</scroll>
                                 <textcolor>Dark2</textcolor>
                                 <label>$INFO[ListItem.Label]</label>
-                                <aligny>top</aligny>
+                                <aligny>center</aligny>
                                 <align>center</align>
                             </control>
                         </control>
