@@ -134,6 +134,7 @@
                          <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
                          <onclick>SetProperty(chooseProperty,widgetIcon)</onclick>
                          <onclick>SendClick(404)</onclick>
+                         <enable>!StringCompare(Container(211).ListItem.Property(widget),weather)</enable>
                      </control>
                     <control type="button" id="310" description="Background">
                         <width>1310</width>
