@@ -571,7 +571,7 @@
             </control>
             <include>Furniture_Clock</include>
             <control type="image">
-                <visible>IntegerGreaterThan(Container(300).NumItems,6)</visible>
+                <visible>IntegerGreaterThan(Container(300).NumItems,6) + Container(300).HasPrevious</visible>
                 <top>962</top>
                 <left>32</left>
                 <width>16</width>
@@ -579,7 +579,7 @@
                 <texture colordiffuse="Dark2" flipx="true">common/arrow-small-right.png</texture>
             </control>
             <control type="image">
-                <visible>IntegerGreaterThan(Container(300).NumItems,6)</visible>
+                <visible>IntegerGreaterThan(Container(300).NumItems,6) + Container(300).HasNext</visible>
                 <visible>!Skin.HasSetting(furniture.clock)</visible>
                 <top>962</top>
                 <right>470</right>
@@ -588,7 +588,7 @@
                 <texture colordiffuse="Dark2" flipx="false">common/arrow-small-right.png</texture>
             </control>
             <control type="image">
-                <visible>IntegerGreaterThan(Container(300).NumItems,6)</visible>
+                <visible>IntegerGreaterThan(Container(300).NumItems,6) + Container(300).HasNext</visible>
                 <visible>Skin.HasSetting(furniture.clock)</visible>
                 <top>962</top>
                 <right>32</right>
@@ -1251,7 +1251,7 @@
             </control>
             <!-- Home Row -->
             <control type="image">
-                <visible>IntegerGreaterThan(Container(300).NumItems,6)</visible>
+                <visible>IntegerGreaterThan(Container(300).NumItems,6) + Container(300).HasPrevious</visible>
                 <top>962</top>
                 <left>32</left>
                 <width>16</width>
@@ -1259,7 +1259,7 @@
                 <texture colordiffuse="Dark2" flipx="true">common/arrow-small-right.png</texture>
             </control>
             <control type="image">
-                <visible>IntegerGreaterThan(Container(300).NumItems,6)</visible>
+                <visible>IntegerGreaterThan(Container(300).NumItems,6) + Container(300).HasNext</visible>
                 <visible>!Skin.HasSetting(furniture.clock)</visible>
                 <top>962</top>
                 <right>470</right>
@@ -1268,7 +1268,7 @@
                 <texture colordiffuse="Dark2" flipx="false">common/arrow-small-right.png</texture>
             </control>
             <control type="image">
-                <visible>IntegerGreaterThan(Container(300).NumItems,6)</visible>
+                <visible>IntegerGreaterThan(Container(300).NumItems,6) + Container(300).HasNext</visible>
                 <visible>Skin.HasSetting(furniture.clock)</visible>
                 <top>962</top>
                 <right>32</right>
