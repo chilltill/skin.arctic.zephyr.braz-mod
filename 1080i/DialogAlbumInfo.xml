@@ -110,6 +110,7 @@
                         <onclick>SetProperty(content,1)</onclick>
                         <onclick>SetFocus(9501)</onclick>
                         <include>DefInfoButtons</include>
+                        <visible>IntegerGreaterThan(Container(9501).NumItems,0)</visible>
                     </control>
 
                     <control type="togglebutton" id ="9002">
