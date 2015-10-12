@@ -111,7 +111,7 @@
                         <onclick>SetProperty(content,1)</onclick>
                         <onclick>SetFocus(9501)</onclick>
                         <include>DefInfoButtons</include>
-                        <visible>IntegerGreaterThan(Container(9501).NumItems,0)</visible>
+                        <enable>IntegerGreaterThan(Container(9501).NumItems,0)</enable>
                     </control>
 
                     <control type="togglebutton" id ="9002">
@@ -606,10 +606,14 @@
                     <preloaditems>2</preloaditems>
                     <scrolltime tween="quadratic">400</scrolltime>
                     <itemlayout height="415" width="554">
-                        <include>DefExtendedInfoItemContent</include>
+                        <include name="DefExtendedInfoItemContent">
+                            <param name="diffusetexture" value="diffuse/wall-fanart.png" />
+                        </include>
                     </itemlayout>
                     <focusedlayout height="415" width="554">
-                        <include>DefExtendedInfoFocusContent</include>
+                        <include name="DefExtendedInfoFocusContent">
+                            <param name="diffusetexture" value="diffuse/wall-fanart.png" />
+                        </include>
                     </focusedlayout>
                     <content>plugin://script.extendedinfo?info=youtubesearch&amp;&amp;id=$ESCINFO[ListItem.Artist] $LOCALIZE[2]</content>
                 </control>
@@ -646,7 +650,7 @@
                             <right>10</right>
                             <bottom>110</bottom>
                             <aspectratio scalediffuse="false">scale</aspectratio>
-                            <texture diffuse="diffuse/wall.png" background="true">$VAR[PosterImage]</texture>
+                            <texture diffuse="diffuse/wall-square.png" background="true">$VAR[PosterImage]</texture>
                         </control>
                         <control type="image">
                             <left>10</left>
@@ -682,7 +686,7 @@
                             <right>10</right>
                             <bottom>110</bottom>
                             <aspectratio scalediffuse="false">scale</aspectratio>
-                            <texture diffuse="diffuse/wall.png" background="true">$VAR[PosterImage]</texture>
+                            <texture diffuse="diffuse/wall-square.png" background="true">$VAR[PosterImage]</texture>
                         </control>
                         <control type="group">
                             <visible>Control.HasFocus(9501)</visible>

@@ -575,10 +575,14 @@
         <preloaditems>2</preloaditems>
         <scrolltime tween="quadratic">400</scrolltime>
         <itemlayout height="425" width="220">
-            <include>DefExtendedInfoItemContent</include>
+            <include name="DefExtendedInfoItemContent">
+                <param name="diffusetexture" value="diffuse/wall.png" />
+            </include>
         </itemlayout>
         <focusedlayout height="425" width="220">
-            <include>DefExtendedInfoFocusContent</include>
+            <include name="DefExtendedInfoFocusContent">
+                <param name="diffusetexture" value="diffuse/wall.png" />
+            </include>
         </focusedlayout>
     </include>
 
@@ -594,10 +598,14 @@
         <preloaditems>2</preloaditems>
         <scrolltime tween="quadratic">400</scrolltime>
         <itemlayout height="425" width="660">
-            <include>DefExtendedInfoItemContent</include>
+            <include name="DefExtendedInfoItemContent">
+                <param name="diffusetexture" value="diffuse/wall-fanart.png" />
+            </include>
         </itemlayout>
         <focusedlayout height="425" width="660">
-            <include>DefExtendedInfoFocusContent</include>
+            <include name="DefExtendedInfoFocusContent">
+                <param name="diffusetexture" value="diffuse/wall-fanart.png" />
+            </include>
         </focusedlayout>
     </include>
 
@@ -616,7 +624,7 @@
             <right>10</right>
             <bottom>110</bottom>
             <aspectratio scalediffuse="false">scale</aspectratio>
-            <texture diffuse="diffuse/wall.png" background="true" fallback="DefaultPicture.png">$INFO[ListItem.Icon]</texture>
+            <texture diffuse="$PARAM[diffusetexture]" background="true" fallback="DefaultPicture.png">$INFO[ListItem.Icon]</texture>
         </control>
      
         <control type="image">
@@ -654,7 +662,7 @@
             <right>10</right>
             <bottom>110</bottom>
             <aspectratio scalediffuse="false">scale</aspectratio>
-            <texture diffuse="diffuse/wall.png" background="true" fallback="DefaultPicture.png">$INFO[ListItem.Icon]</texture>
+            <texture diffuse="$PARAM[diffusetexture]" background="true" fallback="DefaultPicture.png">$INFO[ListItem.Icon]</texture>
         </control>
         <control type="image">
             <centerleft>50%</centerleft>
