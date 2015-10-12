@@ -54,18 +54,19 @@
                 </control>
                 <control type="group">
                     <include>Animation.DelayFadeIn</include>
-                    <visible>Control.HasFocus(51) | [Control.HasFocus(9501) + Control.IsVisible(9501)]</visible>
+                    <visible>Control.HasFocus(51) | [Control.HasFocus(9501) + Control.IsVisible(9501)] | [Control.HasFocus(350) + Control.IsVisible(350)]</visible>
+                    <animation effect="slide" time="0" start="0" end="0,20" condition="Control.HasFocus(350) + Control.IsVisible(350)">Conditional</animation>
                     <centerbottom>396</centerbottom>
                     <height>16</height>
                     <control type="image">
-                        <visible>[Container(9501).HasPrevious + Control.HasFocus(9501)] | [Container(50).HasPrevious + Control.HasFocus(51)]</visible>
+                        <visible>[Container(9501).HasPrevious + Control.HasFocus(9501)] | [Container(350).HasPrevious + Control.HasFocus(350)] | [Container(50).HasPrevious + Control.HasFocus(51)]</visible>
                         <centerleft>734</centerleft>
                         <width>16</width>
                         <height>16</height>
                         <texture colordiffuse="Dark3" flipx="true">common/arrow-small-right.png</texture>
                     </control>
                     <control type="image">
-                        <visible>[Container(9501).HasNext + Control.HasFocus(9501)] | [Container(50).HasNext + Control.HasFocus(51)]</visible>
+                        <visible>[Container(9501).HasNext + Control.HasFocus(9501)] | [Container(350).HasNext + Control.HasFocus(350)] | [Container(50).HasNext + Control.HasFocus(51)]</visible>
                         <centerright>64</centerright>
                         <width>16</width>
                         <height>16</height>
@@ -125,13 +126,22 @@
                         <visible>Container.Content(albums)</visible>
                     </control>
 
-                    <control type="button" id ="9003">
+                    <!--<control type="button" id ="9003">
                         <description>Youtube</description>
                         <label>31141</label>
                         <width>260</width>
                         <onclick>Close</onclick>
                         <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/search/?q=$INFO[ListItem.Artist],return)</onclick>
                         <include>DefInfoButtons</include>
+                    </control>-->
+                    <control type="button" id ="9003">
+                        <description>Youtube</description>
+                        <label>31141</label>
+                        <width>260</width>
+                        <onclick>SetProperty(content,350)</onclick>
+                        <onclick>SetFocus(350)</onclick>
+                        <include>DefInfoButtons</include>
+                        <!--<visible>IntegerGreaterThan(Container(350).NumItems,0)</visible>-->
                     </control>
 
                     <control type="button" id ="6">
@@ -526,7 +536,7 @@
 
                 <!-- Content Labels -->
                 <control type="label">
-                    <visible>Control.IsVisible(50) | [!IsEmpty(Window.Property(content)) + !Container(9501).IsUpdating]</visible>
+                    <visible>Control.IsVisible(50) | [!IsEmpty(Window.Property(content)) + !StringCompare(Window.Property(content),350) + !Container(9501).IsUpdating]</visible>
                     <left>ListSquareX</left>
                     <right>SidePad</right>
                     <textoffsetx>5</textoffsetx>
@@ -535,6 +545,18 @@
                     <textcolor>Dark2</textcolor>
                     <font>Small</font>
                     <label>$INFO[ListItem.Artist,, $LOCALIZE[21888]]</label>
+                    <include>Animation.DelayFadeIn</include>
+                </control>
+                <control type="label">
+                    <visible>[StringCompare(Window.Property(content),350) + !Container(9501).IsUpdating]</visible>
+                    <left>ListSquareX</left>
+                    <right>SidePad</right>
+                    <textoffsetx>5</textoffsetx>
+                    <top>260</top>
+                    <description>Header Label</description>
+                    <textcolor>Dark2</textcolor>
+                    <font>Small</font>
+                    <label>$INFO[ListItem.Artist,, YouTube videos]</label>
                     <include>Animation.DelayFadeIn</include>
                 </control>
                 <control type="label">
@@ -551,12 +573,50 @@
                     <visible>Control.IsVisible(9501)</visible>
                     <include>Animation.DelayFadeIn</include>
                 </control>
+                <control type="label">
+                    <right>SidePad</right>
+                    <left>540</left>
+                    <bottom>270</bottom>
+                    <height>50</height>
+                    <font>Mini</font>
+                    <scroll>true</scroll>
+                    <textcolor>Dark3</textcolor>
+                    <label>$INFO[Container(350).NumItems,, $LOCALIZE[31101]  •  ]$INFO[Container(350).CurrentPage,, $LOCALIZE[20163] ]$INFO[Container(350).NumPages,, $LOCALIZE[31243]]</label>
+                    <aligny>center</aligny>
+                    <align>right</align>
+                    <visible>Control.IsVisible(350)</visible>
+                    <include>Animation.DelayFadeIn</include>
+                </control>
                 
-
+                <!-- Youtube List -->
+                <control type="list" id="350">
+                    <visible allowhiddenfocus="true">!IsEmpty(Window.Property(content)) + StringCompare(Window.Property(content),350)</visible>
+                    <onleft>350</onleft>
+                    <onright>350</onright>
+                    <bottom>80</bottom>
+                    <left>742</left>
+                    <width>1108</width>
+                    <height>670</height>
+                    <include>Animation.FadeIn.Slide</include>
+                    <ondown>ClearProperty(content)</ondown>
+                    <ondown>9000</ondown>
+                    <onback>ClearProperty(content)</onback>
+                    <onback>9000</onback>
+                    <orientation>horizontal</orientation>
+                    <preloaditems>2</preloaditems>
+                    <scrolltime tween="quadratic">400</scrolltime>
+                    <itemlayout height="415" width="554">
+                        <include>DefExtendedInfoItemContent</include>
+                    </itemlayout>
+                    <focusedlayout height="415" width="554">
+                        <include>DefExtendedInfoFocusContent</include>
+                    </focusedlayout>
+                    <content>plugin://script.extendedinfo?info=youtubesearch&amp;&amp;id=$ESCINFO[ListItem.Artist] $LOCALIZE[2]</content>
+                </control>
                 <!-- Content List -->
                 <control type="list" id="9501">
                     <include>Animation.FadeIn.Slide</include>
-                    <visible allowhiddenfocus="true">!IsEmpty(Window.Property(content)) + !Container(9501).IsUpdating + !Control.IsVisible(50)</visible>
+                    <visible allowhiddenfocus="true">!IsEmpty(Window.Property(content)) + !Container(9501).IsUpdating + !Control.IsVisible(50) + !StringCompare(Window.Property(content),350)</visible>
                     <bottom>60</bottom>
                     <left>742</left>
                     <width>1108</width>
@@ -671,6 +731,7 @@
                     </focusedlayout>
                     <content>plugin://script.extendedinfo?info=discography&amp;&amp;artistname=$INFO[ListItem.Artist]</content>
                 </control>
+
             </control>
         </control>
 
