@@ -157,6 +157,14 @@
                         <visible>!Skin.HasSetting(global.kioskmode)</visible>
                         <visible>Container.Content(artists)</visible>
                     </control>
+
+                    <control type="button" id ="9004">
+                        <description>View fanart</description>
+                        <label>View Fanart</label>
+                        <width>260</width>
+                        <onclick>SetFocus(90400)</onclick>
+                        <include>DefInfoButtons</include>
+                    </control>
                 </control>        
 
                 <!-- Album Info -->
@@ -665,17 +673,6 @@
             </control>
         </control>
 
-
-        <!-- Twitter Feed Fake List-->
-        <control type="list" id="9301">
-            <height>36</height>
-            <orientation>horizontal</orientation>
-            <autoscroll time="8000">false</autoscroll>
-            <itemlayout width="1" height="1"></itemlayout>
-            <focusedlayout width="1" height="1"></focusedlayout>
-            <content>plugin://script.extendedinfo?info=artistshouts&amp;&amp;artistname=$INFO[ListItem.Artist]</content>
-        </control>
-
         <control type="group">
             <visible>Control.HasFocus(9601)</visible>
             <include>Animation.FadeIn</include>
@@ -752,6 +749,28 @@
                 <textcolor>Dark1</textcolor>
                 <label>$INFO[ListItem.Property(Album_Description)]</label>
                 <visible>Container.Content(albums)</visible>
+            </control>
+        </control>
+
+        <control type="group">
+            <visible allowhiddenfocus="true">Control.HasFocus(90400)</visible>
+            <control type="button" id="90400">
+                <description>FS Fanart button</description>
+                <width>1920</width>
+                <height>1080</height>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <onleft>SetFocus(9000)</onleft>
+                <onright>SetFocus(9000)</onright>
+                <onup>SetFocus(9000)</onup>
+                <ondown>SetFocus(9000)</ondown>
+                <onclick>SetFocus(9000)</onclick>
+                <label>-</label>
+                <hitrect x="0" y="0" w="0" h="0"/>
+            </control>
+            <control type="image">
+                <include>FullscreenDimensions</include>
+                <texture>$INFO[ListItem.Art(fanart)]</texture>
             </control>
         </control>
 
