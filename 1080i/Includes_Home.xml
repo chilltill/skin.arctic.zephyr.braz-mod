@@ -933,7 +933,7 @@
                                 <bottom>10</bottom>
                                 <top>10</top>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture diffuse="diffuse/wall.png" fallback="DefaultAddonNone.png" background="true">$VAR[PosterImage]</texture>
+                                <texture diffuse="diffuse/wall-square.png" fallback="DefaultAddonNone.png" background="true">$VAR[PosterImage]</texture>
                             </control>
                         </itemlayout>
                         <focusedlayout width="254" height="257" condition="StringCompare(Container(300).ListItem.Property(widgetIcon),Square)">
@@ -943,7 +943,7 @@
                                 <bottom>10</bottom>
                                 <top>10</top>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture diffuse="diffuse/wall.png" fallback="DefaultAddonNone.png" background="true">$VAR[PosterImage]</texture>
+                                <texture diffuse="diffuse/wall-square.png" fallback="DefaultAddonNone.png" background="true">$VAR[PosterImage]</texture>
                             </control>
                             <control type="image">
                                 <visible>Control.HasFocus(301)</visible>
