@@ -163,7 +163,7 @@
                         <include>DefInfoButtons</include>
                         <onclick>SetProperty(content,250)</onclick>
                         <onclick>SetFocus(250)</onclick>
-                        <visible>IntegerGreaterThan(Container(250).NumItems,0)</visible>
+                        <enable>IntegerGreaterThan(Container(250).NumItems,0)</enable>
                     </control>
                     <control type="button" id ="9004">
                         <description>Youtube</description>
@@ -171,7 +171,7 @@
                         <include>DefInfoButtons</include>
                         <onclick>SetProperty(content,350)</onclick>
                         <onclick>SetFocus(350)</onclick>
-                        <visible>IntegerGreaterThan(Container(350).NumItems,0)</visible>
+                        <enable>IntegerGreaterThan(Container(350).NumItems,0)</enable>
                     </control>
                     <control type="button" id ="9005">
                         <description>AsCrew</description>
@@ -179,7 +179,7 @@
                         <include>DefInfoButtons</include>
                         <onclick>SetProperty(content,550)</onclick>
                         <onclick>SetFocus(550)</onclick>
-                        <visible>IntegerGreaterThan(Container(550).NumItems,0)</visible>
+                        <enable>IntegerGreaterThan(Container(550).NumItems,0)</enable>
                     </control>
                     <control type="button" id ="9006">
                         <description>Photos</description>
@@ -187,7 +187,7 @@
                         <include>DefInfoButtons</include>
                         <onclick>SetProperty(content,450)</onclick>
                         <onclick>SetFocus(450)</onclick>
-                        <visible>IntegerGreaterThan(Container(450).NumItems,0)</visible>
+                        <enable>IntegerGreaterThan(Container(450).NumItems,0)</enable>
                     </control>   
                 </control>
 
