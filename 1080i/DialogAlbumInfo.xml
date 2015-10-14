@@ -141,7 +141,7 @@
                         <onclick>SetProperty(content,350)</onclick>
                         <onclick>SetFocus(350)</onclick>
                         <include>DefInfoButtons</include>
-                        <!--<visible>IntegerGreaterThan(Container(350).NumItems,0)</visible>-->
+                        <enable>IntegerGreaterThan(Container(350).NumItems,0)</enable>
                     </control>
 
                     <control type="button" id ="6">

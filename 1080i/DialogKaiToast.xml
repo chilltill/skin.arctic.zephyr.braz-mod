@@ -33,8 +33,7 @@
                     <width>64</width>
                     <height>64</height>
                     <aspectratio>keep</aspectratio>
-                    <colordiffuse>$VAR[OSDPanelWhite70-Kaitoast]</colordiffuse>
-                    <texture>kaitoast/info.png</texture>
+                    <colordiffuse>Dark1</colordiffuse>
                 </control>
                 
                 <control type="label" id="401">
