@@ -34,17 +34,17 @@
                             <aspectratio>stretch</aspectratio>
                             <texture>diffuse/shadowspot.png</texture>
                         </control>
-                        <control type="image">
+                        <!--<control type="image">
                             <width>PosterW</width>
                             <height>PosterW</height>
                             <texture border="5" colordiffuse="Dark1">common/box.png</texture>
-                        </control>
+                        </control>-->
                         <control type="image">
                             <width>PosterW</width>
                             <height>PosterW</height>
                             <fadetime>100</fadetime>
                             <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-                            <texture diffuse="diffuse/listposter.png" background="true">$VAR[PosterImage]</texture>
+                            <texture diffuse="diffuse/bigiconsquare.png" background="true">$VAR[PosterImage]</texture>
                         </control>
                         <control type="group">
                             <visible>!stringcompare(ListItem.Label,..)</visible>
@@ -81,17 +81,17 @@
                             <aspectratio>stretch</aspectratio>
                             <texture>diffuse/shadowspot.png</texture>
                         </control>
-                        <control type="image">
+                        <!--<control type="image">
                             <width>PosterW</width>
                             <height>PosterW</height>
                             <texture border="5" colordiffuse="Dark1">common/box.png</texture>
-                        </control>
+                        </control>-->
                         <control type="image">
                             <width>PosterW</width>
                             <height>PosterW</height>
                             <fadetime>100</fadetime>
                             <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-                            <texture diffuse="diffuse/listposter.png" background="true">$VAR[PosterImage]</texture>
+                            <texture diffuse="diffuse/bigiconsquare.png" background="true">$VAR[PosterImage]</texture>
                         </control>
                         <control type="group">
                             <visible>!stringcompare(ListItem.Label,..)</visible>

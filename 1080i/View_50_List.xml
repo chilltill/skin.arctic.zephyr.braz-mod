@@ -199,7 +199,7 @@
                 <height>PosterH</height>
                 <fadetime>100</fadetime>
                 <aspectratio align="center" aligny="center" scalediffuse="false">keep</aspectratio>
-                <texture diffuse="diffuse/listposter.png" background="true">$VAR[PosterImage]</texture>
+                <texture diffuse="diffuse/listsquare.png" background="true">$VAR[PosterImage]</texture>
             </control>
             <control type="image">
                 <left>-24</left>
