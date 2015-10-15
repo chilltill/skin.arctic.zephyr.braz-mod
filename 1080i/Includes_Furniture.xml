@@ -332,7 +332,7 @@
                 <centertop>50%</centertop>
                 <texture colordiffuse="Dark1">flags/airing.png</texture>
                 <aspectratio align="left">scale</aspectratio>
-                <visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
+                <visible>[Container.Content(tvshows) | Container.Content(seasons)] + !substring(Container.FolderPath,plugin://,left)</visible>
             </control>
             <control type="label">
                 <width min="128">auto</width>
@@ -343,7 +343,7 @@
                 <label>$VAR[LabelNextAiredDetails]</label>
                 <font>Flag</font>
                 <textcolor>Dark2</textcolor>
-                <visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
+                <visible>[Container.Content(tvshows) | Container.Content(seasons)] + !substring(Container.FolderPath,plugin://,left)</visible>
             </control>
 
             <control type="image">

@@ -386,7 +386,7 @@
             <height>32</height>
             <aspectratio aligny="top">keep</aspectratio>
             <texture>$VAR[PercentWatched]</texture>
-            <visible>!stringcompare(ListItem.Label,..)</visible>
+            <visible>!stringcompare(ListItem.Label,..) + !substring(Container.FolderPath,plugin://,left)</visible>
             <animation effect="slide" start="0" end="64" time="0" condition="Container.Content(Seasons)">Conditional</animation>
         </control>
         <control type="label">
@@ -400,7 +400,7 @@
             <selectedcolor>Light1</selectedcolor>
             <label fallback="0.0">$INFO[ListItem.Rating]</label>
             <visible>!stringcompare(ListItem.Label,..)</visible>
-            <visible>![Container.Content(seasons) | Container.Content(artists)]</visible>
+            <visible>![Container.Content(seasons) | Container.Content(artists) | Container.Content(actors)]</visible>
         </control>
     </include>
 
@@ -457,7 +457,7 @@
             <height>32</height>
             <aspectratio aligny="top">keep</aspectratio>
             <texture>$VAR[PercentWatched]</texture>
-            <visible>!stringcompare(ListItem.Label,..)</visible>
+            <visible>!stringcompare(ListItem.Label,..) + !substring(Container.FolderPath,plugin://,left)</visible>
             <animation effect="slide" start="0" end="64" time="0" condition="Container.Content(Seasons)">Conditional</animation>
         </control>
         <control type="label">
@@ -471,7 +471,7 @@
             <selectedcolor>Dark1</selectedcolor>
             <label fallback="0.0">$INFO[ListItem.Rating]</label>
             <visible>!stringcompare(ListItem.Label,..)</visible>
-            <visible>![Container.Content(seasons) | Container.Content(artists)]</visible>
+            <visible>![Container.Content(seasons) | Container.Content(artists) | Container.Content(actors)]</visible>
         </control>
     </include>
     <include name="50itemlayout_square">
