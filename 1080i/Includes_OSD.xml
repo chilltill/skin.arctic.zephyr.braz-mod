@@ -302,10 +302,6 @@
         <value condition="[Skin.HasSetting(osd.usetheme)] | [!Window.IsVisible(fullscreenvideo) + !Window.IsVisible(visualisation)]">Dark1</value>
         <value>PanelWhite70</value>
     </variable>
-    <variable name="OSDPanelWhite70-Kaitoast">
-        <value condition="stringcompare(Control.GetLabel(400),kaitoast/info.png)">$VAR[OSDPanelWhite70]</value>
-        <value>FFffffff</value>
-    </variable>
     <variable name="OSDPanelWhite100">
         <value condition="[Skin.HasSetting(osd.usetheme)] | [!Window.IsVisible(fullscreenvideo) + !Window.IsVisible(visualisation)]">Dark1</value>
         <value>PanelWhite100</value>
@@ -1086,7 +1082,7 @@
                     <height>48</height>
                     <aspectratio aligny="center">keep</aspectratio>
                     <colordiffuse>$VAR[OSDPanelWhite70]</colordiffuse>
-                    <texture>kaitoast/clock.png</texture>
+                    <texture>indicator/clock.png</texture>
                 </control>
                 <control type="label">
                     <right>55%</right>
@@ -1105,7 +1101,7 @@
                     <height>48</height>
                     <aspectratio aligny="center">keep</aspectratio>
                     <colordiffuse>$VAR[OSDPanelWhite70]</colordiffuse>
-                    <texture>kaitoast/arrow.png</texture>
+                    <texture>indicator/arrow.png</texture>
                     <visible>Player.HasVideo</visible>
                 </control>
                 <control type="image">
@@ -1115,7 +1111,7 @@
                     <height>48</height>
                     <aspectratio aligny="center">keep</aspectratio>
                     <colordiffuse>$VAR[OSDPanelWhite70]</colordiffuse>
-                    <texture>kaitoast/finishtime.png</texture>
+                    <texture>indicator/finishtime.png</texture>
                     <visible>Player.HasVideo</visible>
                 </control>
                 <control type="label">
