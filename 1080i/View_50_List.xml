@@ -8,7 +8,7 @@
             <visible>Control.IsVisible(50)</visible>
             <control type="group">
                 <control type="list" id="50">
-                    <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left) | Container.Content(musicvideos) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(actors) | Container.Content(sets) | Container.Content(seasons) | [Container.Content(files) + !substring(Container.FolderPath,plugin://,left) + !stringcompare(Container.FolderPath,library://video/movies/) + !stringcompare(Container.FolderPath,library://video/tvshows/) + !stringcompare(Container.FolderPath,special://videoplaylists/)] | [Container.Content(episodes) + !substring(Container.FolderPath,plugin://,left)]</visible>
+                    <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left) | Container.Content(musicvideos) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(actors) | Container.Content(sets) | Container.Content(seasons) | [Container.Content(files) + !substring(Container.FolderPath,plugin://,left) + !stringcompare(Container.FolderPath,library://video/movies/) + !stringcompare(Container.FolderPath,library://video/tvshows/) + !stringcompare(Container.FolderPath,special://videoplaylists/)] | [Container.Content(episodes)]</visible>
                     <top>PosterPad</top>
                     <height>PosterH</height>
                     <left>ListX</left>
@@ -76,7 +76,7 @@
             <control type="group">
                 <posy>320</posy>
                 <control type="fixedlist" id="50">
-                    <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left) | Container.Content(musicvideos) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(actors) | Container.Content(sets) | Container.Content(seasons) | [Container.Content(files) + !substring(Container.FolderPath,plugin://,left) + !stringcompare(Container.FolderPath,library://video/movies/) + !stringcompare(Container.FolderPath,library://video/tvshows/) + !stringcompare(Container.FolderPath,special://videoplaylists/)] | [Container.Content(episodes) + !substring(Container.FolderPath,plugin://,left)]</visible>
+                    <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left) | Container.Content(musicvideos) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(actors) | Container.Content(sets) | Container.Content(seasons) | [Container.Content(files) + !substring(Container.FolderPath,plugin://,left) + !stringcompare(Container.FolderPath,library://video/movies/) + !stringcompare(Container.FolderPath,library://video/tvshows/) + !stringcompare(Container.FolderPath,special://videoplaylists/)] | [Container.Content(episodes)]</visible>
                     <top>PosterPad</top>
                     <height>320</height>
                     <left>ListX</left>
@@ -346,7 +346,7 @@
             <visible>Container.Content(movies)</visible>
         </control>
         <control type="label">
-            <posx>120</posx>
+            <posx>90</posx>
             <width>auto</width>
             <aligny>center</aligny>
             <height>64</height>
@@ -354,11 +354,12 @@
             <textcolor>Light1</textcolor>
             <selectedcolor>Light1</selectedcolor>
             <label>$INFO[ListItem.Label]</label>
+            <textoffsetx>30</textoffsetx>
             <animation effect="slide" start="0" end="-90" time="0" condition="!Container.Content(movies)">Conditional</animation>
             <visible>!Container.Content(episodes) + !Container.Content(tvshows)</visible>
         </control>
         <control type="label">
-            <posx>30</posx>
+            <posx>0</posx>
             <width>auto</width>
             <aligny>center</aligny>
             <height>64</height>
@@ -366,6 +367,7 @@
             <textcolor>Light1</textcolor>
             <selectedcolor>Light1</selectedcolor>
             <label>$INFO[ListItem.Label]</label>
+            <textoffsetx>30</textoffsetx>
             <visible>Container.Content(episodes) | Container.Content(tvshows)</visible>
         </control>
         <control type="label">
@@ -378,6 +380,7 @@
             <textcolor>Light1</textcolor>
             <selectedcolor>Light1</selectedcolor>
             <label>$VAR[LabelDuration]</label>
+            <visible>!substring(Container.FolderPath,plugin://,left)</visible>
         </control>
         <control type="image">
             <centerright>110</centerright>
@@ -399,7 +402,7 @@
             <textcolor>Light1</textcolor>
             <selectedcolor>Light1</selectedcolor>
             <label fallback="0.0">$INFO[ListItem.Rating]</label>
-            <visible>!stringcompare(ListItem.Label,..)</visible>
+            <visible>!stringcompare(ListItem.Label,..) + IntegerGreaterThan(ListItem.Rating,0)</visible>
             <visible>![Container.Content(seasons) | Container.Content(artists) | Container.Content(actors)]</visible>
         </control>
     </include>
@@ -417,24 +420,26 @@
             <visible>Container.Content(movies)</visible>
         </control>
         <control type="label">
-            <posx>120</posx>
+            <posx>90</posx>
             <width>auto</width>
             <aligny>center</aligny>
             <height>64</height>
             <font>SmallBold</font>
             <label>$INFO[ListItem.Label]</label>
+            <textoffsetx>30</textoffsetx>
             <textcolor>Dark1</textcolor>
             <selectedcolor>Dark1</selectedcolor>
             <animation effect="slide" start="0" end="-90" time="0" condition="!Container.Content(movies)">Conditional</animation>
             <visible>!Container.Content(episodes) + !Container.Content(tvshows)</visible>
         </control>
         <control type="label">
-            <posx>30</posx>
+            <posx>0</posx>
             <width>auto</width>
             <aligny>center</aligny>
             <height>64</height>
             <font>SmallBold</font>
             <label>$INFO[ListItem.Label]</label>
+            <textoffsetx>30</textoffsetx>
             <textcolor>Dark1</textcolor>
             <selectedcolor>Dark1</selectedcolor>
             <visible>Container.Content(episodes) | Container.Content(tvshows)</visible>
@@ -449,6 +454,7 @@
             <textcolor>Dark1</textcolor>
             <selectedcolor>Dark1</selectedcolor>
             <label>$VAR[LabelDuration]</label>
+            <visible>!substring(Container.FolderPath,plugin://,left)</visible>
         </control>
         <control type="image">
             <centerright>110</centerright>
@@ -470,7 +476,7 @@
             <textcolor>Dark1</textcolor>
             <selectedcolor>Dark1</selectedcolor>
             <label fallback="0.0">$INFO[ListItem.Rating]</label>
-            <visible>!stringcompare(ListItem.Label,..)</visible>
+            <visible>!stringcompare(ListItem.Label,..) + IntegerGreaterThan(ListItem.Rating,0)</visible>
             <visible>![Container.Content(seasons) | Container.Content(artists) | Container.Content(actors)]</visible>
         </control>
     </include>
@@ -485,23 +491,25 @@
             <visible>ListItem.IsPlaying</visible>
         </control>
         <control type="label">
-            <posx>30</posx>
+            <posx>0</posx>
             <width>auto</width>
             <aligny>center</aligny>
             <height>64</height>
             <font>SmallBold</font>
             <label>$INFO[ListItem.Label]</label>
+            <textoffsetx>30</textoffsetx>
             <textcolor>Dark1</textcolor>
             <selectedcolor>Dark1</selectedcolor>
             <visible>!ListItem.IsPlaying</visible>
         </control>
         <control type="label">
-            <posx>78</posx>
+            <posx>48</posx>
             <width>auto</width>
             <aligny>center</aligny>
             <height>64</height>
             <font>SmallBold</font>
             <label>$INFO[ListItem.Label]</label>
+            <textoffsetx>30</textoffsetx>
             <textcolor>Dark1</textcolor>
             <selectedcolor>Dark1</selectedcolor>
             <visible>ListItem.IsPlaying</visible>
@@ -535,23 +543,25 @@
             <visible>ListItem.IsPlaying</visible>
         </control>
         <control type="label">
-            <posx>30</posx>
+            <posx>0</posx>
             <width>auto</width>
             <aligny>center</aligny>
             <height>64</height>
             <font>SmallBold</font>
             <label>$INFO[ListItem.Label]</label>
+            <textoffsetx>30</textoffsetx>
             <textcolor>Light1</textcolor>
             <selectedcolor>Light1</selectedcolor>
             <visible>!ListItem.IsPlaying</visible>
         </control>
         <control type="label">
-            <posx>78</posx>
+            <posx>48</posx>
             <width>auto</width>
             <aligny>center</aligny>
             <height>64</height>
             <font>SmallBold</font>
             <label>$INFO[ListItem.Label]</label>
+            <textoffsetx>30</textoffsetx>
             <textcolor>Light1</textcolor>
             <selectedcolor>Light1</selectedcolor>
             <visible>ListItem.IsPlaying</visible>

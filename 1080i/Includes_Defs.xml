@@ -759,23 +759,17 @@
                     <onclick>Container.SetViewMode(55)</onclick>
                     <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)</visible>
                 </control>
+                <control type="button" id="3126">
+                    <include>DefContextButton</include>
+                    <label>Icons</label>
+                    <onclick>Container.SetViewMode(555)</onclick>
+                    <visible>Container.Content(episodes)</visible>
+                </control>
                 <control type="button" id="3122">
                     <include>DefContextButton</include>
                     <label>Icons</label>
                     <onclick>Container.SetViewMode(505)</onclick>
-                    <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left) | Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos)</visible>
-                </control>
-                <control type="button" id="3123">
-                    <include>DefContextButton</include>
-                    <label>Icons</label>
-                    <onclick>Container.SetViewMode(506)</onclick>
-                    <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left) | Container.Content(albums)</visible>
-                </control>
-                <control type="button" id="3125">
-                    <include>DefContextButton</include>
-                    <label>Icons</label>
-                    <onclick>Container.SetViewMode(507)</onclick>
-                    <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left) | Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums)</visible>
+                    <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left) | Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos) | Window.IsActive(programs) | Container.Content(addons)</visible>
                 </control>
                 <control type="button" id="3124">
                     <include>DefContextButton</include>
@@ -793,37 +787,25 @@
                     <include>DefContextButton</include>
                     <label>Cards</label>
                     <onclick>Container.SetViewMode(58)</onclick>
-                    <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(sets)</visible>
+                    <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | [Container.Content(episodes) + !substring(Container.FolderPath,plugin://,left)] | Container.Content(sets)</visible>
                 </control>
                 <control type="button" id="3113">
                     <include>DefContextButton</include>
                     <label>Big list</label>
                     <onclick>Container.SetViewMode(52)</onclick>
-                    <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | [Winodw.IsActive(videolibrary) + Container.Content(addons)] | Container.Content(sets)</visible>
+                    <visible>!Window.IsActive(pictures)</visible>
                 </control>
                 <control type="button" id="3115">
                     <include>DefContextButton</include>
                     <label>Wide</label>
                     <onclick>Container.SetViewMode(54)</onclick>
-                    <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(albums) | Container.Content(songs) | Window.IsActive(musicplaylist) | Container.Content(sets)</visible>
+                    <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | [Container.Content(episodes) + !substring(Container.FolderPath,plugin://,left)] | Container.Content(albums) | Container.Content(songs) | Window.IsActive(musicplaylist) | Container.Content(sets)</visible>
                 </control>
                 <control type="button" id="3112">
                     <include>DefContextButton</include>
                     <label>Big wide</label>
                     <onclick>Container.SetViewMode(51)</onclick>
-                    <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(artists) | Container.Content(sets)</visible>
-                </control>
-                <control type="button" id="3120">
-                    <include>DefContextButton</include>
-                    <label>Media info</label>
-                    <onclick>Container.SetViewMode(56)</onclick>
-                    <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(sets)</visible>
-                </control>
-                <control type="button" id="3121">
-                    <include>DefContextButton</include>
-                    <label>Extra info</label>
-                    <onclick>Container.SetViewMode(57)</onclick>
-                    <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(artists) | Container.Content(sets)</visible>
+                    <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(artists) | Container.Content(sets)</visible>
                 </control>
                 <control type="button" id="3118">
                     <include>DefContextButton</include>

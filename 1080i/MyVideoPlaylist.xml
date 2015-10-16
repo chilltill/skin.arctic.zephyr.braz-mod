@@ -8,7 +8,8 @@
     <controls>
 
         <include>GlobalBackground</include>
-        <include>View_52_BigList</include>
+        <include condition="Skin.HasSetting(52biglist.singlepane)">View_52_BigList_SinglePane</include>
+        <include condition="!Skin.HasSetting(52biglist.singlepane)">View_52_BigList_DoublePane</include>
         <include>View_500_Thumbnails</include>
         <include>Furniture_NowPlaying</include>
         <include>Furniture_Header</include>

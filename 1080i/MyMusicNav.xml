@@ -4,7 +4,7 @@
     <defaultcontrol always="true">50</defaultcontrol>
     <menucontrol>9000</menucontrol>
     <allowoverlay>yes</allowoverlay>
-    <views>50,505,506,507,500,503,54,57,51</views>
+    <views>50,505,500,503,54,51,52</views>
     
     <controls>
 
@@ -16,12 +16,13 @@
         <include>View_50_List_Square</include>
         <include condition="!Skin.HasSetting(51bigwide.showinfo)">View_51_BigWide</include>
         <include condition="Skin.HasSetting(51bigwide.showinfo)">View_51_BigWide_Info</include>
+        <include condition="Skin.HasSetting(52biglist.singlepane)">View_52_BigList_SinglePane</include>
+        <include condition="!Skin.HasSetting(52biglist.singlepane)">View_52_BigList_DoublePane</include>
         <include>View_500_Thumbnails</include>
         <include>View_503_Poster_Square</include>
-        <include>View_505_506_Wall</include>
+        <include condition="!Skin.HasSetting(505wall.showinfo)">View_505_Wall_NoInfo</include>
+        <include condition="Skin.HasSetting(505wall.showinfo)">View_505_Wall</include>
         <include>View_54_Banner</include>
-        <include condition="!Skin.HasSetting(57list.low)">View_57_ExtraInfo</include>
-        <include condition="Skin.HasSetting(57list.low)">View_57_ExtraInfo_LowList</include>
         
         <control type="group">
             <include>Animation.FadeIn</include>
@@ -35,17 +36,7 @@
             <control type="grouplist" id="9000">
                 <include>Def9000GroupList</include>
                 <include>Def9000MusicSide</include>
-                
-                <control type="radiobutton" id="9007" description="Low List (57)">
-                    <include>DefContextButton</include>
-                    <align>left</align>
-                    <label>31142</label>
-                    <selected>Skin.HasSetting(57list.low)</selected>
-                    <onclick>Skin.ToggleSetting(57list.low)</onclick>
-                    <onclick>ReloadSkin()</onclick>
-                    <visible>Control.IsVisible(57)</visible>
-                </control>
-                
+                                
                 <control type="radiobutton" id="9008" description="Big Wide Info (51)">
                     <include>DefContextButton</include>
                     <align>left</align>
@@ -54,6 +45,15 @@
                     <onclick>Skin.ToggleSetting(51bigwide.showinfo)</onclick>
                     <onclick>ReloadSkin()</onclick>
                     <visible>Control.IsVisible(51)</visible>
+                </control>
+                <control type="radiobutton" id="9009" description="Info Wall (505)">
+                    <include>DefContextButton</include>
+                    <align>left</align>
+                    <label>31147</label>
+                    <selected>Skin.HasSetting(505wall.showinfo)</selected>
+                    <onclick>Skin.ToggleSetting(505wall.showinfo)</onclick>
+                    <onclick>ReloadSkin()</onclick>
+                    <visible>Control.IsVisible(505)</visible>
                 </control>
               
                 <control type="button" id="9091">
