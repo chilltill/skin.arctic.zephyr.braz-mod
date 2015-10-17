@@ -102,7 +102,7 @@
             <font>Small</font>
             <textcolor>Dark1</textcolor>
             <label>$INFO[ListItem.Label2]</label>
-            <visible>+ !substring(Container.FolderPath,plugin://,left)</visible>
+            <visible>!substring(Container.FolderPath,plugin://,left)</visible>
         </control>
         <control type="image">
             <centerright>58</centerright>
@@ -150,7 +150,7 @@
             <font>Small</font>
             <textcolor>Light1</textcolor>
             <label>$INFO[ListItem.Label2]</label>
-            <visible>+ !substring(Container.FolderPath,plugin://,left)</visible>
+            <visible>!substring(Container.FolderPath,plugin://,left)</visible>
         </control>
         <control type="image">
             <centerright>58</centerright>
