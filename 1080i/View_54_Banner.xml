@@ -222,7 +222,7 @@
                     
                     <focusedlayout width="1288" height="330" condition="!Container.Content(episodes) + !Container.Content(albums) + !Container.Content(songs) + Skin.HasSetting(54banner.showinfo)">
                         <control type="image">
-                            <left>110</left>
+                            <left>111</left>
                             <top>10</top>
                             <right>110</right>
                             <bottom>10</bottom>
@@ -260,7 +260,7 @@
                             <left>337</left>
                             <right>130</right>
                             <top>70</top>
-                            <height>188</height>
+                            <height>180</height>
                             <font>Tiny</font>
                             <textcolor>Light1</textcolor>
                             <selectedcolor>Light1</selectedcolor>
@@ -303,7 +303,7 @@
                         </control>
                         <control type="image">
                             <left>24</left>
-                            <top>24</top>
+                            <top>25</top>
                             <width>1240</width>
                             <height>270</height>
                             <texture border="8" colordiffuse="Dark1">common/box.png</texture>
@@ -316,29 +316,6 @@
                             <texture diffuse="diffuse/banner.png" background="true">$VAR[BannerImage]</texture>
                             <aspectratio scalediffuse="false">scale</aspectratio>
                         </control>
-                        <control type="group">
-                            <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                            <control type="image">
-                                <right>32</right>
-                                <top>32</top>
-                                <height>40</height>
-                                <width>40</width>
-                                <texture colordiffuse="Dark1">common/circle.png</texture>
-                                <aspectratio align="center" aligny="center">keep</aspectratio>
-                            </control>
-                            <control type="label">
-                                <right>32</right>
-                                <top>32</top>
-                                <height>40</height>
-                                <width>40</width>
-                                <align>center</align>
-                                <aligny>center</aligny>
-                                <label>$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
-                                <font>Flag</font>
-                                <textcolor>Light1</textcolor>
-                            </control>
-                        </control>
-                        
                         
                         <control type="label">
                             <centerbottom>48</centerbottom>
@@ -365,6 +342,19 @@
                             <selectedcolor>Light1</selectedcolor>
                             <visible>!Container.Content(seasons)</visible>
                         </control>
+                        <control type="label">
+                            <centerbottom>48</centerbottom>
+                            <right>44</right>
+                            <width>1220</width>
+                            <height>40</height>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <label>$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[31215]]</label>
+                            <font>Flag</font>
+                            <textcolor>Light1</textcolor>
+                            <selectedcolor>Light1</selectedcolor>
+                            <visible>Container.Content(seasons)</visible>
+                        </control>
                         
                     </focusedlayout>
                     <focusedlayout width="1560" height="322" condition="Container.Content(episodes)">
@@ -377,18 +367,18 @@
                                 <texture border="32">common/shadow-24.png</texture>
                             </control>
                             <control type="image">
-                                <left>24</left>
+                                <left>25</left>
                                 <top>24</top>
                                 <right>24</right>
                                 <height>270</height>
-                                <texture border="8" colordiffuse="Dark1">common/box.png</texture>
+                                <texture border="5" colordiffuse="Dark1">common/box.png</texture>
                             </control>
                             <control type="image">
                                 <left>24</left>
                                 <top>24</top>
                                 <width>480</width>
                                 <height>270</height>
-                                <texture diffuse="diffuse/banner.png" background="true">$VAR[FanartImage]</texture>
+                                <texture diffuse="diffuse/wideepisode.png" background="true">$VAR[FanartImage]</texture>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
                             </control>
                             
@@ -444,7 +434,7 @@
                                 <top>138</top>
                                 <left>525</left>
                                 <right>50</right>
-                                <bottom>35</bottom>
+                                <bottom>38</bottom>
                                 <aligny>top</aligny>
                                 <label>$INFO[ListItem.Plot]</label>
                                 <font>Tiny</font>
@@ -463,18 +453,18 @@
                                 <texture border="32">common/shadow-24.png</texture>
                             </control>
                             <control type="image">
-                                <left>24</left>
+                                <left>25</left>
                                 <top>24</top>
                                 <right>24</right>
                                 <height>270</height>
-                                <texture border="8" colordiffuse="Dark1">common/box.png</texture>
+                                <texture border="5" colordiffuse="Dark1">common/box.png</texture>
                             </control>
                             <control type="image">
                                 <left>24</left>
                                 <top>24</top>
                                 <width>270</width>
                                 <height>270</height>
-                                <texture diffuse="diffuse/banner.png" background="true">$VAR[MusicImage]</texture>
+                                <texture diffuse="diffuse/widealbum.png" background="true">$VAR[MusicImage]</texture>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
                             </control>
                     
@@ -526,18 +516,18 @@
                                 <texture border="32">common/shadow-24.png</texture>
                             </control>
                             <control type="image">
-                                <left>24</left>
+                                <left>25</left>
                                 <top>24</top>
                                 <right>24</right>
                                 <height>270</height>
-                                <texture border="8" colordiffuse="Dark1">common/box.png</texture>
+                                <texture border="5" colordiffuse="Dark1">common/box.png</texture>
                             </control>
                             <control type="image">
                                 <left>24</left>
                                 <top>24</top>
                                 <width>270</width>
                                 <height>270</height>
-                                <texture diffuse="diffuse/banner.png" background="true">$VAR[MusicImage]</texture>
+                                <texture diffuse="diffuse/widealbum.png" background="true">$VAR[MusicImage]</texture>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
                             </control>
                             <control type="label">

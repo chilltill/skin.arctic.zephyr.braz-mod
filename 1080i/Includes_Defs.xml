@@ -16,7 +16,7 @@
     <variable name="PosterSquareLabel2">
         <value condition="Container.Content(artists)">$INFO[ListItem.Genre]</value>
         <value condition="Window.IsActive(MyPrograms.xml) | Container.Content(addons)">$INFO[ListItem.Property(Addon.Summary)]</value>
-        <value>$INFO[ListItem.Artist]$INFO[ListItem.Genre,  •  ]</value>
+        <value>$INFO[ListItem.Artist,,  •  ]$INFO[ListItem.Genre]</value>
     </variable>
     <variable name="DefSettingsOnRight">
         <value condition="Window.IsVisible(AppearanceSettings)">ReplaceWindow(VideosSettings)</value>

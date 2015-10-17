@@ -81,7 +81,7 @@
                     </control>
                     <control type="textbox">
                         <top>125</top>
-                        <height>424</height>
+                        <height>418</height>
                         <font>Tiny</font>
                         <textcolor>PanelWhite100</textcolor>
                         <selectedcolor>PanelWhite100</selectedcolor>
