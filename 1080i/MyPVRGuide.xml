@@ -2,6 +2,7 @@
 <window>
     <allowoverlay>yes</allowoverlay>
     <background>0</background>
+    <menucontrol>9000</menucontrol>
     <defaultcontrol always="true">10</defaultcontrol>
     <views>10,11,12,13</views>
     <controls>
