@@ -567,3 +567,79 @@ msgstr "Current Color"
 msgctxt "#31240"
 msgid "Selected Color"
 msgstr "Selected Color"
+
+msgctxt "#31241"
+msgid "Additional info"
+msgstr "Additional info"
+
+msgctxt "#31242"
+msgid "Provided by themoviedb.org"
+msgstr "Provided by themoviedb.org"
+
+msgctxt "#31243"
+msgid "pages"
+msgstr "pages"
+
+msgctxt "#31244"
+msgid "Banner wall"
+msgstr "Banner wall"
+
+msgctxt "#31245"
+msgid "Classic Style"
+msgstr "Classic Style"
+
+msgctxt "#31246"
+msgid "Show icon media flags"
+msgstr "Show icon media flags"
+
+msgctxt "#31247"
+msgid "Home menu style"
+msgstr "Home menu style"
+
+msgctxt "#31248"
+msgid "Featured"
+msgstr "Featured"
+
+msgctxt "#31249"
+msgid "Classic"
+msgstr "Classic"
+
+msgctxt "#31250"
+msgid "Vertical"
+msgstr "Vertical"
+
+msgctxt "#31251"
+msgid "Weather Fanart"
+msgstr "Weather Fanart"
+
+msgctxt "#31252"
+msgid "Weather Forecast"
+msgstr "Weather Forecast"
+
+msgctxt "#31253"
+msgid "Always display info and OSD controls on music visualisation"
+msgstr "Always display info and OSD controls on music visualization"
+
+msgctxt "#31254"
+msgid "Show plot overlay after 5 second delay"
+msgstr "Show plot overlay after 5 second delay"
+
+msgctxt "#31255"
+msgid "Show info overlay"
+msgstr "Show info overlay"
+
+msgctxt "#31256"
+msgid "Movie hub items"
+msgstr "Movie hub items"
+
+msgctxt "#31257"
+msgid "TV Show hub items"
+msgstr "TV Show hub items"
+
+msgctxt "#31258"
+msgid "Fanart Thumbs"
+msgstr "Fanart Thumbs"
+
+msgctxt "#31259"
+msgid "Extra fanart"
+msgstr "Extra fanart"
