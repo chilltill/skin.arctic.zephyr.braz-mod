@@ -154,12 +154,6 @@
                         <visible>!Skin.HasSetting(global.kioskmode)</visible>
                     </control>
 
-                    <control type="button" id ="7">
-                        <description>User Rating</description>
-                        <label>38023</label>
-                        <include>DefInfoButtons</include>
-                    </control>
-
                     <control type="button" id ="9002">
                         <description>Extras</description>
                         <label>More...</label>

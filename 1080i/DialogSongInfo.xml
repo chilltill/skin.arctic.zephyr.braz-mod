@@ -59,7 +59,7 @@
                     <include>DefInfoButtons</include>
                 </control>
                 
-                <control type="button" id ="7">
+                <control type="button" id="7">
                     <width>350</width>
                     <height>64</height>
                     <label>38023</label>
@@ -71,7 +71,7 @@
                     <include>DefInfoButtons</include>
                 </control>
                 
-                <control type="button" id ="12">
+                <control type="button" id="12">
                     <width>350</width>
                     <height>64</height>
                     <label>10523</label>
@@ -83,7 +83,7 @@
                     <include>DefInfoButtons</include>
                 </control>
                 
-                <control type="button" id ="13">
+                <control type="button" id="13">
                     <width>350</width>
                     <height>64</height>
                     <label>13405</label>

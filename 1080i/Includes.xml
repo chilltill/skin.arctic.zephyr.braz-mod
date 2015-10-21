@@ -17,7 +17,6 @@
     <include file="View_503_Poster_Square.xml" />
     <include file="View_505_Wall_Square.xml" />
     
-    
     <include file="Includes_Furniture.xml" />
     <include file="Includes_Home.xml" />
     <include file="Includes_GlobalSearch.xml" />

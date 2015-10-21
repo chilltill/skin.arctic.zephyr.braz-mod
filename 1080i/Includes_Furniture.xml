@@ -74,33 +74,6 @@
         <value condition="IntegerGreaterThan(ListItem.Rating,8)">star5</value>
         <value>star0</value>
     </variable>
-
-    <variable name="MyFlagstar1">
-        <value condition="IntegerGreaterThan(ListItem.UserRating,1)">star10</value>
-        <value condition="IntegerGreaterThan(ListItem.UserRating,0)">star5</value>
-        <value>star0</value>
-    </variable>
-    <variable name="MyFlagstar2">
-        <value condition="IntegerGreaterThan(ListItem.UserRating,3)">star10</value>
-        <value condition="IntegerGreaterThan(ListItem.UserRating,2)">star5</value>
-        <value>star0</value>
-    </variable>
-    <variable name="MyFlagstar3">
-        <value condition="IntegerGreaterThan(ListItem.UserRating,5)">star10</value>
-        <value condition="IntegerGreaterThan(ListItem.UserRating,4)">star5</value>
-        <value>star0</value>
-    </variable>
-    <variable name="MyFlagstar4">
-        <value condition="IntegerGreaterThan(ListItem.UserRating,7)">star10</value>
-        <value condition="IntegerGreaterThan(ListItem.UserRating,6)">star5</value>
-        <value>star0</value>
-    </variable>
-    <variable name="MyFlagstar5">
-        <value condition="IntegerGreaterThan(ListItem.UserRating,9)">star10</value>
-        <value condition="IntegerGreaterThan(ListItem.UserRating,8)">star5</value>
-        <value>star0</value>
-    </variable>
-
     <variable name="HubFlagstar1">
         <value condition="IntegerGreaterThan(Container(9500).ListItem.Rating,1)">star10</value>
         <value condition="IntegerGreaterThan(Container(9500).ListItem.Rating,0)">star5</value>
@@ -306,7 +279,7 @@
                 <height>64</height>
                 <centertop>50%</centertop>
                 <texture colordiffuse="Dark1">flags/$VAR[Flagstar1].png</texture>
-                <visible>!Skin.HasSetting(furniture.numericrating) | !IsEmpty(ListItem.Rating) | !IsEmpty(ListItem.UserRating)</visible>
+                <visible>!Skin.HasSetting(furniture.numericrating) | !IsEmpty(ListItem.Rating)</visible>
             </control>
             <control type="image">
                 <posx>-48</posx>
@@ -314,7 +287,7 @@
                 <height>64</height>
                 <centertop>50%</centertop>
                 <texture colordiffuse="Dark1">flags/$VAR[Flagstar2].png</texture>
-                <visible>!Skin.HasSetting(furniture.numericrating) + IsEmpty(ListItem.UserRating)</visible>
+                <visible>!Skin.HasSetting(furniture.numericrating)</visible>
             </control>
             <control type="image">
                 <posx>-48</posx>
@@ -322,7 +295,7 @@
                 <height>64</height>
                 <centertop>50%</centertop>
                 <texture colordiffuse="Dark1">flags/$VAR[Flagstar3].png</texture>
-                <visible>!Skin.HasSetting(furniture.numericrating) + IsEmpty(ListItem.UserRating)</visible>
+                <visible>!Skin.HasSetting(furniture.numericrating)</visible>
             </control>
             <control type="image">
                 <posx>-48</posx>
@@ -330,7 +303,7 @@
                 <height>64</height>
                 <centertop>50%</centertop>
                 <texture colordiffuse="Dark1">flags/$VAR[Flagstar4].png</texture>
-                <visible>!Skin.HasSetting(furniture.numericrating) + IsEmpty(ListItem.UserRating)</visible>
+                <visible>!Skin.HasSetting(furniture.numericrating)</visible>
             </control>
             <control type="image">
                 <posx>-48</posx>
@@ -338,43 +311,11 @@
                 <height>64</height>
                 <centertop>50%</centertop>
                 <texture colordiffuse="Dark1">flags/$VAR[Flagstar5].png</texture>
-                <visible>!Skin.HasSetting(furniture.numericrating) + IsEmpty(ListItem.UserRating)</visible>
-            </control>
-            <control type="image">
-                <posx>-48</posx>
-                <width>64</width>
-                <height>64</height>
-                <centertop>50%</centertop>
-                <texture colordiffuse="Dark1">flags/$VAR[MyFlagstar2].png</texture>
-                <visible>!Skin.HasSetting(furniture.numericrating) + !IsEmpty(ListItem.UserRating)</visible>
-            </control>
-            <control type="image">
-                <posx>-48</posx>
-                <width>64</width>
-                <height>64</height>
-                <centertop>50%</centertop>
-                <texture colordiffuse="Dark1">flags/$VAR[MyFlagstar3].png</texture>
-                <visible>!Skin.HasSetting(furniture.numericrating) + !IsEmpty(ListItem.UserRating)</visible>
-            </control>
-            <control type="image">
-                <posx>-48</posx>
-                <width>64</width>
-                <height>64</height>
-                <centertop>50%</centertop>
-                <texture colordiffuse="Dark1">flags/$VAR[MyFlagstar4].png</texture>
-                <visible>!Skin.HasSetting(furniture.numericrating) + !IsEmpty(ListItem.UserRating)</visible>
-            </control>
-            <control type="image">
-                <posx>-48</posx>
-                <width>64</width>
-                <height>64</height>
-                <centertop>50%</centertop>
-                <texture colordiffuse="Dark1">flags/$VAR[MyFlagstar5].png</texture>
-                <visible>!Skin.HasSetting(furniture.numericrating) + !IsEmpty(ListItem.UserRating)</visible>
+                <visible>!Skin.HasSetting(furniture.numericrating)</visible>
             </control>
             <control type="label">
                 <left>-16</left>
-                <width min="40">auto</width>
+                <width min="48">auto</width>
                 <centertop>50%</centertop>
                 <height>64</height>
                 <align>left</align>
@@ -382,19 +323,7 @@
                 <label>$INFO[ListItem.Rating]</label>
                 <font>Flag</font>
                 <textcolor>Dark1</textcolor>
-                <visible>Skin.HasSetting(furniture.numericrating) + !IsEmpty(ListItem.Rating) + IsEmpty(ListItem.UserRating)</visible>
-            </control>
-            <control type="label">
-                <left>-16</left>
-                <width min="24">auto</width>
-                <centertop>50%</centertop>
-                <height>64</height>
-                <align>left</align>
-                <aligny>center</aligny>
-                <label>$INFO[ListItem.UserRating]</label>
-                <font>Flag</font>
-                <textcolor>Dark1</textcolor>
-                <visible>Skin.HasSetting(furniture.numericrating) + !IsEmpty(ListItem.UserRating)</visible>
+                <visible>Skin.HasSetting(furniture.numericrating) + !IsEmpty(ListItem.Rating)</visible>
             </control>
             
             <control type="image">
