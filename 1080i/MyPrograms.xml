@@ -87,6 +87,16 @@
                     <align>left</align>
                     <label>584</label>
                     <altlabel>585</altlabel>
+                    <visible>false</visible>
+                </control>
+                <control type="button" id="1804">
+                    <description>Sort Direction</description>
+                    <include>DefContextButton</include>
+                    <align>left</align>
+                    <label>Sort direction</label>
+                    <label2>$VAR[SortDirection]</label2>
+                    <onclick>SendClick(4)</onclick>
+                    <enable>Control.IsEnabled(4)</enable>
                 </control>
                 <include name="MenuPlayerControls">
                     <param name="PlayerControlsOnUp" value="4" />
