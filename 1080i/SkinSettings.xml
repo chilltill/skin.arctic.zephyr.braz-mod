@@ -479,21 +479,21 @@
                     </control>
                     <control type="button" id="9276" description="Backup settings">
                         <width>1310</width>
-                        <visible>System.HasAddon(script.skin.helper.service)</visible>
+                        <visible>ControlGroup(9100).HasFocus(9107) + System.HasAddon(script.skin.helper.service)</visible>
                         <include>DefSettingsButton</include>
                         <label>Backup skin settings</label>
                         <onclick>RunScript(script.skin.helper.service,action=backup)</onclick>
                     </control>
                     <control type="button" id="9277" description="Restore settings">
                         <width>1310</width>
-                        <visible>System.HasAddon(script.skin.helper.service)</visible>
+                        <visible>ControlGroup(9100).HasFocus(9107) + System.HasAddon(script.skin.helper.service)</visible>
                         <include>DefSettingsButton</include>
                         <label>Restore skin settings</label>
                         <onclick>RunScript(script.skin.helper.service,action=restore)</onclick>
                     </control>
                     <control type="button" id="9278" description="Reset settings">
                         <width>1310</width>
-                        <visible>System.HasAddon(script.skin.helper.service)</visible>
+                        <visible>ControlGroup(9100).HasFocus(9107) + System.HasAddon(script.skin.helper.service)</visible>
                         <include>DefSettingsButton</include>
                         <label>Reset skin settings</label>
                         <onclick>RunScript(script.skin.helper.service,action=reset)</onclick>
