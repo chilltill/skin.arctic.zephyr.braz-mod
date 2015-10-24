@@ -15,8 +15,8 @@
             <animation effect="fade" time="300" delay="200" tween="cubic" start="0" end="100" reversible="true">WindowOpen</animation>
             <animation effect="fade" time="150" tween="cubic" start="100" end="0" reversible="true">Hidden</animation>
             <animation type="Conditional" reversible="true" condition="Window.IsVisible(DialogSelect.xml)">
-            <effect type="zoom" end="95" start="100" time="200" center="auto" tween="quadratic" easing="in" />
-        </animation>
+                <effect type="zoom" end="95" start="100" time="200" center="auto" tween="quadratic" easing="in" />
+            </animation>
             <!--<include>Animation.Common</include>-->
             <left>72</left>
             <right>72</right>
@@ -156,7 +156,7 @@
                         <visible>stringcompare(Window.Property(groupname),mainmenu)</visible>
                         <visible>!stringcompare(Container(211).ListItem.Label2,MovieHub) + !stringcompare(Container(211).ListItem.Label2,TVHub)</visible>
                     </control>
-                    <control type="button" id="9301" description="Set MovieHub">
+                    <!--<control type="button" id="9301" description="Set MovieHub">
                         <width>1310</width>
                         <include>DefSettingsButton</include>
                         <label>31178</label>
@@ -171,7 +171,7 @@
                         <visible>stringcompare(Window.Property(groupname),mainmenu)</visible>
                         <visible>stringcompare(Container(211).ListItem.Label2,TVHub)</visible>
                         <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=episodeshub)</onclick>
-                    </control>
+                    </control>-->
                     <control type="button" id="301" description="Add">
                         <width>1310</width>
                         <include>DefSettingsButton</include>
