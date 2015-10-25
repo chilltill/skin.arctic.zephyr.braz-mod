@@ -1132,6 +1132,15 @@
     </include>
 
     <include name="MenuPlayerControls">
+        <control type="button" id="6049">
+            <description>Fullscreen</description>
+            <align>left</align>
+            <label>Fullscreen</label>
+            <include>DefContextButton</include>
+            <onclick condition="Player.HasVideo">ActivateWindow(fullscreenvideo)</onclick>
+            <onclick condition="Player.HasAudio">ActivateWindow(visualisation)</onclick>
+            <visible>Player.HasMedia</visible>
+        </control>
         <control type="grouplist" id="6050">
             <visible>Player.HasMedia</visible>
             <usecontrolcoords>true</usecontrolcoords>
