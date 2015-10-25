@@ -126,8 +126,7 @@
                 <onleft>3</onleft>
                 <onright>4</onright>
                 <ondown>noop</ondown>
-                <include condition="!Skin.HasSetting(osd.usetheme)">OSDVideoControls</include>
-                <include condition="Skin.HasSetting(osd.usetheme)">OSDVideoControlsFlip</include>
+                <include>OSDVideoControls</include>
             
             </control>
             

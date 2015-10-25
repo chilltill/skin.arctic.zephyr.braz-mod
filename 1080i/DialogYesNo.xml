@@ -3,7 +3,6 @@
 <window id="100">
     <defaultcontrol always="true">10</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
-    <onunload condition="!Skin.HasSetting(startup.init)">Skin.SetBool(osd.usetheme)</onunload>
     <onunload condition="!Skin.HasSetting(startup.init)">Skin.SetBool(home.classicwidgets)</onunload>
     <onunload condition="!Skin.HasSetting(startup.init)">Skin.SetBool(startup.init)</onunload>
     <controls>

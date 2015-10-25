@@ -202,15 +202,6 @@
                     </control>
                     
                     <!-- OSD -->
-                    <control type="radiobutton" id="9234" description="Match theme">
-                        <width>1310</width>
-                        <visible>ControlGroup(9100).HasFocus(9103)</visible>
-                        <include>DefSettingsButton</include>
-                        <label>31196</label>
-                        <selected>!Skin.HasSetting(osd.usetheme)</selected>
-                        <onclick>Skin.ToggleSetting(osd.usetheme)</onclick>
-                        <onclick>ReloadSkin()</onclick>
-                    </control>s
                     <control type="radiobutton" id="9235" description="Show Fanart">
                         <width>1310</width>
                         <visible>ControlGroup(9100).HasFocus(9103)</visible>

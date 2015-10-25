@@ -19,7 +19,6 @@
                 <height>1100</height>
                 <colordiffuse>$VAR[OSDPanel]</colordiffuse>
                 <texture border="16">common/rounded-shadow8.png</texture>
-                <animation effect="fade" start="100" end="90" condition="Skin.HasSetting(osd.usetheme)">Conditional</animation>
             </control>
             <control type="group">
                 <posy>294</posy>
@@ -630,8 +629,7 @@
                     <itemgap>16</itemgap>
                     <orientation>horizontal</orientation>
                     <align>center</align>
-                    <include condition="!Skin.HasSetting(osd.usetheme)">OSDAudioControls</include>
-                    <include condition="Skin.HasSetting(osd.usetheme)">OSDAudioControlsFlip</include>
+                    <include>OSDAudioControls</include>
                 </control>
 
                 
