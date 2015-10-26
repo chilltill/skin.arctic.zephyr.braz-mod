@@ -12,7 +12,6 @@
             <visible>ControlGroup(6000).HasFocus()</visible>
             <include>GlobalOverlay</include>
         </control>
-        <!--<include>GlobalOverlay</include>-->
 
         <control type="group">
             <include>DefDialogBackground</include>
@@ -41,9 +40,10 @@
                     <textcolor>Black70</textcolor>
                     <aligny>center</aligny>
                     <texturefocus border="5" colordiffuse="$VAR[ColorHighlight]">common/white.png</texturefocus>
-                    <onclick>Skin.SetBool(global.hidefanart)</onclick>
+                    <onclick condition="Skin.HasSetting(Edit.LibraryBackground)">Skin.SetBool(global.hidefanart)</onclick>
+                    <onclick condition="Skin.HasSetting(Edit.MusicVizBackground)">Skin.SetBool(ArtistSlideShow.Disabled)</onclick>
+                    <onclick condition="Skin.HasSetting(Edit.MusicVizBackground)">Skin.Reset(musicvis.fanartfallback)</onclick>
                     <onclick>Close</onclick>
-                    <visible>Skin.HasSetting(Edit.LibraryBackground)</visible>
                 </control>
                 <control type="button" id="6002">
                     <height>66</height>
@@ -53,10 +53,11 @@
                     <textcolor>Black70</textcolor>
                     <aligny>center</aligny>
                     <texturefocus border="5" colordiffuse="$VAR[ColorHighlight]">common/white.png</texturefocus>
-                    <onclick condition="Skin.HasSetting(global.hidefanart)">Skin.Reset(global.hidefanart)</onclick>
-                    <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">Skin.Reset(SkinHelper.EnableExtraFanart)</onclick>
+                    <onclick condition="Skin.HasSetting(Edit.LibraryBackground) + Skin.HasSetting(global.hidefanart)">Skin.Reset(global.hidefanart)</onclick>
+                    <onclick condition="Skin.HasSetting(Edit.LibraryBackground) + Skin.HasSetting(SkinHelper.EnableExtraFanart)">Skin.Reset(SkinHelper.EnableExtraFanart)</onclick>
+                    <onclick condition="Skin.HasSetting(Edit.MusicVizBackground)">Skin.SetBool(musicvis.fanartfallback)</onclick>
+                    <onclick condition="Skin.HasSetting(Edit.MusicVizBackground)">Skin.SetBool(ArtistSlideShow.Disabled)</onclick>
                     <onclick>Close</onclick>
-                    <visible>Skin.HasSetting(Edit.LibraryBackground)</visible>
                 </control>
                 <control type="button" id="6003">
                     <height>66</height>
@@ -66,39 +67,13 @@
                     <textcolor>Black70</textcolor>
                     <aligny>center</aligny>
                     <texturefocus border="5" colordiffuse="$VAR[ColorHighlight]">common/white.png</texturefocus>
+                    <onclick condition="Skin.HasSetting(global.hidefanart)">Skin.Reset(global.hidefanart)</onclick>
                     <onclick>Skin.SetBool(SkinHelper.EnableExtraFanart)</onclick>
                     <onclick>Close</onclick>
                     <visible>Skin.HasSetting(Edit.LibraryBackground)</visible>
                     <visible>System.HasAddon(script.skin.helper.service)</visible>
                 </control>
-
                 <control type="button" id="6004">
-                    <height>66</height>
-                    <label>None</label>
-                    <align>left</align>
-                    <font>SmallBold</font>
-                    <textcolor>Black70</textcolor>
-                    <aligny>center</aligny>
-                    <texturefocus border="5" colordiffuse="$VAR[ColorHighlight]">common/white.png</texturefocus>
-                    <onclick>Skin.SetBool(ArtistSlideShow.Disabled)</onclick>
-                    <onclick>Skin.Reset(musicvis.fanartfallback)</onclick>
-                    <onclick>Close</onclick>
-                    <visible>Skin.HasSetting(Edit.MusicVizBackground)</visible>
-                </control>
-                <control type="button" id="6005">
-                    <height>66</height>
-                    <label>Fanart</label>
-                    <align>left</align>
-                    <font>SmallBold</font>
-                    <textcolor>Black70</textcolor>
-                    <aligny>center</aligny>
-                    <texturefocus border="5" colordiffuse="$VAR[ColorHighlight]">common/white.png</texturefocus>
-                    <onclick>Skin.SetBool(musicvis.fanartfallback)</onclick>
-                    <onclick>Skin.SetBool(ArtistSlideShow.Disabled)</onclick>
-                    <onclick>Close</onclick>
-                    <visible>Skin.HasSetting(Edit.MusicVizBackground)</visible>
-                </control>
-                <control type="button" id="6006">
                     <height>66</height>
                     <label>Artist slideshow</label>
                     <align>left</align>
@@ -112,8 +87,6 @@
                     <visible>Skin.HasSetting(Edit.MusicVizBackground)</visible>
                     <visible>System.HasAddon(script.artistslideshow)</visible>
                 </control>
-
-                
 
             </control>
 
