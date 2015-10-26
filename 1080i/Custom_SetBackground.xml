@@ -61,7 +61,7 @@
                 </control>
                 <control type="button" id="6003">
                     <height>66</height>
-                    <label>Extra fanart (videos only)</label>
+                    <label>Extra fanart</label>
                     <align>left</align>
                     <font>SmallBold</font>
                     <textcolor>Black70</textcolor>
