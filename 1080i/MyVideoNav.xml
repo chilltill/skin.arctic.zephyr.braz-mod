@@ -191,15 +191,6 @@
                     <visible>Control.IsVisible(52)</visible>
                 </control>
 
-                <control type="radiobutton" id="9022" description="Enable Extra Fanart">
-                    <include>DefContextButton</include>
-                    <align>left</align>
-                    <label>31259</label>
-                    <selected>Skin.HasSetting(SkinHelper.EnableExtraFanart)</selected>
-                    <onclick>Skin.ToggleSetting(SkinHelper.EnableExtraFanart)</onclick>
-                    <visible>System.HasAddon(script.skin.helper.service)</visible>
-                </control>
-
                 <!-- Other Options -->
                 <control type="radiobutton" id="14">
                     <description>Hide watched</description>

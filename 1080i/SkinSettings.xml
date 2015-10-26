@@ -157,22 +157,50 @@
                         <onclick>Skin.ToggleSetting(home.submenu2)</onclick>
                     </control>
                     
-                    <!-- Fanart -->
-                    <control type="radiobutton" id="9223" description="Show fanart">
+                    <!-- Background -->
+                    <control type="button" id="9223" description="Set library fanart">
                         <width>1310</width>
                         <visible>ControlGroup(9100).HasFocus(9102)</visible>
                         <include>DefSettingsButton</include>
-                        <label>31121</label>
-                        <selected>!Skin.HasSetting(global.hidefanart)</selected>
-                        <onclick>Skin.ToggleSetting(global.hidefanart)</onclick>
+                        <label>Set library background</label>
+                        <label2>$VAR[LibraryBackground]</label2>
+                        <onclick>Skin.SetBool(Edit.LibraryBackground)</onclick>
+                        <onclick>ActivateWindow(1111)</onclick>
                     </control>
                     <control type="radiobutton" id="9224" description="Animate Fanart">
                         <width>1310</width>
                         <visible>ControlGroup(9100).HasFocus(9102)</visible>
                         <include>DefSettingsButton</include>
-                        <label>31146</label>
+                        <label>- Animate library fanart</label>
                         <selected>Skin.HasSetting(Fanart.Animate)</selected>
                         <onclick>Skin.ToggleSetting(Fanart.Animate)</onclick>
+                    </control>
+                    <control type="button" id="9226" description="Set music viz fanart">
+                        <width>1310</width>
+                        <visible>ControlGroup(9100).HasFocus(9102)</visible>
+                        <include>DefSettingsButton</include>
+                        <label>Set music visualization background</label>
+                        <label2>$VAR[MusicVizBackground]</label2>
+                        <onclick>Skin.SetBool(Edit.MusicVizBackground)</onclick>
+                        <onclick>ActivateWindow(1111)</onclick>
+                    </control>
+                    <control type="radiobutton" id="9227" description="Animate Artist slideshow">
+                        <width>1310</width>
+                        <visible>ControlGroup(9100).HasFocus(9102)</visible>
+                        <include>DefSettingsButton</include>
+                        <label>- Animate music visualization fanart</label>
+                        <selected>Skin.HasSetting(ArtistSlideshow.Animate)</selected>
+                        <onclick>Skin.ToggleSetting(ArtistSlideshow.Animate)</onclick>
+                        <enable>Skin.HasSetting(musicvis.fanartfallback) | [!Skin.HasSetting(ArtistSlideShow.Disabled) + System.HasAddon(script.artistslideshow)]</enable>
+                    </control>
+                    <control type="radiobutton" id="9228" description="Show slideshow in background">
+                        <width>1310</width>
+                        <visible>ControlGroup(9100).HasFocus(9102)</visible>
+                        <include>DefSettingsButton</include>
+                        <label>- Show visualization behind fanart</label>
+                        <selected>Skin.HasSetting(OSDVisualisation.ShowFanart)</selected>
+                        <onclick>Skin.ToggleSetting(OSDVisualisation.ShowFanart)</onclick>
+                        <enable>Skin.HasSetting(musicvis.fanartfallback) | [!Skin.HasSetting(ArtistSlideShow.Disabled) + System.HasAddon(script.artistslideshow)]</enable>
                     </control>
                     <control type="button" id="9225" description="Set Fallback Image">
                         <width>1310</width>
@@ -202,42 +230,6 @@
                     </control>
                     
                     <!-- OSD -->
-                    <control type="radiobutton" id="9235" description="Show Fanart">
-                        <width>1310</width>
-                        <visible>ControlGroup(9100).HasFocus(9103)</visible>
-                        <include>DefSettingsButton</include>
-                        <label>31121</label>
-                        <selected>Skin.HasSetting(musicvis.fanartfallback)</selected>
-                        <enable>!System.HasAddon(script.artistslideshow) | Skin.HasSetting(ArtistSlideShow.Disabled)</enable>
-                        <onclick>Skin.ToggleSetting(musicvis.fanartfallback)</onclick>
-                    </control>
-                    <control type="radiobutton" id="9231" description="Show slideshow in background">
-                        <width>1310</width>
-                        <visible>ControlGroup(9100).HasFocus(9103)</visible>
-                        <include>DefSettingsButton</include>
-                        <label>31118</label>
-                        <enable>System.HasAddon(script.artistslideshow)</enable>
-                        <selected>!Skin.HasSetting(ArtistSlideShow.Disabled)</selected>
-                        <onclick>Skin.ToggleSetting(ArtistSlideShow.Disabled)</onclick>
-                    </control>
-                    <control type="radiobutton" id="9232" description="Show slideshow in background">
-                        <width>1310</width>
-                        <visible>ControlGroup(9100).HasFocus(9103)</visible>
-                        <include>DefSettingsButton</include>
-                        <label>31119</label>
-                        <selected>Skin.HasSetting(OSDVisualisation.ShowFanart)</selected>
-                        <onclick>Skin.ToggleSetting(OSDVisualisation.ShowFanart)</onclick>
-                        <enable>Skin.HasSetting(musicvis.fanartfallback) | [!Skin.HasSetting(ArtistSlideShow.Disabled) + System.HasAddon(script.artistslideshow)]</enable>
-                    </control>
-                    <control type="radiobutton" id="9233" description="Animate Artist slideshow">
-                        <width>1310</width>
-                        <visible>ControlGroup(9100).HasFocus(9103)</visible>
-                        <include>DefSettingsButton</include>
-                        <label>31120</label>
-                        <selected>Skin.HasSetting(ArtistSlideshow.Animate)</selected>
-                        <onclick>Skin.ToggleSetting(ArtistSlideshow.Animate)</onclick>
-                        <enable>Skin.HasSetting(musicvis.fanartfallback) | [!Skin.HasSetting(ArtistSlideShow.Disabled) + System.HasAddon(script.artistslideshow)]</enable>
-                    </control>
                     <control type="radiobutton" id="9236" description="Show detailed info on pause">
                         <width>1310</width>
                         <visible>ControlGroup(9100).HasFocus(9103)</visible>
@@ -250,7 +242,7 @@
                         <width>1310</width>
                         <visible>ControlGroup(9100).HasFocus(9103)</visible>
                         <include>DefSettingsButton</include>
-                        <label>31253</label>
+                        <label>Always display info and osd controls on music visualization</label>
                         <selected>Skin.HasSetting(osd.alwaysshowmusicosd)</selected>
                         <onclick>Skin.ToggleSetting(osd.alwaysshowmusicosd)</onclick>
                     </control>
@@ -263,9 +255,7 @@
                         <onclick>Skin.ToggleSetting(ShowClearArtOSD)</onclick>
                     </control>
                     
-                    
                     <!-- Widgets -->
-                    
                     <control type="radiobutton" id="9242" description="Classic Widget Auto show">
                         <width>1310</width>
                         <visible>ControlGroup(9100).HasFocus(9104)</visible>
