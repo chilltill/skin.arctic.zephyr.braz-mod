@@ -280,9 +280,15 @@
                         <include>DefSettingsButton</include>
                         <label>31131</label>
                         <label2>$INFO[Skin.String(home.slideshowpath)]</label2>
-                        <onclick condition="IsEmpty(Skin.String(home.slideshowpath))">Skin.SetPath(home.slideshowpath)</onclick>
-                        <onclick condition="!IsEmpty(Skin.String(home.slideshowpath))">Skin.Reset(home.dontshowfanart)</onclick>
-                        <onclick condition="!IsEmpty(Skin.String(home.slideshowpath))">Skin.Reset(home.slideshowpath)</onclick>
+                        <onclick>Skin.SetPath(home.slideshowpath)</onclick>
+                    </control>
+                    <control type="button" id="9244" description="Reset Slideshow Path">
+                        <width>1310</width>
+                        <visible>ControlGroup(9100).HasFocus(9104)</visible>
+                        <include>DefSettingsButton</include>
+                        <label>- Reset</label>
+                        <onclick>Skin.Reset(home.dontshowfanart)</onclick>
+                        <onclick>Skin.Reset(home.slideshowpath)</onclick>
                     </control>
                                         
                     <!-- Hubs -->
