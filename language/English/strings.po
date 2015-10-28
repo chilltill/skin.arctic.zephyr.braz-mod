@@ -389,7 +389,7 @@ msgid "View Options"
 msgstr ""
 
 msgctxt "#31195"
-msgid "Reload Skin"
+msgid "Reload skin"
 msgstr ""
 
 msgctxt "#31196"

@@ -385,8 +385,8 @@ msgid "View Options"
 msgstr "View Options"
 
 msgctxt "#31195"
-msgid "Reload Skin"
-msgstr "Reload Skin"
+msgid "Reload skin"
+msgstr "Reload skin"
 
 msgctxt "#31196"
 msgid "Use dark theme"
