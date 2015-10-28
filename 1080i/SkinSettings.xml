@@ -281,6 +281,7 @@
                         <label>31131</label>
                         <label2>$INFO[Skin.String(home.slideshowpath)]</label2>
                         <onclick>Skin.SetPath(home.slideshowpath)</onclick>
+                        <enable>Skin.HasSetting(home.dontshowfanart)</enable>
                     </control>
                     <control type="button" id="9244" description="Reset Slideshow Path">
                         <width>1310</width>
@@ -289,6 +290,8 @@
                         <label>- Reset</label>
                         <onclick>Skin.Reset(home.dontshowfanart)</onclick>
                         <onclick>Skin.Reset(home.slideshowpath)</onclick>
+                        <onclick>SetFocus(9243)</onclick>
+                        <enable>Skin.HasSetting(home.dontshowfanart)</enable>
                     </control>
                                         
                     <!-- Hubs -->
