@@ -762,15 +762,6 @@
     </include>
 
     <include name="MenuPlayerControls">
-        <control type="button" id="6049">
-            <description>Fullscreen</description>
-            <align>left</align>
-            <label>Fullscreen</label>
-            <include>DefContextButton</include>
-            <onclick condition="Player.HasVideo">ActivateWindow(fullscreenvideo)</onclick>
-            <onclick condition="Player.HasAudio">ActivateWindow(visualisation)</onclick>
-            <visible>Player.HasMedia</visible>
-        </control>
         <control type="grouplist" id="6050">
             <visible>Player.HasMedia</visible>
             <usecontrolcoords>true</usecontrolcoords>
@@ -778,7 +769,7 @@
             <height>70</height>
             <width>450</width>
             <align>center</align>
-            <itemgap>20</itemgap>
+            <itemgap>10</itemgap>
             <scrolltime tween="sine">200</scrolltime>
             <orientation>horizontal</orientation>
             <onup>$PARAM[PlayerControlsOnUp]</onup>
@@ -855,6 +846,17 @@
                 <height>48</height>
                 <font>-</font>
                 <onclick>PlayerControl(Next)</onclick>
+            </control>
+            <control type="button" id="6057">
+                <texturefocus colordiffuse="$VAR[ColorHighlight]">osd/fullscreen.png</texturefocus>
+                <texturenofocus colordiffuse="Black70">osd/fullscreen.png</texturenofocus>
+                <label>-</label>
+                <top>10</top>
+                <width>48</width>
+                <height>48</height>
+                <font>-</font>
+                <onclick condition="Player.HasVideo">ActivateWindow(fullscreenvideo)</onclick>
+                <onclick condition="Player.HasAudio">ActivateWindow(visualisation)</onclick>
             </control>
         </control>
     </include>
