@@ -284,6 +284,10 @@ msgctxt "#31167"
 msgid "[B]View System Information[/B][CR][CR] •     Summary[CR] •     Storage[CR] •     Network[CR] •     Video[CR] •     Hardware[CR] •     PVR Backend"
 msgstr "[B]View System Information[/B][CR][CR] •     Summary[CR] •     Storage[CR] •     Network[CR] •     Video[CR] •     Hardware[CR] •     PVR Backend"
 
+msgctxt "#31168"
+msgid "Skin default"
+msgstr "Skin default"
+
 msgctxt "#31169"
 msgid "Extras"
 msgstr "Extras"
