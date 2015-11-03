@@ -7,8 +7,9 @@
         <control type="group">
             <include>DefDialogBackground</include>
             
-            <control type="label" id="2">
+            <control type="label">
                 <include>DefDialogHeader</include>
+                <label>Timer settings</label>
             </control>
   
             <control type="grouplist" id="5">
