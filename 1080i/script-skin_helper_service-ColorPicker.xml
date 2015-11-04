@@ -113,8 +113,24 @@
 			        <texturefocus colordiffuse="$VAR[ColorHighlight]" border="5">common/box.png</texturefocus>
 				</control>
 				
+				<!-- Cancel -->
+				<control type="button" id="3090">
+					<onup>3110</onup>
+					<onleft>3010</onleft>
+					<ondown>SetFocus(3110)</ondown>
+					<onclick>Close</onclick>
+					<label>Cancel</label>
+					<font>Button</font>
+			        <textcolor>ff000000</textcolor>
+			        <width>225</width>
+			        <height>68</height>
+			        <texturenofocus colordiffuse="1fcccccc" border="5">common/box.png</texturenofocus>
+			        <texturefocus colordiffuse="$VAR[ColorHighlight]" border="5">common/box.png</texturefocus>
+				</control>
+
 				<!-- None -->
 				<control type="button" id="3011">
+					<visible>False</visible>
 					<onup>3110</onup>
 					<onleft>3010</onleft>
 					<ondown>SetFocus(3110)</ondown>
