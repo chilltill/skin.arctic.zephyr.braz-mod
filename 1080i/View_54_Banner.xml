@@ -36,8 +36,8 @@
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Label]</label>
                             <font>SmallBold</font>
-                            <textcolor>Dark1</textcolor>
-                            <selectedcolor>Dark1</selectedcolor>
+                            <textcolor>White100</textcolor>
+                            <selectedcolor>White100</selectedcolor>
                         </control>
                         <control type="label">
                             <centerbottom>34</centerbottom>
@@ -48,8 +48,8 @@
                             <aligny>center</aligny>
                             <label>$VAR[LabelYear,,  •  ]$VAR[LabelDuration,,  •  ]$INFO[ListItem.Rating]</label>
                             <font>Flag</font>
-                            <textcolor>Dark3</textcolor>
-                            <selectedcolor>Dark3</selectedcolor>
+                            <textcolor>White30</textcolor>
+                            <selectedcolor>White30</selectedcolor>
                             <visible>!Container.Content(seasons)</visible>
                         </control>
                         <control type="label">
@@ -61,8 +61,8 @@
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[31215]]</label>
                             <font>Flag</font>
-                            <textcolor>Dark3</textcolor>
-                            <selectedcolor>Dark3</selectedcolor>
+                            <textcolor>White30</textcolor>
+                            <selectedcolor>White30</selectedcolor>
                             <visible>Container.Content(seasons)</visible>
                         </control>
                     </itemlayout>
@@ -78,8 +78,8 @@
                                 <align>left</align>
                                 <aligny>top</aligny>
                                 <label>$VAR[LabelEpisodeZero]$INFO[ListItem.Episode]</label>
-                                <textcolor>Dark1</textcolor>
-                                <selectedcolor>Dark1</selectedcolor>
+                                <textcolor>White100</textcolor>
+                                <selectedcolor>White100</selectedcolor>
                             </control>
                             <control type="label">
                                 <top>47</top>
@@ -90,8 +90,8 @@
                                 <aligny>top</aligny>
                                 <label>$VAR[LabelTitle]</label>
                                 <font>SmallBold</font>
-                                <textcolor>Dark1</textcolor>
-                                <selectedcolor>Dark1</selectedcolor>
+                                <textcolor>White100</textcolor>
+                                <selectedcolor>White100</selectedcolor>
                                 <animation effect="slide" start="0" end="50" condition="IntegerGreaterThan(ListItem.Episode,99)">Conditional</animation>
                             </control>
                             <control type="image">
@@ -113,8 +113,8 @@
                                 <aligny>top</aligny>
                                 <label fallback="19055">$VAR[LabelYear,,  •  ]$VAR[LabelDuration,,  •  ]$INFO[ListItem.Rating]</label>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
-                                <selectedcolor>Dark2</selectedcolor>
+                                <textcolor>White70</textcolor>
+                                <selectedcolor>White70</selectedcolor>
                                 <animation effect="slide" start="0" end="50" condition="IntegerGreaterThan(ListItem.Episode,99)">Conditional</animation>
                             </control>
                         </control>
@@ -133,8 +133,8 @@
                                 <aligny>top</aligny>
                                 <label>$VAR[LabelTitle]</label>
                                 <font>SmallBold</font>
-                                <textcolor>Dark1</textcolor>
-                                <selectedcolor>Dark1</selectedcolor>
+                                <textcolor>White100</textcolor>
+                                <selectedcolor>White100</selectedcolor>
                             </control>
                             <control type="label">
                                 <top>85</top>
@@ -145,8 +145,8 @@
                                 <aligny>top</aligny>
                                 <label fallback="19055">$INFO[ListItem.Artist]$INFO[ListItem.Year, • ,]</label>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
-                                <selectedcolor>Dark2</selectedcolor>
+                                <textcolor>White70</textcolor>
+                                <selectedcolor>White70</selectedcolor>
                             </control>
                         </control>
                     </itemlayout>
@@ -162,8 +162,8 @@
                                 <align>right</align>
                                 <aligny>top</aligny>
                                 <label>$NUMBER[0]$NUMBER[0]</label>
-                                <textcolor>Dark1</textcolor>
-                                <selectedcolor>Dark1</selectedcolor>
+                                <textcolor>White100</textcolor>
+                                <selectedcolor>White100</selectedcolor>
                                 <visible>!IntegerGreaterThan(ListItem.TrackNumber,0)</visible>
                             </control>
                             <control type="label">
@@ -175,8 +175,8 @@
                                 <align>right</align>
                                 <aligny>top</aligny>
                                 <label>0$INFO[ListItem.TrackNumber]</label>
-                                <textcolor>Dark1</textcolor>
-                                <selectedcolor>Dark1</selectedcolor>
+                                <textcolor>White100</textcolor>
+                                <selectedcolor>White100</selectedcolor>
                                 <visible>!IntegerGreaterThan(ListItem.TrackNumber,9) + IntegerGreaterThan(ListItem.TrackNumber,0)</visible>
                             </control>
                             <control type="label">
@@ -188,8 +188,8 @@
                                 <align>right</align>
                                 <aligny>top</aligny>
                                 <label>$INFO[ListItem.TrackNumber]</label>
-                                <textcolor>Dark1</textcolor>
-                                <selectedcolor>Dark1</selectedcolor>
+                                <textcolor>White100</textcolor>
+                                <selectedcolor>White100</selectedcolor>
                                 <visible>IntegerGreaterThan(ListItem.TrackNumber,9)</visible>
                             </control>
                             <control type="label">
@@ -201,8 +201,8 @@
                                 <aligny>top</aligny>
                                 <label>$INFO[ListItem.Title]</label>
                                 <font>SmallBold</font>
-                                <textcolor>Dark1</textcolor>
-                                <selectedcolor>Dark1</selectedcolor>
+                                <textcolor>White100</textcolor>
+                                <selectedcolor>White100</selectedcolor>
                             </control>
                             <control type="label">
                                 <top>85</top>
@@ -213,8 +213,8 @@
                                 <aligny>top</aligny>
                                 <label fallback="19055">$INFO[ListItem.Artist]$INFO[ListItem.Album,  •  ,]</label>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
-                                <selectedcolor>Dark2</selectedcolor>
+                                <textcolor>White70</textcolor>
+                                <selectedcolor>White70</selectedcolor>
                             </control>
                         </control>
                     </itemlayout>
@@ -226,7 +226,7 @@
                             <top>10</top>
                             <right>110</right>
                             <bottom>10</bottom>
-                            <texture colordiffuse="Dark1" border="5">common/box.png</texture>
+                            <texture colordiffuse="White100" border="5">common/box.png</texture>
                         </control>
                         <control type="image">                                
                             <left>110</left>
@@ -252,8 +252,8 @@
                             <height>50</height>
                             <align>left</align>
                             <font>SmallBold</font>
-                            <textcolor>Light1</textcolor>
-                            <selectedcolor>Light1</selectedcolor>
+                            <textcolor>Dark1</textcolor>
+                            <selectedcolor>Dark1</selectedcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="textbox">
@@ -262,8 +262,8 @@
                             <top>70</top>
                             <height>180</height>
                             <font>Tiny</font>
-                            <textcolor>Light1</textcolor>
-                            <selectedcolor>Light1</selectedcolor>
+                            <textcolor>Dark1</textcolor>
+                            <selectedcolor>Dark1</selectedcolor>
                             <label>$VAR[LabelPlotBox]</label>
                         </control>
                         <control type="label">
@@ -274,8 +274,8 @@
                             <height>38</height>
                             <align>right</align>
                             <font>Tiny</font>
-                            <textcolor>Light1</textcolor>
-                            <selectedcolor>Light1</selectedcolor>
+                            <textcolor>Dark1</textcolor>
+                            <selectedcolor>Dark1</selectedcolor>
                             <visible>!Container.Content(seasons)</visible>
                             <label fallback="19055">$VAR[LabelYear,,  •  ]$VAR[LabelDuration,,  •  ]$INFO[ListItem.Rating]</label>
                         </control>
@@ -287,8 +287,8 @@
                             <height>38</height>
                             <align>right</align>
                             <font>Tiny</font>
-                            <textcolor>Light1</textcolor>
-                            <selectedcolor>Light1</selectedcolor>
+                            <textcolor>Dark1</textcolor>
+                            <selectedcolor>Dark1</selectedcolor>
                             <visible>Container.Content(seasons)</visible>
                             <label fallback="19055">$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[31215]]</label>
                         </control>
@@ -306,7 +306,7 @@
                             <top>25</top>
                             <width>1240</width>
                             <height>270</height>
-                            <texture border="8" colordiffuse="Dark1">common/box.png</texture>
+                            <texture border="8" colordiffuse="White100">common/box.png</texture>
                         </control>
                         <control type="image">
                             <left>24</left>
@@ -326,8 +326,8 @@
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Label]</label>
                             <font>Flag</font>
-                            <textcolor>Light1</textcolor>
-                            <selectedcolor>Light1</selectedcolor>
+                            <textcolor>Dark1</textcolor>
+                            <selectedcolor>Dark1</selectedcolor>
                         </control>
                         <control type="label">
                             <centerbottom>48</centerbottom>
@@ -338,8 +338,8 @@
                             <aligny>center</aligny>
                             <label>$VAR[LabelYear,,  •  ]$VAR[LabelDuration,,  •  ]$INFO[ListItem.Rating]</label>
                             <font>Flag</font>
-                            <textcolor>Light1</textcolor>
-                            <selectedcolor>Light1</selectedcolor>
+                            <textcolor>Dark1</textcolor>
+                            <selectedcolor>Dark1</selectedcolor>
                             <visible>!Container.Content(seasons)</visible>
                         </control>
                         <control type="label">
@@ -351,8 +351,8 @@
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[31215]]</label>
                             <font>Flag</font>
-                            <textcolor>Light1</textcolor>
-                            <selectedcolor>Light1</selectedcolor>
+                            <textcolor>Dark1</textcolor>
+                            <selectedcolor>Dark1</selectedcolor>
                             <visible>Container.Content(seasons)</visible>
                         </control>
                         
@@ -371,7 +371,7 @@
                                 <top>24</top>
                                 <right>24</right>
                                 <height>270</height>
-                                <texture border="5" colordiffuse="Dark1">common/box.png</texture>
+                                <texture border="5" colordiffuse="White100">common/box.png</texture>
                             </control>
                             <control type="image">
                                 <left>24</left>
@@ -391,8 +391,8 @@
                                 <align>left</align>
                                 <aligny>top</aligny>
                                 <label>$VAR[LabelEpisodeZero]$INFO[ListItem.Episode]</label>
-                                <textcolor>Light1</textcolor>
-                                <selectedcolor>Light1</selectedcolor>
+                                <textcolor>Dark1</textcolor>
+                                <selectedcolor>Dark1</selectedcolor>
                             </control>
                             <control type="label">
                                 <top>47</top>
@@ -403,8 +403,8 @@
                                 <aligny>top</aligny>
                                 <label>$VAR[LabelTitle]</label>
                                 <font>SmallBold</font>
-                                <textcolor>Light1</textcolor>
-                                <selectedcolor>Light1</selectedcolor>
+                                <textcolor>Dark1</textcolor>
+                                <selectedcolor>Dark1</selectedcolor>
                                 <animation effect="slide" start="0" end="50" condition="IntegerGreaterThan(ListItem.Episode,99)">Conditional</animation>
                             </control>
                             <control type="image">
@@ -426,8 +426,8 @@
                                 <aligny>top</aligny>
                                 <label fallback="19055">$VAR[LabelYear,,  •  ]$VAR[LabelDuration,,  •  ]$INFO[ListItem.Rating]</label>
                                 <font>Tiny</font>
-                                <textcolor>Light1</textcolor>
-                                <selectedcolor>Light1</selectedcolor>
+                                <textcolor>Dark1</textcolor>
+                                <selectedcolor>Dark1</selectedcolor>
                                 <animation effect="slide" start="0" end="50" condition="IntegerGreaterThan(ListItem.Episode,99)">Conditional</animation>
                             </control>
                             <control type="textbox">
@@ -438,8 +438,8 @@
                                 <aligny>top</aligny>
                                 <label>$INFO[ListItem.Plot]</label>
                                 <font>Tiny</font>
-                                <textcolor>Light1</textcolor>
-                                <selectedcolor>Light1</selectedcolor>
+                                <textcolor>Dark1</textcolor>
+                                <selectedcolor>Dark1</selectedcolor>
                             </control>
                         </control>
                     </focusedlayout>
@@ -457,7 +457,7 @@
                                 <top>24</top>
                                 <right>24</right>
                                 <height>270</height>
-                                <texture border="5" colordiffuse="Dark1">common/box.png</texture>
+                                <texture border="5" colordiffuse="White100">common/box.png</texture>
                             </control>
                             <control type="image">
                                 <left>24</left>
@@ -477,8 +477,8 @@
                                 <aligny>top</aligny>
                                 <label>$VAR[LabelTitle]</label>
                                 <font>SmallBold</font>
-                                <textcolor>Light1</textcolor>
-                                <selectedcolor>Light1</selectedcolor>
+                                <textcolor>Dark1</textcolor>
+                                <selectedcolor>Dark1</selectedcolor>
                             </control>
                             <control type="label">
                                 <top>85</top>
@@ -489,8 +489,8 @@
                                 <aligny>top</aligny>
                                 <label fallback="19055">$INFO[ListItem.Artist]$INFO[ListItem.Year, • ,]</label>
                                 <font>Tiny</font>
-                                <textcolor>Light1</textcolor>
-                                <selectedcolor>Light1</selectedcolor>
+                                <textcolor>Dark1</textcolor>
+                                <selectedcolor>Dark1</selectedcolor>
                             </control>
                             <control type="textbox">
                                 <top>130</top>
@@ -500,8 +500,8 @@
                                 <aligny>top</aligny>
                                 <label>$INFO[ListItem.Property(Album_Description)]</label>
                                 <font>Tiny</font>
-                                <textcolor>Light1</textcolor>
-                                <selectedcolor>Light1</selectedcolor>
+                                <textcolor>Dark1</textcolor>
+                                <selectedcolor>Dark1</selectedcolor>
                             </control>
                             
                         </control>
@@ -520,7 +520,7 @@
                                 <top>24</top>
                                 <right>24</right>
                                 <height>270</height>
-                                <texture border="5" colordiffuse="Dark1">common/box.png</texture>
+                                <texture border="5" colordiffuse="White100">common/box.png</texture>
                             </control>
                             <control type="image">
                                 <left>24</left>
@@ -539,8 +539,8 @@
                                 <align>right</align>
                                 <aligny>top</aligny>
                                 <label>$NUMBER[0]$NUMBER[0]</label>
-                                <textcolor>Light1</textcolor>
-                                <selectedcolor>Light1</selectedcolor>
+                                <textcolor>Dark1</textcolor>
+                                <selectedcolor>Dark1</selectedcolor>
                                 <visible>!IntegerGreaterThan(ListItem.TrackNumber,0)</visible>
                             </control>
                             <control type="label">
@@ -552,8 +552,8 @@
                                 <align>right</align>
                                 <aligny>top</aligny>
                                 <label>0$INFO[ListItem.TrackNumber]</label>
-                                <textcolor>Light1</textcolor>
-                                <selectedcolor>Light1</selectedcolor>
+                                <textcolor>Dark1</textcolor>
+                                <selectedcolor>Dark1</selectedcolor>
                                 <visible>!IntegerGreaterThan(ListItem.TrackNumber,9) + IntegerGreaterThan(ListItem.TrackNumber,0)</visible>
                             </control>
                             <control type="label">
@@ -565,8 +565,8 @@
                                 <align>right</align>
                                 <aligny>top</aligny>
                                 <label>$INFO[ListItem.TrackNumber]</label>
-                                <textcolor>Light1</textcolor>
-                                <selectedcolor>Light1</selectedcolor>
+                                <textcolor>Dark1</textcolor>
+                                <selectedcolor>Dark1</selectedcolor>
                                 <visible>IntegerGreaterThan(ListItem.TrackNumber,9)</visible>
                             </control>
                             <control type="label">
@@ -578,8 +578,8 @@
                                 <aligny>top</aligny>
                                 <label>$INFO[ListItem.Title]</label>
                                 <font>SmallBold</font>
-                                <textcolor>Light1</textcolor>
-                                <selectedcolor>Light1</selectedcolor>
+                                <textcolor>Dark1</textcolor>
+                                <selectedcolor>Dark1</selectedcolor>
                             </control>
                             <control type="label">
                                 <top>85</top>
@@ -590,8 +590,8 @@
                                 <aligny>top</aligny>
                                 <label fallback="19055">$INFO[ListItem.Artist]$INFO[ListItem.Album,  •  ,]</label>
                                 <font>Tiny</font>
-                                <textcolor>Light1</textcolor>
-                                <selectedcolor>Light1</selectedcolor>
+                                <textcolor>Dark1</textcolor>
+                                <selectedcolor>Dark1</selectedcolor>
                             </control>
                             <control type="textbox">
                                 <top>170</top>
@@ -601,8 +601,8 @@
                                 <aligny>top</aligny>
                                 <label>$INFO[ListItem.Genre,[B]$LOCALIZE[515]  [/B],[CR]]$INFO[ListItem.Duration,[B]$LOCALIZE[180]  [/B],[CR]]</label>
                                 <font>Tiny</font>
-                                <textcolor>Light1</textcolor>
-                                <selectedcolor>Light1</selectedcolor>
+                                <textcolor>Dark1</textcolor>
+                                <selectedcolor>Dark1</selectedcolor>
                             </control>
                             <control type="group">
                                 <right>24</right>
@@ -612,31 +612,31 @@
                                     <right>0</right>
                                     <width>64</width>
                                     <height>64</height>
-                                    <texture colordiffuse="Light1">flags/$VAR[MusicFlagstar5].png</texture>
+                                    <texture colordiffuse="Dark1">flags/$VAR[MusicFlagstar5].png</texture>
                                 </control>
                                 <control type="image">
                                     <right>38</right>
                                     <width>64</width>
                                     <height>64</height>
-                                    <texture colordiffuse="Light1">flags/$VAR[MusicFlagstar4].png</texture>
+                                    <texture colordiffuse="Dark1">flags/$VAR[MusicFlagstar4].png</texture>
                                 </control>
                                 <control type="image">
                                     <right>76</right>
                                     <width>64</width>
                                     <height>64</height>
-                                    <texture colordiffuse="Light1">flags/$VAR[MusicFlagstar3].png</texture>
+                                    <texture colordiffuse="Dark1">flags/$VAR[MusicFlagstar3].png</texture>
                                 </control>
                                 <control type="image">
                                     <right>114</right>
                                     <width>64</width>
                                     <height>64</height>
-                                    <texture colordiffuse="Light1">flags/$VAR[MusicFlagstar2].png</texture>
+                                    <texture colordiffuse="Dark1">flags/$VAR[MusicFlagstar2].png</texture>
                                 </control>
                                 <control type="image">
                                     <right>152</right>
                                     <width>64</width>
                                     <height>64</height>
-                                    <texture colordiffuse="Light1">flags/$VAR[MusicFlagstar1].png</texture>
+                                    <texture colordiffuse="Dark1">flags/$VAR[MusicFlagstar1].png</texture>
                                 </control>
                             </control>
                         </control>

@@ -10,7 +10,7 @@
         <height>20</height>
         <aligny>center</aligny>
         <font>Tiny</font>
-        <textcolor>Dark2</textcolor>
+        <textcolor>White70</textcolor>
         <align>center</align>
     </include>
     <include name="NextAiredListGroupParam">

@@ -34,7 +34,7 @@
                                 <left>30</left>
                                 <right>30</right>
                                 <label>$VAR[LabelPlotBox]</label>
-                                <textcolor>Light1</textcolor>
+                                <textcolor>Dark1</textcolor>
                                 <font>Tiny</font>
                             </control>
                         </control>
@@ -47,7 +47,7 @@
                                 <left>30</left>
                                 <right>30</right>
                                 <label>$VAR[LabelPlotBox]</label>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <font>Tiny</font>
                             </control>
                         </control>
@@ -113,9 +113,9 @@
                     <width>8</width>
                     <onleft>50</onleft>
                     <onright condition="!Skin.HasSetting(global.kioskmode)">9000</onright>
-                    <texturesliderbackground border="4" colordiffuse="Dark4">scrollbar/scrollv.png</texturesliderbackground>
-                    <texturesliderbar border="4" colordiffuse="Dark3">scrollbar/scrollv.png</texturesliderbar>
-                    <texturesliderbarfocus border="4" colordiffuse="Dark2">scrollbar/scrollv.png</texturesliderbarfocus>
+                    <texturesliderbackground border="4" colordiffuse="White12">scrollbar/scrollv.png</texturesliderbackground>
+                    <texturesliderbar border="4" colordiffuse="White30">scrollbar/scrollv.png</texturesliderbar>
+                    <texturesliderbarfocus border="4" colordiffuse="White70">scrollbar/scrollv.png</texturesliderbarfocus>
                     <animation effect="fade" start="100" end="33" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
                 </control>
             </control>
@@ -332,7 +332,7 @@
         <control type="image">                                
             <width>100%</width>
             <height>100%</height>
-            <texture border="8" colordiffuse="Dark1">common/box.png</texture>
+            <texture border="8" colordiffuse="White100">common/box.png</texture>
         </control>
         <control type="label">
             <posx>30</posx>
@@ -340,8 +340,8 @@
             <font>Small</font>
             <aligny>center</aligny>
             <height>64</height>
-            <textcolor>Light1</textcolor>
-            <selectedcolor>Light1</selectedcolor>
+            <textcolor>Dark1</textcolor>
+            <selectedcolor>Dark1</selectedcolor>
             <label>$VAR[LabelYear]</label>
             <visible>Container.Content(movies)</visible>
         </control>
@@ -351,8 +351,8 @@
             <aligny>center</aligny>
             <height>64</height>
             <font>SmallBold</font>
-            <textcolor>Light1</textcolor>
-            <selectedcolor>Light1</selectedcolor>
+            <textcolor>Dark1</textcolor>
+            <selectedcolor>Dark1</selectedcolor>
             <label>$INFO[ListItem.Label]</label>
             <textoffsetx>30</textoffsetx>
             <animation effect="slide" start="0" end="-90" time="0" condition="!Container.Content(movies)">Conditional</animation>
@@ -364,8 +364,8 @@
             <aligny>center</aligny>
             <height>64</height>
             <font>SmallBold</font>
-            <textcolor>Light1</textcolor>
-            <selectedcolor>Light1</selectedcolor>
+            <textcolor>Dark1</textcolor>
+            <selectedcolor>Dark1</selectedcolor>
             <label>$INFO[ListItem.Label]</label>
             <textoffsetx>30</textoffsetx>
             <visible>Container.Content(episodes) | Container.Content(tvshows)</visible>
@@ -377,8 +377,8 @@
             <height>64</height>
             <align>right</align>
             <font>Small</font>
-            <textcolor>Light1</textcolor>
-            <selectedcolor>Light1</selectedcolor>
+            <textcolor>Dark1</textcolor>
+            <selectedcolor>Dark1</selectedcolor>
             <label>$VAR[LabelDuration]</label>
             <visible>!substring(Container.FolderPath,plugin://,left)</visible>
         </control>
@@ -399,8 +399,8 @@
             <height>64</height>
             <align>right</align>
             <font>Small</font>
-            <textcolor>Light1</textcolor>
-            <selectedcolor>Light1</selectedcolor>
+            <textcolor>Dark1</textcolor>
+            <selectedcolor>Dark1</selectedcolor>
             <label fallback="0.0">$INFO[ListItem.Rating]</label>
             <visible>!stringcompare(ListItem.Label,..) + IntegerGreaterThan(ListItem.Rating,0)</visible>
             <visible>![Container.Content(seasons) | Container.Content(artists) | Container.Content(actors)]</visible>
@@ -415,8 +415,8 @@
             <aligny>center</aligny>
             <height>64</height>
             <label>$VAR[LabelYear]</label>
-            <textcolor>Dark1</textcolor>
-            <selectedcolor>Dark1</selectedcolor>
+            <textcolor>White100</textcolor>
+            <selectedcolor>White100</selectedcolor>
             <visible>Container.Content(movies)</visible>
         </control>
         <control type="label">
@@ -427,8 +427,8 @@
             <font>SmallBold</font>
             <label>$INFO[ListItem.Label]</label>
             <textoffsetx>30</textoffsetx>
-            <textcolor>Dark1</textcolor>
-            <selectedcolor>Dark1</selectedcolor>
+            <textcolor>White100</textcolor>
+            <selectedcolor>White100</selectedcolor>
             <animation effect="slide" start="0" end="-90" time="0" condition="!Container.Content(movies)">Conditional</animation>
             <visible>!Container.Content(episodes) + !Container.Content(tvshows)</visible>
         </control>
@@ -440,8 +440,8 @@
             <font>SmallBold</font>
             <label>$INFO[ListItem.Label]</label>
             <textoffsetx>30</textoffsetx>
-            <textcolor>Dark1</textcolor>
-            <selectedcolor>Dark1</selectedcolor>
+            <textcolor>White100</textcolor>
+            <selectedcolor>White100</selectedcolor>
             <visible>Container.Content(episodes) | Container.Content(tvshows)</visible>
         </control>
         <control type="label">
@@ -451,8 +451,8 @@
             <height>64</height>
             <align>right</align>
             <font>Small</font>
-            <textcolor>Dark1</textcolor>
-            <selectedcolor>Dark1</selectedcolor>
+            <textcolor>White100</textcolor>
+            <selectedcolor>White100</selectedcolor>
             <label>$VAR[LabelDuration]</label>
             <visible>!substring(Container.FolderPath,plugin://,left)</visible>
         </control>
@@ -473,14 +473,66 @@
             <height>64</height>
             <align>right</align>
             <font>Small</font>
-            <textcolor>Dark1</textcolor>
-            <selectedcolor>Dark1</selectedcolor>
+            <textcolor>White100</textcolor>
+            <selectedcolor>White100</selectedcolor>
             <label fallback="0.0">$INFO[ListItem.Rating]</label>
             <visible>!stringcompare(ListItem.Label,..) + IntegerGreaterThan(ListItem.Rating,0)</visible>
             <visible>![Container.Content(seasons) | Container.Content(artists) | Container.Content(actors)]</visible>
         </control>
     </include>
     <include name="50itemlayout_square">
+        <control type="image">
+            <left>25</left>
+            <centertop>32</centertop>
+            <width>32</width>
+            <height>32</height>
+            <aspectratio aligny="top">keep</aspectratio>
+            <texture colordiffuse="White100">indicator/playlist.png</texture>
+            <visible>ListItem.IsPlaying</visible>
+        </control>
+        <control type="label">
+            <posx>0</posx>
+            <width>auto</width>
+            <aligny>center</aligny>
+            <height>64</height>
+            <font>SmallBold</font>
+            <label>$INFO[ListItem.Label]</label>
+            <textoffsetx>30</textoffsetx>
+            <textcolor>White100</textcolor>
+            <selectedcolor>White100</selectedcolor>
+            <visible>!ListItem.IsPlaying</visible>
+        </control>
+        <control type="label">
+            <posx>48</posx>
+            <width>auto</width>
+            <aligny>center</aligny>
+            <height>64</height>
+            <font>SmallBold</font>
+            <label>$INFO[ListItem.Label]</label>
+            <textoffsetx>30</textoffsetx>
+            <textcolor>White100</textcolor>
+            <selectedcolor>White100</selectedcolor>
+            <visible>ListItem.IsPlaying</visible>
+        </control>
+        <control type="label">
+            <right>30</right>
+            <width>500</width>
+            <aligny>center</aligny>
+            <height>64</height>
+            <align>right</align>
+            <font>Small</font>
+            <textcolor>White100</textcolor>
+            <selectedcolor>White100</selectedcolor>
+            <label>$INFO[ListItem.Label2]</label>
+        </control>
+        
+    </include>
+    <include name="50focuslayout_square">
+        <control type="image">                                
+            <width>100%</width>
+            <height>100%</height>
+            <texture border="8" colordiffuse="White100">common/box.png</texture>
+        </control>
         <control type="image">
             <left>25</left>
             <centertop>32</centertop>
@@ -523,58 +575,6 @@
             <font>Small</font>
             <textcolor>Dark1</textcolor>
             <selectedcolor>Dark1</selectedcolor>
-            <label>$INFO[ListItem.Label2]</label>
-        </control>
-        
-    </include>
-    <include name="50focuslayout_square">
-        <control type="image">                                
-            <width>100%</width>
-            <height>100%</height>
-            <texture border="8" colordiffuse="Dark1">common/box.png</texture>
-        </control>
-        <control type="image">
-            <left>25</left>
-            <centertop>32</centertop>
-            <width>32</width>
-            <height>32</height>
-            <aspectratio aligny="top">keep</aspectratio>
-            <texture colordiffuse="Light1">indicator/playlist.png</texture>
-            <visible>ListItem.IsPlaying</visible>
-        </control>
-        <control type="label">
-            <posx>0</posx>
-            <width>auto</width>
-            <aligny>center</aligny>
-            <height>64</height>
-            <font>SmallBold</font>
-            <label>$INFO[ListItem.Label]</label>
-            <textoffsetx>30</textoffsetx>
-            <textcolor>Light1</textcolor>
-            <selectedcolor>Light1</selectedcolor>
-            <visible>!ListItem.IsPlaying</visible>
-        </control>
-        <control type="label">
-            <posx>48</posx>
-            <width>auto</width>
-            <aligny>center</aligny>
-            <height>64</height>
-            <font>SmallBold</font>
-            <label>$INFO[ListItem.Label]</label>
-            <textoffsetx>30</textoffsetx>
-            <textcolor>Light1</textcolor>
-            <selectedcolor>Light1</selectedcolor>
-            <visible>ListItem.IsPlaying</visible>
-        </control>
-        <control type="label">
-            <right>30</right>
-            <width>500</width>
-            <aligny>center</aligny>
-            <height>64</height>
-            <align>right</align>
-            <font>Small</font>
-            <textcolor>Light1</textcolor>
-            <selectedcolor>Light1</selectedcolor>
             <label>$INFO[ListItem.Label2]</label>
         </control>
     </include>

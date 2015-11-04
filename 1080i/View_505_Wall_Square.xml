@@ -41,7 +41,7 @@
                         <left>20</left>
                         <right>20</right>
                         <height>110</height>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <font>Tiny</font>
                         <align>center</align>
                         <autoscroll>false</autoscroll>
@@ -84,7 +84,7 @@
                         <left>20</left>
                         <right>20</right>
                         <height>110</height>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <font>Tiny</font>
                         <align>center</align>
                         <autoscroll>false</autoscroll>
@@ -130,8 +130,8 @@
                         <aligny>center</aligny>
                         <height>64</height>
                         <font>SmallBold</font>
-                        <textcolor>Dark1</textcolor>
-                        <selectedcolor>Dark1</selectedcolor>
+                        <textcolor>White100</textcolor>
+                        <selectedcolor>White100</selectedcolor>
                         <label>$VAR[LabelDirector]</label>
                     </control>
                     <control type="label">
@@ -139,16 +139,16 @@
                         <height>64</height>
                         <aligny>center</aligny>
                         <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
-                        <selectedcolor>Dark1</selectedcolor>
+                        <textcolor>White100</textcolor>
+                        <selectedcolor>White100</selectedcolor>
                         <label>$VAR[LabelGenre]</label>
                     </control>
                     <control type="textbox">
                         <top>115</top>
                         <bottom>5</bottom>
                         <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
-                        <selectedcolor>Dark1</selectedcolor>
+                        <textcolor>White100</textcolor>
+                        <selectedcolor>White100</selectedcolor>
                         <label>$VAR[LabelPlotBox]</label>
                     </control>
                 </control>
@@ -195,7 +195,7 @@
                         <left>20</left>
                         <right>20</right>
                         <height>110</height>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <font>Tiny</font>
                         <align>center</align>
                         <autoscroll>false</autoscroll>
@@ -238,7 +238,7 @@
                         <left>20</left>
                         <right>20</right>
                         <height>110</height>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <font>Tiny</font>
                         <align>center</align>
                         <autoscroll>false</autoscroll>

@@ -276,7 +276,7 @@
                         <right>15</right>
                         <bottom>40</bottom>
                         <align>left</align>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
@@ -285,7 +285,7 @@
                         <right>15</right>
                         <bottom>40</bottom>
                         <align>right</align>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$INFO[ListItem.Rating]</label>
                     </control>
                     <control type="label">
@@ -294,7 +294,7 @@
                         <right>15</right>
                         <bottom>3</bottom>
                         <align>left</align>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$VAR[LabelYear]</label>
                     </control>
                     <control type="label">
@@ -303,7 +303,7 @@
                         <right>15</right>
                         <bottom>3</bottom>
                         <align>right</align>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$VAR[LabelDuration]</label>
                     </control>
                 </itemlayout>
@@ -362,7 +362,7 @@
                         <right>15</right>
                         <bottom>40</bottom>
                         <align>left</align>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
@@ -371,7 +371,7 @@
                         <right>15</right>
                         <bottom>40</bottom>
                         <align>right</align>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$INFO[ListItem.Rating]</label>
                     </control>
                     <control type="label">
@@ -380,7 +380,7 @@
                         <right>15</right>
                         <bottom>3</bottom>
                         <align>left</align>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$VAR[LabelYear]</label>
                     </control>
                     <control type="label">
@@ -389,7 +389,7 @@
                         <right>15</right>
                         <bottom>3</bottom>
                         <align>right</align>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$VAR[LabelDuration]</label>
                     </control>
                 </focusedlayout>

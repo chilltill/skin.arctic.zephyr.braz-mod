@@ -83,7 +83,7 @@
                     <width>100</width>
                     <height>100</height>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
-                    <texture colordiffuse="Dark1">progress/play.png</texture>
+                    <texture colordiffuse="White100">progress/play.png</texture>
                     <animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
                     <visible>!Player.Paused</visible>
                 </control>
@@ -93,7 +93,7 @@
                     <width>100</width>
                     <height>100</height>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
-                    <texture colordiffuse="Dark1">progress/pause.png</texture>
+                    <texture colordiffuse="White100">progress/pause.png</texture>
                     <animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
                     <visible>Player.Paused</visible>
                 </control>
@@ -126,7 +126,7 @@
                     <width>auto</width>
                     <font>SmallBold</font>
                     <align>left</align>
-                    <textcolor>Dark1</textcolor>
+                    <textcolor>White100</textcolor>
                     <label>$INFO[Player.Title]</label>
                 </control>
                 <control type="label">
@@ -134,7 +134,7 @@
                     <align>left</align>
                     <font>Flag</font>
                     <width>auto</width>
-                    <textcolor>Dark2</textcolor>
+                    <textcolor>White70</textcolor>
                     <label>$INFO[VideoPlayer.TvShowTitle,,  ]$INFO[MusicPlayer.Artist,,  ]$INFO[Player.Time]$INFO[Player.Duration, / ,]</label>
                 </control>
             </control>
@@ -176,7 +176,7 @@
                     <width>64</width>
                     <height>64</height>
                     <aspectratio>keep</aspectratio>
-                    <texture colordiffuse="Dark1">DefaultIconInfo.png</texture>
+                    <texture colordiffuse="White100">DefaultIconInfo.png</texture>
                 </control>
                 
                 <control type="label">
@@ -185,7 +185,7 @@
                     <height>24</height>
                     <aligny>center</aligny>
                     <font>TinyBold</font>
-                    <textcolor>Dark1</textcolor>
+                    <textcolor>White100</textcolor>
                     <label>$VAR[LabelNextRecordingHeader]</label>
                 </control>
                 <control type="label">
@@ -194,7 +194,7 @@
                     <height>24</height>
                     <aligny>center</aligny>
                     <font>Tiny</font>
-                    <textcolor>Dark1</textcolor>
+                    <textcolor>White100</textcolor>
                     <label>$VAR[LabelNextRecording]</label>
                 </control>
 
@@ -319,7 +319,7 @@
                 <height>48</height>
                 <align>left</align>
                 <label>$LOCALIZE[31138]...</label>
-                <textcolor>Dark1</textcolor>
+                <textcolor>White100</textcolor>
             </control>
         </control> 
     </include>
@@ -409,8 +409,8 @@
                     <aligny>center</aligny>
                     <height>80</height>
                     <font>TinyBold</font>
-                    <textcolor>Dark2</textcolor>
-                    <selectedcolor>Dark2</selectedcolor>
+                    <textcolor>White70</textcolor>
+                    <selectedcolor>White70</selectedcolor>
                     <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 </control>
                 <control type="label">
@@ -420,8 +420,8 @@
                     <aligny>center</aligny>
                     <height>80</height>
                     <font>MediumBold</font>
-                    <textcolor>Dark1</textcolor>
-                    <selectedcolor>Dark1</selectedcolor>
+                    <textcolor>White100</textcolor>
+                    <selectedcolor>White100</selectedcolor>
                     <label>$VAR[WidgetTitle]</label>
                 </control>
                 <control type="textbox">
@@ -431,8 +431,8 @@
                     <height>145</height>
                     <font>Tiny</font>
                     <autoscroll>false</autoscroll>
-                    <textcolor>Dark2</textcolor>
-                    <selectedcolor>Dark2</selectedcolor>
+                    <textcolor>White70</textcolor>
+                    <selectedcolor>White70</selectedcolor>
                     <shadowcolor>noop</shadowcolor>
                     <label>$VAR[WidgetPlot]</label>
                 </control>
@@ -443,8 +443,8 @@
                     <bottom>324</bottom>
                     <align>right</align>
                     <autoscroll>false</autoscroll>
-                    <textcolor>Dark1</textcolor>
-                    <selectedcolor>Dark1</selectedcolor>
+                    <textcolor>White100</textcolor>
+                    <selectedcolor>White100</selectedcolor>
                     <label>$VAR[WidgetSubLabel]</label>
                     <font>Flag</font>
                 </control>
@@ -496,8 +496,8 @@
                     <aligny>center</aligny>
                     <height>80</height>
                     <font>TinyBold</font>
-                    <textcolor>Dark2</textcolor>
-                    <selectedcolor>Dark2</selectedcolor>
+                    <textcolor>White70</textcolor>
+                    <selectedcolor>White70</selectedcolor>
                     <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 </control>
                 <control type="label">
@@ -507,8 +507,8 @@
                     <aligny>center</aligny>
                     <height>80</height>
                     <font>MediumBold</font>
-                    <textcolor>Dark1</textcolor>
-                    <selectedcolor>Dark1</selectedcolor>
+                    <textcolor>White100</textcolor>
+                    <selectedcolor>White100</selectedcolor>
                     <label>$VAR[WidgetTitle]</label>
                 </control>
                 <control type="textbox">
@@ -518,8 +518,8 @@
                     <height>145</height>
                     <font>Tiny</font>
                     <autoscroll>false</autoscroll>
-                    <textcolor>Dark2</textcolor>
-                    <selectedcolor>Dark2</selectedcolor>
+                    <textcolor>White70</textcolor>
+                    <selectedcolor>White70</selectedcolor>
                     <shadowcolor>noop</shadowcolor>
                     <label>$VAR[WidgetPlot]</label>
                 </control>
@@ -530,8 +530,8 @@
                     <bottom>324</bottom>
                     <align>right</align>
                     <autoscroll>false</autoscroll>
-                    <textcolor>Dark1</textcolor>
-                    <selectedcolor>Dark1</selectedcolor>
+                    <textcolor>White100</textcolor>
+                    <selectedcolor>White100</selectedcolor>
                     <label>$VAR[WidgetSubLabel]</label>
                     <font>Flag</font>
                 </control>
@@ -576,7 +576,7 @@
                 <left>32</left>
                 <width>16</width>
                 <height>16</height>
-                <texture colordiffuse="Dark2" flipx="true">common/arrow-small-right.png</texture>
+                <texture colordiffuse="White70" flipx="true">common/arrow-small-right.png</texture>
             </control>
             <control type="image">
                 <visible>IntegerGreaterThan(Container(300).NumItems,6) + Container(300).HasNext</visible>
@@ -585,7 +585,7 @@
                 <right>470</right>
                 <width>16</width>
                 <height>16</height>
-                <texture colordiffuse="Dark2" flipx="false">common/arrow-small-right.png</texture>
+                <texture colordiffuse="White70" flipx="false">common/arrow-small-right.png</texture>
             </control>
             <control type="image">
                 <visible>IntegerGreaterThan(Container(300).NumItems,6) + Container(300).HasNext</visible>
@@ -594,7 +594,7 @@
                 <right>32</right>
                 <width>16</width>
                 <height>16</height>
-                <texture colordiffuse="Dark2" flipx="false">common/arrow-small-right.png</texture>
+                <texture colordiffuse="White70" flipx="false">common/arrow-small-right.png</texture>
             </control>
             <control type="list" id="300">
                 
@@ -713,7 +713,7 @@
                         <width>100%</width>
                         <centertop>50%</centertop>
                         <height>100%</height>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <include>DefContextButton</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
@@ -782,7 +782,7 @@
                         <width>180</width>
                         <top>30</top>
                         <centerleft>50%</centerleft>
-                        <textcolor>Dark3</textcolor>
+                        <textcolor>White30</textcolor>
                         <font>HomeIcon</font>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
@@ -795,7 +795,7 @@
                         <width>90%</width>
                         <top>30</top>
                         <centerleft>50%</centerleft>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <font>HomeIcon</font>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
@@ -814,7 +814,7 @@
                         <centerleft>50%</centerleft>
                         <width>16</width>
                         <height>16</height>
-                        <texture colordiffuse="Dark3" flipy="true">common/arrow-small.png</texture>
+                        <texture colordiffuse="White30" flipy="true">common/arrow-small.png</texture>
                         <animation effect="fade" end="100" start="0" delay="300" time="400" reversible="false">Focus</animation>
                     </control>
                 </focusedlayout>
@@ -1035,7 +1035,7 @@
                                     <height>60</height>
                                     <font>Medium</font>
                                     <align>center</align>
-                                    <textcolor>Dark2</textcolor>
+                                    <textcolor>White70</textcolor>
                                     <label>$INFO[ListItem.Label]</label>
                                     <textoffsetx>15</textoffsetx>
                                 </control>
@@ -1045,7 +1045,7 @@
                                     <height>60</height>
                                     <font>Small</font>
                                     <align>center</align>
-                                    <textcolor>Dark2</textcolor>
+                                    <textcolor>White70</textcolor>
                                     <label>$INFO[ListItem.Label2]</label>
                                     <textoffsetx>15</textoffsetx>
                                 </control>
@@ -1056,7 +1056,7 @@
                                     <height>60</height>
                                     <font>Small</font>
                                     <align>center</align>
-                                    <textcolor>Dark2</textcolor>
+                                    <textcolor>White70</textcolor>
                                     <label>$INFO[ListItem.Property(HighTemp),[B],[/B]]$INFO[ListItem.Property(LowTemp),  ]</label>
                                     <textoffsetx>15</textoffsetx>
                                 </control>
@@ -1078,8 +1078,8 @@
                                     <height>60</height>
                                     <font>Medium</font>
                                     <align>center</align>
-                                    <textcolor>Dark2</textcolor>
-                                    <selectedcolor>Dark2</selectedcolor>
+                                    <textcolor>White70</textcolor>
+                                    <selectedcolor>White70</selectedcolor>
                                     <label>$INFO[ListItem.Label]</label>
                                     <textoffsetx>15</textoffsetx>
                                 </control>
@@ -1089,8 +1089,8 @@
                                     <height>60</height>
                                     <font>Small</font>
                                     <align>center</align>
-                                    <textcolor>Dark2</textcolor>
-                                    <selectedcolor>Dark2</selectedcolor>
+                                    <textcolor>White70</textcolor>
+                                    <selectedcolor>White70</selectedcolor>
                                     <label>$INFO[ListItem.Label2]</label>
                                     <textoffsetx>15</textoffsetx>
                                 </control>
@@ -1101,8 +1101,8 @@
                                     <height>60</height>
                                     <font>Small</font>
                                     <align>center</align>
-                                    <textcolor>Dark2</textcolor>
-                                    <selectedcolor>Dark2</selectedcolor>
+                                    <textcolor>White70</textcolor>
+                                    <selectedcolor>White70</selectedcolor>
                                     <label>$INFO[ListItem.Property(HighTemp),[B],[/B]]$INFO[ListItem.Property(LowTemp),  ]</label>
                                     <textoffsetx>15</textoffsetx>
                                 </control>
@@ -1186,7 +1186,7 @@
                             <height>48</height>
                             <align>left</align>
                             <label>$LOCALIZE[31138]...</label>
-                            <textcolor>Dark1</textcolor>
+                            <textcolor>White100</textcolor>
                         </control>
 
                     </control>
@@ -1208,8 +1208,8 @@
                             <aligny>center</aligny>
                             <height>80</height>
                             <font>TinyBold</font>
-                            <textcolor>Dark2</textcolor>
-                            <selectedcolor>Dark2</selectedcolor>
+                            <textcolor>White70</textcolor>
+                            <selectedcolor>White70</selectedcolor>
                             <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                         </control>
                         <control type="label">
@@ -1219,8 +1219,8 @@
                             <aligny>center</aligny>
                             <height>80</height>
                             <font>MediumBold</font>
-                            <textcolor>Dark1</textcolor>
-                            <selectedcolor>Dark1</selectedcolor>
+                            <textcolor>White100</textcolor>
+                            <selectedcolor>White100</selectedcolor>
                             <label>$VAR[WidgetTitle]</label>
                         </control>
                         <control type="textbox">
@@ -1230,8 +1230,8 @@
                             <height>110</height>
                             <font>Tiny</font>
                             <autoscroll delay="10000" time="3000" repeat="10000"/>
-                            <textcolor>Dark2</textcolor>
-                            <selectedcolor>Dark2</selectedcolor>
+                            <textcolor>White70</textcolor>
+                            <selectedcolor>White70</selectedcolor>
                             <label>$VAR[WidgetPlot]</label>
                         </control>
                         <control type="label">
@@ -1241,8 +1241,8 @@
                             <height>40</height>
                             <align>right</align>
                             <autoscroll>false</autoscroll>
-                            <textcolor>Dark2</textcolor>
-                            <selectedcolor>Dark2</selectedcolor>
+                            <textcolor>White70</textcolor>
+                            <selectedcolor>White70</selectedcolor>
                             <label>$VAR[WidgetSubLabel]</label>
                             <font>Flag</font>
                         </control>
@@ -1257,7 +1257,7 @@
                 <left>32</left>
                 <width>16</width>
                 <height>16</height>
-                <texture colordiffuse="Dark2" flipx="true">common/arrow-small-right.png</texture>
+                <texture colordiffuse="White70" flipx="true">common/arrow-small-right.png</texture>
             </control>
             <control type="image">
                 <visible>IntegerGreaterThan(Container(300).NumItems,6) + Container(300).HasNext</visible>
@@ -1266,7 +1266,7 @@
                 <right>470</right>
                 <width>16</width>
                 <height>16</height>
-                <texture colordiffuse="Dark2" flipx="false">common/arrow-small-right.png</texture>
+                <texture colordiffuse="White70" flipx="false">common/arrow-small-right.png</texture>
             </control>
             <control type="image">
                 <visible>IntegerGreaterThan(Container(300).NumItems,6) + Container(300).HasNext</visible>
@@ -1275,7 +1275,7 @@
                 <right>32</right>
                 <width>16</width>
                 <height>16</height>
-                <texture colordiffuse="Dark2" flipx="false">common/arrow-small-right.png</texture>
+                <texture colordiffuse="White70" flipx="false">common/arrow-small-right.png</texture>
             </control>
             <control type="list" id="300">
                 <include>Animation.FadeIn.Delay</include>
@@ -1312,7 +1312,7 @@
                 <width>180</width>
                 <top>0</top>
                 <centerleft>50%</centerleft>
-                <textcolor>Dark3</textcolor>
+                <textcolor>White30</textcolor>
                 <font>Home</font>
                 <label>$INFO[ListItem.Label]</label>
             </control>
@@ -1325,7 +1325,7 @@
                 <width>90%</width>
                 <top>0</top>
                 <centerleft>50%</centerleft>
-                <textcolor>Dark1</textcolor>
+                <textcolor>White100</textcolor>
                 <font>Home</font>
                 <label>$INFO[ListItem.Label]</label>
             </control>
@@ -1344,7 +1344,7 @@
                 <centerleft>50%</centerleft>
                 <width>16</width>
                 <height>16</height>
-                <texture colordiffuse="Dark3">common/arrow-small.png</texture>
+                <texture colordiffuse="White30">common/arrow-small.png</texture>
                 <visible>Control.HasFocus(300)</visible>
                 <visible>IntegerGreaterThan(Container(302).NumItems,0)</visible>
                 <animation effect="fade" end="100" start="0" delay="300" time="400" reversible="false">Focus</animation>
@@ -1363,7 +1363,7 @@
                 <height>128</height>
                 <centerleft>50%</centerleft>
                 <centertop>40%</centertop>
-                <texture colordiffuse="Dark3">$INFO[ListItem.Icon]</texture>
+                <texture colordiffuse="White30">$INFO[ListItem.Icon]</texture>
                 <visible>substring(ListItem.Icon,special://skin/extras/icons)</visible>
             </control>
             <control type="label">
@@ -1372,7 +1372,7 @@
                 <width>180</width>
                 <bottom>0</bottom>
                 <centerleft>50%</centerleft>
-                <textcolor>Dark3</textcolor>
+                <textcolor>White30</textcolor>
                 <font>HomeIcon</font>
                 <label>$INFO[ListItem.Label]</label>
             </control>
@@ -1384,7 +1384,7 @@
                 <height>128</height>
                 <centerleft>50%</centerleft>
                 <centertop>40%</centertop>
-                <texture colordiffuse="Dark1">$INFO[ListItem.Icon]</texture>
+                <texture colordiffuse="White100">$INFO[ListItem.Icon]</texture>
                 <visible>substring(ListItem.Icon,special://skin/extras/icons)</visible>
             </control>
             <control type="label">
@@ -1393,7 +1393,7 @@
                 <width>180</width>
                 <bottom>0</bottom>
                 <centerleft>50%</centerleft>
-                <textcolor>Dark1</textcolor>
+                <textcolor>White100</textcolor>
                 <font>HomeIcon</font>
                 <label>$INFO[ListItem.Label]</label>
             </control>
@@ -1412,7 +1412,7 @@
                 <centerleft>50%</centerleft>
                 <width>16</width>
                 <height>16</height>
-                <texture colordiffuse="Dark3">common/arrow-small.png</texture>
+                <texture colordiffuse="White30">common/arrow-small.png</texture>
                 <visible>Control.HasFocus(300)</visible>
                 <visible>IntegerGreaterThan(Container(302).NumItems,0)</visible>
                 <animation effect="fade" end="100" start="0" delay="300" time="400" reversible="false">Focus</animation>
@@ -1499,7 +1499,7 @@
                             <align>right</align>
                             <aligny>center</aligny>
                             <height>100%</height>
-                            <textcolor>Dark3</textcolor>
+                            <textcolor>White30</textcolor>
                             <font>Home</font>
                             <label>$INFO[ListItem.Label]</label>
                             <visible>!Skin.HasSetting(home.showicons)</visible>
@@ -1510,7 +1510,7 @@
                             <align>right</align>
                             <aligny>center</aligny>
                             <height>100%</height>
-                            <textcolor>Dark3</textcolor>
+                            <textcolor>White30</textcolor>
                             <font>Home</font>
                             <label>$INFO[ListItem.Label]</label>
                             <visible>Skin.HasSetting(home.showicons)</visible>
@@ -1519,7 +1519,7 @@
                             <right>10</right>
                             <width>80</width>
                             <height>80</height>
-                            <texture colordiffuse="Dark3">$INFO[ListItem.Icon]</texture>
+                            <texture colordiffuse="White30">$INFO[ListItem.Icon]</texture>
                             <visible>Skin.HasSetting(home.showicons)</visible>
                         </control>
                     </itemlayout>
@@ -1531,7 +1531,7 @@
                             <align>right</align>
                             <aligny>center</aligny>
                             <height>100%</height>
-                            <textcolor>Dark1</textcolor>
+                            <textcolor>White100</textcolor>
                             <font>Home</font>
                             <label>$INFO[ListItem.Label]</label>
                             <visible>!Skin.HasSetting(home.showicons)</visible>
@@ -1542,7 +1542,7 @@
                             <align>right</align>
                             <aligny>center</aligny>
                             <height>100%</height>
-                            <textcolor>Dark1</textcolor>
+                            <textcolor>White100</textcolor>
                             <font>Home</font>
                             <label>$INFO[ListItem.Label]</label>
                             <visible>Skin.HasSetting(home.showicons)</visible>
@@ -1551,7 +1551,7 @@
                             <right>10</right>
                             <width>80</width>
                             <height>80</height>
-                            <texture colordiffuse="Dark1">$INFO[ListItem.Icon]</texture>
+                            <texture colordiffuse="White100">$INFO[ListItem.Icon]</texture>
                             <visible>Skin.HasSetting(home.showicons)</visible>
                         </control>
                     </focusedlayout>
@@ -1586,7 +1586,7 @@
                             <align>right</align>
                             <aligny>center</aligny>
                             <height>100%</height>
-                            <textcolor>Dark3</textcolor>
+                            <textcolor>White30</textcolor>
                             <font>Home</font>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
@@ -1599,7 +1599,7 @@
                             <align>right</align>
                             <aligny>center</aligny>
                             <height>100%</height>
-                            <textcolor>Dark1</textcolor>
+                            <textcolor>White100</textcolor>
                             <font>Home</font>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
@@ -1643,7 +1643,7 @@
                         <width>1322</width>
                         <top>256</top>
                         <align>left</align>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$VAR[WidgetLabel]</label>
                         <include>Animation.FadeIn</include>
                         <include>Animation.FadeOut</include>
@@ -1663,7 +1663,7 @@
                             <font>SmallBold</font>
                             <width>100%</width>
                             <align>left</align>
-                            <textcolor>Dark1</textcolor>
+                            <textcolor>White100</textcolor>
                             <label>$VAR[WidgetTitle]</label>
                         </control>
                         <control type="textbox">
@@ -1671,14 +1671,14 @@
                             <width>100%</width>
                             <height>110</height>
                             <align>left</align>
-                            <textcolor>Dark2</textcolor>
+                            <textcolor>White70</textcolor>
                             <label>$VAR[WidgetPlot]</label>
                         </control>
                         <control type="label">
                             <font>Tiny</font>
                             <width>100%</width>
                             <align>left</align>
-                            <textcolor>Dark2</textcolor>
+                            <textcolor>White70</textcolor>
                             <label>$VAR[WidgetSubLabel]</label>
                         </control>
                     </control>
@@ -1949,7 +1949,7 @@
                                     <height>60</height>
                                     <font>Medium</font>
                                     <align>center</align>
-                                    <textcolor>Dark2</textcolor>
+                                    <textcolor>White70</textcolor>
                                     <label>$INFO[ListItem.Label]</label>
                                     <textoffsetx>15</textoffsetx>
                                 </control>
@@ -1959,7 +1959,7 @@
                                     <height>60</height>
                                     <font>Small</font>
                                     <align>center</align>
-                                    <textcolor>Dark2</textcolor>
+                                    <textcolor>White70</textcolor>
                                     <label>$INFO[ListItem.Label2]</label>
                                     <textoffsetx>15</textoffsetx>
                                 </control>
@@ -1969,7 +1969,7 @@
                                     <height>60</height>
                                     <font>Small</font>
                                     <align>center</align>
-                                    <textcolor>Dark2</textcolor>
+                                    <textcolor>White70</textcolor>
                                     <label>$INFO[ListItem.Property(HighTemp),[B],[/B]]$INFO[ListItem.Property(LowTemp),  ]</label>
                                     <textoffsetx>15</textoffsetx>
                                 </control>
@@ -1991,8 +1991,8 @@
                                     <height>60</height>
                                     <font>Medium</font>
                                     <align>center</align>
-                                    <textcolor>Dark2</textcolor>
-                                    <selectedcolor>Dark2</selectedcolor>
+                                    <textcolor>White70</textcolor>
+                                    <selectedcolor>White70</selectedcolor>
                                     <label>$INFO[ListItem.Label]</label>
                                     <textoffsetx>15</textoffsetx>
                                 </control>
@@ -2002,8 +2002,8 @@
                                     <height>60</height>
                                     <font>Small</font>
                                     <align>center</align>
-                                    <textcolor>Dark2</textcolor>
-                                    <selectedcolor>Dark2</selectedcolor>
+                                    <textcolor>White70</textcolor>
+                                    <selectedcolor>White70</selectedcolor>
                                     <label>$INFO[ListItem.Label2]</label>
                                     <textoffsetx>15</textoffsetx>
                                 </control>
@@ -2013,8 +2013,8 @@
                                     <height>60</height>
                                     <font>Small</font>
                                     <align>center</align>
-                                    <textcolor>Dark2</textcolor>
-                                    <selectedcolor>Dark2</selectedcolor>
+                                    <textcolor>White70</textcolor>
+                                    <selectedcolor>White70</selectedcolor>
                                     <label>$INFO[ListItem.Property(HighTemp),[B],[/B]]$INFO[ListItem.Property(LowTemp),  ]</label>
                                     <textoffsetx>15</textoffsetx>
                                 </control>

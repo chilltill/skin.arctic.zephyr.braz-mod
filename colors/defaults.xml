@@ -2,14 +2,10 @@
 <colors>
     <color name="Highlight">ff0385b5</color>
     <color name="Selected">FFededed</color>
-    <color name="Dark1">ffcccccc</color>
-    <color name="Dark2">b3cccccc</color>
-    <color name="Dark3">4dcccccc</color>
-    <color name="Dark4">1fcccccc</color>
-    <color name="Light1">ff333333</color>
-    <color name="Light2">b3333333</color>
-    <color name="Light3">4d333333</color>
-    <color name="Light4">1f333333</color>
+    <color name="Dark1">ff333333</color>
+    <color name="Dark2">b3333333</color>
+    <color name="Dark3">4d333333</color>
+    <color name="Dark4">1f333333</color>
 
     <color name="White100">FFcccccc</color>
     <color name="White70">B3cccccc</color>

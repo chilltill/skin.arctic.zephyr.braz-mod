@@ -163,21 +163,21 @@
                 <control type="label">
                     <font>SmallBold</font>
                     <label>$INFO[ListItem.Label]</label>
-                    <textcolor>Dark1</textcolor>
+                    <textcolor>White100</textcolor>
                     <height>35</height>
                     <aligny>top</aligny>
                 </control>
                 <control type="label">
                     <font>Tiny</font>
                     <label>$VAR[LabelGenre]</label>
-                    <textcolor>Dark1</textcolor>
+                    <textcolor>White100</textcolor>
                     <height>42</height>
                     <aligny>top</aligny>
                 </control>
                 <control type="textbox">
                     <font>Tiny</font>
                     <label>$VAR[LabelPlotBox]</label>
-                    <textcolor>Dark2</textcolor>
+                    <textcolor>White70</textcolor>
                     <height>80</height>
                 </control>
             </control>

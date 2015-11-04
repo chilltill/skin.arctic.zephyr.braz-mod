@@ -28,7 +28,7 @@
                             <top>10</top>
                             <right>10</right>
                             <bottom>10</bottom>
-                            <texture colordiffuse="Dark4" border="5">common/box.png</texture>
+                            <texture colordiffuse="White12" border="5">common/box.png</texture>
                         </control>
                         <control type="image">
                             <right>24</right>
@@ -54,8 +54,8 @@
                             <height>50</height>
                             <align>left</align>
                             <font>SmallBold</font>
-                            <textcolor>Dark1</textcolor>
-                            <selectedcolor>Dark1</selectedcolor>
+                            <textcolor>White100</textcolor>
+                            <selectedcolor>White100</selectedcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="textbox">
@@ -65,8 +65,8 @@
                             <height>180</height>
                             <font>Tiny</font>
                             <autoscroll>false</autoscroll>
-                            <textcolor>Dark1</textcolor>
-                            <selectedcolor>Dark1</selectedcolor>
+                            <textcolor>White100</textcolor>
+                            <selectedcolor>White100</selectedcolor>
                             <label>$VAR[LabelPlotBox]</label>
                         </control>
                         <control type="label">
@@ -77,8 +77,8 @@
                             <height>38</height>
                             <align>right</align>
                             <font>Tiny</font>
-                            <textcolor>Dark1</textcolor>
-                            <selectedcolor>Dark1</selectedcolor>
+                            <textcolor>White100</textcolor>
+                            <selectedcolor>White100</selectedcolor>
                             <label>$VAR[LabelYear]$VAR[LabelDuration,  •  ]$INFO[ListItem.Rating,  •  ]</label>
                         </control>
                        
@@ -90,7 +90,7 @@
                             <top>10</top>
                             <right>10</right>
                             <bottom>10</bottom>
-                            <texture colordiffuse="Dark4" border="5">common/box.png</texture>
+                            <texture colordiffuse="White12" border="5">common/box.png</texture>
                         </control>
                         <control type="image">
                             <right>24</right>
@@ -116,8 +116,8 @@
                             <height>50</height>
                             <align>left</align>
                             <font>SmallBold</font>
-                            <textcolor>Dark1</textcolor>
-                            <selectedcolor>Dark1</selectedcolor>
+                            <textcolor>White100</textcolor>
+                            <selectedcolor>White100</selectedcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="textbox">
@@ -127,8 +127,8 @@
                             <height>180</height>
                             <font>Tiny</font>
                             <autoscroll>false</autoscroll>
-                            <textcolor>Dark1</textcolor>
-                            <selectedcolor>Dark1</selectedcolor>
+                            <textcolor>White100</textcolor>
+                            <selectedcolor>White100</selectedcolor>
                             <label>$INFO[ListItem.Plot]</label>
                         </control>
                         <control type="label">
@@ -139,8 +139,8 @@
                             <height>38</height>
                             <align>right</align>
                             <font>Tiny</font>
-                            <textcolor>Dark1</textcolor>
-                            <selectedcolor>Dark1</selectedcolor>
+                            <textcolor>White100</textcolor>
+                            <selectedcolor>White100</selectedcolor>
                             <label>$VAR[LabelYear]$VAR[LabelDuration,  •  ]$INFO[ListItem.Rating,  •  ]</label>
                         </control>
                        
@@ -152,7 +152,7 @@
                             <top>10</top>
                             <right>10</right>
                             <bottom>10</bottom>
-                            <texture colordiffuse="Dark1" border="5">common/box.png</texture>
+                            <texture colordiffuse="White100" border="5">common/box.png</texture>
                         </control>
                         <control type="image">                                
                             <left>10</left>
@@ -178,8 +178,8 @@
                             <height>50</height>
                             <align>left</align>
                             <font>SmallBold</font>
-                            <textcolor>Light1</textcolor>
-                            <selectedcolor>Light1</selectedcolor>
+                            <textcolor>Dark1</textcolor>
+                            <selectedcolor>Dark1</selectedcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="textbox">
@@ -188,8 +188,8 @@
                             <top>70</top>
                             <height>180</height>
                             <font>Tiny</font>
-                            <textcolor>Light1</textcolor>
-                            <selectedcolor>Light1</selectedcolor>
+                            <textcolor>Dark1</textcolor>
+                            <selectedcolor>Dark1</selectedcolor>
                             <label>$VAR[LabelPlotBox]</label>
                         </control>
                         <control type="label">
@@ -200,8 +200,8 @@
                             <height>38</height>
                             <align>right</align>
                             <font>Tiny</font>
-                            <textcolor>Light1</textcolor>
-                            <selectedcolor>Light1</selectedcolor>
+                            <textcolor>Dark1</textcolor>
+                            <selectedcolor>Dark1</selectedcolor>
                             <label>$VAR[LabelYear]$VAR[LabelDuration,  •  ]$INFO[ListItem.Rating,  •  ]</label>
                         </control>
                     </focusedlayout>
@@ -211,7 +211,7 @@
                             <top>10</top>
                             <right>10</right>
                             <bottom>10</bottom>
-                            <texture colordiffuse="Dark1" border="5">common/box.png</texture>
+                            <texture colordiffuse="White100" border="5">common/box.png</texture>
                         </control>
                         <control type="image">
                             <right>24</right>
@@ -237,8 +237,8 @@
                             <height>50</height>
                             <align>left</align>
                             <font>SmallBold</font>
-                            <textcolor>Light1</textcolor>
-                            <selectedcolor>Light1</selectedcolor>
+                            <textcolor>Dark1</textcolor>
+                            <selectedcolor>Dark1</selectedcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="textbox">
@@ -247,8 +247,8 @@
                             <top>70</top>
                             <height>180</height>
                             <font>Tiny</font>
-                            <textcolor>Light1</textcolor>
-                            <selectedcolor>Light1</selectedcolor>
+                            <textcolor>Dark1</textcolor>
+                            <selectedcolor>Dark1</selectedcolor>
                             <label>$INFO[ListItem.Plot]</label>
                         </control>
                         <control type="label">
@@ -259,8 +259,8 @@
                             <height>38</height>
                             <align>right</align>
                             <font>Tiny</font>
-                            <textcolor>Light1</textcolor>
-                            <selectedcolor>Light1</selectedcolor>
+                            <textcolor>Dark1</textcolor>
+                            <selectedcolor>Dark1</selectedcolor>
                             <label>$VAR[LabelYear]$VAR[LabelDuration,  •  ]$INFO[ListItem.Rating,  •  ]</label>
                         </control>
                        

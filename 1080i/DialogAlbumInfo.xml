@@ -42,14 +42,14 @@
                         <centerleft>734</centerleft>
                         <width>16</width>
                         <height>16</height>
-                        <texture colordiffuse="Dark3" flipx="true">common/arrow-small-right.png</texture>
+                        <texture colordiffuse="White30" flipx="true">common/arrow-small-right.png</texture>
                     </control>
                     <control type="image">
                         <visible>Container(9000).HasNext</visible>
                         <centerright>64</centerright>
                         <width>16</width>
                         <height>16</height>
-                        <texture colordiffuse="Dark3" flipx="false">common/arrow-small-right.png</texture>
+                        <texture colordiffuse="White30" flipx="false">common/arrow-small-right.png</texture>
                     </control>
                 </control>
                 <control type="group">
@@ -63,14 +63,14 @@
                         <centerleft>734</centerleft>
                         <width>16</width>
                         <height>16</height>
-                        <texture colordiffuse="Dark3" flipx="true">common/arrow-small-right.png</texture>
+                        <texture colordiffuse="White30" flipx="true">common/arrow-small-right.png</texture>
                     </control>
                     <control type="image">
                         <visible>[Container(9501).HasNext + Control.HasFocus(9501)] | [Container(350).HasNext + Control.HasFocus(350)] | [Container(50).HasNext + Control.HasFocus(51)]</visible>
                         <centerright>64</centerright>
                         <width>16</width>
                         <height>16</height>
-                        <texture colordiffuse="Dark3" flipx="false">common/arrow-small-right.png</texture>
+                        <texture colordiffuse="White30" flipx="false">common/arrow-small-right.png</texture>
                     </control>
                 </control>
                 <control type="button" id ="5">
@@ -192,7 +192,7 @@
                         <itemgap>0</itemgap>
                         <control type="label">
                             <description>Header Label</description>
-                            <textcolor>Dark1</textcolor>
+                            <textcolor>White100</textcolor>
                             <include>DefDialogInfoHeader</include>
                             <label>$INFO[ListItem.Album]</label>
                         </control>
@@ -203,7 +203,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[ListItem.Artist]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -216,7 +216,7 @@
                                 <width>150</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$LOCALIZE[345][/B]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -225,7 +225,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[ListItem.Year]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -237,7 +237,7 @@
                                 <width>150</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$LOCALIZE[2050][/B]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -246,7 +246,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[Window(home).Property(Album.Songs.Duration)]$INFO[Window(home).Property(Album.Songs.Count),  -  , $LOCALIZE[182]]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -258,7 +258,7 @@
                                 <width>150</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$LOCALIZE[572][/B]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -267,7 +267,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[ListItem.Property(Album_Label)]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -279,7 +279,7 @@
                                 <width>150</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$LOCALIZE[515][/B]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -288,7 +288,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[ListItem.Genre]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -303,7 +303,7 @@
                                 <width>100%</width>
                                 <height>250</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <aligny>top</aligny>
                             </control>
                         </control>
@@ -315,7 +315,7 @@
                                 <width>150</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$LOCALIZE[182][/B]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -324,7 +324,7 @@
                                 <width>439</width>
                                 <height>250</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <scroll>false</scroll>
                                 <label fallback="19055">$INFO[Window(home).Property(Album.Song.1.Title),[B]1.[/B] ,]$INFO[Window(home).Property(Album.Song.2.Title),[CR][B]2.[/B] ,]$INFO[Window(home).Property(Album.Song.3.Title),[CR][B]3.[/B] ,]$INFO[Window(home).Property(Album.Song.4.Title),[CR][B]4.[/B] ,]$INFO[Window(home).Property(Album.Song.5.Title),[CR][B]5.[/B] ,]$INFO[Window(home).Property(Album.Song.6.Title),[CR][B]6.[/B] ,]$INFO[Window(home).Property(Album.Song.7.Title),[CR][B]7.[/B] ,]$INFO[Window(home).Property(Album.Song.8.Title),[CR][B]8.[/B] ,]</label>
                                 <aligny>top</aligny>
@@ -334,7 +334,7 @@
                                 <width>439</width>
                                 <height>250</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <scroll>false</scroll>
                                 <label fallback="19055">$INFO[Window(home).Property(Album.Song.9.Title),[B]9.[/B] ,]$INFO[Window(home).Property(Album.Song.10.Title),[CR][B]10.[/B] ,]$INFO[Window(home).Property(Album.Song.11.Title),[CR][B]11.[/B] ,]$INFO[Window(home).Property(Album.Song.12.Title),[CR][B]12.[/B] ,]$INFO[Window(home).Property(Album.Song.13.Title),[CR][B]13.[/B] ,]$INFO[Window(home).Property(Album.Song.14.Title),[CR][B]14.[/B] ,]$INFO[Window(home).Property(Album.Song.15.Title),[CR][B]15.[/B] ,]$INFO[Window(home).Property(Album.Song.16.Title),[CR][B]16.[/B] ,]</label>
                                 <aligny>top</aligny>
@@ -357,7 +357,7 @@
                         <itemgap>0</itemgap>
                         <control type="label">
                             <description>Header Label</description>
-                            <textcolor>Dark1</textcolor>
+                            <textcolor>White100</textcolor>
                             <include>DefDialogInfoHeader</include>
                             <label>$INFO[ListItem.Artist]</label>
                         </control>
@@ -368,7 +368,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[ListItem.Property(Artist_YearsActive)]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -380,7 +380,7 @@
                                 <width>150</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$LOCALIZE[515][/B]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -389,7 +389,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[ListItem.Genre]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -401,7 +401,7 @@
                                 <width>150</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$LOCALIZE[21893][/B]</label>
                                 <aligny>center</aligny>
                                 <visible>!IsEmpty(ListItem.Property(Artist_Born))</visible>
@@ -410,7 +410,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$LOCALIZE[21894][/B]</label>
                                 <aligny>center</aligny>
                                 <visible>IsEmpty(ListItem.Property(Artist_Born))</visible>
@@ -420,7 +420,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[ListItem.Property(Artist_Born)]$INFO[ListItem.Property(Artist_Formed)]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -432,7 +432,7 @@
                                 <width>150</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$LOCALIZE[21897][/B]</label>
                                 <aligny>center</aligny>
                                 <visible>!IsEmpty(ListItem.Property(Artist_Died))</visible>
@@ -441,7 +441,7 @@
                                 <width>150</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$LOCALIZE[21896][/B]</label>
                                 <aligny>center</aligny>
                                 <visible>IsEmpty(ListItem.Property(Artist_Died))</visible>
@@ -451,7 +451,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[ListItem.Property(Artist_Died)]</label>
                                 <aligny>center</aligny>
                                 <visible>!IsEmpty(ListItem.Property(Artist_Died))</visible>
@@ -461,7 +461,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[ListItem.Property(Artist_Disbanded)]</label>
                                 <aligny>center</aligny>
                                 <visible>IsEmpty(ListItem.Property(Artist_Died))</visible>
@@ -474,7 +474,7 @@
                                 <width>150</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$LOCALIZE[176][/B]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -483,7 +483,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[ListItem.Property(Artist_Style)]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -497,7 +497,7 @@
                                 <width>100%</width>
                                 <height>250</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <aligny>top</aligny>
                             </control>
                         </control>
@@ -530,7 +530,7 @@
                         <height>48</height>
                         <align>left</align>
                         <label>$LOCALIZE[31138]...</label>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                     </control>
                 </control>
 
@@ -542,7 +542,7 @@
                     <textoffsetx>5</textoffsetx>
                     <top>280</top>
                     <description>Header Label</description>
-                    <textcolor>Dark2</textcolor>
+                    <textcolor>White70</textcolor>
                     <font>Small</font>
                     <label>$INFO[ListItem.Artist,, $LOCALIZE[21888]]</label>
                     <include>Animation.DelayFadeIn</include>
@@ -554,7 +554,7 @@
                     <textoffsetx>5</textoffsetx>
                     <top>260</top>
                     <description>Header Label</description>
-                    <textcolor>Dark2</textcolor>
+                    <textcolor>White70</textcolor>
                     <font>Small</font>
                     <label>$INFO[ListItem.Artist,, YouTube videos]</label>
                     <include>Animation.DelayFadeIn</include>
@@ -566,7 +566,7 @@
                     <height>50</height>
                     <font>Mini</font>
                     <scroll>true</scroll>
-                    <textcolor>Dark3</textcolor>
+                    <textcolor>White30</textcolor>
                     <label>$INFO[Container(9501).NumItems,, $LOCALIZE[31101]  •  ]$INFO[Container(9501).CurrentPage,, $LOCALIZE[20163] ]$INFO[Container(9501).NumPages,, $LOCALIZE[31243]]</label>
                     <aligny>center</aligny>
                     <align>right</align>
@@ -580,7 +580,7 @@
                     <height>50</height>
                     <font>Mini</font>
                     <scroll>true</scroll>
-                    <textcolor>Dark3</textcolor>
+                    <textcolor>White30</textcolor>
                     <label>$INFO[Container(350).NumItems,, $LOCALIZE[31101]  •  ]$INFO[Container(350).CurrentPage,, $LOCALIZE[20163] ]$INFO[Container(350).NumPages,, $LOCALIZE[31243]]</label>
                     <aligny>center</aligny>
                     <align>right</align>
@@ -657,7 +657,7 @@
                             <right>10</right>
                             <bottom>0</bottom>
                             <height>86</height>
-                            <texture colordiffuse="Dark4" border="5">common/box.png</texture>
+                            <texture colordiffuse="White12" border="5">common/box.png</texture>
                         </control>
                         <control type="textbox">
                             <left>20</left>
@@ -666,7 +666,7 @@
                             <height>64</height>
                             <font>Mini</font>
                             <autoscroll>false</autoscroll>
-                            <textcolor>Dark2</textcolor>
+                            <textcolor>White70</textcolor>
                             <label>$INFO[ListItem.Label]</label>
                             <aligny>center</aligny>
                             <align>center</align>
@@ -717,7 +717,7 @@
                                 <right>10</right>
                                 <bottom>0</bottom>
                                 <height>86</height>
-                                <texture colordiffuse="Dark4" border="5">common/box.png</texture>
+                                <texture colordiffuse="White12" border="5">common/box.png</texture>
                             </control>
                             <control type="textbox">
                                 <left>20</left>
@@ -726,7 +726,7 @@
                                 <height>64</height>
                                 <font>Mini</font>
                                 <scroll>true</scroll>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label>$INFO[ListItem.Label]</label>
                                 <aligny>center</aligny>
                                 <align>center</align>
@@ -777,7 +777,7 @@
                 <right>60</right>
                 <posy>60</posy>
                 <font>EpisodeNumber</font>
-                <textcolor>Dark1</textcolor>
+                <textcolor>White100</textcolor>
                 <height>45</height>
                 <label>$INFO[ListItem.Artist]</label>
                 <visible>Container.Content(artists)</visible>
@@ -788,7 +788,7 @@
                 <right>60</right>
                 <posy>60</posy>
                 <font>EpisodeNumber</font>
-                <textcolor>Dark1</textcolor>
+                <textcolor>White100</textcolor>
                 <height>45</height>
                 <label>$INFO[ListItem.Album]</label>
                 <visible>Container.Content(albums)</visible>
@@ -801,7 +801,7 @@
                 <top>150</top>
                 <bottom>0</bottom>
                 <font>Medium</font>
-                <textcolor>Dark1</textcolor>
+                <textcolor>White100</textcolor>
                 <label>$INFO[ListItem.Property(Artist_Description)]</label>
                 <visible>Container.Content(artists)</visible>
             </control>
@@ -812,7 +812,7 @@
                 <top>150</top>
                 <bottom>0</bottom>
                 <font>Medium</font>
-                <textcolor>Dark1</textcolor>
+                <textcolor>White100</textcolor>
                 <label>$INFO[ListItem.Property(Album_Description)]</label>
                 <visible>Container.Content(albums)</visible>
             </control>

@@ -26,8 +26,8 @@
                     <font>Medium</font>
                     <height>100</height>
                     <width>200</width>
-                    <textcolor>Dark3</textcolor>
-                    <focusedcolor>Dark1</focusedcolor>
+                    <textcolor>White30</textcolor>
+                    <focusedcolor>White100</focusedcolor>
                     <label>20339</label>
                     <onclick>SetProperty(content,3)</onclick>
                     <onclick>SetFocus(9500,0)</onclick>
@@ -37,8 +37,8 @@
                     <font>Medium</font>
                     <height>100</height>
                     <width>200</width>
-                    <textcolor>Dark3</textcolor>
-                    <focusedcolor>Dark1</focusedcolor>
+                    <textcolor>White30</textcolor>
+                    <focusedcolor>White100</focusedcolor>
                     <label>31206</label>
                     <onclick>SetProperty(content,2)</onclick>
                     <onclick>SetFocus(9500,0)</onclick>
@@ -48,8 +48,8 @@
                     <font>Medium</font>
                     <height>100</height>
                     <width>200</width>
-                    <textcolor>Dark3</textcolor>
-                    <focusedcolor>Dark1</focusedcolor>
+                    <textcolor>White30</textcolor>
+                    <focusedcolor>White100</focusedcolor>
                     <label>572</label>
                     <onclick>SetProperty(content,1)</onclick>
                     <onclick>SetFocus(9500,0)</onclick>
@@ -83,7 +83,7 @@
                     <height>48</height>
                     <align>left</align>
                     <label>$LOCALIZE[31138]...</label>
-                    <textcolor>Dark1</textcolor>
+                    <textcolor>White100</textcolor>
                 </control>
 
             </control>
@@ -205,14 +205,14 @@
                     <font>MediumBold</font>
                     <width>100%</width>
                     <align>center</align>
-                    <textcolor>Dark1</textcolor>
+                    <textcolor>White100</textcolor>
                     <label>$INFO[Container(9500).ListItem.Label]</label>
                 </control>
                 <control type="label">
                     <font>Small</font>
                     <width>100%</width>
                     <align>center</align>
-                    <textcolor>Dark2</textcolor>
+                    <textcolor>White70</textcolor>
                     <label>$INFO[Container(9500).ListItem.Year]$INFO[Container(9500).ListItem.Rating,  •  ,]$INFO[Container(9500).ListItem.Votes, (, $LOCALIZE[20350])]</label>
                 </control>
             </control>

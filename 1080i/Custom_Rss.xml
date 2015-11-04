@@ -9,9 +9,9 @@
             <height>32</height>
             <right>0</right>
             <font>Mini</font>
-            <textcolor>Dark2</textcolor>
-            <headlinecolor>Dark2</headlinecolor>
-            <titlecolor>Dark1</titlecolor>
+            <textcolor>White70</textcolor>
+            <headlinecolor>White70</headlinecolor>
+            <titlecolor>White100</titlecolor>
         </control>
     </controls>
 </window>

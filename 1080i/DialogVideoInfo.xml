@@ -39,14 +39,14 @@
                         <centerleft>524</centerleft>
                         <width>16</width>
                         <height>16</height>
-                        <texture colordiffuse="Dark3" flipx="true">common/arrow-small-right.png</texture>
+                        <texture colordiffuse="White30" flipx="true">common/arrow-small-right.png</texture>
                     </control>
                     <control type="image">
                         <visible>Container(9000).HasNext</visible>
                         <centerright>64</centerright>
                         <width>16</width>
                         <height>16</height>
-                        <texture colordiffuse="Dark3" flipx="false">common/arrow-small-right.png</texture>
+                        <texture colordiffuse="White30" flipx="false">common/arrow-small-right.png</texture>
                     </control>
                 </control>
                 <control type="group">
@@ -59,14 +59,14 @@
                         <centerleft>524</centerleft>
                         <width>16</width>
                         <height>16</height>
-                        <texture colordiffuse="Dark3" flipx="true">common/arrow-small-right.png</texture>
+                        <texture colordiffuse="White30" flipx="true">common/arrow-small-right.png</texture>
                     </control>
                     <control type="image">
                         <visible>[Container(9501).HasNext + Control.HasFocus(9501)] | [Container(50).HasNext + Control.HasFocus(51)]</visible>
                         <centerright>64</centerright>
                         <width>16</width>
                         <height>16</height>
-                        <texture colordiffuse="Dark3" flipx="false">common/arrow-small-right.png</texture>
+                        <texture colordiffuse="White30" flipx="false">common/arrow-small-right.png</texture>
                     </control>
                 </control>
                 <control type="button" id ="5">
@@ -169,7 +169,7 @@
                     <height>50</height>
                     <font>Mini</font>
                     <scroll>true</scroll>
-                    <textcolor>Dark3</textcolor>
+                    <textcolor>White30</textcolor>
                     <label>$INFO[Container(9501).NumItems,, $LOCALIZE[31101]  •  ]$INFO[Container(9501).CurrentPage,, $LOCALIZE[20163] ]$INFO[Container(9501).NumPages,, $LOCALIZE[31243]]</label>
                     <aligny>center</aligny>
                     <align>right</align>
@@ -183,7 +183,7 @@
                     <height>50</height>
                     <font>Mini</font>
                     <scroll>true</scroll>
-                    <textcolor>Dark3</textcolor>
+                    <textcolor>White30</textcolor>
                     <label>$INFO[Container(50).NumItems,, $LOCALIZE[31101]  •  ]$INFO[Container(50).CurrentPage,, $LOCALIZE[20163] ]$INFO[Container(50).NumPages,, $LOCALIZE[31243]]</label>
                     <aligny>center</aligny>
                     <align>right</align>
@@ -197,7 +197,7 @@
                     <height>50</height>
                     <font>Mini</font>
                     <scroll>true</scroll>
-                    <textcolor>Dark3</textcolor>
+                    <textcolor>White30</textcolor>
                     <label>$INFO[ListItem.FileNameAndPath]</label>
                     <aligny>center</aligny>
                     <align>right</align>
@@ -210,7 +210,7 @@
                     <right>SidePad</right>
                     <top>260</top>
                     <description>Header Label</description>
-                    <textcolor>Dark2</textcolor>
+                    <textcolor>White70</textcolor>
                     <font>Small</font>
                     <label>$VAR[LabelVideoInfoCastDirector]</label>
                     <include>Animation.DelayFadeIn</include>
@@ -234,7 +234,7 @@
                         <itemgap>0</itemgap>
                         <control type="label">
                             <description>Header Label</description>
-                            <textcolor>Dark1</textcolor>
+                            <textcolor>White100</textcolor>
                             <include>DefDialogInfoHeader</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
@@ -246,7 +246,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label>$INFO[ListItem.Tagline]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -256,7 +256,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label>$INFO[ListItem.TVShowTitle]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -266,7 +266,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label>$INFO[ListItem.Property(UnWatchedEpisodes)] unwatched episodes</label>
                                 <aligny>center</aligny>
                             </control>
@@ -278,7 +278,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$LOCALIZE[345][/B]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -287,7 +287,7 @@
                                 <right>420</right>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[ListItem.Year]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -299,7 +299,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$LOCALIZE[563][/B]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -308,7 +308,7 @@
                                 <right>420</right>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="Unrated">$INFO[ListItem.MPAA]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -320,7 +320,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$LOCALIZE[2050][/B]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -329,7 +329,7 @@
                                 <right>420</right>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -341,7 +341,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$LOCALIZE[572][/B]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -350,7 +350,7 @@
                                 <right>420</right>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[ListItem.Studio]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -362,7 +362,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$LOCALIZE[515][/B]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -371,7 +371,7 @@
                                 <right>420</right>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[ListItem.Genre]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -383,7 +383,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]Latest[/B]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -392,7 +392,7 @@
                                 <right>420</right>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[Window(Home).Property(NextAired.LatestNumber),, - ]$INFO[Window(Home).Property(NextAired.LatestTitle)]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -404,7 +404,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$LOCALIZE[20339][/B]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -413,7 +413,7 @@
                                 <right>420</right>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[ListItem.Director]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -425,7 +425,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$LOCALIZE[20417][/B]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -434,7 +434,7 @@
                                 <right>420</right>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[ListItem.Writer]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -446,7 +446,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$LOCALIZE[445][/B]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -527,7 +527,7 @@
                             <width>100%</width>
                             <height>20</height>
                             <font>Tiny</font>
-                            <textcolor>Dark1</textcolor>
+                            <textcolor>White100</textcolor>
                             <label></label>
                             <aligny>center</aligny>
                         </control>
@@ -535,7 +535,7 @@
                             <width>100%</width>
                             <height>110</height>
                             <font>Tiny</font>
-                            <textcolor>Dark2</textcolor>
+                            <textcolor>White70</textcolor>
                         </control>
                         
                     </control>
@@ -582,7 +582,7 @@
                                 <right>10</right>
                                 <bottom>0</bottom>
                                 <height>86</height>
-                                <texture colordiffuse="Dark4" border="5">common/box.png</texture>
+                                <texture colordiffuse="White12" border="5">common/box.png</texture>
                             </control>
                             <control type="textbox">
                                 <left>20</left>
@@ -591,7 +591,7 @@
                                 <height>64</height>
                                 <font>Mini</font>
                                 <autoscroll>false</autoscroll>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label>$INFO[ListItem.Label]</label>
                                 <aligny>center</aligny>
                                 <align>center</align>
@@ -642,7 +642,7 @@
                                     <right>10</right>
                                     <bottom>0</bottom>
                                     <height>86</height>
-                                    <texture colordiffuse="Dark4" border="5">common/box.png</texture>
+                                    <texture colordiffuse="White12" border="5">common/box.png</texture>
                                 </control>
                                 <control type="textbox">
                                     <left>20</left>
@@ -651,7 +651,7 @@
                                     <height>64</height>
                                     <font>Mini</font>
                                     <scroll>true</scroll>
-                                    <textcolor>Dark2</textcolor>
+                                    <textcolor>White70</textcolor>
                                     <label>$INFO[ListItem.Label]</label>
                                     <aligny>center</aligny>
                                     <align>center</align>
@@ -687,7 +687,7 @@
                         <height>48</height>
                         <align>left</align>
                         <label>$LOCALIZE[31138]...</label>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                     </control>
 
                 </control>
@@ -730,7 +730,7 @@
                             <right>10</right>
                             <bottom>0</bottom>
                             <height>86</height>
-                            <texture colordiffuse="Dark4" border="5">common/box.png</texture>
+                            <texture colordiffuse="White12" border="5">common/box.png</texture>
                         </control>
                         <control type="textbox">
                             <left>20</left>
@@ -739,7 +739,7 @@
                             <height>64</height>
                             <font>Mini</font>
                             <autoscroll>false</autoscroll>
-                            <textcolor>Dark2</textcolor>
+                            <textcolor>White70</textcolor>
                             <label>$INFO[ListItem.Label]</label>
                             <aligny>center</aligny>
                             <align>center</align>
@@ -808,7 +808,7 @@
                                 <right>10</right>
                                 <bottom>0</bottom>
                                 <height>86</height>
-                                <texture colordiffuse="Dark4" border="5">common/box.png</texture>
+                                <texture colordiffuse="White12" border="5">common/box.png</texture>
                             </control>
                             <control type="textbox">
                                 <left>20</left>
@@ -817,7 +817,7 @@
                                 <height>64</height>
                                 <font>Mini</font>
                                 <scroll>true</scroll>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label>$INFO[ListItem.Label]</label>
                                 <aligny>center</aligny>
                                 <align>center</align>
@@ -867,7 +867,7 @@
                 <right>60</right>
                 <posy>60</posy>
                 <font>EpisodeNumber</font>
-                <textcolor>Dark1</textcolor>
+                <textcolor>White100</textcolor>
                 <height>45</height>
                 <label>$INFO[ListItem.Label]</label>
             </control>
@@ -879,7 +879,7 @@
                 <top>150</top>
                 <bottom>0</bottom>
                 <font>Medium</font>
-                <textcolor>Dark1</textcolor>
+                <textcolor>White100</textcolor>
                 <label>$INFO[ListItem.Tagline,[B],[/B][CR][CR]]$INFO[ListItem.Plot]</label>
             </control>
         </control>

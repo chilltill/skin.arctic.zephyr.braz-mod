@@ -128,7 +128,7 @@
                         <itemgap>0</itemgap>
                         <control type="label">
                             <description>Header Label</description>
-                            <textcolor>Dark1</textcolor>
+                            <textcolor>White100</textcolor>
                             <include>DefDialogInfoHeader</include>
                             <label>$INFO[ListItem.Title]</label>
                         </control>
@@ -139,7 +139,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[ListItem.ChannelName]$INFO[ListItem.ChannelNumber, (,)]$VAR[PVRInfoStatus,  ,]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -151,7 +151,7 @@
                                 <width>150</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$LOCALIZE[2050][/B]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -160,7 +160,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -171,7 +171,7 @@
                                 <width>150</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$LOCALIZE[19126][/B]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -180,7 +180,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[ListItem.StartDate] - $INFO[ListItem.StartTime]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -191,7 +191,7 @@
                                 <width>150</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$LOCALIZE[19127][/B]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -200,7 +200,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[ListItem.EndDate] - $INFO[ListItem.EndTime]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -211,7 +211,7 @@
                                 <width>150</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$LOCALIZE[515][/B]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -220,7 +220,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[ListItem.Genre]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -236,7 +236,7 @@
                                 <right>0</right>
                                 <height>240</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <scroll>false</scroll>
                                 <info>ListItem.Plot</info>
                                 <aligny>top</aligny>

@@ -204,7 +204,7 @@
                 <include>Animation.DelayFadeIn</include>
                 <include>Animation.FadeOut</include>
                 <visible>Control.HasFocus($PARAM[listid]) + IntegerGreaterThan(Container($PARAM[listid]).NumItems,4)</visible>
-                <texture colordiffuse="Dark2" flipx="false">common/arrow-small-right.png</texture>
+                <texture colordiffuse="White70" flipx="false">common/arrow-small-right.png</texture>
             </control>
         </control>
     </include>
@@ -324,7 +324,7 @@
                 <itemgap>0</itemgap>
                 <control type="label">
                     <description>Header Label</description>
-                    <textcolor>Dark1</textcolor>
+                    <textcolor>White100</textcolor>
                     <width>1000</width>
                     <include>DefDialogInfoHeader</include>
                     <label>$INFO[Container(100).ListItem.Label]</label>
@@ -336,7 +336,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label fallback="19055">$VAR[GlobalSearchInfoSubHeading]</label>
                         <aligny>center</aligny>
                     </control>
@@ -348,7 +348,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <label>[B]$LOCALIZE[345][/B]</label>
                         <aligny>center</aligny>
                     </control>
@@ -357,7 +357,7 @@
                         <right>420</right>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$INFO[Container(100).ListItem.Property(Year)]</label>
                         <aligny>center</aligny>
                     </control>
@@ -368,7 +368,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <label>[B]$LOCALIZE[563][/B]</label>
                         <aligny>center</aligny>
                     </control>
@@ -377,7 +377,7 @@
                         <right>420</right>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label fallback="Unrated">$INFO[Container(100).ListItem.Property(Mpaa)]</label>
                         <aligny>center</aligny>
                     </control>
@@ -389,7 +389,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <label>[B]Season[/B]</label>
                         <aligny>center</aligny>
                     </control>
@@ -398,7 +398,7 @@
                         <right>420</right>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$INFO[Container(100).ListItem.Property(Season)]</label>
                         <aligny>center</aligny>
                     </control>
@@ -410,7 +410,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <label>[B]Episode[/B]</label>
                         <aligny>center</aligny>
                     </control>
@@ -419,7 +419,7 @@
                         <right>420</right>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$INFO[Container(100).ListItem.Property(Episode)]</label>
                         <aligny>center</aligny>
                     </control>
@@ -431,7 +431,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <label>[B]Premiered[/B]</label>
                         <aligny>center</aligny>
                     </control>
@@ -440,7 +440,7 @@
                         <right>420</right>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$INFO[Container(100).ListItem.Property(Premiered)]</label>
                         <aligny>center</aligny>
                     </control>
@@ -452,7 +452,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <label>[B]$LOCALIZE[2050][/B]</label>
                         <aligny>center</aligny>
                     </control>
@@ -461,7 +461,7 @@
                         <right>420</right>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$INFO[Container(100).ListItem.Property(Duration),, $LOCALIZE[12391]]</label>
                         <aligny>center</aligny>
                     </control>
@@ -473,7 +473,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <label>[B]$LOCALIZE[572][/B]</label>
                         <aligny>center</aligny>
                     </control>
@@ -482,7 +482,7 @@
                         <right>420</right>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$INFO[Container(100).ListItem.Property(Studio)]</label>
                         <aligny>center</aligny>
                     </control>
@@ -494,7 +494,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <label>[B]$LOCALIZE[515][/B]</label>
                         <aligny>center</aligny>
                     </control>
@@ -503,7 +503,7 @@
                         <right>420</right>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$INFO[Container(100).ListItem.Property(Genre)]</label>
                         <aligny>center</aligny>
                     </control>
@@ -515,7 +515,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <label>[B]$LOCALIZE[20339][/B]</label>
                         <aligny>center</aligny>
                     </control>
@@ -524,7 +524,7 @@
                         <right>420</right>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$INFO[Container(100).ListItem.Property(Director)]</label>
                         <aligny>center</aligny>
                     </control>
@@ -534,7 +534,7 @@
                     <width>100%</width>
                     <height>20</height>
                     <font>Tiny</font>
-                    <textcolor>Dark1</textcolor>
+                    <textcolor>White100</textcolor>
                     <label></label>
                     <aligny>center</aligny>
                 </control>
@@ -542,7 +542,7 @@
                     <width>100%</width>
                     <height>110</height>
                     <font>Tiny</font>
-                    <textcolor>Dark2</textcolor>
+                    <textcolor>White70</textcolor>
                     <label>$INFO[Container(100).ListItem.Property(Plot)]</label>
                 </control>
                 
@@ -566,7 +566,7 @@
                 <itemgap>0</itemgap>
                 <control type="label">
                     <description>Header Label</description>
-                    <textcolor>Dark1</textcolor>
+                    <textcolor>White100</textcolor>
                     <width>1000</width>
                     <include>DefDialogInfoHeader</include>
                     <label>$INFO[Container(100).ListItem.Label]</label>
@@ -578,7 +578,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label fallback="19055">$VAR[GlobalSearchInfoSubHeading]</label>
                         <aligny>center</aligny>
                     </control>
@@ -591,7 +591,7 @@
                         <width>150</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <label>[B]Album[/B]</label>
                         <aligny>center</aligny>
                     </control>
@@ -600,7 +600,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$INFO[Container(100).ListItem.Property(Album)]</label>
                         <aligny>center</aligny>
                     </control>
@@ -612,7 +612,7 @@
                         <width>150</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <label>[B]Track[/B]</label>
                         <aligny>center</aligny>
                     </control>
@@ -621,7 +621,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$INFO[Container(100).ListItem.Property(Track)]</label>
                         <aligny>center</aligny>
                     </control>
@@ -633,7 +633,7 @@
                         <width>150</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <label>[B]$LOCALIZE[345][/B]</label>
                         <aligny>center</aligny>
                     </control>
@@ -642,7 +642,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$INFO[Container(100).ListItem.Property(Year)]</label>
                         <aligny>center</aligny>
                     </control>
@@ -654,7 +654,7 @@
                         <width>150</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <label>[B]$LOCALIZE[572][/B]</label>
                         <aligny>center</aligny>
                     </control>
@@ -663,7 +663,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$INFO[Container(100).ListItem.Property(Album_Label)]</label>
                         <aligny>center</aligny>
                     </control>
@@ -675,7 +675,7 @@
                         <width>150</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <label>[B]$LOCALIZE[515][/B]</label>
                         <aligny>center</aligny>
                     </control>
@@ -684,7 +684,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$INFO[Container(100).ListItem.Property(Genre)]</label>
                         <aligny>center</aligny>
                     </control>
@@ -696,7 +696,7 @@
                         <width>150</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <label>[B]$LOCALIZE[515][/B]</label>
                         <aligny>center</aligny>
                     </control>
@@ -705,7 +705,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$INFO[Container(100).ListItem.Property(Artist_Genre)]</label>
                         <aligny>center</aligny>
                     </control>
@@ -717,7 +717,7 @@
                         <width>150</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <label>[B]$LOCALIZE[21893][/B]</label>
                         <aligny>center</aligny>
                         <visible>!IsEmpty(Container(100).ListItem.Property(Artist_Born))</visible>
@@ -726,7 +726,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <label>[B]$LOCALIZE[21894][/B]</label>
                         <aligny>center</aligny>
                         <visible>IsEmpty(Container(100).ListItem.Property(Artist_Born))</visible>
@@ -736,7 +736,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$INFO[Container(100).ListItem.Property(Artist_Born)]$INFO[Container(100).ListItem.Property(Artist_Formed)]</label>
                         <aligny>center</aligny>
                     </control>
@@ -748,7 +748,7 @@
                         <width>150</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <label>[B]$LOCALIZE[21897][/B]</label>
                         <aligny>center</aligny>
                         <visible>!IsEmpty(Container(100).ListItem.Property(Artist_Died))</visible>
@@ -757,7 +757,7 @@
                         <width>150</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <label>[B]$LOCALIZE[21896][/B]</label>
                         <aligny>center</aligny>
                         <visible>IsEmpty(Container(100).ListItem.Property(Artist_Died))</visible>
@@ -767,7 +767,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$INFO[Container(100).ListItem.Property(Artist_Died)]</label>
                         <aligny>center</aligny>
                         <visible>!IsEmpty(Container(100).ListItem.Property(Artist_Died))</visible>
@@ -777,7 +777,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$INFO[Container(100).ListItem.Property(Artist_Disbanded)]</label>
                         <aligny>center</aligny>
                         <visible>IsEmpty(Container(100).ListItem.Property(Artist_Died))</visible>
@@ -790,7 +790,7 @@
                         <width>150</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <label>[B]$LOCALIZE[176][/B]</label>
                         <aligny>center</aligny>
                     </control>
@@ -799,7 +799,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$INFO[Container(100).ListItem.Property(Artist_Style)]</label>
                         <aligny>center</aligny>
                     </control>
@@ -808,7 +808,7 @@
                     <width>100%</width>
                     <height>20</height>
                     <font>Tiny</font>
-                    <textcolor>Dark1</textcolor>
+                    <textcolor>White100</textcolor>
                     <label></label>
                     <aligny>center</aligny>
                 </control>
@@ -816,7 +816,7 @@
                     <width>100%</width>
                     <height>250</height>
                     <font>Tiny</font>
-                    <textcolor>Dark2</textcolor>
+                    <textcolor>White70</textcolor>
                     <label>$INFO[Container(100).ListItem.Property(Album_Description)]</label>
                     <visible>Control.IsVisible(170)</visible>
                 </control>
@@ -824,7 +824,7 @@
                     <width>100%</width>
                     <height>250</height>
                     <font>Tiny</font>
-                    <textcolor>Dark2</textcolor>
+                    <textcolor>White70</textcolor>
                     <label>$INFO[Container(100).ListItem.Property(Artist_Description)]</label>
                     <visible>Control.IsVisible(160)</visible>
                 </control>
@@ -848,7 +848,7 @@
                 <itemgap>0</itemgap>
                 <control type="label">
                     <description>Header Label</description>
-                    <textcolor>Dark1</textcolor>
+                    <textcolor>White100</textcolor>
                     <width>1000</width>
                     <include>DefDialogInfoHeader</include>
                     <label>$INFO[Container(100).ListItem.Label]</label>
@@ -860,7 +860,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label fallback="19055">$VAR[GlobalSearchInfoSubHeading]</label>
                         <aligny>center</aligny>
                     </control>
@@ -873,7 +873,7 @@
                         <width>150</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <label>[B]Duration[/B]</label>
                         <aligny>center</aligny>
                     </control>
@@ -882,7 +882,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$INFO[Container(100).ListItem.Property(Duration)]</label>
                         <aligny>center</aligny>
                     </control>
@@ -894,7 +894,7 @@
                         <width>150</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <label>[B]Start[/B]</label>
                         <aligny>center</aligny>
                     </control>
@@ -903,7 +903,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$INFO[Container(100).ListItem.Property(Starttime)]</label>
                         <aligny>center</aligny>
                     </control>
@@ -915,7 +915,7 @@
                         <width>150</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <label>[B]End[/B]</label>
                         <aligny>center</aligny>
                     </control>
@@ -924,7 +924,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$INFO[Container(100).ListItem.Property(Endtime)]</label>
                         <aligny>center</aligny>
                     </control>
@@ -936,7 +936,7 @@
                         <width>150</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <label>[B]$LOCALIZE[515][/B]</label>
                         <aligny>center</aligny>
                     </control>
@@ -945,7 +945,7 @@
                         <width>100%</width>
                         <height>36</height>
                         <font>Tiny</font>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$INFO[Container(100).ListItem.Property(Genre)]</label>
                         <aligny>center</aligny>
                     </control>
@@ -954,7 +954,7 @@
                     <width>100%</width>
                     <height>20</height>
                     <font>Tiny</font>
-                    <textcolor>Dark1</textcolor>
+                    <textcolor>White100</textcolor>
                     <label></label>
                     <aligny>center</aligny>
                 </control>
@@ -962,7 +962,7 @@
                     <width>100%</width>
                     <height>250</height>
                     <font>Tiny</font>
-                    <textcolor>Dark2</textcolor>
+                    <textcolor>White70</textcolor>
                     <label>$INFO[Container(100).ListItem.Property(Plot)]</label>
                 </control>
             </control>

@@ -88,14 +88,14 @@
                         <centerleft>524</centerleft>
                         <width>16</width>
                         <height>16</height>
-                        <texture colordiffuse="Dark3" flipx="true">common/arrow-small-right.png</texture>
+                        <texture colordiffuse="White30" flipx="true">common/arrow-small-right.png</texture>
                     </control>
                     <control type="image">
                         <visible>[Control.HasFocus(150) + Container(150).HasNext] | [Control.HasFocus(250) + Container(250).HasNext] | [Control.HasFocus(350) + Container(350).HasNext] | [Control.HasFocus(450) + Container(450).HasNext] | [Control.HasFocus(550) + Container(550).HasNext] | [Control.HasFocus(750) + Container(750).HasNext] | [Control.HasFocus(1000) + Container(1000).HasNext] | [Control.HasFocus(1150) + Container(1150).HasNext] | [Control.HasFocus(50) + Container(50).HasNext] | [Control.HasFocus(9501) + Container(9501).HasNext]</visible>
                         <centerright>64</centerright>
                         <width>16</width>
                         <height>16</height>
-                        <texture colordiffuse="Dark3" flipx="false">common/arrow-small-right.png</texture>
+                        <texture colordiffuse="White30" flipx="false">common/arrow-small-right.png</texture>
                     </control>
                 </control>
 
@@ -110,14 +110,14 @@
                         <centerleft>524</centerleft>
                         <width>16</width>
                         <height>16</height>
-                        <texture colordiffuse="Dark3" flipx="true">common/arrow-small-right.png</texture>
+                        <texture colordiffuse="White30" flipx="true">common/arrow-small-right.png</texture>
                     </control>
                     <control type="image">
                         <visible>Container(9000).HasNext</visible>
                         <centerright>64</centerright>
                         <width>16</width>
                         <height>16</height>
-                        <texture colordiffuse="Dark3" flipx="false">common/arrow-small-right.png</texture>
+                        <texture colordiffuse="White30" flipx="false">common/arrow-small-right.png</texture>
                     </control>
                 </control>
 
@@ -198,7 +198,7 @@
                     <right>SidePad</right>
                     <top>260</top>
                     <description>Header Label</description>
-                    <textcolor>Dark2</textcolor>
+                    <textcolor>White70</textcolor>
                     <font>Small</font>
                     <label>$INFO[Window.Property(actor.title)] $ADDON[script.extendedinfo 32010]</label>
                     <include>Animation.DelayFadeIn</include>
@@ -210,7 +210,7 @@
                     <height>50</height>
                     <font>Mini</font>
                     <scroll>true</scroll>
-                    <textcolor>Dark3</textcolor>
+                    <textcolor>White30</textcolor>
                     <label>$INFO[Container(150).NumItems,, $LOCALIZE[31101]  •  ]$INFO[Container(150).CurrentPage,, $LOCALIZE[20163] ]$INFO[Container(150).NumPages,, $LOCALIZE[31243]]</label>
                     <aligny>center</aligny>
                     <align>right</align>
@@ -226,7 +226,7 @@
                     <right>SidePad</right>
                     <top>260</top>
                     <description>Header Label</description>
-                    <textcolor>Dark2</textcolor>
+                    <textcolor>White70</textcolor>
                     <font>Small</font>
                     <label>$INFO[Window.Property(actor.title)] $ADDON[script.extendedinfo 32031]</label>
                     <include>Animation.DelayFadeIn</include>
@@ -238,7 +238,7 @@
                     <height>50</height>
                     <font>Mini</font>
                     <scroll>true</scroll>
-                    <textcolor>Dark3</textcolor>
+                    <textcolor>White30</textcolor>
                     <label>$INFO[Container(250).NumItems,, $LOCALIZE[31101]  •  ]$INFO[Container(250).CurrentPage,, $LOCALIZE[20163] ]$INFO[Container(250).NumPages,, $LOCALIZE[31243]]</label>
                     <aligny>center</aligny>
                     <align>right</align>
@@ -254,7 +254,7 @@
                     <right>SidePad</right>
                     <top>260</top>
                     <description>Header Label</description>
-                    <textcolor>Dark2</textcolor>
+                    <textcolor>White70</textcolor>
                     <font>Small</font>
                     <label>$INFO[Window.Property(actor.title)] $ADDON[script.extendedinfo 32118]</label>
                     <include>Animation.DelayFadeIn</include>
@@ -266,7 +266,7 @@
                     <height>50</height>
                     <font>Mini</font>
                     <scroll>true</scroll>
-                    <textcolor>Dark3</textcolor>
+                    <textcolor>White30</textcolor>
                     <label>$INFO[Container(350).NumItems,, $LOCALIZE[31101]  •  ]$INFO[Container(350).CurrentPage,, $LOCALIZE[20163] ]$INFO[Container(350).NumPages,, $LOCALIZE[31243]]</label>
                     <aligny>center</aligny>
                     <align>right</align>
@@ -282,7 +282,7 @@
                     <right>SidePad</right>
                     <top>260</top>
                     <description>Header Label</description>
-                    <textcolor>Dark2</textcolor>
+                    <textcolor>White70</textcolor>
                     <font>Small</font>
                     <label>$INFO[Window.Property(actor.title)] photos</label>
                     <include>Animation.DelayFadeIn</include>
@@ -294,7 +294,7 @@
                     <height>50</height>
                     <font>Mini</font>
                     <scroll>true</scroll>
-                    <textcolor>Dark3</textcolor>
+                    <textcolor>White30</textcolor>
                     <label>$INFO[Container(450).NumItems,, $LOCALIZE[31101]  •  ]$INFO[Container(450).CurrentPage,, $LOCALIZE[20163] ]$INFO[Container(450).NumPages,, $LOCALIZE[31243]]</label>
                     <aligny>center</aligny>
                     <align>right</align>
@@ -310,7 +310,7 @@
                     <right>SidePad</right>
                     <top>260</top>
                     <description>Header Label</description>
-                    <textcolor>Dark2</textcolor>
+                    <textcolor>White70</textcolor>
                     <font>Small</font>
                     <label>$INFO[Window.Property(actor.title)] $ADDON[script.extendedinfo 32115]</label>
                     <include>Animation.DelayFadeIn</include>
@@ -322,7 +322,7 @@
                     <height>50</height>
                     <font>Mini</font>
                     <scroll>true</scroll>
-                    <textcolor>Dark3</textcolor>
+                    <textcolor>White30</textcolor>
                     <label>$INFO[Container(550).NumItems,, $LOCALIZE[31101]  •  ]$INFO[Container(550).CurrentPage,, $LOCALIZE[20163] ]$INFO[Container(550).NumPages,, $LOCALIZE[31243]]</label>
                     <aligny>center</aligny>
                     <align>right</align>
@@ -342,7 +342,7 @@
                         <itemgap>0</itemgap>
                         <control type="label">
                             <description>Header Label</description>
-                            <textcolor>Dark1</textcolor>
+                            <textcolor>White100</textcolor>
                             <include>DefDialogInfoHeader</include>
                             <label>$INFO[Window.Property(actor.title)]</label>
                         </control>
@@ -353,7 +353,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label>$INFO[Window.Property(actor.AlsoKnownAs)]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -365,7 +365,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$ADDON[script.extendedinfo 32012][/B]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -374,7 +374,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[Window.Property(actor.Birthday)]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -386,7 +386,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$ADDON[script.extendedinfo 32014][/B]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -395,7 +395,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[Window.Property(actor.PlaceOfBirth)]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -407,7 +407,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$ADDON[script.extendedinfo 32013][/B]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -416,7 +416,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[Window.Property(actor.DeathDay)]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -428,7 +428,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark1</textcolor>
+                                <textcolor>White100</textcolor>
                                 <label>[B]$ADDON[script.extendedinfo 32020][/B]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -437,7 +437,7 @@
                                 <width>100%</width>
                                 <height>36</height>
                                 <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
+                                <textcolor>White70</textcolor>
                                 <label fallback="19055">$INFO[Window.Property(actor.Age)]</label>
                                 <aligny>center</aligny>
                             </control>
@@ -449,7 +449,7 @@
                             <width>100%</width>
                             <height>24</height>
                             <font>Tiny</font>
-                            <textcolor>Dark1</textcolor>
+                            <textcolor>White100</textcolor>
                             <label></label>
                             <aligny>center</aligny>
                         </control>
@@ -458,7 +458,7 @@
                             <width>100%</width>
                             <height>250</height>
                             <font>Tiny</font>
-                            <textcolor>Dark2</textcolor>
+                            <textcolor>White70</textcolor>
                             <label>$INFO[Window.Property(actor.Biography)]</label>
                         </control>
                         
@@ -528,7 +528,7 @@
                 <right>60</right>
                 <posy>60</posy>
                 <font>EpisodeNumber</font>
-                <textcolor>Dark1</textcolor>
+                <textcolor>White100</textcolor>
                 <height>45</height>
                 <label>$INFO[Window.Property(actor.title)]</label>
             </control>
@@ -540,7 +540,7 @@
                 <top>150</top>
                 <bottom>0</bottom>
                 <font>Medium</font>
-                <textcolor>Dark1</textcolor>
+                <textcolor>White100</textcolor>
                 <label>$INFO[Window.Property(actor.Biography)]</label>
             </control>
         </control>

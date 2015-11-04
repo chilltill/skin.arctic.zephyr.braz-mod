@@ -31,7 +31,7 @@
                         <posy>22</posy>
                         <width>490</width>
                         <height>40</height>
-                        <textcolor>Dark1</textcolor>
+                        <textcolor>White100</textcolor>
                         <font>SmallBold</font>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
@@ -40,7 +40,7 @@
                         <posy>61</posy>
                         <width>490</width>
                         <height>40</height>
-                        <textcolor>Dark2</textcolor>
+                        <textcolor>White70</textcolor>
                         <label>$INFO[ListItem.Label2]</label>
                         <font>Font-ListInfo</font>
                     </control>
@@ -68,7 +68,7 @@
                             <width>490</width>
                             <height>40</height>
                             <font>SmallBold</font>
-                            <textcolor>Dark1</textcolor>
+                            <textcolor>White100</textcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -76,7 +76,7 @@
                             <posy>61</posy>
                             <width>490</width>
                             <height>40</height>
-                            <textcolor>Dark2</textcolor>
+                            <textcolor>White70</textcolor>
                             <label>$INFO[ListItem.Label2]</label>
                             <font>Font-ListInfo</font>
                         </control>

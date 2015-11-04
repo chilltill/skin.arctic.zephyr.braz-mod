@@ -59,7 +59,7 @@
                         <left>0</left>
                         <right>10</right>
                         <height>120</height>
-                        <texture border="5" colordiffuse="Dark4">common/box.png</texture>
+                        <texture border="5" colordiffuse="White12">common/box.png</texture>
                     </control>
                     <include>View_52_BigList_ItemLayout</include>
                 </itemlayout>
@@ -89,7 +89,7 @@
             <height>100</height>
             <aligny>center</aligny>
             <font>SmallBold</font>
-            <textcolor>Dark1</textcolor>
+            <textcolor>White100</textcolor>
             <label>$INFO[ListItem.Label]</label>
         </control>
         <control type="label">
@@ -100,7 +100,7 @@
             <height>100</height>
             <aligny>center</aligny>
             <font>Small</font>
-            <textcolor>Dark1</textcolor>
+            <textcolor>White100</textcolor>
             <label>$INFO[ListItem.Label2]</label>
             <visible>!substring(Container.FolderPath,plugin://,left)</visible>
         </control>
@@ -120,7 +120,7 @@
             <left>0</left>
             <right>10</right>
             <height>120</height>
-            <texture border="5" colordiffuse="Dark1">common/box.png</texture>
+            <texture border="5" colordiffuse="White100">common/box.png</texture>
         </control>
         <control type="image">
             <left>10</left>
@@ -137,7 +137,7 @@
             <height>100</height>
             <aligny>center</aligny>
             <font>SmallBold</font>
-            <textcolor>Light1</textcolor>
+            <textcolor>Dark1</textcolor>
             <label>$INFO[ListItem.Label]</label>
         </control>
         <control type="label">
@@ -148,7 +148,7 @@
             <height>100</height>
             <aligny>center</aligny>
             <font>Small</font>
-            <textcolor>Light1</textcolor>
+            <textcolor>Dark1</textcolor>
             <label>$INFO[ListItem.Label2]</label>
             <visible>!substring(Container.FolderPath,plugin://,left)</visible>
         </control>
