@@ -13,7 +13,7 @@
                 <top>0</top>
                 <height>240</height>
                 <aspectratio aligny="top">scale</aspectratio>
-                <texture colordiffuse="Background">common/bg.jpg</texture>
+                <texture colordiffuse="$VAR[ColorBackground]">common/bg.jpg</texture>
                 <animation effect="fade" start="100" end="75" time="200" condition="true">Conditional</animation>
             </control>
             <control type="image" description="FanartOverlay">
@@ -21,7 +21,7 @@
                 <height>240</height>
                 <top>0</top>
                 <aspectratio aligny="bottom">scale</aspectratio>
-                <texture colordiffuse="FloorFade">common/floor.png</texture>
+                <texture colordiffuse="$VAR[ColorBackground]">common/floor.png</texture>
             </control>
             <control type="image" description="Shadow">
                 <width>100%</width>
@@ -59,7 +59,7 @@
                 <posy>0</posy>
                 <width>660</width>
                 <height>100</height>
-                <texture border="16" colordiffuse="Background">common/rounded-shadow8.png</texture>
+                <texture border="16" colordiffuse="$VAR[ColorBackground]">common/rounded-shadow8.png</texture>
                 <animation effect="fade" start="100" end="90" condition="true">Conditional</animation>
             </control>
             
@@ -164,7 +164,7 @@
                 <posy>0</posy>
                 <width>660</width>
                 <height>100</height>
-                <texture border="16" colordiffuse="Background">common/rounded-shadow8.png</texture>
+                <texture border="16" colordiffuse="$VAR[ColorBackground]">common/rounded-shadow8.png</texture>
                 <animation effect="fade" start="100" end="90" condition="true">Conditional</animation>
             </control>
 
@@ -214,7 +214,7 @@
                 <top>0</top>
                 <height>100</height>
                 <aspectratio aligny="top">scale</aspectratio>
-                <texture colordiffuse="Background">common/bg.jpg</texture>
+                <texture colordiffuse="$VAR[ColorBackground]">common/bg.jpg</texture>
                 <animation effect="fade" start="100" end="75" time="200" condition="true">Conditional</animation>
             </control>
             <control type="image" description="FanartOverlay">
@@ -222,7 +222,7 @@
                 <height>100</height>
                 <top>0</top>
                 <aspectratio aligny="bottom">scale</aspectratio>
-                <texture colordiffuse="FloorFade">common/floor.png</texture>
+                <texture colordiffuse="$VAR[ColorBackground]">common/floor.png</texture>
             </control>
             <control type="image" description="Shadow">
                 <width>100%</width>
@@ -298,7 +298,7 @@
                 <width>450</width>
                 <height>117</height>
                 <animation effect="fade" start="100" end="90" condition="true">Conditional</animation>
-                <texture border="16" colordiffuse="Background">common/rounded-shadow8.png</texture>
+                <texture border="16" colordiffuse="$VAR[ColorBackground]">common/rounded-shadow8.png</texture>
             </control>
 
             <control type="image">
@@ -380,7 +380,7 @@
                     <right>10</right>
                     <height>324</height>
                     <animation effect="fade" start="100" end="90" time="200" condition="true">Conditional</animation>
-                    <texture border="5" colordiffuse="Background">common/box.png</texture>
+                    <texture border="5" colordiffuse="$VAR[ColorBackground]">common/box.png</texture>
                 </control>
                 <control type="image">
                     <left>5</left>
@@ -477,7 +477,7 @@
                     <right>10</right>
                     <height>324</height>
                     <animation effect="fade" start="100" end="90" time="200" condition="true">Conditional</animation>
-                    <texture border="5" colordiffuse="Background">common/box.png</texture>
+                    <texture border="5" colordiffuse="$VAR[ColorBackground]">common/box.png</texture>
                 </control>
                 <control type="image">
                     <left>5</left>
@@ -553,7 +553,7 @@
                 <height>220</height>
                 <bottom>0</bottom>
                 <aspectratio aligny="bottom">scale</aspectratio>
-                <texture colordiffuse="Background">common/bg.jpg</texture>
+                <texture colordiffuse="$VAR[ColorBackground]">common/bg.jpg</texture>
                 <animation effect="fade" start="100" end="75" time="200" condition="true">Conditional</animation>
             </control>
             <control type="image" description="FanartOverlay">
@@ -561,7 +561,7 @@
                 <height>220</height>
                 <bottom>0</bottom>
                 <aspectratio aligny="bottom">scale</aspectratio>
-                <texture colordiffuse="FloorFade">common/floor.png</texture>
+                <texture colordiffuse="$VAR[ColorBackground]">common/floor.png</texture>
             </control>
             <control type="image" description="Shadow">
                 <width>100%</width>
@@ -651,42 +651,42 @@
                 <description>6 Option Menu</description>
                 <width>100%</width>
                 <height>452</height>
-                <texture border="16" colordiffuse="Background">common/rounded-shadow8.png</texture>
+                <texture border="16" colordiffuse="$VAR[ColorBackground]">common/rounded-shadow8.png</texture>
                 <visible>IntegerGreaterThan(Container(302).NumItems,5)</visible>
             </control>
             <control type="image">
                 <description>5 Option Menu</description>
                 <width>100%</width>
                 <height>382</height>
-                <texture border="16" colordiffuse="Background">common/rounded-shadow8.png</texture>
+                <texture border="16" colordiffuse="$VAR[ColorBackground]">common/rounded-shadow8.png</texture>
                 <visible>IntegerGreaterThan(Container(302).NumItems,4) + !IntegerGreaterThan(Container(302).NumItems,5)</visible>
             </control>
             <control type="image">
                 <description>4 Option Menu</description>
                 <width>100%</width>
                 <height>312</height>
-                <texture border="16" colordiffuse="Background">common/rounded-shadow8.png</texture>
+                <texture border="16" colordiffuse="$VAR[ColorBackground]">common/rounded-shadow8.png</texture>
                 <visible>IntegerGreaterThan(Container(302).NumItems,3) + !IntegerGreaterThan(Container(302).NumItems,4)</visible>
             </control>
             <control type="image">
                 <description>3 Option Menu</description>
                 <width>100%</width>
                 <height>242</height>
-                <texture border="16" colordiffuse="Background">common/rounded-shadow8.png</texture>
+                <texture border="16" colordiffuse="$VAR[ColorBackground]">common/rounded-shadow8.png</texture>
                 <visible>IntegerGreaterThan(Container(302).NumItems,2) + !IntegerGreaterThan(Container(302).NumItems,3)</visible>
             </control>
             <control type="image">
                 <description>2 Option Menu</description>
                 <width>100%</width>
                 <height>172</height>
-                <texture border="16" colordiffuse="Background">common/rounded-shadow8.png</texture>
+                <texture border="16" colordiffuse="$VAR[ColorBackground]">common/rounded-shadow8.png</texture>
                 <visible>IntegerGreaterThan(Container(302).NumItems,1) + !IntegerGreaterThan(Container(302).NumItems,2)</visible>
             </control>
             <control type="image">
                 <description>1 Option Menu</description>
                 <width>100%</width>
                 <height>102</height>
-                <texture border="16" colordiffuse="Background">common/rounded-shadow8.png</texture>
+                <texture border="16" colordiffuse="$VAR[ColorBackground]">common/rounded-shadow8.png</texture>
                 <visible>!IntegerGreaterThan(Container(302).NumItems,1)</visible>
             </control>
             <control type="list" id="302">
@@ -841,7 +841,7 @@
                         <height>900</height>
                         <bottom>-680</bottom>
                         <aspectratio aligny="bottom">scale</aspectratio>
-                        <texture colordiffuse="Background">common/bg.jpg</texture>
+                        <texture colordiffuse="$VAR[ColorBackground]">common/bg.jpg</texture>
                         <animation effect="fade" start="100" end="75" time="200" condition="true">Conditional</animation>
                     </control>
                     <control type="image" description="FanartOverlay">
@@ -849,7 +849,7 @@
                         <height>900</height>
                         <bottom>-680</bottom>
                         <aspectratio aligny="bottom">scale</aspectratio>
-                        <texture colordiffuse="FloorFade">common/floor.png</texture>
+                        <texture colordiffuse="$VAR[ColorBackground]">common/floor.png</texture>
                     </control>
                     <control type="image" description="Shadow">
                         <width>100%</width>

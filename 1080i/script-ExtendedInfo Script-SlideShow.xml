@@ -14,7 +14,7 @@
             <visible>!Window.IsVisible(home) | Skin.HasSetting(home.vertical)</visible>
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
-            <texture colordiffuse="FloorFade">common/floor.png</texture>
+            <texture colordiffuse="$VAR[ColorBackground]">common/floor.png</texture>
         </control>
         <!-- Busy Loader -->
         <control type="group">
