@@ -34,16 +34,11 @@
     </variable>
     <include name="GlobalSearchListItem">
         <control type="image">
-            <width>100%</width>
-            <height>100%</height>
-            <texture border="10">common/nofocus-shadow10.png</texture>
-        </control>
-        <control type="image">
             <left>10</left>
             <top>10</top>
             <right>10</right>
             <bottom>10</bottom>
-            <texture border="5" colordiffuse="Panel">common/box.png</texture>
+            <texture border="5" colordiffuse="PanelFull">common/box.png</texture>
         </control>
         <control type="label">
             <left>20</left>
@@ -119,6 +114,7 @@
             <control type="group">
                 <width>296</width>
                 <control type="image">
+                    <visible>Control.HasFocus($PARAM[buttonid])</visible>
                     <width>296</width>
                     <height>330</height>
                     <texture border="10">common/nofocus-shadow10.png</texture>
@@ -140,7 +136,7 @@
                     <onclick>Close</onclick>
                     <onclick>$PARAM[buttonclick]</onclick>
                     <label></label>
-                    <texturenofocus border="5" colordiffuse="Panel">common/box.png</texturenofocus>
+                    <texturenofocus border="5" colordiffuse="PanelFull">common/box.png</texturenofocus>
                     <texturefocus border="5" colordiffuse="$VAR[ColorHighlight]">common/box.png</texturefocus>
                 </control>
                 <control type="label">
