@@ -8,6 +8,10 @@
         <value condition="!IsEmpty(Skin.String(backgroundcolor.name))">$INFO[Skin.String(backgroundcolor.name)]</value>
         <value>Background</value>
     </variable>
+    <variable name="ColorPickerLabel">
+        <value condition="Skin.HasSetting(colorpicker.highlight)">Select highlight color</value>
+        <value condition="Skin.HasSetting(colorpicker.background)">Select background color</value>
+    </variable>
     <variable name="SortDirection">
         <value condition="Container.SortDirection(Ascending)">Ascending</value>
         <value condition="Container.SortDirection(Descending)">Descending</value>

@@ -430,6 +430,7 @@
                         <include>DefSettingsButton</include>
                         <label>$LOCALIZE[31238]</label>
                         <label2>[UPPERCASE]$INFO[Skin.String(focuscolor.name)][/UPPERCASE]</label2>
+                        <onclick>Skin.SetBool(colorpicker.highlight)</onclick>
                         <onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=focuscolor.name)</onclick>
                     </control>
                     <control type="button" id="9271" description="Set Background Color">
@@ -438,6 +439,7 @@
                         <include>DefSettingsButton</include>
                         <label>Select background color</label>
                         <label2>[UPPERCASE]$INFO[Skin.String(backgroundcolor.name)][/UPPERCASE]</label2>
+                        <onclick>Skin.SetBool(colorpicker.background)</onclick>
                         <onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=backgroundcolor.name)</onclick>
                     </control>
                     <control type="radiobutton" id="9272" description="Kiosk Mode">

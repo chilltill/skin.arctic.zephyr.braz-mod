@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
 	<defaultcontrol always="true">3110</defaultcontrol>
+	<onunload>Skin.Reset(colorpicker.highlight)</onunload>
+	<onunload>Skin.Reset(colorpicker.background)</onunload>
 	<controls>
     	<include>GlobalOverlay</include>
     	<control type="group">
@@ -21,7 +23,7 @@
                 <width>1382</width>
                 <font>MediumBold</font>
                 <align>center</align>
-                <label>$ADDON[script.skin.helper.service 32011]</label>
+                <label>$VAR[ColorPickerLabel]</label>
             </control>
 
 			<control type="panel" id="3110">
@@ -83,7 +85,7 @@
 				<control type="button" id="3010">
 					<onup>3110</onup>
 					<align>left</align>
-					<ondown>SetFocus(3110)</ondown>
+					<ondown>SetFocus(3110,0)</ondown>
 					<onright>3011</onright>
 					<label>Color:</label>
 					<label2>$INFO[Window.Property(colorstring)]</label2>
@@ -99,6 +101,7 @@
 				<control type="button" id="3012">
 					<onup>3110</onup>
 					<onleft>3010</onleft>
+					<ondown>SetFocus(3110,0)</ondown>
 					<label>190</label>
 					<font>Button</font>
 			        <textcolor>Black70</textcolor>
@@ -112,7 +115,7 @@
 				<control type="button" id="3090">
 					<onup>3110</onup>
 					<onleft>3010</onleft>
-					<ondown>SetFocus(3110)</ondown>
+					<ondown>SetFocus(3110,0)</ondown>
 					<onclick>Close</onclick>
 					<label>Cancel</label>
 					<font>Button</font>
