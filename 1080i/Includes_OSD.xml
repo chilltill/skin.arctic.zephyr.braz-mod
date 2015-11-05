@@ -287,8 +287,8 @@
     </include>
     
     <variable name="OSDPanel">
-        <value condition="!Window.IsVisible(fullscreenvideo) + !Window.IsVisible(visualisation)">Background</value>
-        <value>OSDBack</value>
+        <value condition="!Window.IsVisible(fullscreenvideo) + !Window.IsVisible(visualisation)">$VAR[ColorBackground]</value>
+        <value>$VAR[ColorBackground]</value>
     </variable>
     <variable name="OSDPanelWhite12">
         <value condition="!Window.IsVisible(fullscreenvideo) + !Window.IsVisible(visualisation)">White30</value>

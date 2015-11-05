@@ -100,10 +100,10 @@
 					<label>Color:</label>
 					<label2>$INFO[Window.Property(colorstring)]</label2>
 					<font>Button</font>
-			        <textcolor>ff000000</textcolor>
+			        <textcolor>Black70</textcolor>
 			        <width>290</width>
 			        <height>68</height>
-			        <texturenofocus colordiffuse="1fcccccc" border="5">common/box.png</texturenofocus>
+			        <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
 			        <texturefocus colordiffuse="$VAR[ColorHighlight]" border="5">common/box.png</texturefocus>
 				</control>
 				
@@ -113,10 +113,10 @@
 					<onleft>3010</onleft>
 					<label>190</label>
 					<font>Button</font>
-			        <textcolor>ff000000</textcolor>
+			        <textcolor>Black70</textcolor>
 			        <width>225</width>
 			        <height>68</height>
-			        <texturenofocus colordiffuse="1fcccccc" border="5">common/box.png</texturenofocus>
+			        <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
 			        <texturefocus colordiffuse="$VAR[ColorHighlight]" border="5">common/box.png</texturefocus>
 				</control>
 				
@@ -128,10 +128,10 @@
 					<onclick>Close</onclick>
 					<label>Cancel</label>
 					<font>Button</font>
-			        <textcolor>ff000000</textcolor>
+			        <textcolor>Black70</textcolor>
 			        <width>225</width>
 			        <height>68</height>
-			        <texturenofocus colordiffuse="1fcccccc" border="5">common/box.png</texturenofocus>
+			        <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
 			        <texturefocus colordiffuse="$VAR[ColorHighlight]" border="5">common/box.png</texturefocus>
 				</control>
 
@@ -143,10 +143,10 @@
 					<ondown>SetFocus(3110)</ondown>
 					<label>$ADDON[script.skin.helper.service 32013]</label>
 					<font>Button</font>
-			        <textcolor>ff000000</textcolor>
+			        <textcolor>Black70</textcolor>
 			        <width>225</width>
 			        <height>68</height>
-			        <texturenofocus colordiffuse="1fcccccc" border="5">common/box.png</texturenofocus>
+			        <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
 			        <texturefocus colordiffuse="$VAR[ColorHighlight]" border="5">common/box.png</texturefocus>
 				</control>
 				
