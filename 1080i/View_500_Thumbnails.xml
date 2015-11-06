@@ -56,8 +56,8 @@
                             <right>20</right>
                             <height>256</height>
                             <aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
-                            <texture diffuse="diffuse/wall.png" background="true">$VAR[ThumbImage]</texture>
-                            <visible>!Container.Content(albums) + !Container.Content(artists) + !Container.Content(songs)</visible>
+                            <texture background="true">$VAR[ThumbImage]</texture>
+                            <visible>!Container.Content(albums) + !Container.Content(artists) + !Container.Content(songs) + !Container.Content(addons)</visible>
                         </control>
                         <control type="image">
                             <left>20</left>
@@ -66,7 +66,7 @@
                             <height>256</height>
                             <aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
                             <texture diffuse="diffuse/wall-square.png" background="true">$VAR[ThumbImage]</texture>
-                            <visible>Container.Content(albums) | Container.Content(artists) | Container.Content(songs)</visible>
+                            <visible>Container.Content(albums) | Container.Content(artists) | Container.Content(songs) | Container.Content(addons)</visible>
                         </control>
                         <control type="image">
                             <centerright>42</centerright>
@@ -118,8 +118,8 @@
                             <right>20</right>
                             <height>256</height>
                             <aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
-                            <texture diffuse="diffuse/wall.png" background="true">$VAR[ThumbImage]</texture>
-                            <visible>!Container.Content(albums) + !Container.Content(artists) + !Container.Content(songs)</visible>
+                            <texture background="true">$VAR[ThumbImage]</texture>
+                            <visible>!Container.Content(albums) + !Container.Content(artists) + !Container.Content(songs) + !Container.Content(addons)</visible>
                         </control>
                         <control type="image">
                             <left>20</left>
@@ -128,7 +128,7 @@
                             <height>256</height>
                             <aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
                             <texture diffuse="diffuse/wall-square.png" background="true">$VAR[ThumbImage]</texture>
-                            <visible>Container.Content(albums) | Container.Content(artists) | Container.Content(songs)</visible>
+                            <visible>Container.Content(albums) | Container.Content(artists) | Container.Content(songs) | Container.Content(addons)</visible>
                         </control>
                         <control type="image">
                             <centerright>42</centerright>
