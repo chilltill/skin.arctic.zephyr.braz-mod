@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
 	<defaultcontrol always="true">3110</defaultcontrol>
-	<onunload>Skin.Reset(colorpicker.highlight)</onunload>
-	<onunload>Skin.Reset(colorpicker.background)</onunload>
 	<controls>
     	<include>GlobalOverlay</include>
     	<control type="group">
@@ -16,14 +14,13 @@
                 <texture border="16" colordiffuse="White100">common/rounded-shadow100.png</texture>
             </control>
 
-            <control type="label">
+            <control type="label" id="1">
                 <description>Heading</description>
                 <centerleft>50%</centerleft>
                 <posy>20</posy>
                 <width>1382</width>
                 <font>MediumBold</font>
                 <align>center</align>
-                <label>$VAR[ColorPickerLabel]</label>
             </control>
 
 			<control type="panel" id="3110">
@@ -35,7 +32,7 @@
 				<orientation>vertical</orientation>
 				<onleft>3110</onleft>
 				<onright>3110</onright>
-				<onup>3110</onup>
+				<onup>3010</onup>
 				<ondown>3010</ondown>
 				<preloaditems>4</preloaditems>
 				<itemlayout height="60" width="90">
@@ -82,7 +79,7 @@
 				</control>
 				<!-- edit manual -->
 				<control type="button" id="3010">
-					<onup>3110</onup>
+					<onup>SetFocus(3110,112)</onup>
 					<align>left</align>
 					<ondown>SetFocus(3110,0)</ondown>
 					<onright>3011</onright>
