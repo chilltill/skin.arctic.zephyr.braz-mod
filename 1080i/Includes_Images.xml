@@ -80,8 +80,8 @@
         <value>$INFO[Container(301).ListItem.Icon]</value>
     </variable>
     <variable name="ThumbImage">
-        <value condition="Window.IsVisible(MyVideoNav.xml) + Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(sets)">$VAR[FanartImage]</value>
-        <value condition="Window.IsActive(videos) + Container.Content(genres)">$INFO[ListItem.Label,video_genre/,.png]</value>
+        <value condition="Window.IsVisible(MyVideoNav.xml) + !Control.IsVisible(52) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(sets)]">$VAR[FanartImage]</value>
+        <value condition="Window.IsActive(videos) + Container.Content(genres)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.arctic.zephyr/,.png]</value>
         <value>$INFO[ListItem.Icon]</value>
     </variable>
     <variable name="PlayerPoster">
