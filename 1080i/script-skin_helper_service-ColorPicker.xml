@@ -150,15 +150,14 @@
 						<width>130</width>
 						<left>0</left>
 						<align>left</align>
-						<onup>3110</onup>
 						<label>$ADDON[script.skin.helper.service 32049]:</label>
 					</control>
 					<control type="slider" id="3015">
 						<!-- opacity slider -->
 						<top>25</top>
 						<left>130</left>
-						<onup>3011</onup>
-						<ondown>3011</ondown>
+						<onup>3090</onup>
+						<ondown>3090</ondown>
 						<width>200</width>
 						<colordiffuse>Black70</colordiffuse>
 					</control>
@@ -170,8 +169,6 @@
 						<height>68</height>
 						<right>0</right>
 						<align>right</align>
-						<onup>3110</onup>
-						<onleft>3010</onleft>
 						<label>$INFO[Control.Getlabel(3015)]</label>
 					</control>
 				</control>
