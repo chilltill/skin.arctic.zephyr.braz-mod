@@ -2,7 +2,6 @@
 <!-- Foundation -->
 <window id="2006">
     <defaultcontrol always="true">-</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
     <onload condition="Skin.HasSetting(osd.alwaysshowmusicosd)">ActivateWindow(musicosd)</onload>
 
     <controls>

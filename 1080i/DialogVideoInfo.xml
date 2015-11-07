@@ -2,7 +2,6 @@
 <!-- Foundation -->
 <window id="2003">
     <defaultcontrol always="true">8</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
     <onload condition="System.HasAddon(script.videoextras)">RunScript(script.videoextras,check,"$INFO[ListItem.FilenameAndPath]")</onload>
     <onload>ClearProperty(content)</onload>
     <onload>ClearProperty(movie.Fanart,home)</onload>

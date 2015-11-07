@@ -2,7 +2,6 @@
 <!-- Foundation -->
 <window id="145">
     <defaultcontrol always="true">11</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
 
     <controls>
         <control type="group">

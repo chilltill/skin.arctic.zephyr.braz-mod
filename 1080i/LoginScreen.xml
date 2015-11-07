@@ -1,6 +1,5 @@
 <window>
     <defaultcontrol always="true">52</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
     <backgroundcolor>0</backgroundcolor>
     <onload>SetProperty(SkinInitStarted,1,home)</onload>
     <controls>

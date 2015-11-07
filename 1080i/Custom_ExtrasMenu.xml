@@ -8,7 +8,6 @@
         <top>0</top>
     </coordinates>
     <!--<zorder>10</zorder>-->
-    <allowoverlay>no</allowoverlay>
     <controls>
         <control type="group">
             <include>Animation.FadeIn</include>

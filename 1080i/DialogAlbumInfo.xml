@@ -2,7 +2,6 @@
 <!-- Foundation -->
 <window id="2001">
     <defaultcontrol always="true">9000</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
     <onload>ClearProperty(content)</onload>
     <onload>ClearProperty(tracklist)</onload>
     <onload>Dialog.Close(135)</onload>

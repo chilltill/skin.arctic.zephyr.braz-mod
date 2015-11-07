@@ -3,7 +3,6 @@
 <window type="dialog" id="1109">
     <defaultcontrol always="true">3110</defaultcontrol>
     <zorder>10</zorder>
-    <allowoverlay>no</allowoverlay>
     <controls>
 
         <include condition="Window.IsActive(videolibrary)" name="DefViewLayout">

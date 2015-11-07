@@ -2,7 +2,6 @@
 <!-- Foundation -->
 <window type="dialog" id="1111">
     <defaultcontrol always="true">6000</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
     <onunload>Skin.Reset(Edit.LibraryBackground)</onunload>
     <onunload>Skin.Reset(Edit.MusicVizBackground)</onunload>
     <controls>
