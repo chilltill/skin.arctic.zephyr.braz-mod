@@ -389,10 +389,10 @@
                     <height>324</height>
                     <fadetime>350</fadetime>
                     <aspectratio scalediffuse="false">scale</aspectratio>
-                    <texture diffuse="diffuse/widgetposter.png" fallback="DefaultAddonNone.png">$VAR[WidgetImage]</texture>
-                    <visible>!substring(Container(300).ListItem.Property(widget),Weather,left)</visible>
+                    <texture diffuse="diffuse/cardposter.png" fallback="DefaultAddonNone.png">$VAR[WidgetImage]</texture>
+                    <!--<visible>!substring(Container(300).ListItem.Property(widget),Weather,left)</visible>-->
                 </control>
-                <control type="image">
+                <!--<control type="image">
                     <left>5</left>
                     <top>5</top>
                     <width>216</width>
@@ -401,7 +401,7 @@
                     <aspectratio scalediffuse="false">keep</aspectratio>
                     <texture diffuse="diffuse/widgetposter.png">$INFO[Weather.FanartCode,weather/,.png]</texture>
                     <visible>substring(Container(300).ListItem.Property(widget),Weather,left)</visible>
-                </control>
+                </control>-->
                 <control type="label">
                     <left>251</left>
                     <top>5</top>
@@ -486,7 +486,7 @@
                     <height>324</height>
                     <fadetime>350</fadetime>
                     <aspectratio scalediffuse="false">scale</aspectratio>
-                    <texture diffuse="diffuse/widgetposter.png" fallback="DefaultAddonNone.png">$VAR[WidgetImage]</texture>
+                    <texture diffuse="diffuse/widealbum.png" fallback="DefaultAddonNone.png">$VAR[WidgetImage]</texture>
                 </control>
       
                 <control type="label">
