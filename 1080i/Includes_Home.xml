@@ -1554,6 +1554,16 @@
                             <texture colordiffuse="White100">$INFO[ListItem.Icon]</texture>
                             <visible>Skin.HasSetting(home.showicons)</visible>
                         </control>
+                        <control type="image">
+                            <left>415</left>
+                            <top>17</top>
+                            <width>4</width>
+                            <height>58%</height>
+                            <texture colordiffuse="$VAR[ColorHighlight]">common/box.png</texture>
+                            <visible>Control.HasFocus(300)</visible>
+                            <include>Animation.FadeIn</include>
+                            <include>Animation.FadeOut</include>
+                        </control>
                     </focusedlayout>
                     <content>
                         <include>skinshortcuts-mainmenu</include>
@@ -1602,6 +1612,16 @@
                             <textcolor>White100</textcolor>
                             <font>Home</font>
                             <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="image">
+                            <left>415</left>
+                            <top>17</top>
+                            <width>4</width>
+                            <height>58%</height>
+                            <texture colordiffuse="$VAR[ColorHighlight]">common/box.png</texture>
+                            <visible>Control.HasFocus(302)</visible>
+                            <include>Animation.FadeIn</include>
+                            <include>Animation.FadeOut</include>
                         </control>
                     </focusedlayout>
                     <content>
