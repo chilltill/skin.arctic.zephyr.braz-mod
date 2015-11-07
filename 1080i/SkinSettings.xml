@@ -82,6 +82,13 @@
                         <include>DefSettingsButton</include>
                         <label>31169</label>
                     </control>
+
+                    <control type="togglebutton" id="9108" description="Advanced">
+                        <usealttexture>ControlGroup(9100).HasFocus(9108)</usealttexture>
+                        <alttexturenofocus colordiffuse="$VAR[ColorHighlight]">common/white.png</alttexturenofocus>
+                        <include>DefSettingsButton</include>
+                        <label>Advanced</label>
+                    </control>
                 </control>
                 
                 
@@ -439,14 +446,6 @@
                         <label2>[UPPERCASE]$INFO[Skin.String(backgroundcolor.name)][/UPPERCASE]</label2>
                         <onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=backgroundcolor.name,header=Select background color)</onclick>
                     </control>
-                    <control type="radiobutton" id="9272" description="Kiosk Mode">
-                        <width>1310</width>
-                        <visible>ControlGroup(9100).HasFocus(9107)</visible>
-                        <include>DefSettingsButton</include>
-                        <label>31199</label>
-                        <selected>Skin.HasSetting(global.kioskmode)</selected>
-                        <onclick>Skin.ToggleSetting(global.kioskmode)</onclick>
-                    </control>
                     <control type="radiobutton" id="9273" description="Busy Loader Minimal">
                         <width>1310</width>
                         <visible>ControlGroup(9100).HasFocus(9107)</visible>
@@ -463,32 +462,42 @@
                         <label2>$INFO[Skin.String(busyloader)]</label2>
                         <onclick>Skin.SetFile(busyloader,.png,special://skin/extras/spinners)</onclick>
                     </control>
-                     <control type="radiobutton" id="9275" description="Debug mode">
+
+                    <!-- Advanced -->
+                    <control type="radiobutton" id="9280" description="Kiosk Mode">
                         <width>1310</width>
-                        <visible>ControlGroup(9100).HasFocus(9107)</visible>
+                        <visible>ControlGroup(9100).HasFocus(9108)</visible>
+                        <include>DefSettingsButton</include>
+                        <label>31199</label>
+                        <selected>Skin.HasSetting(global.kioskmode)</selected>
+                        <onclick>Skin.ToggleSetting(global.kioskmode)</onclick>
+                    </control>
+                    <control type="radiobutton" id="9281" description="Debug mode">
+                        <width>1310</width>
+                        <visible>ControlGroup(9100).HasFocus(9108)</visible>
                         <include>DefSettingsButton</include>
                         <label>20191</label>
                         <onclick>Skin.ToggleSetting(Skin.ToggleDebug)</onclick>
                         <onclick>Skin.ToggleDebug</onclick>
                         <selected>Skin.HasSetting(Skin.ToggleDebug)</selected>
                     </control>
-                    <control type="button" id="9276" description="Backup settings">
+                    <control type="button" id="9282" description="Backup settings">
                         <width>1310</width>
-                        <visible>ControlGroup(9100).HasFocus(9107) + System.HasAddon(script.skin.helper.service)</visible>
+                        <visible>ControlGroup(9100).HasFocus(9108) + System.HasAddon(script.skin.helper.service)</visible>
                         <include>DefSettingsButton</include>
                         <label>Backup skin settings</label>
                         <onclick>RunScript(script.skin.helper.service,action=backup)</onclick>
                     </control>
-                    <control type="button" id="9277" description="Restore settings">
+                    <control type="button" id="9283" description="Restore settings">
                         <width>1310</width>
-                        <visible>ControlGroup(9100).HasFocus(9107) + System.HasAddon(script.skin.helper.service)</visible>
+                        <visible>ControlGroup(9100).HasFocus(9108) + System.HasAddon(script.skin.helper.service)</visible>
                         <include>DefSettingsButton</include>
                         <label>Restore skin settings</label>
                         <onclick>RunScript(script.skin.helper.service,action=restore)</onclick>
                     </control>
-                    <control type="button" id="9278" description="Reset settings">
+                    <control type="button" id="9284" description="Reset settings">
                         <width>1310</width>
-                        <visible>ControlGroup(9100).HasFocus(9107) + System.HasAddon(script.skin.helper.service)</visible>
+                        <visible>ControlGroup(9100).HasFocus(9108) + System.HasAddon(script.skin.helper.service)</visible>
                         <include>DefSettingsButton</include>
                         <label>Reset skin settings</label>
                         <onclick>RunScript(script.skin.helper.service,action=reset)</onclick>
