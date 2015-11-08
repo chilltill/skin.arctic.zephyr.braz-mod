@@ -829,7 +829,7 @@
                     <include>DefContextButton</include>
                     <label>Panel</label>
                     <onclick>Container.SetViewMode(57)</onclick>
-                    <visible>Container.Content(movies) | Container.Content(tvshows) | [Container.Content(episodes) + !substring(Container.FolderPath,plugin://,left)]</visible>
+                    <visible>Container.Content(musicvideos) | Container.Content(movies) | Container.Content(tvshows) | [Container.Content(episodes) + !substring(Container.FolderPath,plugin://,left)] | Container.Content(artists)</visible>
                 </control>
                 <control type="button" id="3113">
                     <include>DefContextButton</include>
