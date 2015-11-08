@@ -825,6 +825,12 @@
                     <onclick>Container.SetViewMode(58)</onclick>
                     <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | [Container.Content(episodes) + !substring(Container.FolderPath,plugin://,left)] | Container.Content(sets)</visible>
                 </control>
+                <control type="button" id="3125">
+                    <include>DefContextButton</include>
+                    <label>Panel</label>
+                    <onclick>Container.SetViewMode(57)</onclick>
+                    <visible>Container.Content(movies) | Container.Content(tvshows) | [Container.Content(episodes) + !substring(Container.FolderPath,plugin://,left)]</visible>
+                </control>
                 <control type="button" id="3113">
                     <include>DefContextButton</include>
                     <label>Big list</label>
