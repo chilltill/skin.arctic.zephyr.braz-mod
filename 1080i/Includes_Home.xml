@@ -334,6 +334,8 @@
                 <description>Widget</description>
                 <width>1</width>
                 <height>1</height>
+                <oninfo condition="StringCompare(Container(300).ListItem.Property(widgetType),movies)">RunScript(script.extendedinfo,info=extendedinfo,name=$INFO[Container(301).ListItem.Label])</oninfo>
+                <oninfo condition="StringCompare(Container(300).ListItem.Property(widgetType),episodes)">RunScript(script.extendedinfo,info=extendedtvinfo,name=$INFO[Container(301).ListItem.TvShowTitle])</oninfo>
                 <onup condition="IsEmpty(Container(300).ListItem.Property(widget))">303</onup>
                 <onup condition="!IsEmpty(Container(300).ListItem.Property(widget))">300</onup>
                 <ondown>300</ondown>
@@ -1714,6 +1716,8 @@
                         <left>518</left>
                         <width>1554</width>
                         <height>325</height>
+                        <oninfo condition="StringCompare(Container(300).ListItem.Property(widgetType),movies)">RunScript(script.extendedinfo,info=extendedinfo,name=$INFO[Container(301).ListItem.Label])</oninfo>
+                        <oninfo condition="StringCompare(Container(300).ListItem.Property(widgetType),episodes)">RunScript(script.extendedinfo,info=extendedtvinfo,name=$INFO[Container(301).ListItem.TvShowTitle])</oninfo>
                         <onback>300</onback>
                         <onleft>300</onleft>
                         <onup>300</onup>

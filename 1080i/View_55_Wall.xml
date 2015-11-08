@@ -154,7 +154,7 @@
                             <posy>10</posy>
                             <width>870</width>
                             <height>305</height>
-                            <texture colordiffuse="eecccccc" border="5">common/box.png</texture>
+                            <texture colordiffuse="White100" border="5">common/box.png</texture>
                             <animation effect="zoom" start="866,0,1,305" end="-866,0,846,305" delay="1200" time="300" reversible="false">Focus</animation>
                         </control>
                         <include>View_55_Info_Right</include>
