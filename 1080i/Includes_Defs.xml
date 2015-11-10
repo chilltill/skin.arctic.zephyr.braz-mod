@@ -662,6 +662,24 @@
             <aspectratio scalediffuse="false">scale</aspectratio>
             <texture diffuse="$PARAM[diffusetexture]" background="true" fallback="DefaultPicture.png">$INFO[ListItem.Icon]</texture>
         </control>
+        <control type="image">
+            <centerright>32</centerright>
+            <centertop>32</centertop>
+            <width>32</width>
+            <height>32</height>
+            <aspectratio aligny="top">keep</aspectratio>
+            <texture colordiffuse="$VAR[ColorHighlight]">$VAR[PosterPercentWatchedBacking]</texture>
+            <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+        </control>
+        <control type="image">
+            <centerright>32</centerright>
+            <centertop>32</centertop>
+            <width>32</width>
+            <height>32</height>
+            <aspectratio aligny="top">keep</aspectratio>
+            <texture>$VAR[PosterPercentWatched]</texture>
+            <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+        </control>
      
         <control type="image">
             <left>10</left>
@@ -699,6 +717,24 @@
             <bottom>110</bottom>
             <aspectratio scalediffuse="false">scale</aspectratio>
             <texture diffuse="$PARAM[diffusetexture]" background="true" fallback="DefaultPicture.png">$INFO[ListItem.Icon]</texture>
+        </control>
+        <control type="image">
+            <centerright>32</centerright>
+            <centertop>32</centertop>
+            <width>32</width>
+            <height>32</height>
+            <aspectratio aligny="top">keep</aspectratio>
+            <texture colordiffuse="$VAR[ColorHighlight]">$VAR[PosterPercentWatchedBacking]</texture>
+            <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+        </control>
+        <control type="image">
+            <centerright>32</centerright>
+            <centertop>32</centertop>
+            <width>32</width>
+            <height>32</height>
+            <aspectratio aligny="top">keep</aspectratio>
+            <texture>$VAR[PosterPercentWatched]</texture>
+            <visible>!IsEmpty(ListItem.Property(DBID))</visible>
         </control>
         <control type="image">
             <centerleft>50%</centerleft>
