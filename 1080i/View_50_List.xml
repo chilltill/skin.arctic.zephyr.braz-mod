@@ -68,60 +68,6 @@
             <include>View_50_SidePoster</include>
         </control>
     </include>
-    <include name="View_50_LowList">
-        <description>List View (id=50)</description>
-        <control type="group">
-            <include>Animation.Common</include>
-            <visible>Control.IsVisible(50)</visible>
-            <control type="group">
-                <posy>320</posy>
-                <control type="fixedlist" id="50">
-                    <visible>substring(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left) | Container.Content(musicvideos) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(actors) | Container.Content(sets) | Container.Content(seasons) | [Container.Content(files) + !substring(Container.FolderPath,plugin://,left) + !stringcompare(Container.FolderPath,library://video/movies/) + !stringcompare(Container.FolderPath,library://video/tvshows/) + !stringcompare(Container.FolderPath,special://videoplaylists/)] | [Container.Content(episodes)]</visible>
-                    <top>PosterPad</top>
-                    <height>320</height>
-                    <left>ListX</left>
-                    <right>SidePad</right>
-                    <onleft condition="!Skin.HasSetting(global.kioskmode)">9000</onleft>
-                    <onright>60</onright>
-                    <onup>50</onup>
-                    <ondown>50</ondown>
-                    <focusposition>2</focusposition>
-                    <movement>2</movement>
-                    <pagecontrol>60</pagecontrol>
-                    <viewtype label="535">list</viewtype>
-                    <scrolltime tween="quadratic">400</scrolltime>
-                    <itemlayout width="ListW" height="64">
-                        <include>50itemlayout</include>
-                    </itemlayout>
-
-                    <focusedlayout width="ListW" height="64">
-                        <control type="group">
-                            <visible>!Control.HasFocus(60)</visible>
-                            <include>50focuslayout</include>
-                        </control>
-                        <control type="group">
-                            <visible>Control.HasFocus(60)</visible>
-                            <include>50itemlayout</include>
-                        </control>
-                    </focusedlayout>
-                </control>
-                <control type="scrollbar" id="60">
-                    <onback>50</onback>
-                    <centerright>60</centerright>
-                    <posy>PosterPad</posy>
-                    <height>320</height>
-                    <width>8</width>
-                    <onleft>50</onleft>
-                    <onright condition="!Skin.HasSetting(global.kioskmode)">9000</onright>
-                    <texturesliderbackground border="4" colordiffuse="White12">scrollbar/scrollv.png</texturesliderbackground>
-                    <texturesliderbar border="4" colordiffuse="White30">scrollbar/scrollv.png</texturesliderbar>
-                    <texturesliderbarfocus border="4" colordiffuse="White70">scrollbar/scrollv.png</texturesliderbarfocus>
-                    <animation effect="fade" start="100" end="33" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
-                </control>
-            </control>
-            <include>View_50_SidePoster</include>
-        </control>
-    </include>
     <include name="View_50_SidePoster">
         <control type="group" description="Poster">
             <left>SidePad</left>
@@ -402,7 +348,7 @@
             <textcolor>Dark1</textcolor>
             <selectedcolor>Dark1</selectedcolor>
             <label fallback="0.0">$INFO[ListItem.Rating]</label>
-            <visible>!stringcompare(ListItem.Label,..) + IntegerGreaterThan(ListItem.Rating,0)</visible>
+            <visible>!stringcompare(ListItem.Label,..)</visible>
             <visible>![Container.Content(seasons) | Container.Content(artists) | Container.Content(actors)]</visible>
         </control>
     </include>
@@ -476,7 +422,7 @@
             <textcolor>White100</textcolor>
             <selectedcolor>White100</selectedcolor>
             <label fallback="0.0">$INFO[ListItem.Rating]</label>
-            <visible>!stringcompare(ListItem.Label,..) + IntegerGreaterThan(ListItem.Rating,0)</visible>
+            <visible>!stringcompare(ListItem.Label,..)</visible>
             <visible>![Container.Content(seasons) | Container.Content(artists) | Container.Content(actors)]</visible>
         </control>
     </include>
