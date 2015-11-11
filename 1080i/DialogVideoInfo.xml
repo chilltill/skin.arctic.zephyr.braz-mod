@@ -675,6 +675,7 @@
                         <width>48</width>
                         <height>48</height>
                         <texture colordiffuse="$VAR[ColorHighlight]" fallback="special://skin/extras/spinners/Sun.png">$INFO[Skin.String(busyloader)]</texture>
+                        <animation effect="rotate" start="360" end="0" center="auto" time="3000" loop="true" condition="true">conditional</animation>
                         <aspectratio>keep</aspectratio>
                     </control>
 
@@ -725,6 +726,24 @@
                             <texture diffuse="diffuse/wall.png" background="true">$VAR[PosterImage]</texture>
                         </control>
                         <control type="image">
+                            <centerright>32</centerright>
+                            <centertop>32</centertop>
+                            <width>32</width>
+                            <height>32</height>
+                            <aspectratio aligny="top">keep</aspectratio>
+                            <texture colordiffuse="$VAR[ColorHighlight]">$VAR[PosterPercentWatchedBacking]</texture>
+                            <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                        </control>
+                        <control type="image">
+                            <centerright>32</centerright>
+                            <centertop>32</centertop>
+                            <width>32</width>
+                            <height>32</height>
+                            <aspectratio aligny="top">keep</aspectratio>
+                            <texture>$VAR[PosterPercentWatched]</texture>
+                            <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                        </control>
+                        <control type="image">
                             <left>10</left>
                             <right>10</right>
                             <bottom>0</bottom>
@@ -759,6 +778,24 @@
                             <bottom>110</bottom>
                             <aspectratio scalediffuse="false">scale</aspectratio>
                             <texture diffuse="diffuse/wall.png" background="true">$VAR[PosterImage]</texture>
+                        </control>
+                        <control type="image">
+                            <centerright>32</centerright>
+                            <centertop>32</centertop>
+                            <width>32</width>
+                            <height>32</height>
+                            <aspectratio aligny="top">keep</aspectratio>
+                            <texture colordiffuse="$VAR[ColorHighlight]">$VAR[PosterPercentWatchedBacking]</texture>
+                            <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                        </control>
+                        <control type="image">
+                            <centerright>32</centerright>
+                            <centertop>32</centertop>
+                            <width>32</width>
+                            <height>32</height>
+                            <aspectratio aligny="top">keep</aspectratio>
+                            <texture>$VAR[PosterPercentWatched]</texture>
+                            <visible>!IsEmpty(ListItem.Property(DBID))</visible>
                         </control>
                         <control type="image">
                             <centerleft>50%</centerleft>
