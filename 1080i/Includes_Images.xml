@@ -100,6 +100,7 @@
         <value>$INFO[ListItem.Icon]</value>
     </variable>
     <variable name="LandscapeImage">
+        <value condition="Control.IsVisible(301) + StringCompare(Container(300).ListItem.Property(widgetType),episodes)">$INFO[ListItem.Thumb]</value>
         <value condition="!IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
         <value condition="!IsEmpty(ListItem.Art(fanart)) + !Container.Content(episodes)">$INFO[ListItem.Art(fanart)]</value>
         <value condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
