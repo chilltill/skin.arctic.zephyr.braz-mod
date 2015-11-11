@@ -24,13 +24,13 @@
                         <include>50itemlayout</include>
                     </itemlayout>
 
-                    <focusedlayout width="ListW" height="128" condition="Skin.HasSetting(50list.showplot)">
+                    <focusedlayout width="ListW" height="192" condition="Skin.HasSetting(50list.showplot) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)]">
                         <control type="group">
                             <visible>!Control.HasFocus(60)</visible>
                             <include>50focuslayout</include>
                             <control type="textbox">
-                                <height>75</height>
-                                <bottom>5</bottom>
+                                <height>113</height>
+                                <bottom>15</bottom>
                                 <left>30</left>
                                 <right>30</right>
                                 <label>$VAR[LabelPlotBox]</label>
@@ -52,7 +52,7 @@
                             </control>
                         </control>
                     </focusedlayout>
-                    <focusedlayout width="ListW" height="64" condition="!Skin.HasSetting(50list.showplot)">
+                    <focusedlayout width="ListW" height="64" condition="!Skin.HasSetting(50list.showplot) | ![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)]">
                         <control type="group">
                             <visible>!Control.HasFocus(60)</visible>
                             <include>50focuslayout</include>
