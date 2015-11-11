@@ -71,6 +71,7 @@
                     <width>48</width>
                     <height>48</height>
                     <texture colordiffuse="$VAR[ColorHighlight]" fallback="special://skin/extras/spinners/Sun.png">$INFO[Skin.String(busyloader)]</texture>
+                    <animation effect="rotate" start="360" end="0" center="auto" time="3000" loop="true" condition="true">conditional</animation>
                     <aspectratio>keep</aspectratio>
                 </control>
 
