@@ -144,7 +144,7 @@
                 <control type="radiobutton" id="9003" description="Info Wall (55)">
                     <include>DefContextButton</include>
                     <align>left</align>
-                    <label>31147</label>
+                    <label>31214</label>
                     <selected>Skin.HasSetting(55wall.showinfo)</selected>
                     <onclick>Skin.ToggleSetting(55wall.showinfo)</onclick>
                     <visible>Control.IsVisible(55)</visible>
