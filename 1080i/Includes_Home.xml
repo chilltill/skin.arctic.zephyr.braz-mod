@@ -357,7 +357,7 @@
             </control>
             <!-- Normal Widget -->
             <control type="group">
-                <visible>!Container(301).IsUpdating</visible>
+                <visible>!Container(301).IsUpdating + ![Container(300).OnNext | Container(300).OnPrevious]</visible>
                 <visible>IntegerGreaterThan(Container(301).NumItems,0)</visible>
                 <!--<visible>!substring(Container(300).ListItem.Property(widget),Weather,left)</visible>-->
                 <visible>!StringCompare(Container(300).ListItem.Property(widgetIcon),Square) + !StringCompare(Container(300).ListItem.Property(widgetIcon),Landscape)</visible>
@@ -455,7 +455,7 @@
             
             <!-- Album Widget -->
             <control type="group">
-                <visible>!Container(301).IsUpdating</visible>
+                <visible>!Container(301).IsUpdating + ![Container(300).OnNext | Container(300).OnPrevious]</visible>
                 <!--<visible>!substring(Container(300).ListItem.Property(widget),Weather,left)</visible>-->
                 <visible>StringCompare(Container(300).ListItem.Property(widgetIcon),Square) | StringCompare(Container(300).ListItem.Property(widgetIcon),Landscape)</visible>
                 <visible>![Window.IsVisible(home) + !IsEmpty(Skin.String(home.slideshowpath)) + IsEmpty(Container(300).ListItem.Property(widget))] + [IsEmpty(Container(300).ListItem.Property(Background)) | !IsEmpty(Container(300).ListItem.Property(widget))]</visible>
@@ -873,7 +873,7 @@
                     <height>297</height>
                     <control type="list" id="301">
                         <description>Plugin Content Widget</description>
-                        <visible>!substring(Container(300).ListItem.Property(widget),Weather,left)</visible>
+                        <visible>!substring(Container(300).ListItem.Property(widget),Weather,left) + ![Container(300).OnNext | Container(300).OnPrevious]</visible>
                         <visible>IntegerGreaterThan(Container(301).NumItems,0) | Container(301).IsUpdating</visible>
                         <visible allowhiddenfocus="true">Control.HasFocus(301) | ControlGroup(303).HasFocus() | !Skin.HasSetting(home.dontautoshowwidget)</visible>
                         <include>Animation.FadeIn</include>
@@ -1709,7 +1709,7 @@
 
                     <!-- Widget -->
                     <control type="fixedlist" id="301">
-                        <visible>!StringCompare(Container(300).ListItem.Property(widget),weather)</visible>
+                        <visible>!StringCompare(Container(300).ListItem.Property(widget),weather) + ![Container(300).OnNext | Container(300).OnPrevious]</visible>
                         <visible allowhiddenfocus="true">IntegerGreaterThan(Container(301).NumItems,0) | Container(301).IsUpdating</visible>
                         <animation effect="fade" start="100" end="66" time="400" condition="!Control.HasFocus(301)">Conditional</animation>
                         <include>Animation.FadeIn</include>
@@ -1886,7 +1886,7 @@
                                 <right>10</right>
                                 <bottom>10</bottom>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture diffuse="diffuse/wall-fanart.png" background="true" fallback="DefaultMovies.png">$VAR[PosterImage]</texture>
+                                <texture diffuse="diffuse/wall-fanart.png" background="true" fallback="DefaultMovies.png">$VAR[LandscapeImage]</texture>
                             </control>
                             <control type="image">
                                 <centerright>32</centerright>
@@ -1913,7 +1913,7 @@
                                 <right>10</right>
                                 <bottom>10</bottom>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture diffuse="diffuse/wall-fanart.png" background="true" fallback="DefaultMovies.png">$VAR[PosterImage]</texture>
+                                <texture diffuse="diffuse/wall-fanart.png" background="true" fallback="DefaultMovies.png">$VAR[LandscapeImage]</texture>
                             </control>
                             <control type="image">
                                 <centerright>32</centerright>
