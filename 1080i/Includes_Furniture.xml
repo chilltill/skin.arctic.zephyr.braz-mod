@@ -938,6 +938,7 @@
         <value condition="Control.HasFocus(161)">[COLOR=$VAR[ColorHighlight]]$INFO[Control.GetLabel(160)][/COLOR] $LOCALIZE[133]</value>
         <value condition="Control.HasFocus(171)">[COLOR=$VAR[ColorHighlight]]$INFO[Control.GetLabel(170)][/COLOR] $LOCALIZE[132]</value>
         <value condition="Control.HasFocus(181)">[COLOR=$VAR[ColorHighlight]]$INFO[Control.GetLabel(180)][/COLOR] $LOCALIZE[134]</value>
+        <value condition="!Window.IsVisible(DialogButtonMenu.xml)">[COLOR=$VAR[ColorHighlight]]0[/COLOR] items</value>
 
     </variable>
     
